@@ -8,9 +8,9 @@ url: "" # the base hostname & protocol for your site
 weibo_username: boxbeat
 github_username: MiaowLabs
 
-copyright: 喵呜实验室 Miaow Labs
+copyright: Miaow Labs
 
-data: 2015
+date: 2015
 
 
 # Build settings
