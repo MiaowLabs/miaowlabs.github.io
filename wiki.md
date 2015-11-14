@@ -14,7 +14,7 @@ title: Miaow Wiki
 <p>开源硬件是喵呜实验室团队成长的土壤。喵呜实验室也愿意积极地给大家带来更多开源硬件。</p>
 
 * [两轮平衡车历史回顾](wiki/self-balanced-history.html)
-* [开源四轴飞行器](wiki/opensource-quadcopter.html)
+* [开创历史的Segway](wiki/segway.html)
 * [四轴飞行器明星产品](wiki/quadcopter-star.html)
 * [多旋翼 VS 直升机 VS 固定翼](wiki/heli-quad-fix-copter.html)
 

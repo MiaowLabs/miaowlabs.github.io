@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: 最具影响力的开创者Segway
+title: 开创历史的Segway
 ---
 
 # {{ page.title }}
@@ -19,6 +19,7 @@ Segway在成长过程中，可谓一把辛酸史，中间几经易主，现在�
 ![](/img/wiki/DeanKamen.jpg)
 
 Dean·Kamen（狄恩·卡门），生于1951年04月05日），企业家、发明家。但其大多发明不为人所熟知，而Segway算是他的知名作品。
+根据Dean·Kamen的描述，“Segway”起源于英文单字“Segue”，意指“流畅平顺地走”。
 
 Dean·Kamen曾考入伍斯特理工学院(Worcester Polytechnic Institute)，两年之后中途退学。目前他已拥有200多项美国与国外专利，其中包括创新的医疗仪器，因为他想要拓展全球性医疗保护的领域，让更方便、安全的医疗生活可以普及到一般人身上。而除此之外，Dean·Kamen也致力于将科技应用在生活上，他也被评为全球“十大辍学亿万富翁”之一。
 
