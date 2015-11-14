@@ -4,11 +4,11 @@ title: Crazepony Wiki
 ---
 
 <div class="jumbotron">
-    <p class="lead">这里是Craze团队提供的航模维基百科。</p>
-    <p class="lead">下面的介绍航模基本概念，开源四轴飞行器，多悬翼飞行器基本组成等内容。希望我们的努力能够为新手入门提供帮助和指导。 </p>
+    <p class="lead">这里是Miaow Labs提供的维基百科。</p>
+    <p class="lead">下面将介绍一些基本概念、开源自平衡小车、开源四轴飞行器基本组成等内容。希望我们的努力能够为新手入门提供帮助和指导。 </p>
 </div>
 
-<h2 id="quadcopter">四轴飞行器</h2>
+<h2 id="quadcopter">两轮自平衡小车</h2>
 <p>开源硬件，创客是Crazepony成长的土壤。Crazepony也愿意更加积极的参与到创客活动中，给大家带来乐趣。</p>
 
 * [四轴飞行器历史回顾](wiki/quadcopter-history.html)
