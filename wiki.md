@@ -12,9 +12,9 @@ title: Miaow Wiki
 </div>
 
 <h2 id="quadcopter">两轮自平衡小车</h2>
-<p>开源硬件、创客是喵呜实验室团队成长的土壤。喵呜实验室也愿意更加积极地参与到创客活动中，给大家带来乐趣。</p>
+<p>开源硬件是喵呜实验室团队成长的土壤。喵呜实验室也愿意更加积极地给大家带来更多开源硬件。</p>
 
-* [四轴飞行器历史回顾](wiki/quadcopter-history.html)
+* [两轮平衡车历史回顾](_wiki/Self-Balanced-History.html)
 * [开源四轴飞行器](wiki/opensource-quadcopter.html)
 * [四轴飞行器明星产品](wiki/quadcopter-star.html)
 * [多旋翼 VS 直升机 VS 固定翼](wiki/heli-quad-fix-copter.html)
