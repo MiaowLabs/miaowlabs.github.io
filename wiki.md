@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: Crazepony Wiki
+title: Miaow Wiki
 ---
 
 <div class="jumbotron">
