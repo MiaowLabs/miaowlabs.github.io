@@ -4,12 +4,15 @@ title: Miaow Wiki
 ---
 
 <div class="jumbotron">
-    <p class="lead">这里是Miaow Labs提供的维基百科。</p>
-    <p class="lead">下面将介绍一些基本概念、开源自平衡小车、开源四轴飞行器基本组成等内容。希望我们的努力能够为新手入门提供帮助和指导。 </p>
+<b>
+	<h1 align="center" >喵呜百科</h1>
+    <p class="lead">这里是喵呜实验室提供的维基百科。</p>
+    <p class="lead">下面介绍一些涉及两轮自平衡小车的基本概念等。希望我们的努力能够为新手入门提供帮助和指导。 </p>
+</b>
 </div>
 
 <h2 id="quadcopter">两轮自平衡小车</h2>
-<p>开源硬件，创客是Crazepony成长的土壤。Crazepony也愿意更加积极的参与到创客活动中，给大家带来乐趣。</p>
+<p>开源硬件、创客是喵呜实验室团队成长的土壤。喵呜实验室也愿意更加积极地参与到创客活动中，给大家带来乐趣。</p>
 
 * [四轴飞行器历史回顾](wiki/quadcopter-history.html)
 * [开源四轴飞行器](wiki/opensource-quadcopter.html)
