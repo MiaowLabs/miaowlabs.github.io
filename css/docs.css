@@ -252,10 +252,10 @@ border-right-color: #646668;
 .bs-docs-header {
   position: relative;
   padding: 30px 15px;
-  color: #999;
+  color: #000000;
   text-align: center;
   text-shadow: 0 1px 0 rgba(0,0,0,.1);
-  background: #FF0000;;
+  background: #FAEBD7;;
   /*background: #e5e9ec;;
   background-attachment: fixed;*/
   background-size: cover;
