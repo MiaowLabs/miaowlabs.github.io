@@ -43,7 +43,7 @@
       <ul class="nav navbar-nav">
         <li>
           <a href="/wiki.html">百科主页</a>
-		  <a href="/greatape.html">两轮自平衡小车</a>  
+		  <a href="/greatape.html">自平衡小车</a>  
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -114,12 +114,6 @@ s.setAttribute('data-timestamp', +new Date());
 
 <script id="dsq-count-scr" src="//miaowlabs.disqus.com/count.js" async></script>
 
-$('#disqus_container .comment').on('click',function(){  
-        $(this).html('加载中...');  
-        var disqus_shortname = 'miaow_wiki';  
-        var that = this;  
-        BYB.includeScript('http://' + disqus_shortname + '.disqus.com/embed.js',function(){$(that).remove()}); //这是一个加载js的函数  
-}); 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
