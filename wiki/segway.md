@@ -18,8 +18,6 @@ Segway在成长过程中，可谓一把辛酸史，中间几经易主，现在�
 
 ![](/img/wiki/DeanKamen.jpg)
 
-是的，你没看错，上面这老头就是Dean·Kamen。
-
 Dean·Kamen（狄恩·卡门），生于1951年04月05日），企业家、发明家。但其大多发明不为人所熟知，而Segway算是他的知名作品。
 根据Dean·Kamen的描述，“Segway”起源于英文单字“Segue”，意指“流畅平顺地走”。
 
