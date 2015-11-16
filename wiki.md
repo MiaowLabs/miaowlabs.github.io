@@ -18,8 +18,8 @@ title: Miaow Wiki
 * [开源两轮自平衡小车](wiki/open-source-self-balanced.html)
 
 <h2 id="basic-knowledge">基础知识</h2>
-* [电机的基础知识](wiki/copter-terminology.html)
-* [三维中pitch/yaw/roll的区别](wiki/pitch-yaw-roll.html)
+* [电机的基础知识](wiki/motor.html)
+* [惯性导航系统](wiki/inertial-navigation-system.html)
 * [大四轴 VS 小四轴](wiki/large-small-quadcopter.html)
 * [美国手 VS 日本手](wiki/japan-american-rc.html)
 * [四轴飞行器的空气动力原理](wiki/quadcopter-aerodynamic.html)
