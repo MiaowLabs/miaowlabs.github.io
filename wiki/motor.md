@@ -11,7 +11,7 @@ title: 电机的基础知识
 
 所谓“电机”，是将电气能转换为机械能的一种装置。
 
-![](/img/wiki/motor-1.jpg)
+![](/img/wiki/motor-1.png)
 
 
 性能用語一览表
