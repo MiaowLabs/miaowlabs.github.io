@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title:两轮自平衡小车需要多少个维度数据？
+title:需要多少个维度数据？
 ---
 
 # {{ page.title }}
