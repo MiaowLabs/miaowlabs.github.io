@@ -20,7 +20,7 @@ title: 下载中心
 <a href="http://pan.baidu.com/s/1i31fUCl" class="btn btn-primary btn-xl" role="button" target="_blank" >元器件资料</a>
 
 ## Windows相关安装包
-代码在Windows下使用Keil进行开发编译。固件的烧写可以直接通过micro USB进行烧写。我们整理了开发工具的安装文件、驱动安装文件等，共享在百度网盘上提供下载。
+代码在Windows下使用Keil进行开发编译。固件的烧写可以直接通过Micro USB进行烧写。我们整理了开发工具的安装文件、驱动安装文件等，共享在百度网盘上提供下载。
 
 <p>
 <a href="" class="btn btn-primary btn-xl" role="button" target="_blank" >Keil 5安装文件（5.1及以上）</a>
