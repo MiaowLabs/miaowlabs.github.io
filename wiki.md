@@ -6,7 +6,7 @@ title: Miaow Wiki
 <div class="jumbotron">
 <b>
     <p class="lead">这里是喵呜实验室提供的维基百科。</p>
-    <p class="lead">下面介绍一些涉及两轮自平衡小车的基本概念等。希望我们的努力能够为新手入门提供帮助和指导。 </p>
+    <p class="lead">希望我们的努力能够为新手入门提供指导和帮助。 </p>
 </b>
 </div>
 
