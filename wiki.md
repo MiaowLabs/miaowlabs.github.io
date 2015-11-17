@@ -18,12 +18,12 @@ title: Miaow Wiki
 * [开源两轮自平衡小车](wiki/open-source-self-balanced.html)
 
 <h2 id="basic-knowledge">基础知识</h2>
-* [电机的基础知识](wiki/motor.html)
+* [加速度传感器](wiki/acceleration.html)
+* [陀螺仪](wiki/gyroscope.html)
 * [惯性导航系统](wiki/intertial-navigation-system.html)
+* [为何要用加速度计和陀螺仪两个传感器？](wiki/why-accel-gyro.html)
 * [两轮自平衡小车需要多少个维度数据？](wiki/how-many-dimensions.html)
-* [美国手 VS 日本手](wiki/japan-american-rc.html)
-* [四轴飞行器的空气动力原理](wiki/quadcopter-aerodynamic.html)
-* [无头模式](wiki/head-free.html)
+* [电机的基础知识](wiki/motor.html)
 
 <h2 id="copter">平衡车基本组成部分</h2>
 <p>平衡车基本组成部分的介绍，包括了动力系统，控制器，遥控器等部分。在这里主要以两轮自平衡小车为讲解目标。当然，很多知识点在载人平衡车也是通用的。</p>
