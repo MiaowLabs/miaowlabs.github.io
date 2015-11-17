@@ -18,9 +18,9 @@ title: Miaow Wiki
 * [开源两轮自平衡小车](wiki/open-source-self-balanced.html)
 
 <h2 id="basic-knowledge">基础知识</h2>
+* [惯性导航系统](wiki/intertial-navigation-system.html)
 * [加速度传感器](wiki/acceleration.html)
 * [陀螺仪](wiki/gyroscope.html)
-* [惯性导航系统](wiki/intertial-navigation-system.html)
 * [为何要用加速度计和陀螺仪两个传感器？](wiki/why-accel-gyro.html)
 * [两轮自平衡小车需要多少个维度数据？](wiki/how-many-dimensions.html)
 * [电机的基础知识](wiki/motor.html)
@@ -34,10 +34,3 @@ title: Miaow Wiki
 * [姿态控制器-MCU](wiki/main-controller-mcu.html)
 * [姿态控制器—传感器](wiki/main-controller-sensor.html)
 * [遥控器](wiki/remote-controller-2-4.html)
-
-
-<h2 id="other">其他</h2>
-* [源代码的文件编码和文件格式](wiki/source-setting.html)
-* [如何参与站点建设](wiki/wiki-help.html)
-* [jekyll的安装和使用](wiki/jekyll-intro.html)
-* [windows下github配置](wiki/windows-git-intro.html)

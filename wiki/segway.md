@@ -5,7 +5,7 @@ title: 开创历史的Segway
 
 # {{ page.title }}
 
-> 本文局部资料来自于雷锋网报道
+> 本文整理自网络众多资料 by Songyimiao
 
 
 提到平衡车，你不能不知道Segway（中文翻译：赛格威）！正是Segway的出现，使社会大众开始知道并接受载人平衡车。
@@ -73,9 +73,7 @@ Dean·Kamen曾考入伍斯特理工学院(Worcester Polytechnic Institute)，两
 
 10年前让小米董事长雷军玩到爱不释手的平衡车Segway，在4月15日这天被小米生态链成员Ninebot（纳恩博）正式“收入囊中”。
 
-值得一提的是，Ninebot成立只有3年，而Segway有15年历史。
-
-Segway是全球最大最老的平衡车公司，是平衡车行业的开创者。
+值得一提的是，Segway是全球最大最老的平衡车公司，有15年历史，是平衡车行业的开创者，而Ninebot成立只有3年。
 
 Ninebot是国内领先的集研发、设计、生产、销售与服务于一体的智能短途产品运营商，Ninebot旗下有WindRunner（风行者）系列、Ninebot九号系列、Ninebot One系列产品。收购后，Ninebot不仅获得Segway旗下三大产品系列近十款产品的所有权，行业400多项核心专利，以及人才、生产线，全球经销商网络和供应商体系。
 
