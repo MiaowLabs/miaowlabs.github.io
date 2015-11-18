@@ -21,11 +21,7 @@ title: 电机的基础知识
 
 ###性能用語一览表
 
-(*1) 表示附加在电机的电气能中，有几成（％）被有效的作为机械能使用了。
-
-(*2) 是指revolutions per minute，表示每分钟的转数。
-
-<table>
+><table>
 <tbody>
 <tr><td><em>用语</em></td><td><em>记号</em></td><td><em>单位</em></td><td><em>英语</em></td></tr>
 <tr><td>输入功率</td><td>P</td><td>W</td><td>Input</td></tr>
@@ -43,6 +39,10 @@ title: 电机的基础知识
 <tr><td>堵转扭矩</td><td>Ts/td><td>mN·m , g·cm</td><td>Stall torque</td></tr>
 </tbody>
 </table>
+
+(*1) 表示附加在电机的电气能中，有几成（％）被有效的作为机械能使用了。
+
+(*2) 是指revolutions per minute，表示每分钟的转数。
 
 
 
