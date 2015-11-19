@@ -1,12 +1,13 @@
 ---
 layout: wiki
-title: H250 Wiki
+title: MWbalanced Wiki
 ---
 
 <div class="jumbotron">
-    <p class="lead">这里是CrazePony的维基百科。我们提供DIY一个属于你自己四轴飞行器的文档，也提供对CrazePony四轴飞行器进行二次开发的指导。 </p>
+    <p class="lead">这里是喵呜实验室的维基百科。我们提供DIY一个属于你自己两轮自平衡小车的文档，也提供对MWbalanced两轮自平衡小车进行二次开发的指导。 </p>
 </div>
 
+<p>MWbalanced是喵呜实验室的两轮自平衡小车的代号。命名方式为“MW+balanced”，MW为大写，是Miaow的缩写，balanced为小写，意为“平衡的”。</p>
 * [入手试飞教程](wiki/user-guide.html)
 * [组装维修教程](wiki/assemble-guide.html)
 
