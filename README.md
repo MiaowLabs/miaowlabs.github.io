@@ -1,14 +1,9 @@
-# Creative Theme for Jekyll
+# 喵呜实验室网站
 
-A Jekyll implementation of the [Creative Theme](http://startbootstrap.com/template-overviews/creative/) template by [Start Bootstrap](http://startbootstrap.com).
+这是喵呜实验室网站源码位置，包括了[喵呜实验室 首页](http://miaowlabs.github.io/index-cn.html)，[喵呜实验室百科](http://miaowlabs.github.io/wiki.html)百科站点，[喵呜实验室博客](http://miaowlbas.github.io/blog.html)博客站点。
 
-Creative is a one page Bootstrap theme for creatives, small businesses, and other multipurpose uses.
-The theme includes a number of rich features and plugins that you can use as a great boilerplate for your next Jekyll project! 
+喵呜实验室网站建设和部署使用了多种开源的技术和平台。
 
-See it live in action at <https://volny.github.io/creative-theme-jekyll/>
-
-## To use the Creative Theme template in your project
-
-- Start by adding your info in `_config.yml`
-- In `_layouts/front.html` reorder or remove section as you prefer.
-
+* 网站部署在Github上，使用了Github Page网站服务器功能，并且整个站点框架使用[jekyll](http://jekyllrb.com/)，这是Github Page支持的静态网站框架。
+* 前端框架使用[bootstrap](https://github.com/twbs/bootstrap)开源项目
+* 百科站点和博客站点内容全部使用markdown标志语言编辑
