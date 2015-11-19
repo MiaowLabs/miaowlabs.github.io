@@ -255,9 +255,9 @@ border-right-color: #646668;
   color: #000000;
   text-align: center;
   text-shadow: 0 1px 0 rgba(0,0,0,.1);
-  background: #FF7F50;;
-  /*background: #e5e9ec;;
-  background-attachment: fixed;*/
+  /*background: #FF7F50;;*/
+  background: #e5e9ec;;
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#393939', endColorstr='#6F5499', GradientType=0);
