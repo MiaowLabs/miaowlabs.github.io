@@ -1587,6 +1587,8 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  color: #000000;
+  background: #FF7F50;
 }
 .row {
   margin-right: -15px;
@@ -4052,10 +4054,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
   min-height: 50px;
   margin-bottom: 20px;
-  border: 1px solid transparent;
-  
-  background-color:#000;
-  color:#FFF;
+  border: 1px solid transparent;  
 }
 @media (min-width: 768px) {
   .navbar {
