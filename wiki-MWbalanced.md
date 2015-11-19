@@ -8,7 +8,7 @@ title: MWbalanced Wiki
 </div>
 
 <p>MWbalanced是喵呜实验室的两轮自平衡小车的代号。代号MWbalanced的命名遵循“MW+xxx”的方式，MW为大写，是Miaow的缩写，balanced为小写，意为“平衡的”。</p>
-* [入手试飞教程](wiki/user-guide.html)
+* [入手试玩教程](wiki/user-guide.html)
 * [组装维修教程](wiki/assemble-guide.html)
 
 <h2 id="rd">开发指南</h2>
