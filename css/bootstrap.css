@@ -4054,7 +4054,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 20px;
   border: 1px solid transparent;
   
-  background:#000;
+  background-color:#000;
   color:#FFF;
 }
 @media (min-width: 768px) {
