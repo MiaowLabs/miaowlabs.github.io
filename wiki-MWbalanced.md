@@ -8,16 +8,16 @@ title: MWbalanced Wiki
 </div>
 
 <p>MWbalanced是喵呜实验室的两轮自平衡小车的代号。代号MWbalanced的命名遵循“MW+xxx”的方式，MW为大写，是Miaow的缩写，balanced为小写，意为“平衡的”。</p>
-* [入手试玩教程](wiki/user-guide.html)
-* [组装维修教程](wiki/assemble-guide.html)
+* [入手试玩教程]()
+* [组装维修教程]()
 
 <h2 id="rd">开发指南</h2>
-* [windows下开发环境搭建—裸机版本](wiki/setup-environment-in-windows-none.html)
-* [windows下开发环境搭建—Small RTOS51版本](wiki/setup-environment-in-windows.html)
-* [STC-ISP使用及常见问题](wiki/setup-environment-in-linux.html)
-* [通过USB烧写固件](wiki/jlink-debug.html)
-* [MWbalanced安卓客户端](wiki/crazepony-android-client.html)
-* [MWbalanced上位机使用](wiki/flash-firmware.html)
+* [windows下开发环境搭建—裸机版本]()
+* [windows下开发环境搭建—Small RTOS51版本]()
+* [STC-ISP使用及常见问题]()
+* [通过USB烧写固件]()
+* [MWbalanced安卓客户端]()
+* [MWbalanced上位机使用]()
 
 <h2>MWbalanced原理讲解</h2>
 * [MWbalanced器件选型总览及说明](wiki/ic-readme.html)

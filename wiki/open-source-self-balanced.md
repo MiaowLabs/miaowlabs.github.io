@@ -9,6 +9,6 @@ title: 开源两轮自平衡小车
 
 所谓开源，其价值在于更利于知识的传播。
 
-###GreatBalance
+###MWbalanced
 
-喵呜实验室（Miaow Labs）旗下的开源两轮自平衡小车GreatBalance。
+喵呜实验室（Miaow Labs）旗下的开源两轮自平衡小车MWbalanced。
