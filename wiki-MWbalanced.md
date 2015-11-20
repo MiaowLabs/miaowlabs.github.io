@@ -20,20 +20,20 @@ title: MWbalanced Wiki
 * [MWbalanced上位机使用]()
 
 <h2>MWbalanced原理讲解</h2>
-* [MWbalanced器件选型总览及说明](wiki/ic-readme.html)
-* [MWbalanced硬件原理讲解](wiki/hardware-base.html)
-* [MWbalanced软件框架讲解（5.0及以前）](wiki/software-base.html)
-* [MWbalanced软件框架讲解](wiki/softmain.html)
-* [MWbalanced软件开发经验总结](wiki/software-experience.html)
-* [MWbalanced通信协议](wiki/crazepony-communication.html)
+* [MWbalanced元器件选型总览](wiki/devices-selection.html)
+* [MWbalanced零部件购买指南](wiki/devices-buy.html)
+* [MWbalanced硬件原理讲解](wiki/devices-buy.html)
+* [MWbalanced软件框架讲解](wiki/)
+* [MWbalanced软件开发经验总结](wiki/)
+* [MWbalanced通信协议](wiki/)
 
 <h2 id="exp">开发经验总结</h2>
-* [原地直立&原地旋转](wiki/auto-hold.html)
-* [动力效率&续航时间](wiki/crazepony-props.html)
-* [车体平衡调试](wiki/crazepony-debug.html)
-* [超声波和避障](wiki/crazepony-antenna.html)
-* [红外巡线](wiki/crazepony-camera.html)
-* [摄像头和图传](wiki/remote-controller-bt.html)
+* [原地直立&原地旋转]()
+* [动力效率&续航时间]()
+* [车体平衡调试]()
+* [超声波和避障]()
+* [红外巡线]()
+* [摄像头和图传]()
 
 <h2 id="quadcopter-dev">两轮自平衡小车算法讲解</h2>
 <p>姿态解算是指把陀螺仪、加速度计、罗盘等数据融合在一起，得出飞行器的空中姿态，也叫做姿态融合。姿态解算的过程，涉及到传感器数据读取与滤波，四元数与旋转，姿态解算框架，长期融合/快速融合。</p>
@@ -48,7 +48,7 @@ title: MWbalanced Wiki
 * [气压计MS5611](wiki/ms5611.html)
 * [四轴PID控制算法](wiki/algorithm-pid.html)
 
-<h2 id="crazyflie">Crazyflie</h2>
+<h2 id="crazyflie">Small RTOS51</h2>
 <p>为了满足各个层次用户的需求和体现出我们的努力，后续会试着移植Small RTOS51实时操作系统内核。Small RTOS51是陈明计先生（就职于周立功公司）编写的一个实时操作系统，适合在小RAM单片机上运行。</p>
 * [Small RTOS51简介](wiki/freertos-intro.html)
 * [介绍几个常用的宏的作用](wiki/macro-controls.html)

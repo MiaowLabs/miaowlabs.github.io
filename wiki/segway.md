@@ -16,7 +16,7 @@ Segway在成长过程中，几经易主，可谓一把辛酸史，现在已经�
 
 ##Dean·Kamen时代
 
-![](/img/wiki/DeanKamen.jpg)
+![](/img/wiki/segway-01.jpg)
 
 没错！就是上面这个图片上的老头，他就是Dean·Kamen。
 
@@ -31,7 +31,7 @@ Dean·Kamen曾考入伍斯特理工学院(Worcester Polytechnic Institute)，两
 
 当时，Segway被以国礼的形式赠送给当时的美国总统小布什，走的是高层路线。而收获的，是包括警察局在内的公共服务订单。4月23日，美国佐治亚州的亚特兰大市政府采购了一批Segway。
 
-![](/img/wiki/segway-1.jpg)
+![](/img/wiki/segway-02.jpg)
 
 从此，Segway便开始攻入于政府与军方市场。
 
@@ -41,7 +41,7 @@ Dean·Kamen曾考入伍斯特理工学院(Worcester Polytechnic Institute)，两
 
 借助2008年北京举办奥运会契机，Segway以高科技品质形象正式进入中国消费者的视野，成为安保人员的高科技智能环保代步车。
 
-![](/img/wiki/segway-2.jpg)
+![](/img/wiki/segway-03.jpg)
 
 2008年11月，Segway的首席技术官Doug Field（道格·菲尔德）被Steve Jobs（史蒂夫·乔布斯）挖去出任苹果工业设计部门副总裁。
 
@@ -65,7 +65,7 @@ Dean·Kamen曾考入伍斯特理工学院(Worcester Polytechnic Institute)，两
 
 ##Ninebot时代
 
-![](/img/wiki/segway-3.jpg)
+![](/img/wiki/segway-04.jpg)
 
 2015年4月15日下午，在北京JW万豪酒店，中国创新短途交通领导企业Ninebot正式宣布已完成对Segway的全资收购，Segway成为Ninebot的全资子公司。收购后，Ninebot将获得Segway旗下三大产品系列近十款产品的所有权，行业400多项核心专利，以及人才、生产线，全球经销商网络和供应商体系。
 

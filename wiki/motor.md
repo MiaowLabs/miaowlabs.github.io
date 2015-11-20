@@ -11,7 +11,7 @@ title: 电机的基础知识
 
 所谓“电机”，是将电气能转换为机械能的一种装置。如图1。
 
-![](/img/wiki/motor-1.png)
+![](/img/wiki/motor-01.png)
 
 图1 转换示意图
 
@@ -21,7 +21,7 @@ title: 电机的基础知识
 
 ###性能用語一览表
 
-><table>
+<table>
 <tbody>
 <tr><td><em>用语</em></td><td><em>记号</em></td><td><em>单位</em></td><td><em>英语</em></td></tr>
 <tr><td>输入功率</td><td>P</td><td>W</td><td>Input</td></tr>
@@ -40,9 +40,9 @@ title: 电机的基础知识
 </tbody>
 </table>
 
-(*1) 表示附加在电机的电气能中，有几成（％）被有效的作为机械能使用了。
+> (*1) 表示附加在电机的电气能中，有几成（％）被有效的作为机械能使用了。
 
-(*2) 是指revolutions per minute，表示每分钟的转数。
+> (*2) 是指revolutions per minute，表示每分钟的转数。
 
 
 
