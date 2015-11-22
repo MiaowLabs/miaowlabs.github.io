@@ -50,11 +50,11 @@ MWbalanced-firmware-none_uvproj.bak
 
 以Keil C51 9.00为例，点击Project栏目下Open project，打开代码解压所在文件夹选中MWbalanced-firmware-none.uvproj，此时已将代码项目工程所有文件导入Keil C51，如图所示：
 
-![](/img/wiki/keil-build.png)
+![](img/wiki/keil-build.png)
 
 点击左上角的编译按钮，编译整个项目，在工程下生成Output目录，目录中MWbalanced-firmware-none.hex就是可以烧写到STC51的固件。
 
 STC15固件的调试和烧入可以使用STC-ISP调试器进行开发，详见[STC-ISP的使用及常见问题]()。MWbalanced板载USB-TTL芯片，支持USB口烧入，即采用ISP下载，操作简单。只需要安装cp2102驱动程序，使用一根Mini USB数据线连接电脑。详见[固件烧写]()，烧录界面如图所示:
 
-![](/img/wiki/stc-isp-download.png)
+![](img/wiki/stc-isp-download.png)
 
