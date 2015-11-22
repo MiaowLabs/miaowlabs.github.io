@@ -1,0 +1,777 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>卡尔曼滤波 | 开源造车—喵呜ISO两轮自平衡小车</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="../datafusion/dmp.html" />
+    
+    
+    <link rel="prev" href="../datafusion/complementary.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="6.2" data-basepath=".." data-revision="Sun Aug 16 2015 20:25:01 GMT+0800 (中国标准时间)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        前言
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="about/index.html">
+            
+                
+                    <a href="../about/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        喵呜ISO两轮自平衡小车
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="about/demo-guide.html">
+            
+                
+                    <a href="../about/demo-guide.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        套件试玩指南
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="about/service-guide.html">
+            
+                
+                    <a href="../about/service-guide.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        硬件自检指南
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="self-balanced/index.html">
+            
+                
+                    <a href="../self-balanced/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        电动平衡车
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="self-balanced/history.html">
+            
+                
+                    <a href="../self-balanced/history.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        历史回顾
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="self-balanced/segway.html">
+            
+                
+                    <a href="../self-balanced/segway.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Segway
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="self-balanced/bigvssmall.html">
+            
+                
+                    <a href="../self-balanced/bigvssmall.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        载人大车vs开源小车
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="self-balanced/composition.html">
+            
+                
+                    <a href="../self-balanced/composition.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        两轮自平衡小车基本组成
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="machinery/index.html">
+            
+                
+                    <a href="../machinery/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        机械
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="machinery/structure.html">
+            
+                
+                    <a href="../machinery/structure.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        结构
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="hardware/index.html">
+            
+                
+                    <a href="../hardware/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        硬件
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="hardware/motor.html">
+            
+                
+                    <a href="../hardware/motor.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        电机选型
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="hardware/battery.html">
+            
+                
+                    <a href="../hardware/battery.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        电池选型
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="hardware/wheel.html">
+            
+                
+                    <a href="../hardware/wheel.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        轮子选型
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="hardware/components.html">
+            
+                
+                    <a href="../hardware/components.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        元器件选型
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="hardware/schematic.html">
+            
+                
+                    <a href="../hardware/schematic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        原理图讲解
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="software/index.html">
+            
+                
+                    <a href="../software/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        软件
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="software/framework.html">
+            
+                
+                    <a href="../software/framework.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        软件框架
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="software/datafusion.html">
+            
+                
+                    <a href="../software/datafusion.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        数据融合
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="software/pid.html">
+            
+                
+                    <a href="../software/pid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        PID
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="software/debug.html">
+            
+                
+                    <a href="../software/debug.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        调试要点
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="datafusion/index.html">
+            
+                
+                    <a href="../datafusion/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        数据融合
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="datafusion/complementary.html">
+            
+                
+                    <a href="../datafusion/complementary.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        互补滤波
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="6.2" data-path="datafusion/kalman.html">
+            
+                
+                    <a href="../datafusion/kalman.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        卡尔曼滤波
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="datafusion/dmp.html">
+            
+                
+                    <a href="../datafusion/dmp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        MPU6050 DMP
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="reengineering/index.html">
+            
+                
+                    <a href="../reengineering/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        二次开发指南
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="reengineering/mdk.html">
+            
+                
+                    <a href="../reengineering/mdk.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        MDK环境搭建
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="reengineering/download.html">
+            
+                
+                    <a href="../reengineering/download.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        下载程序
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="reengineering/scope.html">
+            
+                
+                    <a href="../reengineering/scope.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        上位机-虚拟示波器
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >开源造车—喵呜ISO两轮自平衡小车</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="%E5%8D%A1%E5%B0%94%E6%9B%BC%E6%BB%A4%E6%B3%A2">&#x5361;&#x5C14;&#x66FC;&#x6EE4;&#x6CE2;</h1>
+<p>&#x5728;&#x56FD;&#x5185;&#x7684;&#x671F;&#x520A;&#x8BBA;&#x6587;&#x641C;&#x7D22;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x5927;&#x591A;&#x6570;&#x90FD;&#x662F;&#x7406;&#x8BBA;&#x4EFF;&#x771F;&#x7684;&#xFF0C;&#x5DE5;&#x7A0B;&#x5E94;&#x7528;&#x7684;&#x5F88;&#x5C11;&#xFF0C;&#x800C;&#x6D89;&#x53CA;&#x5230;&#x7B97;&#x6CD5;&#x5B9E;&#x73B0;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x66F4;&#x662F;&#x4E00;&#x53E5;&#x5E26;&#x8FC7;&#x3002;</p>
+<p>&#x5361;&#x5C14;&#x66FC;&#x6EE4;&#x6CE2;&#x662F;&#x4E00;&#x79CD;&#x7EBF;&#x6027;&#x7CFB;&#x7EDF;&#x7684;&#x6700;&#x4F18;&#x4F30;&#x8BA1;&#x6EE4;&#x6CE2;&#x65B9;&#x6CD5;&#x3002;&#x5BF9;&#x4E8E;&#x672C;&#x7CFB;&#x7EDF;&#x800C;&#x8A00;&#xFF0C;&#x4F7F;&#x7528;&#x5361;&#x5C14;&#x66FC;&#x6EE4;&#x6CE2;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x901A;&#x8FC7;&#x5BF9;&#x7CFB;&#x7EDF;&#x72B6;&#x6001;&#x91CF;&#x7684;&#x4F30;&#x8BA1;&#xFF0C;&#x548C;&#x901A;&#x8FC7;&#x52A0;&#x901F;&#x5EA6;&#x8BA1;&#x6D4B;&#x91CF;&#x503C;&#x5BF9;&#x7CFB;&#x7EDF;&#x72B6;&#x6001;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;&#xFF0C;&#x4ECE;&#x800C;&#x5F97;&#x5230;&#x8BE5;&#x7CFB;&#x7EDF;&#x7684;&#x6700;&#x4F18;&#x72B6;&#x6001;&#x91CF;&#xFF0C;&#x5E76;&#x5B9E;&#x65F6;&#x66F4;&#x65B0;&#x7CFB;&#x7EDF;&#x7684;&#x5404;&#x53C2;&#x6570;&#xFF08;&#x77E9;&#x9635;&#xFF09;&#xFF0C;&#x800C;&#x6700;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x70B9;&#xFF0C;&#x6539;&#x6EE4;&#x6CE2;&#x5668;&#x80FD;&#x591F;&#x5BF9;&#x9640;&#x87BA;&#x4EEA;&#x7684;&#x5E38;&#x503C;&#x6F02;&#x79FB;&#x8FDB;&#x884C;&#x4F30;&#x8BA1;&#xFF0C;&#x4ECE;&#x800C;&#x4FDD;&#x8BC1;&#x89D2;&#x5EA6;&#x73AF;&#x7684;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#xFF0C;&#x5E76;&#x5728;&#x52A0;&#x901F;&#x5EA6;&#x8BA1;&#x654F;&#x611F;&#x5230;&#x5404;&#x79CD;&#x52A0;&#x901F;&#x5EA6;&#x566A;&#x58F0;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F7F;&#x59FF;&#x6001;&#x68C0;&#x6D4B;&#x66F4;&#x52A0;&#x51C6;&#x786E;&#x3002;&#x4F46;&#x662F;&#x5361;&#x5C14;&#x66FC;&#x6EE4;&#x6CE2;&#x5668;&#x80FD;&#x5426;&#x5DE5;&#x4F5C;&#x5728;&#x6700;&#x4F18;&#x72B6;&#x6001;&#x5F88;&#x5927;&#x7A0B;&#x5EA6;&#x4E0A;&#x53D6;&#x51B3;&#x4E8E;&#x7CFB;&#x7EDF;&#x6A21;&#x578B;&#x7684;&#x51C6;&#x786E;&#x6027;&#xFF0C;&#x6A21;&#x578B;&#x53C2;&#x6570;&#x7684;&#x6807;&#x5B9A;&#x548C;&#x7CFB;&#x7EDF;&#x53C2;&#x6570;&#x7684;&#x9009;&#x53D6;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x4EC5;&#x4EC5;&#x901A;&#x8FC7;&#x4E0A;&#x4F4D;&#x673A;&#x89C2;&#x6D4B;&#x800C;&#x5F97;&#x5230;&#x6700;&#x4F18;&#x5DE5;&#x4F5C;&#x53C2;&#x6570;&#x8FD8;&#x662F;&#x6709;&#x4E00;&#x5B9A;&#x8BEF;&#x5DEE;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x53C2;&#x6570;&#x7684;&#x4FEE;&#x6539;&#x4F1A;&#x5BFC;&#x81F4;&#x6574;&#x4E2A;&#x7CFB;&#x7EDF;&#x4E2D;&#x5F88;&#x591A;&#x5730;&#x65B9;&#x53D1;&#x751F;&#x6539;&#x53D8;&#xFF0C;&#x5F88;&#x96BE;&#x4FDD;&#x8BC1;&#x51E0;&#x4E2A;&#x503C;&#x90FD;&#x6070;&#x597D;&#x4E3A;&#x6700;&#x4F18;&#x89E3;&#xFF0C;&#x8FD9;&#x9700;&#x8981;&#x624E;&#x5B9E;&#x7684;&#x7406;&#x8BBA;&#x77E5;&#x8BC6;&#xFF0C;&#x5927;&#x91CF;&#x7684;&#x6D4B;&#x91CF;&#x6570;&#x636E;&#x548C;&#x7CFB;&#x7EDF;&#x7684;&#x4EFF;&#x771F;&#xFF0C;&#x901A;&#x8FC7;&#x6211;&#x5BF9;&#x5361;&#x5C14;&#x66FC;&#x6EE4;&#x6CE2;&#x5668;&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x53D1;&#x73B0;&#x8981;&#x60F3;&#x517C;&#x987E;&#x6240;&#x6709;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x8FD8;&#x662F;&#x6709;&#x4E00;&#x5B9A;&#x96BE;&#x5EA6;&#x7684;&#x3002;</p>
+<p>&#x540E;&#x7EED;&#x6211;&#x4F1A;&#x5199;&#x4E00;&#x7BC7;&#x5173;&#x4E8E;&#x5DE5;&#x7A0B;&#x4E0A;&#x5982;&#x4F55;&#x8C03;&#x8282;&#x5361;&#x5C14;&#x66FC;&#x53C2;&#x6570;&#x7684;&#x7AE0;&#x8282;&#x3002;&#x5BB9;&#x6211;&#x60F3;&#x60F3;&#x600E;&#x4E48;&#x5199;&#xFF0C;&#x9700;&#x8981;&#x65F6;&#x95F4;&#x6765;&#x5199;&#x8FD9;&#x7BC7;&#x7AE0;&#x3002;</p>
+<h3 id="1-1%E5%85%B3%E4%BA%8E%E5%8D%A1%E5%B0%94%E6%9B%BC">1.1&#x5173;&#x4E8E;&#x5361;&#x5C14;&#x66FC;</h3>
+<p>&#x5728;&#x5B66;&#x4E60;&#x5361;&#x5C14;&#x66FC;&#x6EE4;&#x6CE2;&#x5668;&#x4E4B;&#x524D;&#xFF0C;&#x9996;&#x5148;&#x770B;&#x770B;&#x4E3A;&#x4EC0;&#x4E48;&#x53EB;&#x201C;&#x5361;&#x5C14;&#x66FC;&#x201D;&#x3002;&#x8DDF;&#x5176;&#x4ED6;&#x8457;&#x540D;&#x7684;&#x7406;&#x8BBA;&#xFF08;&#x4F8B;&#x5982;&#x5085;&#x7ACB;&#x53F6;&#x53D8;&#x6362;&#xFF0C;&#x6CF0;&#x52D2;&#x7EA7;&#x6570;&#x7B49;&#x7B49;&#xFF09;&#x4E00;&#x6837;&#xFF0C;&#x5361;&#x5C14;&#x66FC;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x4EBA;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x800C;&#x8DDF;&#x4ED6;&#x4EEC;&#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;&#x4ED6;&#x662F;&#x4E2A;&#x73B0;&#x4EE3;&#x4EBA;&#xFF01;</p>
+<p>&#x5361;&#x5C14;&#x66FC;&#x5168;&#x540D; Rudolf Emil Kalman&#xFF0C;&#x5308;&#x7259;&#x5229;&#x6570;&#x5B66;&#x5BB6;&#xFF0C; 1930&#x5E74;&#x51FA;&#x751F;&#x4E8E;&#x5308;&#x7259;&#x5229;&#x9996;&#x90FD;&#x5E03;&#x8FBE;&#x4F69;&#x65AF;&#x3002; 1953&#x3001; 1954&#x5E74;&#x4E8E;&#x9EBB;&#x7701;&#x7406;&#x5DE5;&#x5B66;&#x9662;&#x5206;&#x522B;&#x83B7;&#x5F97;&#x7535;&#x673A;&#x5DE5;&#x7A0B;&#x5B66;&#x58EB;&#x53CA;&#x7855;&#x58EB;&#x5B66;&#x4F4D;&#x3002; 1957&#x5E74;&#x4E8E;&#x54E5;&#x4F26;&#x6BD4;&#x4E9A;&#x5927;&#x5B66;&#x83B7;&#x5F97;&#x535A;&#x58EB;&#x5B66;&#x4F4D;&#x3002;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x8981;&#x5B66;&#x4E60;&#x7684;&#x5361;&#x5C14;&#x66FC;&#x6EE4;&#x6CE2;&#x5668;&#xFF0C;&#x6B63;&#x662F;&#x6E90;&#x4E8E;&#x4ED6;&#x7684;&#x535A;&#x58EB;&#x8BBA;&#x6587;&#x548C; 1960&#x5E74;&#x53D1;&#x8868;&#x7684;&#x8BBA;&#x6587;&#x300A;A New Approach to Linear Filtering and Prediction Problems&#x300B;&#xFF08;&#x7EBF;&#x6027;&#x6EE4;&#x6CE2;&#x4E0E;&#x9884;&#x6D4B;&#x95EE;&#x9898;&#x7684;&#x65B0;&#x65B9;&#x6CD5;&#xFF09;&#x3002;&#x5982;&#x679C;&#x5BF9;&#x8FD9;&#x7F16;&#x8BBA;&#x6587;&#x6709;&#x5174;&#x8DA3;&#xFF0C;&#x53EF;&#x4EE5;&#x5230;&#x4E0B;&#x9762;&#x7684;&#x5730;&#x5740;&#x9605;&#x8BFB;&#x6216;&#x4E0B;&#x8F7D;&#xFF1A;</p>
+<p><a href="http://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf" target="_blank">http://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf</a></p>
+<p>&#x7B80;&#x5355;&#x6765;&#x8BF4;&#xFF0C; &#x5361;&#x5C14;&#x66FC;&#x6EE4;&#x6CE2;&#x5668;&#x662F;&#x4E00;&#x4E2A;&#x201C;optimal recursive data processing algorithm&#xFF08;&#x6700;&#x4F18;&#x5316;&#x81EA;&#x56DE;&#x5F52;&#x6570;&#x636E;&#x5904;&#x7406;&#x7B97;&#x6CD5;&#xFF09; &#x201D;&#x3002;&#x5BF9;&#x4E8E;&#x89E3;&#x51B3;&#x5F88;&#x5927;&#x90E8;&#x5206;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x4ED6;&#x662F;&#x6700;&#x4F18;&#xFF0C;&#x6548;&#x7387;&#x6700;&#x9AD8;&#x751A;&#x81F3;&#x662F;&#x6700;&#x6709;&#x7528;&#x7684;&#x3002;&#x4ED6;&#x7684;&#x5E7F;&#x6CDB;&#x5E94;&#x7528;&#x5DF2;&#x7ECF;&#x8D85;&#x8FC7;30&#x5E74;&#xFF0C;&#x5305;&#x62EC;&#x673A;&#x5668;&#x4EBA;&#x5BFC;&#x822A;&#xFF0C;&#x63A7;&#x5236;&#xFF0C;&#x4F20;&#x611F;&#x5668;&#x6570;&#x636E;&#x878D;&#x5408;&#x751A;&#x81F3;&#x5728;&#x519B;&#x4E8B;&#x65B9;&#x9762;&#x7684;&#x96F7;&#x8FBE;&#x7CFB;&#x7EDF;&#x4EE5;&#x53CA;&#x5BFC;&#x5F39;&#x8FFD;&#x8E2A;&#x7B49;&#x7B49;&#x3002;&#x8FD1;&#x5E74;&#x6765;&#x66F4;&#x88AB;&#x5E94;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x673A;&#x56FE;&#x50CF;&#x5904;&#x7406;&#xFF0C;&#x4F8B;&#x5982;&#x5934;&#x8138;&#x8BC6;&#x522B;&#xFF0C;&#x56FE;&#x50CF;&#x5206;&#x5272;&#xFF0C;&#x56FE;&#x50CF;&#x8FB9;&#x7F18;&#x68C0;&#x6D4B;&#x7B49;&#x7B49;&#x3002;</p>
+<h3 id="1-2-%E4%B8%8E%E5%8D%A1%E5%B0%94%E6%9B%BC%E6%BB%A4%E6%B3%A2%E5%99%A8%E6%9D%A5%E4%B8%AA%E6%84%9F%E6%80%A7%E8%AE%A4%E8%AF%86">1.2 &#x4E0E;&#x5361;&#x5C14;&#x66FC;&#x6EE4;&#x6CE2;&#x5668;&#x6765;&#x4E2A;&#x611F;&#x6027;&#x8BA4;&#x8BC6;</h3>
+<p>&#x4E3A;&#x4E86;&#x53EF;&#x4EE5;&#x66F4;&#x52A0;&#x5BB9;&#x6613;&#x7684;&#x7406;&#x89E3;&#x5361;&#x5C14;&#x66FC;&#x6EE4;&#x6CE2;&#x5668;&#xFF0C;&#x8FD9;&#x91CC;&#x4F1A;&#x5E94;&#x7528;&#x5F62;&#x8C61;&#x7684;&#x63CF;&#x8FF0;&#x65B9;&#x6CD5;&#x6765;&#x8BB2;&#x89E3;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x50CF;&#x5927;&#x591A;&#x6570;&#x53C2;&#x8003;&#x4E66;&#x90A3;&#x6837;&#x7F57;&#x5217;&#x4E00;&#x5927;&#x5806;&#x53CD;&#x4EBA;&#x7C7B;&#x7684;&#x6570;&#x5B66;&#x516C;&#x5F0F;&#x548C;&#x6570;&#x5B66;&#x7B26;&#x53F7;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x4ED6;&#x7684;5&#x6761;&#x516C;&#x5F0F;&#x662F;&#x5176;&#x6838;&#x5FC3;&#x5185;&#x5BB9;&#x3002;&#x7ED3;&#x5408;&#x73B0;&#x4EE3;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#xFF0C;&#x5176;&#x5B9E;&#x5361;&#x5C14;&#x66FC;&#x7684;&#x7A0B;&#x5E8F;&#x76F8;&#x5F53;&#x7684;&#x7B80;&#x5355;&#xFF0C;&#x53EA;&#x8981;&#x4F60;&#x7406;&#x89E3;&#x4E86;&#x4ED6;&#x7684;&#x90A3;5&#x6761;&#x516C;&#x5F0F;&#x3002;&#x5728;&#x4ECB;&#x7ECD;&#x4ED6;&#x7684;5&#x6761;&#x516C;&#x5F0F;&#x4E4B;&#x524D;&#xFF0C;&#x5148;&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x6839;&#x636E;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E00;&#x6B65;&#x4E00;&#x6B65;&#x7684;&#x63A2;&#x7D22;&#xFF0C;&#x4E92;&#x76F8;&#x6765;&#x4E2A;&#x611F;&#x6027;&#x7684;&#x8BA4;&#x8BC6;&#x3002;</p>
+<p>&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x8981;&#x7814;&#x7A76;&#x7684;&#x5BF9;&#x8C61;&#x662F;&#x4E00;&#x4E2A;&#x623F;&#x95F4;&#x7684;&#x6E29;&#x5EA6;&#x3002;&#x6839;&#x636E;&#x4F60;&#x7684;&#x7ECF;&#x9A8C;&#x5224;&#x65AD;&#xFF0C;&#x8FD9;&#x4E2A;&#x623F;&#x95F4;&#x7684;&#x6E29;&#x5EA6;&#x662F;&#x6052;&#x5B9A;&#x7684;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E0B;&#x4E00;&#x5206;&#x949F;&#x7684;&#x6E29;&#x5EA6;&#x7B49;&#x4E8E;&#x73B0;&#x5728;&#x8FD9;&#x4E00;&#x5206;&#x949F;&#x7684;&#x6E29;&#x5EA6;&#xFF08;&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x7528;&#x4E00;&#x5206;&#x949F;&#x6765;&#x505A;&#x65F6;&#x95F4;&#x5355;&#x4F4D;&#xFF09;&#x3002;&#x5047;&#x8BBE;&#x4F60;&#x5BF9;&#x4F60;&#x7684;&#x7ECF;&#x9A8C;&#x4E0D;&#x662F;100%&#x7684;&#x76F8;&#x4FE1;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x4E0A;&#x4E0B;&#x504F;&#x5DEE;&#x51E0;&#x5EA6;&#x3002;&#x6211;&#x4EEC;&#x628A;&#x8FD9;&#x4E9B;&#x504F;&#x5DEE;&#x770B;&#x6210;&#x662F;&#x9AD8;&#x65AF;&#x767D;&#x566A;&#x58F0;&#xFF08; White Gaussian Noise&#xFF09;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8FD9;&#x4E9B;&#x504F;&#x5DEE;&#x8DDF;&#x524D;&#x540E;&#x65F6;&#x95F4;&#x662F;&#x6CA1;&#x6709;&#x5173;&#x7CFB;&#x7684;&#x800C;&#x4E14;&#x7B26;&#x5408;&#x9AD8;&#x65AF;&#x5206;&#x914D;&#xFF08; Gaussian Distribution&#xFF09;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x623F;&#x95F4;&#x91CC;&#x653E;&#x4E00;&#x4E2A;&#x6E29;&#x5EA6;&#x8BA1;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E2A;&#x6E29;&#x5EA6;&#x8BA1;&#x4E5F;&#x4E0D;&#x51C6;&#x786E;&#x7684;&#xFF0C;&#x6D4B;&#x91CF;&#x503C;&#x4F1A;&#x6BD4;&#x5B9E;&#x9645;&#x503C;&#x504F;&#x5DEE;&#x3002;&#x6211;&#x4EEC;&#x4E5F;&#x628A;&#x8FD9;&#x4E9B;&#x504F;&#x5DEE;&#x770B;&#x6210;&#x662F;&#x9AD8;&#x65AF;&#x767D;&#x566A;&#x58F0;&#x3002;</p>
+<p>&#x597D;&#x4E86;&#xFF0C;&#x73B0;&#x5728;&#x5BF9;&#x4E8E;&#x67D0;&#x4E00;&#x5206;&#x949F;&#x6211;&#x4EEC;&#x6709;&#x4E24;&#x4E2A;&#x6709;&#x5173;&#x4E8E;&#x8BE5;&#x623F;&#x95F4;&#x7684;&#x6E29;&#x5EA6;&#x503C;&#xFF1A;&#x4F60;&#x6839;&#x636E;&#x7ECF;&#x9A8C;&#x7684;&#x9884;&#x6D4B;&#x503C;&#xFF08;&#x7CFB;&#x7EDF;&#x7684;&#x9884;&#x6D4B;&#x503C;&#xFF09;&#x548C;&#x6E29;&#x5EA6;&#x8BA1;&#x7684;&#x503C;&#xFF08;&#x6D4B;&#x91CF;&#x503C;&#xFF09;&#x3002;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x8981;&#x7528;&#x8FD9;&#x4E24;&#x4E2A;&#x503C;&#x7ED3;&#x5408;&#x4ED6;&#x4EEC;&#x5404;&#x81EA;&#x7684;&#x566A;&#x58F0;&#x6765;&#x4F30;&#x7B97;&#x51FA;&#x623F;&#x95F4;&#x7684;&#x5B9E;&#x9645;&#x6E29;&#x5EA6;&#x503C;&#x3002;</p>
+<p>&#x5047;&#x5982;&#x6211;&#x4EEC;&#x8981;&#x4F30;&#x7B97;k&#x65F6;&#x523B;&#x7684;&#x662F;&#x5B9E;&#x9645;&#x6E29;&#x5EA6;&#x503C;&#x3002;&#x9996;&#x5148;&#x4F60;&#x8981;&#x6839;&#x636E;k-1&#x65F6;&#x523B;&#x7684;&#x6E29;&#x5EA6;&#x503C;&#xFF0C;&#x6765;&#x9884;&#x6D4B;k&#x65F6;&#x523B;&#x7684;&#x6E29;&#x5EA6;&#x3002;&#x56E0;&#x4E3A;&#x4F60;&#x76F8;&#x4FE1;&#x6E29;&#x5EA6;&#x662F;&#x6052;&#x5B9A;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x4F1A;&#x5F97;&#x5230;k&#x65F6;&#x523B;&#x7684;&#x6E29;&#x5EA6;&#x9884;&#x6D4B;&#x503C;&#x662F;&#x8DDF;k-1&#x65F6;&#x523B;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x5047;&#x8BBE;&#x662F;23&#x5EA6;&#xFF0C;&#x540C;&#x65F6;&#x8BE5;&#x503C;&#x7684;&#x9AD8;&#x65AF;&#x566A;&#x58F0;&#x7684;&#x504F;&#x5DEE;&#x662F;5&#x5EA6;&#xFF08; 5 &#x662F;&#x8FD9;&#x6837;&#x5F97;&#x5230;&#x7684;&#xFF1A;&#x5982;&#x679C; k-1 &#x65F6;&#x523B;&#x4F30;&#x7B97;&#x51FA;&#x7684;&#x6700;&#x4F18;&#x6E29;&#x5EA6;&#x503C;&#x7684;&#x504F;&#x5DEE;&#x662F; 3&#xFF0C;&#x4F60;&#x5BF9;&#x81EA;&#x5DF1;&#x9884;&#x6D4B;&#x7684;&#x4E0D;&#x786E;&#x5B9A;&#x5EA6;&#x662F; 4 &#x5EA6;&#xFF0C;&#x4ED6;&#x4EEC;&#x5E73;&#x65B9;&#x76F8;&#x52A0;&#x518D;&#x5F00;&#x65B9;&#xFF0C;&#x5C31;&#x662F; 5&#xFF09;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x4F60;&#x4ECE;&#x6E29;&#x5EA6;&#x8BA1;&#x90A3;&#x91CC;&#x5F97;&#x5230;&#x4E86; k &#x65F6;&#x523B;&#x7684;&#x6E29;&#x5EA6;&#x503C;&#xFF0C;&#x5047;&#x8BBE;&#x662F;25 &#x5EA6;&#xFF0C;&#x540C;&#x65F6;&#x8BE5;&#x503C;&#x7684;&#x504F;&#x5DEE;&#x662F; 4 &#x5EA6;&#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x6211;&#x4EEC;&#x7528;&#x4E8E;&#x4F30;&#x7B97; k &#x65F6;&#x523B;&#x7684;&#x5B9E;&#x9645;&#x6E29;&#x5EA6;&#x6709;&#x4E24;&#x4E2A;&#x6E29;&#x5EA6;&#x503C;&#xFF0C; &#x5206;&#x522B;&#x662F; 23 &#x5EA6;&#x548C; 25 &#x5EA6;&#x3002; &#x7A76;&#x7ADF;&#x5B9E;&#x9645;&#x6E29;&#x5EA6;&#x662F;&#x591A;&#x5C11;&#x5462;&#xFF1F;&#x76F8;&#x4FE1;&#x81EA;&#x5DF1;&#x8FD8;&#x662F;&#x76F8;&#x4FE1;&#x6E29;&#x5EA6;&#x8BA1;&#x5462;&#xFF1F;&#x7A76;&#x7ADF;&#x76F8;&#x4FE1;&#x8C01;&#x591A;&#x4E00;&#x70B9; &#xFF0C; &#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;&#x4ED6;&#x4EEC;&#x7684;covariance&#x6765;&#x5224;&#x65AD; &#x3002; &#x56E0;&#x4E3A;<code>Kg^2=5^2/(5^2+4^2)</code>&#xFF0C;&#x6240;&#x4EE5; <code>Kg=0.78</code>&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F30;&#x7B97;&#x51FA; k &#x65F6;&#x523B;&#x7684;&#x5B9E;&#x9645;&#x6E29;&#x5EA6;&#x503C;&#x662F;&#xFF1A; <code>23+0.78*(25-23)=24.56</code> &#x5EA6;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C; &#x56E0;&#x4E3A;&#x6E29;&#x5EA6;&#x8BA1;&#x7684; covariance &#x6BD4;&#x8F83;&#x5C0F;&#xFF08;&#x6BD4;&#x8F83;&#x76F8;&#x4FE1;&#x6E29;&#x5EA6;&#x8BA1;&#xFF09;&#xFF0C; &#x6240;&#x4EE5;&#x4F30;&#x7B97;&#x51FA;&#x7684;&#x6700;&#x4F18;&#x6E29;&#x5EA6;&#x503C;&#x504F;&#x5411;&#x6E29;&#x5EA6;&#x8BA1;&#x7684;&#x503C;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x5F97;&#x5230;k&#x65F6;&#x523B;&#x7684;&#x6700;&#x4F18;&#x6E29;&#x5EA6;&#x503C;&#x4E86;&#xFF0C;&#x4E0B;&#x4E00;&#x6B65;&#x5C31;&#x662F;&#x8981;&#x8FDB;&#x5165; k+1 &#x65F6;&#x523B;&#xFF0C;&#x8FDB;&#x884C;&#x65B0;&#x7684;&#x6700;&#x4F18;&#x4F30;&#x7B97;&#x3002;&#x5230;&#x73B0;&#x5728;&#x4E3A;&#x6B62;&#xFF0C;&#x597D;&#x50CF;&#x8FD8;&#x6CA1;&#x770B;&#x5230;&#x4EC0;&#x4E48;&#x81EA;&#x56DE;&#x5F52;&#x7684;&#x4E1C;&#x897F;&#x51FA;&#x73B0;&#x3002;&#x5BF9;&#x4E86;&#xFF0C;&#x5728;&#x8FDB;&#x5165; k+1 &#x65F6;&#x523B;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x8981;&#x7B97;&#x51FA;k&#x65F6;&#x523B;&#x90A3;&#x4E2A;&#x6700;&#x4F18;&#x503C;&#xFF08; 24.56 &#x5EA6;&#xFF09;&#x7684;&#x504F;&#x5DEE;&#x3002;</p>
+<p>&#x7B97;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A; <code>((1-Kg)*5^2)^0.5=2.35</code>&#x3002;&#x8FD9;&#x91CC;&#x7684; 5 &#x5C31;&#x662F;&#x4E0A;&#x9762;&#x7684; k &#x65F6;&#x523B;&#x4F60;&#x9884;&#x6D4B;&#x7684;&#x90A3;&#x4E2A; 23&#x5EA6;&#x6E29;&#x5EA6;&#x503C;&#x7684;&#x504F;&#x5DEE;&#xFF0C; &#x5F97;&#x51FA;&#x7684; 2.35 &#x5C31;&#x662F;&#x8FDB;&#x5165; k+1 &#x65F6;&#x523B;&#x4EE5;&#x540E; k &#x65F6;&#x523B;&#x4F30;&#x7B97;&#x51FA;&#x7684;&#x6700;&#x4F18;&#x6E29;&#x5EA6;&#x503C;&#x7684;&#x504F;&#x5DEE;&#xFF08;&#x5BF9;&#x5E94;&#x4E8E;&#x4E0A;&#x9762;&#x7684; 3&#xFF09;&#x3002;&#x5C31;&#x662F;&#x8FD9;&#x6837;&#xFF0C;&#x5361;&#x5C14;&#x66FC;&#x6EE4;&#x6CE2;&#x5668;&#x5C31;&#x4E0D;&#x65AD;&#x7684;&#x628A; covariance &#x9012;&#x5F52;&#xFF0C;&#x4ECE;&#x800C;&#x4F30;&#x7B97;&#x51FA;&#x6700;&#x4F18;&#x7684;&#x6E29;&#x5EA6;&#x503C;&#x3002;&#x4ED6;&#x8FD0;&#x884C;&#x7684;&#x5F88;&#x5FEB;&#xFF0C;&#x800C;&#x4E14;&#x5B83;&#x53EA;&#x4FDD;&#x7559;&#x4E86;&#x4E0A;&#x4E00;&#x65F6;&#x523B;&#x7684; covariance&#x3002;&#x4E0A;&#x9762;&#x7684; Kg&#xFF0C;&#x5C31;&#x662F;&#x5361;&#x5C14;&#x66FC;&#x589E;&#x76CA;&#xFF08; Kalman Gain&#xFF09;&#x3002;&#x4ED6;&#x53EF;&#x4EE5;&#x968F;&#x4E0D;&#x540C;&#x7684;&#x65F6;&#x523B;&#x800C;&#x6539;&#x53D8;&#x4ED6;&#x81EA;&#x5DF1;&#x7684;&#x503C;&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x5F88;&#x795E;&#x5947;&#xFF01;
+ &#x4E0B;&#x9762;&#x5C31;&#x8981;&#x8A00;&#x5F52;&#x6B63;&#x4F20;&#xFF0C;&#x8BA8;&#x8BBA;&#x771F;&#x6B63;&#x5DE5;&#x7A0B;&#x7CFB;&#x7EDF;&#x4E0A;&#x7684;&#x5361;&#x5C14;&#x66FC;&#x3002;</p>
+<h3 id="1-3-%E5%8D%A1%E5%B0%94%E6%9B%BC%E6%BB%A4%E6%B3%A2%E5%99%A8%E7%AE%97%E6%B3%95">1.3 &#x5361;&#x5C14;&#x66FC;&#x6EE4;&#x6CE2;&#x5668;&#x7B97;&#x6CD5;</h3>
+<p>&#xFF08;The Kalman Filter Algorithm&#xFF09;</p>
+<p>&#x5728;&#x8FD9;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x6765;&#x63CF;&#x8FF0;&#x6E90;&#x4E8E; Dr. Kalman &#x7684;&#x5361;&#x5C14;&#x66FC;&#x6EE4;&#x6CE2;&#x5668;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x4F1A;&#x6D89;&#x53CA;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x7684;&#x6982;&#x5FF5;&#x77E5;
+&#x8BC6;&#xFF0C;&#x5305;&#x62EC;&#x6982;&#x7387;&#xFF08; Probability&#xFF09;&#xFF0C;&#x968F;&#x5373;&#x53D8;&#x91CF;&#xFF08; Random Variable&#xFF09;&#xFF0C;&#x9AD8;&#x65AF;&#x6216;&#x6B63;&#x6001;&#x5206;&#x914D;&#xFF08; Gaussian Distribution&#xFF09;&#x8FD8;&#x6709;State-space Model &#x7B49;&#x7B49;&#x3002;&#x4F46;&#x5BF9;&#x4E8E;&#x5361;&#x5C14;&#x66FC;&#x6EE4;&#x6CE2;&#x5668;&#x7684;&#x8BE6;&#x7EC6;&#x8BC1;&#x660E;&#xFF0C;&#x8FD9;&#x91CC;&#x4E0D;&#x80FD;&#x4E00;&#x4E00;&#x63CF;&#x8FF0;&#x3002;</p>
+<p>&#x9996;&#x5148;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x8981;&#x5F15;&#x5165;&#x4E00;&#x4E2A;&#x79BB;&#x6563;&#x63A7;&#x5236;&#x8FC7;&#x7A0B;&#x7684;&#x7CFB;&#x7EDF;&#x3002;&#x8BE5;&#x7CFB;&#x7EDF;&#x53EF;&#x7528;&#x4E00;&#x4E2A;&#x7EBF;&#x6027;&#x968F;&#x673A;&#x5FAE;&#x5206;&#x65B9;&#x7A0B;&#xFF08; Linear Stochastic Difference equation&#xFF09;&#x6765;&#x63CF;&#x8FF0;&#xFF1A;</p>
+<p><code>X(k)=A X(k-1)+B U(k)+W(k)</code></p>
+<p>&#x518D;&#x52A0;&#x4E0A;&#x7CFB;&#x7EDF;&#x7684;&#x6D4B;&#x91CF;&#x503C;&#xFF1A;</p>
+<p><code>Z(k)=H X(k)+V(k)</code></p>
+<p>&#x4E0A;&#x4E24;&#x5F0F;&#x5B50;&#x4E2D;&#xFF0C; X(k)&#x662F; k &#x65F6;&#x523B;&#x7684;&#x7CFB;&#x7EDF;&#x72B6;&#x6001;&#xFF0C; U(k)&#x662F; k &#x65F6;&#x523B;&#x5BF9;&#x7CFB;&#x7EDF;&#x7684;&#x63A7;&#x5236;&#x91CF;&#x3002; A &#x548C; B &#x662F;&#x7CFB;&#x7EDF;&#x53C2;&#x6570;&#xFF0C;&#x5BF9;&#x4E8E;&#x591A;&#x6A21;&#x578B;&#x7CFB;&#x7EDF;&#xFF0C;&#x4ED6;&#x4EEC;&#x4E3A;&#x77E9;&#x9635;&#x3002; Z(k)&#x662F; k &#x65F6;&#x523B;&#x7684;&#x6D4B;&#x91CF;&#x503C;&#xFF0C; H &#x662F;&#x6D4B;&#x91CF;&#x7CFB;&#x7EDF;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x5BF9;&#x4E8E;&#x591A;&#x6D4B;&#x91CF;&#x7CFB;&#x7EDF;&#xFF0C; H &#x4E3A;&#x77E9;&#x9635;&#x3002; W(k)&#x548C;V(k)&#x5206;&#x522B;&#x8868;&#x793A;&#x8FC7;&#x7A0B;&#x548C;&#x6D4B;&#x91CF;&#x7684;&#x566A;&#x58F0;&#x3002;&#x4ED6;&#x4EEC;&#x88AB;&#x5047;&#x8BBE;&#x6210;&#x9AD8;&#x65AF;&#x767D;&#x566A;&#x58F0;(White Gaussian Noise)&#xFF0C;&#x4ED6;&#x4EEC;&#x7684; covariance &#x5206;&#x522B;&#x662F; Q&#xFF0C; R&#xFF08;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x5047;&#x8BBE;&#x4ED6;&#x4EEC;&#x4E0D;&#x968F;&#x7CFB;&#x7EDF;&#x72B6;&#x6001;&#x53D8;&#x5316;&#x800C;&#x53D8;&#x5316;&#xFF09;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x6EE1;&#x8DB3;&#x4E0A;&#x9762;&#x7684;&#x6761;&#x4EF6;(&#x7EBF;&#x6027;&#x968F;&#x673A;&#x5FAE;&#x5206;&#x7CFB;&#x7EDF;&#xFF0C;&#x8FC7;&#x7A0B;&#x548C;&#x6D4B;&#x91CF;&#x90FD;&#x662F;&#x9AD8;&#x65AF;&#x767D;&#x566A;&#x58F0;)&#xFF0C;&#x5361;&#x5C14;&#x66FC;&#x6EE4;&#x6CE2;&#x5668;&#x662F;&#x6700;&#x4F18;&#x7684;&#x4FE1;&#x606F;
+&#x5904;&#x7406;&#x5668;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x6765;&#x7528;&#x4ED6;&#x4EEC;&#x7ED3;&#x5408;&#x4ED6;&#x4EEC;&#x7684; covariances &#x6765;&#x4F30;&#x7B97;&#x7CFB;&#x7EDF;&#x7684;&#x6700;&#x4F18;&#x5316;&#x8F93;&#x51FA;&#xFF08;&#x7C7B;&#x4F3C;&#x4E0A;&#x4E00;&#x8282;&#x90A3;&#x4E2A;&#x6E29;&#x5EA6;&#x7684;&#x4F8B;&#x5B50;&#xFF09;&#x3002;</p>
+<p>&#x9996;&#x5148;&#x6211;&#x4EEC;&#x8981;&#x5229;&#x7528;&#x7CFB;&#x7EDF;&#x7684;&#x8FC7;&#x7A0B;&#x6A21;&#x578B;&#xFF0C;&#x6765;&#x9884;&#x6D4B;&#x4E0B;&#x4E00;&#x72B6;&#x6001;&#x7684;&#x7CFB;&#x7EDF;&#x3002;&#x5047;&#x8BBE;&#x73B0;&#x5728;&#x7684;&#x7CFB;&#x7EDF;&#x72B6;&#x6001;&#x662F; k&#xFF0C;&#x6839;&#x636E;&#x7CFB;&#x7EDF;&#x7684;&#x6A21;
+&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x57FA;&#x4E8E;&#x7CFB;&#x7EDF;&#x7684;&#x4E0A;&#x4E00;&#x72B6;&#x6001;&#x800C;&#x9884;&#x6D4B;&#x51FA;&#x73B0;&#x5728;&#x72B6;&#x6001;&#xFF1A;</p>
+<p><code>X(k|k-1)=A X(k-1|k-1)+B U(k) ------ (1)</code></p>
+<p>&#x5F0F;(1)&#x4E2D;&#xFF0C; X(k|k-1)&#x662F;&#x5229;&#x7528;&#x4E0A;&#x4E00;&#x72B6;&#x6001;&#x9884;&#x6D4B;&#x7684;&#x7ED3;&#x679C;&#xFF0C; X(k-1|k-1)&#x662F;&#x4E0A;&#x4E00;&#x72B6;&#x6001;&#x6700;&#x4F18;&#x7684;&#x7ED3;&#x679C;&#xFF0C; U(k)&#x4E3A;&#x73B0;&#x5728;&#x72B6;&#x6001;&#x7684;&#x63A7;&#x5236;&#x91CF;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63A7;&#x5236;&#x91CF;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x4E3A; 0&#x3002;</p>
+<p>&#x5230;&#x73B0;&#x5728;&#x4E3A;&#x6B62;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x7CFB;&#x7EDF;&#x7ED3;&#x679C;&#x5DF2;&#x7ECF;&#x66F4;&#x65B0;&#x4E86;&#xFF0C;&#x53EF;&#x662F;&#xFF0C;&#x5BF9;&#x5E94;&#x4E8E; X(k|k-1)&#x7684; covariance &#x8FD8;&#x6CA1;&#x66F4;&#x65B0;&#x3002;&#x6211;&#x4EEC;&#x7528; P&#x8868;&#x793A; covariance&#xFF1A;</p>
+<p><code>P(k|k-1)=A P(k-1|k-1) A&#x2019;+Q ------(2)</code></p>
+<p>&#x5F0F;(2)&#x4E2D;&#xFF0C; P(k|k-1)&#x662F; X(k|k-1)&#x5BF9;&#x5E94;&#x7684; covariance&#xFF0C; P(k-1|k-1)&#x662F; X(k-1|k-1)&#x5BF9;&#x5E94;&#x7684; covariance&#xFF0C; A&#x2019;&#x8868;&#x793A; A &#x7684;&#x8F6C;&#x7F6E;&#x77E9;&#x9635;&#xFF0C; Q &#x662F;&#x7CFB;&#x7EDF;&#x8FC7;&#x7A0B;&#x7684; covariance&#x3002;&#x5F0F;&#x5B50; 1&#xFF0C; 2 &#x5C31;&#x662F;&#x5361;&#x5C14;&#x66FC;&#x6EE4;&#x6CE2;&#x5668; 5 &#x4E2A;&#x516C;&#x5F0F;&#x5F53;&#x4E2D;&#x7684;&#x524D;&#x4E24;&#x4E2A;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5BF9;&#x7CFB;&#x7EDF;&#x7684;&#x9884;&#x6D4B;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x6709;&#x4E86;&#x73B0;&#x5728;&#x72B6;&#x6001;&#x7684;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#xFF0C;&#x7136;&#x540E;&#x6211;&#x4EEC;&#x518D;&#x6536;&#x96C6;&#x73B0;&#x5728;&#x72B6;&#x6001;&#x7684;&#x6D4B;&#x91CF;&#x503C;&#x3002;&#x7ED3;&#x5408;&#x9884;&#x6D4B;&#x503C;&#x548C;&#x6D4B;&#x91CF;&#x503C;&#xFF0C;&#x6211;&#x4EEC;
+&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x73B0;&#x5728;&#x72B6;&#x6001;(k)&#x7684;&#x6700;&#x4F18;&#x5316;&#x4F30;&#x7B97;&#x503C; X(k|k)&#xFF1A;</p>
+<p><code>X(k|k)= X(k|k-1)+Kg(k) (Z(k)-H X(k|k-1)) ------ (3)</code></p>
+<p>&#x5176;&#x4E2D; Kg &#x4E3A;&#x5361;&#x5C14;&#x66FC;&#x589E;&#x76CA;(Kalman Gain)&#xFF1A;</p>
+<p><code>Kg(k)= P(k|k-1) H&#x2019; / (H P(k|k-1) H&#x2019; + R) ------ (4)</code></p>
+<p>&#x5230;&#x73B0;&#x5728;&#x4E3A;&#x6B62;&#xFF0C;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x5F97;&#x5230;&#x4E86; k &#x72B6;&#x6001;&#x4E0B;&#x6700;&#x4F18;&#x7684;&#x4F30;&#x7B97;&#x503C; X(k|k)&#x3002;&#x4F46;&#x662F;&#x4E3A;&#x4E86;&#x8981;&#x53E6;&#x5361;&#x5C14;&#x66FC;&#x6EE4;&#x6CE2;&#x5668;&#x4E0D;&#x65AD;&#x7684;&#x8FD0;&#x884C;
+&#x4E0B;&#x53BB;&#x76F4;&#x5230;&#x7CFB;&#x7EDF;&#x8FC7;&#x7A0B;&#x7ED3;&#x675F;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x8981;&#x66F4;&#x65B0; k &#x72B6;&#x6001;&#x4E0B; X(k|k)&#x7684; covariance&#xFF1A;</p>
+<p><code>P(k|k)=&#xFF08; I-Kg(k) H&#xFF09; P(k|k-1) ------ (5)</code></p>
+<p>&#x5176;&#x4E2D; I &#x4E3A; 1 &#x7684;&#x77E9;&#x9635;&#xFF0C;&#x5BF9;&#x4E8E;&#x5355;&#x6A21;&#x578B;&#x5355;&#x6D4B;&#x91CF;&#xFF0C; I=1&#x3002;&#x5F53;&#x7CFB;&#x7EDF;&#x8FDB;&#x5165; k+1 &#x72B6;&#x6001;&#x65F6;&#xFF0C; P(k|k)&#x5C31;&#x662F;&#x5F0F;&#x5B50;(2)&#x7684; <code>P(k-1|k-1)</code>&#x3002;</p>
+<p>&#x8FD9;&#x6837;&#xFF0C;&#x7B97;&#x6CD5;&#x5C31;&#x53EF;&#x4EE5;&#x81EA;&#x56DE;&#x5F52;&#x7684;&#x8FD0;&#x7B97;&#x4E0B;&#x53BB;&#x3002;</p>
+<p>&#x5361;&#x5C14;&#x66FC;&#x6EE4;&#x6CE2;&#x5668;&#x7684;&#x539F;&#x7406;&#x57FA;&#x672C;&#x63CF;&#x8FF0;&#x4E86;&#xFF0C;&#x5F0F;&#x5B50; 1&#xFF0C; 2&#xFF0C; 3&#xFF0C; 4 &#x548C; 5 &#x5C31;&#x662F;&#x4ED6;&#x7684; 5 &#x4E2A;&#x57FA;&#x672C;&#x516C;&#x5F0F;&#x3002;&#x6839;&#x636E;&#x8FD9; 5 &#x4E2A;&#x516C;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x5F88;&#x5BB9;&#x6613;&#x7684;&#x5B9E;&#x73B0;&#x8BA1;&#x7B97;&#x673A;&#x7684;&#x7A0B;&#x5E8F;&#x3002;&#x4E0B;&#x9762;&#xFF0C;&#x6211;&#x4F1A;&#x7528;&#x7A0B;&#x5E8F;&#x4E3E;&#x4E00;&#x4E2A;&#x5B9E;&#x9645;&#x8FD0;&#x884C;&#x7684;&#x4F8B;&#x5B50;&#x3002;</p>
+<h3 id="1-4-%E7%AE%80%E5%8D%95%E4%BE%8B%E5%AD%90">1.4 &#x7B80;&#x5355;&#x4F8B;&#x5B50;</h3>
+<p>&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x7ED3;&#x5408;&#x7B2C;&#x4E8C;&#x7B2C;&#x4E09;&#x8282;&#xFF0C;&#x4E3E;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#x6765;&#x8BF4;&#x660E;&#x5361;&#x5C14;&#x66FC;&#x6EE4;&#x6CE2;&#x5668;&#x7684;&#x5DE5;&#x4F5C;&#x8FC7;&#x7A0B;&#x3002;&#x6240;&#x4E3E;&#x7684;&#x4F8B;&#x5B50;&#x662F;&#x8FDB;
+&#x4E00;&#x6B65;&#x63CF;&#x8FF0;&#x7B2C;&#x4E8C;&#x8282;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x800C;&#x4E14;&#x8FD8;&#x4F1A;&#x914D;&#x4EE5;&#x7A0B;&#x5E8F;&#x6A21;&#x62DF;&#x7ED3;&#x679C;&#x3002;</p>
+<p>&#x6839;&#x636E;&#x7B2C;&#x4E8C;&#x8282;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x628A;&#x623F;&#x95F4;&#x770B;&#x6210;&#x4E00;&#x4E2A;&#x7CFB;&#x7EDF;&#xFF0C;&#x7136;&#x540E;&#x5BF9;&#x8FD9;&#x4E2A;&#x7CFB;&#x7EDF;&#x5EFA;&#x6A21;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x6211;&#x4EEC;&#x89C1;&#x7684;&#x6A21;&#x578B;&#x4E0D;&#x9700;&#x8981;&#x975E;&#x5E38;&#x5730;
+&#x7CBE;&#x786E;&#x3002;&#x6211;&#x4EEC;&#x6240;&#x77E5;&#x9053;&#x7684;&#x8FD9;&#x4E2A;&#x623F;&#x95F4;&#x7684;&#x6E29;&#x5EA6;&#x662F;&#x8DDF;&#x524D;&#x4E00;&#x65F6;&#x523B;&#x7684;&#x6E29;&#x5EA6;&#x76F8;&#x540C;&#x7684;&#xFF0C;&#x6240;&#x4EE5; A=1 &#x3002;&#x6CA1;&#x6709;&#x63A7;&#x5236;&#x91CF;&#xFF0C;&#x6240;&#x4EE5; U(k)=0&#x3002;</p>
+<p>&#x56E0;&#x6B64;&#x5F97;&#x51FA;&#xFF1A;</p>
+<p><code>X(k|k-1)=X(k-1|k-1) ------ (6)</code></p>
+<p>&#x5F0F;&#x5B50;&#xFF08; 2&#xFF09;&#x53EF;&#x4EE5;&#x6539;&#x6210;&#xFF1A;</p>
+<p><code>P(k|k-1)=P(k-1|k-1) +Q ------- (7)</code></p>
+<p>&#x56E0;&#x4E3A;&#x6D4B;&#x91CF;&#x7684;&#x503C;&#x662F;&#x6E29;&#x5EA6;&#x8BA1;&#x7684;&#xFF0C;&#x8DDF;&#x6E29;&#x5EA6;&#x76F4;&#x63A5;&#x5BF9;&#x5E94;&#xFF0C;&#x6240;&#x4EE5; H=1 &#x3002;&#x5F0F;&#x5B50; 3&#xFF0C; 4&#xFF0C; 5 &#x53EF;&#x4EE5;&#x6539;&#x6210;&#x4EE5;&#x4E0B;&#xFF1A;</p>
+<p><code>X(k|k)= X(k|k-1)+Kg(k) (Z(k)-X(k|k-1)) ----- (8)</code></p>
+<p><code>Kg(k)= P(k|k-1) / (P(k|k-1) + R) ------ (9)</code></p>
+<p><code>P(k|k)=&#xFF08; 1-Kg(k)&#xFF09; P(k|k-1) ------ (10)</code></p>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x6A21;&#x62DF;&#x4E00;&#x7EC4;&#x6D4B;&#x91CF;&#x503C;&#x4F5C;&#x4E3A;&#x8F93;&#x5165;&#x3002;&#x5047;&#x8BBE;&#x623F;&#x95F4;&#x7684;&#x771F;&#x5B9E;&#x6E29;&#x5EA6;&#x4E3A; 25 &#x5EA6;&#xFF0C;&#x6211;&#x6A21;&#x62DF;&#x4E86; 200 &#x4E2A;&#x6D4B;&#x91CF;&#x503C;&#xFF0C;&#x8FD9;&#x4E9B;&#x6D4B;&#x91CF;&#x503C;&#x7684;&#x5E73;&#x5747;&#x503C;&#x4E3A; 25 &#x5EA6;&#xFF0C;&#x4F46;&#x662F;&#x52A0;&#x5165;&#x4E86;&#x6807;&#x51C6;&#x504F;&#x5DEE;&#x4E3A;&#x51E0;&#x5EA6;&#x7684;&#x9AD8;&#x65AF;&#x767D;&#x566A;&#x58F0;&#xFF08;&#x5728;&#x56FE;&#x4E2D;&#x4E3A;&#x84DD;&#x7EBF;&#xFF09;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x4EE4;&#x5361;&#x5C14;&#x66FC;&#x6EE4;&#x6CE2;&#x5668;&#x5F00;&#x59CB;&#x5DE5;&#x4F5C;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x544A;&#x8BC9;&#x5361;&#x5C14;&#x66FC;&#x4E24;&#x4E2A;&#x96F6;&#x65F6;&#x523B;&#x7684;&#x521D;&#x59CB;&#x503C;&#xFF0C;&#x662F; X(0|0)&#x548C; P(0|0)&#x3002;&#x4ED6;&#x4EEC;&#x7684;&#x503C;&#x4E0D;&#x7528;&#x592A;&#x5728;&#x610F;&#xFF0C;&#x968F;&#x4FBF;&#x7ED9;&#x4E00;&#x4E2A;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF0C;&#x56E0;&#x4E3A;&#x968F;&#x7740;&#x5361;&#x5C14;&#x66FC;&#x7684;&#x5DE5;&#x4F5C;&#xFF0C; X &#x4F1A;&#x9010;&#x6E10;&#x7684;&#x6536;&#x655B;&#x3002;&#x4F46;&#x662F;&#x5BF9;&#x4E8E; P&#xFF0C;&#x4E00;&#x822C;&#x4E0D;&#x8981;&#x53D6;0&#xFF0C; &#x56E0;&#x4E3A;&#x8FD9;&#x6837;&#x53EF;&#x80FD;&#x4F1A;&#x4EE4;&#x5361;&#x5C14;&#x66FC;&#x5B8C;&#x5168;&#x76F8;&#x4FE1;&#x4F60;&#x7ED9;&#x5B9A;&#x7684; X(0|0)&#x662F;&#x7CFB;&#x7EDF;&#x6700;&#x4F18;&#x7684;&#xFF0C; &#x4ECE;&#x800C;&#x4F7F;&#x7B97;&#x6CD5;&#x4E0D;&#x80FD;&#x6536;&#x655B;&#x3002; &#x6211;&#x9009;&#x4E86; X(0|0)=1&#x5EA6;&#xFF0C; P(0|0)=10&#x3002;</p>
+<p><img src="http://miaowlabs.com/img/kalman.png" alt="GA25"></p>
+<p>&#x8BE5;&#x7CFB;&#x7EDF;&#x7684;&#x771F;&#x5B9E;&#x6E29;&#x5EA6;&#x4E3A; 25 &#x5EA6;&#xFF0C;&#x56FE;&#x4E2D;&#x7528;&#x9ED1;&#x7EBF;&#x8868;&#x793A;&#x3002;&#x56FE;&#x4E2D;&#x7EA2;&#x7EBF;&#x662F;&#x5361;&#x5C14;&#x66FC;&#x6EE4;&#x6CE2;&#x5668;&#x8F93;&#x51FA;&#x7684;&#x6700;&#x4F18;&#x5316;&#x7ED3;&#x679C;&#xFF08;&#x8BE5;&#x7ED3;&#x679C;&#x5728;&#x7B97;
+&#x6CD5;&#x4E2D;&#x8BBE;&#x7F6E;&#x4E86; Q=1e-6&#xFF0C; R=1e-1&#xFF09;&#x3002;</p>
+<p>&#x9644; matlab &#x4E0B;&#x9762;&#x7684; kalman &#x6EE4;&#x6CE2;&#x7A0B;&#x5E8F;&#xFF1A;</p>
+<pre><code>clear
+N=200;
+w(1)=0;
+w=randn(1,N)
+x(1)=0;
+5
+a=1;
+for k=2:N;
+x(k)=a*x(k-1)+w(k-1);
+end
+V=randn(1,N);
+q1=std(V);
+Rvv=q1.^2;
+q2=std(x);
+Rxx=q2.^2;
+q3=std(w);
+Rww=q3.^2;
+c=0.2;
+Y=c*x+V;
+p(1)=0;
+s(1)=0;
+for t=2:N;
+p1(t)=a.^2*p(t-1)+Rww;
+b(t)=c*p1(t)/(c.^2*p1(t)+Rvv);
+s(t)=a*s(t-1)+b(t)*(Y(t)-a*c*s(t-1));
+p(t)=p1(t)-c*b(t)*p1(t);
+end
+t=1:N;
+plot(t,s,&apos;r&apos;,t,Y,&apos;g&apos;,t,x,&apos;b&apos;);
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../datafusion/complementary.html" class="navigation navigation-prev " aria-label="Previous page: 互补滤波"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../datafusion/dmp.html" class="navigation navigation-next " aria-label="Next page: MPU6050 DMP"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

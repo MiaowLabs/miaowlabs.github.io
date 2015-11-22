@@ -1,0 +1,715 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>Segway | 开源造车—喵呜ISO两轮自平衡小车</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="../self-balanced/bigvssmall.html" />
+    
+    
+    <link rel="prev" href="../self-balanced/history.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="2.2" data-basepath=".." data-revision="Sun Aug 16 2015 20:25:01 GMT+0800 (中国标准时间)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        前言
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="about/index.html">
+            
+                
+                    <a href="../about/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        喵呜ISO两轮自平衡小车
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="about/demo-guide.html">
+            
+                
+                    <a href="../about/demo-guide.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        套件试玩指南
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="about/service-guide.html">
+            
+                
+                    <a href="../about/service-guide.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        硬件自检指南
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="self-balanced/index.html">
+            
+                
+                    <a href="../self-balanced/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        电动平衡车
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="self-balanced/history.html">
+            
+                
+                    <a href="../self-balanced/history.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        历史回顾
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2" data-path="self-balanced/segway.html">
+            
+                
+                    <a href="../self-balanced/segway.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Segway
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="self-balanced/bigvssmall.html">
+            
+                
+                    <a href="../self-balanced/bigvssmall.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        载人大车vs开源小车
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="self-balanced/composition.html">
+            
+                
+                    <a href="../self-balanced/composition.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        两轮自平衡小车基本组成
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="machinery/index.html">
+            
+                
+                    <a href="../machinery/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        机械
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="machinery/structure.html">
+            
+                
+                    <a href="../machinery/structure.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        结构
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="hardware/index.html">
+            
+                
+                    <a href="../hardware/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        硬件
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="hardware/motor.html">
+            
+                
+                    <a href="../hardware/motor.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        电机选型
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="hardware/battery.html">
+            
+                
+                    <a href="../hardware/battery.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        电池选型
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="hardware/wheel.html">
+            
+                
+                    <a href="../hardware/wheel.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        轮子选型
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="hardware/components.html">
+            
+                
+                    <a href="../hardware/components.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        元器件选型
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="hardware/schematic.html">
+            
+                
+                    <a href="../hardware/schematic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        原理图讲解
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="software/index.html">
+            
+                
+                    <a href="../software/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        软件
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="software/framework.html">
+            
+                
+                    <a href="../software/framework.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        软件框架
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="software/datafusion.html">
+            
+                
+                    <a href="../software/datafusion.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        数据融合
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="software/pid.html">
+            
+                
+                    <a href="../software/pid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        PID
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="software/debug.html">
+            
+                
+                    <a href="../software/debug.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        调试要点
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="datafusion/index.html">
+            
+                
+                    <a href="../datafusion/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        数据融合
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="datafusion/complementary.html">
+            
+                
+                    <a href="../datafusion/complementary.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        互补滤波
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="datafusion/kalman.html">
+            
+                
+                    <a href="../datafusion/kalman.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        卡尔曼滤波
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="datafusion/dmp.html">
+            
+                
+                    <a href="../datafusion/dmp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        MPU6050 DMP
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="reengineering/index.html">
+            
+                
+                    <a href="../reengineering/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        二次开发指南
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="reengineering/mdk.html">
+            
+                
+                    <a href="../reengineering/mdk.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        MDK环境搭建
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="reengineering/download.html">
+            
+                
+                    <a href="../reengineering/download.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        下载程序
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="reengineering/scope.html">
+            
+                
+                    <a href="../reengineering/scope.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        上位机-虚拟示波器
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >开源造车—喵呜ISO两轮自平衡小车</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="%E5%95%86%E7%94%A8%E5%B9%B3%E8%A1%A1%E8%BD%A6%E9%BC%BB%E7%A5%96segway">&#x5546;&#x7528;&#x5E73;&#x8861;&#x8F66;&#x9F3B;&#x7956;Segway</h1>
+<p>&#x63D0;&#x5230;&#x5E73;&#x8861;&#x8F66;&#xFF0C;&#x4F60;&#x4E0D;&#x80FD;&#x4E0D;&#x77E5;&#x9053;Segway!</p>
+<p>&#x5728;&#x7F8E;&#x56FD;&#xFF0C;Segway&#x4E0D;&#x4EC5;&#x4EC5;&#x662F;&#x4E00;&#x4E2A;&#x54C1;&#x724C;&#xFF0C;&#x800C;&#x4E14;&#x88AB;&#x5B9A;&#x4E49;&#x4E3A;&#x4E00;&#x79CD;&#x54C1;&#x7C7B;&#x3002;</p>
+<h1 id="dean%C2%B7kamen%E6%97%B6%E4%BB%A3">Dean&#xB7;Kamen&#x65F6;&#x4EE3;</h1>
+<p><img src="http://miaowlabs.com/img/DeanKamen.jpg" alt="Dean&#xB7;Kamen" title="Title"></p>
+<p>Dean&#xB7;Kamen&#xFF08;&#x72C4;&#x6069;&#xB7;&#x5361;&#x95E8;&#xFF09;&#xFF0C;&#x751F;&#x4E8E;1951&#x5E74;04&#x6708;05&#x65E5;&#xFF09;&#xFF0C;&#x4F01;&#x4E1A;&#x5BB6;&#x3001;&#x53D1;&#x660E;&#x5BB6;&#x3002;&#x4F46;&#x5176;&#x5927;&#x591A;&#x53D1;&#x660E;&#x4E0D;&#x4E3A;&#x4EBA;&#x6240;&#x719F;&#x77E5;&#xFF0C;&#x800C;Segway&#x5219;&#x662F;&#x4ED6;&#x7684;&#x77E5;&#x540D;&#x4F5C;&#x54C1;&#x3002;</p>
+<p>Dean&#xB7;Kamen&#x66FE;&#x8003;&#x5165;&#x4F0D;&#x65AF;&#x7279;&#x7406;&#x5DE5;&#x5B66;&#x9662;(Worcester Polytechnic Institute)&#xFF0C;&#x4E24;&#x5E74;&#x4E4B;&#x540E;&#x4E2D;&#x9014;&#x9000;&#x5B66;&#x3002;&#x76EE;&#x524D;&#x4ED6;&#x5DF2;&#x62E5;&#x6709;200&#x591A;&#x9879;&#x7F8E;&#x56FD;&#x4E0E;&#x56FD;&#x5916;&#x4E13;&#x5229;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x62EC;&#x521B;&#x65B0;&#x7684;&#x533B;&#x7597;&#x4EEA;&#x5668;&#xFF0C;&#x56E0;&#x4E3A;&#x4ED6;&#x60F3;&#x8981;&#x62D3;&#x5C55;&#x5168;&#x7403;&#x6027;&#x533B;&#x7597;&#x4FDD;&#x62A4;&#x7684;&#x9886;&#x57DF;&#xFF0C;&#x8BA9;&#x66F4;&#x65B9;&#x4FBF;&#x3001;&#x5B89;&#x5168;&#x7684;&#x533B;&#x7597;&#x751F;&#x6D3B;&#x53EF;&#x4EE5;&#x666E;&#x53CA;&#x5230;&#x4E00;&#x822C;&#x4EBA;&#x8EAB;&#x4E0A;&#x3002;&#x800C;&#x9664;&#x6B64;&#x4E4B;&#x5916;&#xFF0C;Dean&#xB7;Kamen&#x4E5F;&#x81F4;&#x529B;&#x4E8E;&#x5C06;&#x79D1;&#x6280;&#x5E94;&#x7528;&#x5728;&#x751F;&#x6D3B;&#x4E0A;&#xFF0C;&#x4ED6;&#x4E5F;&#x88AB;&#x8BC4;&#x4E3A;&#x5168;&#x7403;&#x201C;&#x5341;&#x5927;&#x8F8D;&#x5B66;&#x4EBF;&#x4E07;&#x5BCC;&#x7FC1;&#x201D;&#x4E4B;&#x4E00;&#x3002;</p>
+<p>&#x516C;&#x5F00;&#x8D44;&#x6599;&#x663E;&#x793A;&#xFF0C;&#x65E9;&#x5728;1999&#x5E74;&#xFF0C;Dean&#xB7;Kamen&#x4FBF;&#x5F00;&#x59CB;&#x8BBE;&#x8BA1;Segway&#xFF0C; &#x4E0E;&#x4ED6;&#x7684;DEKA&#x7814;&#x53D1;&#x56E2;&#x961F;(DEKA Research and Development Corp.)&#x5171;&#x540C;&#x5B8C;&#x6210;&#xFF0C;&#x5E76;&#x521B;&#x7ACB;&#x4E86;&#x516C;&#x53F8;Segway.LLC&#xFF08;&#x540E;&#x6539;&#x4E3A;Segway.INC&#xFF09;&#x3002;</p>
+<p>2002&#x5E74;3&#x6708;&#xFF0C;&#x7B2C;&#x4E00;&#x8F86;&#x5B9E;&#x9645;&#x91CF;&#x4EA7;&#x7684;&#x4EA7;&#x54C1;&#xFF0C;Segway HT i167&#x6B63;&#x5F0F;&#x51FA;&#x5382;&#x3002;</p>
+<p>&#x5F53;&#x65F6;&#xFF0C;Segway&#x88AB;&#x4EE5;&#x56FD;&#x793C;&#x7684;&#x5F62;&#x5F0F;&#x8D60;&#x9001;&#x7ED9;&#x5F53;&#x65F6;&#x7684;&#x7F8E;&#x56FD;&#x603B;&#x7EDF;&#x5C0F;&#x5E03;&#x4EC0;&#xFF0C;&#x8D70;&#x7684;&#x662F;&#x9AD8;&#x5C42;&#x8DEF;&#x7EBF;&#x3002;&#x800C;&#x6536;&#x83B7;&#x7684;&#xFF0C;&#x662F;&#x5305;&#x62EC;&#x8B66;&#x5BDF;&#x5C40;&#x5728;&#x5185;&#x7684;&#x516C;&#x5171;&#x670D;&#x52A1;&#x8BA2;&#x5355;&#x3002;4&#x6708;23&#x65E5;&#xFF0C;&#x7F8E;&#x56FD;&#x4F50;&#x6CBB;&#x4E9A;&#x5DDE;&#x7684;&#x4E9A;&#x7279;&#x5170;&#x5927;&#x5E02;&#x653F;&#x5E9C;&#x91C7;&#x8D2D;&#x4E86;&#x4E00;&#x6279;Segway&#x3002;</p>
+<p><img src="http://miaowlabs.com/img/segway-1.jpg" alt="Segway" title="Title"></p>
+<p>&#x4ECE;&#x6B64;&#xFF0C;Segway&#x4FBF;&#x5F00;&#x59CB;&#x653B;&#x5165;&#x4E8E;&#x653F;&#x5E9C;&#x4E0E;&#x519B;&#x65B9;&#x5E02;&#x573A;&#x3002;</p>
+<p>2006&#x5E74;Segway&#x6B63;&#x5F0F;&#x8FDB;&#x5165;&#x4E2D;&#x56FD;&#x5E02;&#x573A;&#x3002;</p>
+<p>&#x501F;&#x52A9;2008&#x5E74;&#x5317;&#x4EAC;&#x4E3E;&#x529E;&#x5965;&#x8FD0;&#x4F1A;&#x5951;&#x673A;&#xFF0C;Segway&#x4EE5;&#x9AD8;&#x79D1;&#x6280;&#x54C1;&#x8D28;&#x5F62;&#x8C61;&#x6B63;&#x5F0F;&#x8FDB;&#x5165;&#x4E2D;&#x56FD;&#x6D88;&#x8D39;&#x8005;&#x7684;&#x89C6;&#x91CE;&#xFF0C;&#x6210;&#x4E3A;&#x5B89;&#x4FDD;&#x4EBA;&#x5458;&#x7684;&#x9AD8;&#x79D1;&#x6280;&#x667A;&#x80FD;&#x73AF;&#x4FDD;&#x4EE3;&#x6B65;&#x8F66;&#x3002;</p>
+<p><img src="http://miaowlabs.com/img/segway-2.jpg" alt="Segway" title="Title"></p>
+<p>2008&#x5E74;11&#x6708;&#xFF0C;Segway&#x7684;&#x9996;&#x5E2D;&#x6280;&#x672F;&#x5B98;Doug Field&#xFF08;&#x9053;&#x683C;&#xB7;&#x83F2;&#x5C14;&#x5FB7;&#xFF09;&#x88AB;Steve Jobs&#xFF08;&#x53F2;&#x8482;&#x592B;&#xB7;&#x4E54;&#x5E03;&#x65AF;&#xFF09;&#x6316;&#x53BB;&#x51FA;&#x4EFB;&#x82F9;&#x679C;&#x5DE5;&#x4E1A;&#x8BBE;&#x8BA1;&#x90E8;&#x95E8;&#x526F;&#x603B;&#x88C1;&#x3002;</p>
+<h1 id="jimi%C2%B7heselden%E6%97%B6%E4%BB%A3">Jimi&#xB7;Heselden&#x65F6;&#x4EE3;</h1>
+<p>2009&#x5E74;12&#x6708;24&#x65E5;&#xFF0C;Segway&#x516C;&#x53F8;&#x88AB;&#x4E00;&#x4F4D;&#x82F1;&#x56FD;&#x4F01;&#x4E1A;&#x5BB6;Jimi&#xB7;Heselden&#x7684;&#x516C;&#x53F8;Hesco Bastion&#x6536;&#x8D2D;&#x3002;&#x4E0D;&#x8FC7;&#x4E0D;&#x5E78;&#x7684;&#x662F;&#xFF0C;Jimi&#xB7;Heselden&#x4E8E;2010&#x5E74;9&#x6708;27&#x65E5;&#x9A91;&#x7740;&#x4ED6;&#x7684;Segway X2 Scooter&#x6237;&#x5916;&#x7248;&#x5E73;&#x8861;&#x8F66;&#x5760;&#x60AC;&#x5D16;&#x8EAB;&#x4EA1;&#xFF0C;&#x4EAB;&#x5E74;62&#x5C81;&#x3002;</p>
+<p>&#x76F4;&#x5230;2013&#x5E74;2&#x6708;28&#x65E5;&#x88AB;SSI&#xFF08;Summit Strategic Investments&#xFF09;&#x6536;&#x8D2D;&#xFF0C;Segway&#x5E76;&#x672A;&#x63A8;&#x51FA;&#x4EC0;&#x4E48;&#x65B0;&#x4EA7;&#x54C1;&#xFF0C;&#x53EA;&#x662F;&#x9664;&#x4E86;&#x66F4;&#x591A;&#x7684;&#x8FD0;&#x7528;&#x4E8E;&#x8B66;&#x65B9;&#xFF0C;Segway&#x8FD8;&#x5F00;&#x59CB;&#x5927;&#x91CF;&#x5728;&#x65C5;&#x6E38;&#x4E1A;&#x505A;&#x63A8;&#x5E7F;&#xFF0C;&#x6210;&#x4E3A;&#x65C5;&#x6E38;&#x533A;&#x7684;&#x4EE3;&#x6B65;&#x5DE5;&#x5177;&#x3002;</p>
+<p>&#x5728;&#x7F8E;&#x56FD;&#xFF0C;Segway&#x4E0D;&#x4EC5;&#x4EC5;&#x662F;&#x4E00;&#x4E2A;&#x54C1;&#x724C;&#xFF0C;&#x800C;&#x4E14;&#x88AB;&#x5B9A;&#x4E49;&#x4E3A;&#x4E00;&#x79CD;&#x54C1;&#x7C7B;&#x3002;&#x6240;&#x4EE5;&#x5728;&#x4E2D;&#x56FD;&#x9700;&#x8981;&#x53D6;&#x4E00;&#x4E2A;&#x4E2D;&#x6587;&#x8BD1;&#x540D;&#xFF0C;&#x7531;&#x4E8E;&#x4EBA;&#x4EEC;&#x5BF9;&#x5176;&#x54C1;&#x7C7B;&#x5B9A;&#x4F4D;&#x6A21;&#x7CCA;&#xFF0C;&#x7ED3;&#x679C;&#x4E94;&#x82B1;&#x516B;&#x95E8;&#x7684;&#x540D;&#x5B57;&#x90FD;&#x51FA;&#x6765;&#x4E86;&#x2014;&#x2014;&#x8131;&#x80CE;&#x4E8E;&#x97F3;&#x8BD1;&#x7684;&#x201C;&#x6444;&#x4F4D;&#x8F66;&#x201D;&#x3001;&#x201C;&#x601D;&#x7EF4;&#x8F66;&#x201D;&#x3001;&#x201C;&#x8D5B;&#x683C;&#x5A01;&#x201D;&#xFF0C;&#x6839;&#x636E;&#x7814;&#x53D1;&#x6280;&#x672F;&#x7684;&#x201C;&#x667A;&#x80FD;&#x8F7D;&#x5177;&#x201D;&#x3001;&#x201C;&#x4EE3;&#x6B65;&#x673A;&#x5668;&#x4EBA;&#x201D;&#xFF0C;&#x6839;&#x636E;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x7684;&#x201C;&#x4F53;&#x611F;&#x8F66;&#x201D;&#xFF0C;&#x6839;&#x636E;&#x54C1;&#x724C;&#x7684;&#x6BD4;&#x5982;&#x201C;&#x6613;&#x6B65;&#x8F66;&#x201D;&#x7B49;&#x7B49;&#xFF0C;&#x4E0D;&#x4E00;&#x800C;&#x8DB3;&#x3002;</p>
+<p>&#x4E0D;&#x8FC7;&#x6700;&#x7EC8;&#xFF0C;&#x5728;2013&#x5E74;&#x7EC8;&#x4E8E;&#x786E;&#x5B9A;&#x4E86;&#x201C;&#x5E73;&#x8861;&#x8F66;&#x201D;&#x8FD9;&#x4E2A;&#x540D;&#x5B57;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x4E0A;&#x9700;&#x8981;&#x611F;&#x8C22;&#x8584;&#x7763;&#x548C;&#x6D4E;&#x5357;&#x4E2D;&#x9662;&#xFF0C;&#x7531;&#x4E8E;&#x8584;&#x6848;&#x7684;&#x5BA1;&#x7406;&#x6D89;&#x53CA;&#x5230;&#x4E00;&#x53F0;Segway X2&#x8D8A;&#x91CE;&#x7248;&#x7535;&#x52A8;&#x5E73;&#x8861;&#x8F66;&#x3002;&#x4ED6;&#x6E05;&#x695A;&#x660E;&#x767D;&#x5730;&#x8BFB;&#x51FA;&#x201C;&#x7535;&#x52A8;&#x5E73;&#x8861;&#x8F66;&#x201D;&#x4E94;&#x4E2A;&#x5B57;&#xFF0C;&#x662F;&#x5BF9;&#x8FD9;&#x4E2A;&#x884C;&#x4E1A;&#x6700;&#x5927;&#x7684;&#x8D21;&#x732E;&#x2014;&#x2014;&#x7EC8;&#x4E8E;&#x5728;2013&#x5E74;&#x4ECE;&#x5927;&#x4F17;&#x5C42;&#x9762;&#x7EDF;&#x4E00;&#x4E86;&#x8FD9;&#x4E2A;&#x54C1;&#x7C7B;&#x7684;&#x5B66;&#x540D;&#x3002;</p>
+<p>&#x800C;&#x5728;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;Dean&#xB7;Kamen&#x4F9D;&#x7136;&#x662F;Segway&#x7684;&#x6295;&#x8D44;&#x8005;&#xFF0C;&#x4E0D;&#x8FC7;&#x4ED6;&#x5DF2;&#x7ECF;&#x4E0D;&#x600E;&#x4E48;&#x7BA1;&#x7406;Segway&#x4E86;&#xFF0C;&#x542C;&#x8BF4;&#x4ED6;&#x5728;&#x53D1;&#x660E;&#x4E00;&#x79CD;&#x65B0;&#x7684;&#x5047;&#x80A2;&#xFF0C;&#x8FD9;&#x4E2A;&#x5168;&#x65B0;&#x7684;&#x4EA7;&#x54C1;&#x4E3B;&#x8981;&#x7528;&#x6237;&#x7FA4;&#x662F;&#x5728;&#x6218;&#x4E89;&#x4E2D;&#x5931;&#x53BB;&#x624B;&#x81C2;&#x7684;&#x519B;&#x4EBA;&#x3002;&#x679C;&#x7136;&#xFF0C;&#x8FD8;&#x662F;&#x53D1;&#x660E;&#x5BB6;&#x66F4;&#x9002;&#x5408;&#x4ED6;&#x3002;</p>
+<h1 id="ssi%E6%97%B6%E4%BB%A3">SSI&#x65F6;&#x4EE3;</h1>
+<p>2013&#x5E74;&#xFF0C;Segway&#x88AB;SSI&#xFF08;Summit Strategic Investments&#xFF09;&#x6536;&#x8D2D;&#xFF0C;&#x5E76;&#x5BA3;&#x79F0;&#x4ECA;&#x540E;&#x51E0;&#x5E74;&#x5C06;&#x6539;&#x53D8;&#x53D1;&#x5C55;&#x65B9;&#x5411;&#xFF0C;&#x4F46;&#x8FD9;&#x4E00;&#x9879;&#x76EE;&#x5374;&#x4E00;&#x76F4;&#x88AB;&#x6401;&#x7F6E;&#x3002;</p>
+<h1 id="ninebot%E6%97%B6%E4%BB%A3">Ninebot&#x65F6;&#x4EE3;</h1>
+<p><img src="http://miaowlabs.com/img/segway-3.jpg" alt="Segway" title="Title"></p>
+<p>2015&#x5E74;4&#x6708;15&#x65E5;&#x4E0B;&#x5348;&#xFF0C;&#x5728;&#x5317;&#x4EAC;JW&#x4E07;&#x8C6A;&#x9152;&#x5E97;&#xFF0C;&#x4E2D;&#x56FD;&#x521B;&#x65B0;&#x77ED;&#x9014;&#x4EA4;&#x901A;&#x9886;&#x5BFC;&#x4F01;&#x4E1A;Ninebot&#x6B63;&#x5F0F;&#x5BA3;&#x5E03;&#x5DF2;&#x5B8C;&#x6210;&#x5BF9;Segway&#x7684;&#x5168;&#x8D44;&#x6536;&#x8D2D;&#xFF0C;Segway&#x6210;&#x4E3A;Ninebot&#x7684;&#x5168;&#x8D44;&#x5B50;&#x516C;&#x53F8;&#x3002;&#x6536;&#x8D2D;&#x540E;&#xFF0C;Ninebot&#x5C06;&#x83B7;&#x5F97;Segway&#x65D7;&#x4E0B;&#x4E09;&#x5927;&#x4EA7;&#x54C1;&#x7CFB;&#x5217;&#x8FD1;&#x5341;&#x6B3E;&#x4EA7;&#x54C1;&#x7684;&#x6240;&#x6709;&#x6743;&#xFF0C;&#x884C;&#x4E1A;400&#x591A;&#x9879;&#x6838;&#x5FC3;&#x4E13;&#x5229;&#xFF0C;&#x4EE5;&#x53CA;&#x4EBA;&#x624D;&#x3001;&#x751F;&#x4EA7;&#x7EBF;&#xFF0C;&#x5168;&#x7403;&#x7ECF;&#x9500;&#x5546;&#x7F51;&#x7EDC;&#x548C;&#x4F9B;&#x5E94;&#x5546;&#x4F53;&#x7CFB;&#x3002;</p>
+<p>&#x53D1;&#x5E03;&#x4F1A;&#x73B0;&#x573A;&#xFF0C;&#x5C0F;&#x7C73;&#x79D1;&#x6280;&#x3001;&#x7EA2;&#x6749;&#x8D44;&#x672C;&#x3001;&#x987A;&#x4E3A;&#x57FA;&#x91D1;&#x548C;&#x534E;&#x5C71;&#x8D44;&#x672C;&#x4E5F;&#x8054;&#x5408;&#x5BF9;Ninebot&#x8FDB;&#x884C;&#x4E86;A&#x8F6E;&#x6295;&#x8D44;&#xFF0C;&#x91D1;&#x989D;&#x8FBE;8000&#x4E07;&#x7F8E;&#x5143;&#x3002;</p>
+<p>10&#x5E74;&#x524D;&#x8BA9;&#x5C0F;&#x7C73;&#x8463;&#x4E8B;&#x957F;&#x96F7;&#x519B;&#x73A9;&#x5230;&#x7231;&#x4E0D;&#x91CA;&#x624B;&#x7684;&#x5E73;&#x8861;&#x8F66;Segway&#xFF0C;&#x5728;4&#x6708;15&#x65E5;&#x8FD9;&#x5929;&#x88AB;&#x5C0F;&#x7C73;&#x751F;&#x6001;&#x94FE;&#x6210;&#x5458;Ninebot&#xFF08;&#x7EB3;&#x6069;&#x535A;&#xFF09;&#x6B63;&#x5F0F;&#x201C;&#x6536;&#x5165;&#x56CA;&#x4E2D;&#x201D;&#x3002;</p>
+<p>&#x503C;&#x5F97;&#x4E00;&#x63D0;&#x7684;&#x662F;&#xFF0C;Ninebot&#x6210;&#x7ACB;&#x53EA;&#x6709;3&#x5E74;&#xFF0C;&#x800C;Segway&#x6709;15&#x5E74;&#x5386;&#x53F2;&#x3002;</p>
+<p>Segway&#x662F;&#x5168;&#x7403;&#x6700;&#x5927;&#x6700;&#x8001;&#x7684;&#x5E73;&#x8861;&#x8F66;&#x516C;&#x53F8;&#xFF0C;&#x662F;&#x5E73;&#x8861;&#x8F66;&#x884C;&#x4E1A;&#x7684;&#x5F00;&#x521B;&#x8005;&#x3002;</p>
+<p>Ninebot&#x662F;&#x56FD;&#x5185;&#x9886;&#x5148;&#x7684;&#x96C6;&#x7814;&#x53D1;&#x3001;&#x8BBE;&#x8BA1;&#x3001;&#x751F;&#x4EA7;&#x3001;&#x9500;&#x552E;&#x4E0E;&#x670D;&#x52A1;&#x4E8E;&#x4E00;&#x4F53;&#x7684;&#x667A;&#x80FD;&#x77ED;&#x9014;&#x4EA7;&#x54C1;&#x8FD0;&#x8425;&#x5546;&#xFF0C;Ninebot&#x65D7;&#x4E0B;&#x6709;WindRunner&#xFF08;&#x98CE;&#x884C;&#x8005;&#xFF09;&#x7CFB;&#x5217;&#x3001;Ninebot&#x4E5D;&#x53F7;&#x7CFB;&#x5217;&#x3001;Ninebot One&#x7CFB;&#x5217;&#x4EA7;&#x54C1;&#x3002;&#x6536;&#x8D2D;&#x540E;&#xFF0C;Ninebot&#x4E0D;&#x4EC5;&#x83B7;&#x5F97;Segway&#x65D7;&#x4E0B;&#x4E09;&#x5927;&#x4EA7;&#x54C1;&#x7CFB;&#x5217;&#x8FD1;&#x5341;&#x6B3E;&#x4EA7;&#x54C1;&#x7684;&#x6240;&#x6709;&#x6743;&#xFF0C;&#x884C;&#x4E1A;400&#x591A;&#x9879;&#x6838;&#x5FC3;&#x4E13;&#x5229;&#xFF0C;&#x4EE5;&#x53CA;&#x4EBA;&#x624D;&#x3001;&#x751F;&#x4EA7;&#x7EBF;&#xFF0C;&#x5168;&#x7403;&#x7ECF;&#x9500;&#x5546;&#x7F51;&#x7EDC;&#x548C;&#x4F9B;&#x5E94;&#x5546;&#x4F53;&#x7CFB;&#x3002;</p>
+<h1 id="%E7%BE%A4%E9%9B%84%E5%89%B2%E6%8D%AE">&#x7FA4;&#x96C4;&#x5272;&#x636E;</h1>
+<p>Segway&#x88AB;&#x5C0F;&#x7C73;&#x751F;&#x6001;&#x94FE;&#x6210;&#x5458;Ninebot&#x6536;&#x8D2D;&#x3002;&#x4F7F;&#x5F97;&#x5E73;&#x8861;&#x8F66;&#x5E02;&#x573A;&#x5C40;&#x9762;&#x518D;&#x4E00;&#x6B21;&#x88AB;&#x6253;&#x7834;&#xFF0C;&#x8FDB;&#x5165;&#x7FA4;&#x96C4;&#x5272;&#x636E;&#x65F6;&#x4EE3;&#x3002;</p>
+<p>&#x5E73;&#x8861;&#x8F66;&#x5728;&#x4E2D;&#x56FD;&#x6D88;&#x8D39;&#x8005;&#x5FC3;&#x4E2D;&#x6709;&#x4E24;&#x4E2A;&#x5927;&#x54C1;&#x724C;&#xFF0C;&#x5357;&#x6613;&#x6B65;&#x5317;&#x98CE;&#x884C;&#x8005;&#x3002;&#x6613;&#x6B65;&#x7684;&#x603B;&#x90E8;&#x5728;&#x4E1C;&#x839E;&#xFF0C;&#x98CE;&#x884C;&#x8005;&#x7684;&#x603B;&#x90E8;&#x5728;&#x5317;&#x4EAC;&#x3002;&#x5176;&#x4ED6;&#x7684;&#x54C1;&#x724C;&#x6216;&#x8005;&#x8FD8;&#x6CA1;&#x6709;&#x5982;&#x8FD9;&#x4E24;&#x8005;&#x5927;&#x7684;&#x9500;&#x91CF;&#x548C;&#x5F71;&#x54CD;&#x529B;&#xFF0C;&#x6216;&#x8005;&#x672F;&#x4E1A;&#x6709;&#x4E13;&#x653B;&#xFF08;&#x6BD4;&#x5982;&#x65B0;&#x4E16;&#x7EAA;&#x54C1;&#x724C;&#x53EA;&#x9762;&#x5411;&#x516C;&#x5B89;&#x7CFB;&#x7EDF;&#x9500;&#x552E;&#xFF09;&#x3002;&#x4E0E;&#x6B64;&#x540C;&#x65F6;&#xFF0C;&#x8FD8;&#x6709;&#x5927;&#x91CF;&#x521A;&#x521A;&#x8D77;&#x6B65;&#x521B;&#x4E1A;&#x7684;&#x5E73;&#x8861;&#x8F66;&#x4F01;&#x4E1A;&#x3002;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../self-balanced/history.html" class="navigation navigation-prev " aria-label="Previous page: 历史回顾"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../self-balanced/bigvssmall.html" class="navigation navigation-next " aria-label="Next page: 载人大车vs开源小车"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

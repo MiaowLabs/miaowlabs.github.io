@@ -1,0 +1,702 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>互补滤波 | 开源造车—喵呜ISO两轮自平衡小车</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="../datafusion/kalman.html" />
+    
+    
+    <link rel="prev" href="../datafusion/index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="6.1" data-basepath=".." data-revision="Sun Aug 16 2015 20:25:01 GMT+0800 (中国标准时间)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        前言
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="about/index.html">
+            
+                
+                    <a href="../about/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        喵呜ISO两轮自平衡小车
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="about/demo-guide.html">
+            
+                
+                    <a href="../about/demo-guide.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        套件试玩指南
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="about/service-guide.html">
+            
+                
+                    <a href="../about/service-guide.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        硬件自检指南
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="self-balanced/index.html">
+            
+                
+                    <a href="../self-balanced/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        电动平衡车
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="self-balanced/history.html">
+            
+                
+                    <a href="../self-balanced/history.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        历史回顾
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="self-balanced/segway.html">
+            
+                
+                    <a href="../self-balanced/segway.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Segway
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="self-balanced/bigvssmall.html">
+            
+                
+                    <a href="../self-balanced/bigvssmall.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        载人大车vs开源小车
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="self-balanced/composition.html">
+            
+                
+                    <a href="../self-balanced/composition.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        两轮自平衡小车基本组成
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="machinery/index.html">
+            
+                
+                    <a href="../machinery/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        机械
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="machinery/structure.html">
+            
+                
+                    <a href="../machinery/structure.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        结构
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="hardware/index.html">
+            
+                
+                    <a href="../hardware/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        硬件
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="hardware/motor.html">
+            
+                
+                    <a href="../hardware/motor.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        电机选型
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="hardware/battery.html">
+            
+                
+                    <a href="../hardware/battery.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        电池选型
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="hardware/wheel.html">
+            
+                
+                    <a href="../hardware/wheel.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        轮子选型
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="hardware/components.html">
+            
+                
+                    <a href="../hardware/components.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        元器件选型
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="hardware/schematic.html">
+            
+                
+                    <a href="../hardware/schematic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        原理图讲解
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="software/index.html">
+            
+                
+                    <a href="../software/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        软件
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="software/framework.html">
+            
+                
+                    <a href="../software/framework.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        软件框架
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="software/datafusion.html">
+            
+                
+                    <a href="../software/datafusion.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        数据融合
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="software/pid.html">
+            
+                
+                    <a href="../software/pid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        PID
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="software/debug.html">
+            
+                
+                    <a href="../software/debug.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        调试要点
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="datafusion/index.html">
+            
+                
+                    <a href="../datafusion/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        数据融合
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="6.1" data-path="datafusion/complementary.html">
+            
+                
+                    <a href="../datafusion/complementary.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        互补滤波
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="datafusion/kalman.html">
+            
+                
+                    <a href="../datafusion/kalman.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        卡尔曼滤波
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="datafusion/dmp.html">
+            
+                
+                    <a href="../datafusion/dmp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        MPU6050 DMP
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="reengineering/index.html">
+            
+                
+                    <a href="../reengineering/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        二次开发指南
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="reengineering/mdk.html">
+            
+                
+                    <a href="../reengineering/mdk.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        MDK环境搭建
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="reengineering/download.html">
+            
+                
+                    <a href="../reengineering/download.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        下载程序
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="reengineering/scope.html">
+            
+                
+                    <a href="../reengineering/scope.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        上位机-虚拟示波器
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >开源造车—喵呜ISO两轮自平衡小车</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="%E4%BA%92%E8%A1%A5%E6%BB%A4%E6%B3%A2">&#x4E92;&#x8865;&#x6EE4;&#x6CE2;</h1>
+<p>&#x6D41;&#x4F20;&#x5F97;&#x6700;&#x5E7F;&#x6CDB;&#x7684;&#x662F;MIT&#xFF08;&#x9EBB;&#x7701;&#x7406;&#x5DE5;&#xFF09;&#x5B66;&#x751F;Shane Colton&#x7684;&#x4E8E;2007&#x5E74;&#x53D1;&#x8868;&#x7684;&#x4E00;&#x7BC7;&#x8BBA;&#x6587;&#x300A;The Balance Filter&#x300B;&#x3002;Shane Colton&#x5728;&#x5176;&#x8BBA;&#x6587;&#x4E2D;&#x63D0;&#x5230;&#xFF0C;&#x5BF9;&#x4E8E;&#x96C6;&#x6210;&#x9640;&#x87BA;&#x4EEA;&#x4E0E;&#x52A0;&#x901F;&#x5EA6;&#x4F20;&#x611F;&#x5668;&#x7684;&#x5E73;&#x8861;&#x88C5;&#x7F6E;&#xFF0C;&#x4E92;&#x8865;&#x6EE4;&#x6CE2;&#x662F;&#x4E00;&#x79CD;&#x7B80;&#x5355;&#x6709;&#x6548;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;</p>
+<p>&#x300A;The Balance Filter&#x300B;&#x91CC;&#x9762;&#x63D0;&#x5230;&#x7684;&#x5C31;&#x662F;&#x4E00;&#x9636;&#x4E92;&#x8865;&#x6EE4;&#x6CE2;&#x3002;</p>
+<p>&#x4E00;&#x9636;&#x4E92;&#x8865;&#x6EE4;&#x6CE2;&#x6838;&#x5FC3;&#x4EE3;&#x7801;&#x975E;&#x5E38;&#x7B80;&#x6D01;&#xFF1A;</p>
+<p><code>angle = (0.98)*(angle + gyro * dt) + (0.02)*(x_acc);</code></p>
+<p>&#x5176;&#x4E2D;&#xFF0C;angle&#x4E3A;&#x5F97;&#x5230;&#x7684;&#x5B9E;&#x9645;&#x89D2;&#x5EA6;&#xFF0C;gyro&#x4E3A;&#x9640;&#x87BA;&#x4EEA;&#x503C;&#xFF0C;x_acc&#x4E3A;&#x52A0;&#x901F;&#x5EA6;&#x503C;&#xFF0C;dt&#x4E3A;&#x8BA1;&#x7B97;&#x5468;&#x671F;&#xFF1B;</p>
+<p>&#x540E;&#x6765;&#x7ECF;&#x8FC7;&#x4F17;&#x4EBA;&#x7684;&#x4E0D;&#x65AD;&#x6539;&#x5584;&#xFF0C;&#x53C8;&#x53D1;&#x5C55;&#x51FA;&#x4E86;&#x6ED1;&#x52A8;&#x53C2;&#x6570;&#x4E92;&#x8865;&#x6EE4;&#x6CE2;&#x548C;&#x4E8C;&#x9636;&#x4E92;&#x8865;&#x6EE4;&#x6CE2;&#x7B49;&#x7B49;&#x3002;</p>
+<p>&#x9644;&#x4E0A;&#x4E8C;&#x9636;&#x6EE4;&#x6CE2;&#x4EE3;&#x7801;&#x4F9B;&#x5927;&#x5BB6;&#x53C2;&#x8003;&#xFF1A;</p>
+<h3 id="%E4%BA%8C%E9%98%B6%E4%BA%92%E8%A1%A5%E6%BB%A4%E6%B3%A2">&#x4E8C;&#x9636;&#x4E92;&#x8865;&#x6EE4;&#x6CE2;</h3>
+<pre><code>// newAngle = angle measured with atan2 using the accelerometer
+// newRate = angle measured using the gyro
+// looptime = loop time in millis()
+float Complementary2(float newAngle, float newRate, intlooptime)
+{
+float k = 10;
+float dtc2 = float(looptime) / 1000.0;
+x1 = (newAngle -   x_angle2C) * k * k;
+    y1 = dtc2 * x1 + y1;
+x2 = y1 + (newAngle -   x_angle2C) * 2 * k + newRate;
+    x_angle2C = dtc2 * x2 + x_angle2C;
+return x_angle2C;
+}
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../datafusion/index.html" class="navigation navigation-prev " aria-label="Previous page: 数据融合"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../datafusion/kalman.html" class="navigation navigation-next " aria-label="Next page: 卡尔曼滤波"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
