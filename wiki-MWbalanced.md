@@ -8,7 +8,7 @@ title: MWbalanced Wiki
 </div>
 
 <p>MWbalanced是喵呜实验室的两轮自平衡小车的代号。代号MWbalanced的命名遵循“MW+xxx”的方式，MW为大写，是Miaow的缩写，balanced为小写，意为“平衡的”。</p>
-* [入手试玩教程]()
+* [入手试玩教程](/manual.html)
 * [组装维修教程]()
 
 <h2 id="rd">开发指南</h2>
@@ -37,16 +37,13 @@ title: MWbalanced Wiki
 
 <h2 id="quadcopter-dev">两轮自平衡小车算法讲解</h2>
 <p>姿态解算是指把陀螺仪、加速度计等数据融合在一起，得到平衡小车的姿态数据，也叫做姿态融合。姿态解算的过程，涉及到传感器数据读取与滤波，四元数与旋转，姿态解算框架，长期融合/快速融合。</p>
-* [姿态解算简介](wiki/attitude-algorithm.html)
-* [姿态的数学表示方法](wiki/attitude-math.html)
-* [姿态的测量](wiki/attitude-measure.html)
-* [姿态解算流程](wiki/attitude-algorithm-flow-graph.html)
-* [软件姿态解算](wiki/software-algorithm.html)
-* [硬件姿态解算](wiki/hardware-algorithm.html)
-* [四元数](wiki/quaternions.html)
-* [三轴陀螺仪和三轴加速度计MPU6050](wiki/mpu6050.html)
-* [气压计MS5611](wiki/ms5611.html)
-* [平衡车PID控制算法](wiki/algorithm-pid.html)
+* [姿态解算简介]()
+* [姿态的数学表示方法]()
+* [姿态的测量]()
+* [软件姿态解算]()
+* [硬件姿态解算]()
+* [三轴陀螺仪和三轴加速度计MPU6050]()
+* [平衡车PID控制算法]()
 
 <h2 id="crazyflie">Small RTOS51</h2>
 <p>为了满足各个层次小伙伴的需求和体现出我们的努力，后续会试着移植Small RTOS51实时操作系统内核。Small RTOS51是陈明计先生编写的一个实时操作系统，并著有《嵌入式实时操作系统Small RTOS51原理及应用》。SmallRTOS51适合在小RAM/小FLASH单片机上运行。</p>
@@ -56,4 +53,4 @@ title: MWbalanced Wiki
 * [通信协议]()
 
 <h2 id="other">其他</h2>
-* [MWbalanced的机械结构](wiki/crazepony-construct.html)
+* [MWbalanced的机械结构](wiki/mwbalanced-construct.html)
