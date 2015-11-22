@@ -14,10 +14,10 @@ title: MWbalanced Wiki
 <h2 id="rd">开发指南</h2>
 * [windows下开发环境搭建—裸机版本](wiki/setup-environment-in-windows-none.html)
 * [windows下开发环境搭建—Small RTOS51版本]()
-* [STC-ISP使用及常见问题]()
+* [STC-ISP使用及常见问题](wiki/stc-isp-use-guide.html)
 * [通过USB烧写固件]()
 * [MWbalanced安卓客户端]()
-* [MWbalanced上位机使用]()
+* [虚拟示波器的使用]()
 
 <h2>MWbalanced原理讲解</h2>
 * [MWbalanced元器件选型总览](wiki/devices-selection.html)
