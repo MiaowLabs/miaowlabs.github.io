@@ -21,6 +21,7 @@ title: MWbalanced Wiki
 
 <h2>MWbalanced原理讲解</h2>
 * [MWbalanced元器件选型总览](wiki/devices-selection.html)
+* [MWbalanced电机选型](wiki/motor-select.html)
 * [MWbalanced零部件购买指南](wiki/devices-buy.html)
 * [MWbalanced硬件原理讲解](wiki//hardware-basic.html)
 * [MWbalanced软件框架讲解](wiki/)

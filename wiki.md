@@ -23,5 +23,5 @@ title: Miaow Wiki
 * [陀螺仪](wiki/gyroscope.html)
 * [为何要用加速度计和陀螺仪两个传感器？](wiki/why-accel-gyro.html)
 * [两轮自平衡小车需要多少个维度数据？](wiki/how-many-dimensions.html)
-* [电机的基础知识](wiki/motor.html)
+* [电机的基础知识](wiki/motor-base.html)
 
