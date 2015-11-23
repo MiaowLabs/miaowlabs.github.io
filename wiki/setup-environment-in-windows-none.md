@@ -5,7 +5,7 @@ title: Windows下开发环境搭建-裸机版本
 
 # {{ page.title }}
 
-> 作者：nieyong
+> 作者：Songyimiao
 
 IDE开发工具Keil C51 V9.00下载地址：喵呜实验室百度云网盘[Keil-C51-Version-9.00.zip](http://pan.baidu.com/s/1kTKN5AZ)（5.2及以后版本）。
 
