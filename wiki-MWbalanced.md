@@ -11,18 +11,22 @@ title: MWbalanced Wiki
 * [入手试玩教程](/manual.html)
 * [组装维修教程]()
 
+* [MWbalanced零部件购买指南](wiki/devices-buy.html)
+
+<h2>MWbalanced选型指南</h2>
+* [MWbalanced元器件选型总览](wiki/devices-selection.html)
+* [MWbalanced电机选型](wiki/motor-select.html)
+* [MWbalanced电池选型](wiki/power-select.html)
+
 <h2 id="rd">开发指南</h2>
 * [windows下开发环境搭建—裸机版本](wiki/setup-environment-in-windows-none.html)
 * [windows下开发环境搭建—Small RTOS51版本]()
 * [STC-ISP使用及常见问题](wiki/stc-isp-use-guide.html)
 * [通过USB烧写固件](wiki/usb-download-firmware.html)
 * [MWbalanced安卓客户端]()
-* [虚拟示波器的使用]()
+* [虚拟示波器Serial Digital Scope](wiki/serial-digital-scope.html)
 
 <h2>MWbalanced原理讲解</h2>
-* [MWbalanced元器件选型总览](wiki/devices-selection.html)
-* [MWbalanced电机选型](wiki/motor-select.html)
-* [MWbalanced零部件购买指南](wiki/devices-buy.html)
 * [MWbalanced硬件原理讲解](wiki//hardware-basic.html)
 * [MWbalanced软件框架讲解](wiki/)
 * [MWbalanced软件开发经验总结](wiki/)
