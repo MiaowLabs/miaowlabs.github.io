@@ -9,7 +9,7 @@ title: MWbalanced电机选型
 
 MWbalanced-2.0使用的电机是针对两轮自平衡小车专门定制的电机。![淘宝链接](https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-2285046357.4.LqBktW&id=524029857706)。
 
-如需了解更多基础知识，请到[电机的基础知识](wiki/motor-base.html)查看。
+如需了解更多基础知识，请到[电机的基础知识](/motor-base.html)查看。
 
 以下内容为MWbalanced-1.0两轮自平衡小车的电机选型依据：
 
@@ -29,16 +29,17 @@ MWbalanced-2.0使用的电机是针对两轮自平衡小车专门定制的电机
 
 市面常见的三款编码器直流减速电机：
 
-![GA25](/img/wiki/motor-ga25.png)
+![](/img/wiki/motor-ga25.png)
 
 GA25减速电机（带334光电编码器，含保护罩）
 
-![3](/img/wiki/motor-GB37-2.jpg)
+![](/img/wiki/motor-GB37-2.jpg)
 
 GB37减速电机（带448光电编码器，不含保护罩）
 
-![1](/img/wiki/motor-GB37-3.png) 
-![2](/img/wiki/motor-GB37-1.png) 
+![](/img/wiki/motor-GB37-3.png) 
+
+![](/img/wiki/motor-GB37-1.png) 
 
 GB37减速电机（16CPR霍尔效应编码器，不受粉尘等影响）
 
