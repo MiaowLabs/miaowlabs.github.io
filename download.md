@@ -24,7 +24,7 @@ title: 下载中心
 
 <p>
 <a href="http://pan.baidu.com/s/1kTKN5AZ" class="btn btn-primary btn-xl" role="button" target="_blank" >Keil C51安装文件</a>
-<a href="" class="btn btn-primary btn-xl" role="button" target="_blank" >STC-ISP-15xx-v6.82H固件烧写工具</a>
+<a href="http://pan.baidu.com/s/1bnBg2qN" class="btn btn-primary btn-xl" role="button" target="_blank" >STC-ISP-15xx-v6.82H固件烧写工具</a>
 </p>
 
 ## 上位机和Android客户端
