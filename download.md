@@ -3,9 +3,9 @@ layout: download
 title: 下载中心
 ---
 
-## 两轮自平衡小车源代码/遥控器源代码
+## MWbalanced两轮自平衡小车源代码/遥控器源代码
 
-开源项目代码都托管在代码库Github，包括控制代码，遥控代码，Android APP源码等。
+开源项目的代码都托管在代码库Github，包括控制代码，遥控代码，Android APP源码等。
 
 现在使用的控制代码命名方式为“MWbalanced-firmware-none”，名字中的none表示**没有**使用实时操作系统RTOS，是裸机代码，代码更加简单明了，适合初学者使用。
 
@@ -13,9 +13,10 @@ title: 下载中心
 <a href="" class="btn btn-primary btn-xl" role="button" target="_blank" >遥控源码</a>
 <a href="http://pan.baidu.com/s/1c0dUrb6" class="btn btn-primary btn-xl" role="button" target="_blank" >出厂固件</a>
 
-## 元器件资料
-我们整理了所使用到的元器件的资料（Datasheet、封装图等），并上传到了百度云盘，供大家下载。
+## 原理图/元器件资料
+我们整理了MWbalanced的原理图和所使用到元器件的资料（Datasheet、封装图等），并上传到了百度云盘，供大家下载。
 
+<a href="http://pan.baidu.com/s/1pJJ5yjD" class="btn btn-primary btn-xl" role="button" target="_blank" >原理图</a>
 <a href="http://pan.baidu.com/s/1sj5Uesd" class="btn btn-primary btn-xl" role="button" target="_blank" >元器件资料</a>
 
 ## Windows相关安装包
