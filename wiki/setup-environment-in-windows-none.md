@@ -7,7 +7,7 @@ title: Windows下开发环境搭建-裸机版本
 
 > 作者：Songyimiao
 
-IDE开发工具Keil C51 V9.00下载地址：喵呜实验室百度云网盘[Keil-C51-Version-9.00.zip](http://pan.baidu.com/s/1kTKN5AZ)（5.2及以后版本）。
+IDE开发工具Keil C51 V9.00下载地址：喵呜实验室百度云网盘[Keil-C51-Version-9.00.zip](http://pan.baidu.com/s/1kTKN5AZ)
 
 IDE开发工具Keil C51最新版本（C51-Version-9.54a）官方下载地址：[Keil官网下载页面](https://www.keil.com/demo/eval/c51.htm)。
 
@@ -15,7 +15,7 @@ IDE开发工具Keil C51最新版本（C51-Version-9.54a）官方下载地址：[
 
 CP2102驱动下载地址：喵呜实验室百度云网盘[CP2102驱动](http://pan.baidu.com/s/1c08Q5AK)
 
-STC-ISP固件烧录工具：喵呜实验室百度云网盘[stc-isp-15xx-v6.82H](http://pan.baidu.com/s/1gd4S7M7)
+STC-ISP固件烧录工具：喵呜实验室百度云网盘[stc-isp-15xx-v6.82H](http://pan.baidu.com/s/1bnBg2qN)
 
 ## 环境配置说明
 裸机版本是指没有使用RTOS的主控固件版本，由于没有使用RTOS，程序代码显得更加简单明了，开发环境配置简单，非常适合初学者使用。
