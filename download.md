@@ -28,7 +28,7 @@ title: 下载中心
 </p>
 
 ## 上位机和Android客户端
-<a href="" class="btn btn-primary btn-xl" role="button" target="_blank" >PC上位机</a>
+<a href="http://pan.baidu.com/s/1mg3w8xa" class="btn btn-primary btn-xl" role="button" target="_blank" >虚拟示波器Serial Digital Scope V2</a>
 <a href="" class="btn btn-primary btn-xl" role="button" target="_blank" >Android APP安装程序（蓝牙4.0 BLE）</a>
 <a href="" class="btn btn-primary btn-xl" role="button" target="_blank" >Android APP安装程序（蓝牙2.1）</a>
 
