@@ -66,6 +66,8 @@ CP2102，是一款高度集成的USB-UART桥接器，用于固件下载，参数
 
 MTS102，6A/125V，大电流开关。
 
+![](/img/wiki/devices-buy-01.png)
+
 
 
 
