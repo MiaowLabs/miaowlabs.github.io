@@ -4,13 +4,16 @@ title: MWbalanced Wiki
 ---
 
 <div class="jumbotron">
-    <p class="lead">这里是喵呜实验室的维基百科。我们提供DIY一个属于你自己两轮自平衡小车的文档，也提供对MWbalanced两轮自平衡小车进行二次开发的指导。 </p>
+<b>
+    <p class="lead">这里是喵呜实验室的维基百科。</p>
+    <p class="lead">我们提供DIY一个属于你自己两轮自平衡小车的文档，也提供对MWbalanced两轮自平衡小车进行二次开发的指导。 </p>
+</b>
 </div>
 
 <p>MWbalanced是喵呜实验室的两轮自平衡小车的代号。代号MWbalanced的命名遵循“MW+xxx”的方式，MW为大写，是Miaow的缩写，balanced为小写，意为“平衡的”。</p>
-* [入手试玩教程](/manual.html)
-* [组装维修教程]()
 
+* [入手试玩教程](/manual.html)
+* [组装维修教程](wiki/assemble-guide.html)
 * [MWbalanced零部件购买指南](wiki/devices-buy.html)
 
 <h2>MWbalanced选型指南</h2>
@@ -28,12 +31,12 @@ title: MWbalanced Wiki
 
 <h2>MWbalanced原理讲解</h2>
 * [MWbalanced硬件原理讲解](wiki//hardware-basic.html)
-* [MWbalanced软件框架讲解](wiki/)
+* [MWbalanced软件框架讲解](wiki/software-main.html)
 * [MWbalanced软件开发经验总结](wiki/)
 * [MWbalanced通信协议](wiki/)
 
 <h2 id="exp">开发经验总结</h2>
-* [原地直立&原地旋转]()
+* [原地直立&原地旋转](wiki/inplace-hold.html)
 * [动力效率&续航时间]()
 * [车体平衡调试]()
 * [超声波和避障]()
