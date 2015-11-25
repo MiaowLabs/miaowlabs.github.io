@@ -1,7 +1,9 @@
 ---
 layout: wiki
-title: 软件框架讲解
+title: 软件框架讲解-裸机版本
 ---
+
+# {{ page.title }}
 
 > 作者：Songyimiao
 

@@ -31,7 +31,7 @@ title: MWbalanced Wiki
 
 <h2>MWbalanced原理讲解</h2>
 * [MWbalanced硬件原理讲解](wiki//hardware-basic.html)
-* [MWbalanced软件框架讲解](wiki/software-main.html)
+* [MWbalanced软件框架讲解](wiki/software-main-none.html)
 * [MWbalanced软件开发经验总结](wiki/)
 * [MWbalanced通信协议](wiki/)
 
