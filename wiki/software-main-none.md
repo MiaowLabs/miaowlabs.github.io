@@ -7,7 +7,7 @@ title: 软件框架讲解-裸机版本
 
 > 作者：Songyimiao
 
-MWbalanced是最早使用STC15单片机作为控制芯片的两轮自平衡小车项目。MWbalanced控制源代码，都是属于一砖一瓦敲出来的。没有移植嵌入式实时操作系统（RTOS）的源代码，我们称之为裸机代码，托管在[Github](https://github.com/MiaowLabs/MWbalanced-firmware-none)，命名方式为为"MWbalanced-firmware-none"，尾缀none表示未使用操作系统，裸奔的意思。
+MWbalanced是最早使用STC15系列单片机作为控制芯片的两轮自平衡小车项目。MWbalanced控制源代码，都是属于一砖一瓦敲出来的。没有移植嵌入式实时操作系统（RTOS）的源代码，我们称之为裸机代码，托管在[Github](https://github.com/MiaowLabs/MWbalanced-firmware-none)，命名方式为为"MWbalanced-firmware-none"，尾缀none表示未使用操作系统，裸奔的意思。
 
 现在结合裸机代码，来说说MWbalanced的软件框架。
 
