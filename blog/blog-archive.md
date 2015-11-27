@@ -23,14 +23,13 @@ layout: blog-home
         <div class="container" id="cc">
              <p>
              <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="知识共享许可协议" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a>
-             全部内容以 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons 署名-非商业性使用-相同方式共享 3.0 协议发布</a>.&nbsp;&nbsp;模板来自<a href="http://beiyuu.com/">BeiYuu</a>博客.</p>
+             全部内容以 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">Creative Commons 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)协议</a>发布.&nbsp;&nbsp;模板来自<a href="http://beiyuu.com/">BeiYuu</a>博客.</p>
 
-        <p>Copyright &copy;2013 Shenzhen CrazePony Technologies Co., Ltd. All rights reserved.</p>
+        <p>&copy;2015 喵呜实验室 All rights reserved.</p>
         </div>
 
     </div>
 
-
-    <div class="aside">
+	<div class="aside">
     </div>
 </div>
