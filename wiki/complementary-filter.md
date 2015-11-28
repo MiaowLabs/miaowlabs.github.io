@@ -6,6 +6,8 @@ title: 互补滤波器
 # {{ page.title }}
 
 > 作者：Songyimiao
+> 
+> 参考：《The Balance Filter》
 
 滤波器通常有模拟滤波器和数字滤波器。模拟滤波器完全依靠电阻器、电容器、晶体管等电子元件组成的物理网络实现滤波功能。数字滤波器是由数字乘法器、加法器和延时单元组成的一种算法或装置，功能是对输入离散信号进行运算处理，以达到实现滤波的目的。
 
@@ -23,13 +25,13 @@ title: 互补滤波器
 
 互补滤波器，也是带通滤波器的变种。
 
-一阶互补滤波核心代码非常简洁：
+（一阶）互补滤波核心代码非常简洁：
 
 	angle = (0.98)*(angle + gyro * dt) + (0.02)*(x_acc);
 
 其中，`angle`为得到的实际角度，`gyro`为陀螺仪值，`x_acc`为加速度值，`dt`为计算周期；、、
 
-##积分
+##积分器
 
 学过高中物理的同学都知道，速度*时间=路程。如果知道了起点位置、速度和时间，通过计算就能得到路程。转化为代码就是：
 
@@ -47,9 +49,43 @@ title: 互补滤波器
 
 ##低通滤波器
 
-	angle = (0.98)*angle + (0.02)*x_acc;
+低通滤波器的目标是过滤掉短期波动，让长期变化得以保留。
 
+	angle = (0.98)*angle_last + (0.02)*x_acc;
 
+其中，`angle`为当前角度，`angle_last`为前一次角度，`x_acc`为当前加速度计的角度值。对`x_acc`进行低通滤波，让加速度计的长期变化得以保留，`angle`能追踪加速度计的长期变化。
+
+##（一阶）互补滤波器
+
+互补滤波器，就是上面积分器和低通滤波器的变种结合体。如图1。
+
+![](/img/wiki/complementary-filter-01.png)
+
+图1
+
+看到这里，是不是觉得滤波其实也就那回事，并没有那么神秘高大上？滤波器的用途极广，只要你细心观察，滤波器的身影无处不在。
+
+##（二阶）互补滤波器
+
+后来，互补滤波器经过不断演变发展，出现了**二阶互补滤波器**和**滑动参数互补滤波器**等变种滤波器。
+
+附上二阶滤波代码供大家参考：
+
+```
+// newAngle = angle measured with atan2 using the accelerometer
+// newRate = angle measured using the gyro
+// looptime = loop time in millis()
+float Complementary2(float newAngle, float newRate, intlooptime)
+{
+float k = 10;
+float dtc2 = float(looptime) / 1000.0;
+x1 = (newAngle -   x_angle2C) * k * k;
+    y1 = dtc2 * x1 + y1;
+x2 = y1 + (newAngle -   x_angle2C) * 2 * k + newRate;
+    x_angle2C = dtc2 * x2 + x_angle2C;
+return x_angle2C;
+}
+```
 
 
 
