@@ -61,4 +61,4 @@ title: MWbalanced Wiki
 * [通信协议]()
 
 <h2 id="other">其他</h2>
-* [MWbalanced的机械结构](wiki/mwbalanced-construct.html)
+* [MWbalanced的机械结构](wiki/MWbalanced-structure.html)
