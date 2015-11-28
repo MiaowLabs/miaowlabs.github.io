@@ -72,9 +72,9 @@ title: 互补滤波器
 附上二阶滤波代码供大家参考：
 
 
-	// newAngle = angle measured with atan2 using the accelerometer
-	// newRate = angle measured using the gyro
-	// looptime = loop time in millis()
+	// newAngle 为加速度传感器经过atan2()转化后的角度值
+	// newRate 为陀螺仪角度值
+	// looptime 为计算周期
 	float Complementary2(float newAngle, float newRate, intlooptime)
 	{
 	float k = 10;

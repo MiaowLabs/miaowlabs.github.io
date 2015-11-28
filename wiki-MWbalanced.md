@@ -36,9 +36,9 @@ title: MWbalanced Wiki
 * [MWbalanced通信协议](wiki/)
 
 <h2 id="exp">开发经验总结</h2>
-* [原地直立&原地旋转](wiki/inplace-hold.html)
-* [动力效率&续航时间]()
-* [车体平衡调试]()
+* [原地直立&原地旋转](wiki/MWbalanced-inplace-hold.html)
+* [动力效率&续航时间](wiki/MWbalanced-power-endurance.html)
+* [车体平衡调试](wiki/MWbalanced-debug.html)
 * [超声波和避障]()
 * [红外巡线]()
 * [摄像头和图传]()
