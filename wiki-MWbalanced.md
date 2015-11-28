@@ -47,7 +47,7 @@ title: MWbalanced Wiki
 <p>姿态解算是指把陀螺仪、加速度计等数据融合在一起，得到平衡小车的姿态数据，也叫做姿态融合。姿态解算的过程，涉及到传感器数据读取与滤波，四元数与旋转，姿态解算框架，长期融合/快速融合。</p>
 * [为什么要用加速度计和陀螺仪两个传感器？](wiki/why-accel-gyro.html)
 * [两轮自平衡小车需要用到多少个维度数据？](wiki/how-many-dimensions.html)
-* [互补滤波器](wiki/complementary.html)
+* [互补滤波器](wiki/complementary-filter.html)
 * [软件姿态解算]()
 * [硬件姿态解算]()
 * [三轴陀螺仪和三轴加速度计MPU6050]()
