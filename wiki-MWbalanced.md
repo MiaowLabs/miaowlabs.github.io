@@ -62,3 +62,4 @@ title: MWbalanced Wiki
 
 <h2 id="other">其他</h2>
 * [MWbalanced的机械结构](wiki/MWbalanced-structure.html)
+* [MPU-6050芯片解剖](wiki/mpu6050-anatomy.html)
