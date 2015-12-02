@@ -7,7 +7,9 @@ description: MWbalanced项目旨在为大学生/车模爱好者/创客提供可�
 
 ![](/img/MWbalanced-PCBA.jpg)
 
-MWbalanced项目旨在为大学生/车模爱好者/创客提供可二次开发的两轮自平衡小车工程原型。我们秉承开放，合作，分享的理念，致力将Crazepony打造成航模爱好者学习交流的软硬件平台。MWbalanced是开源项目，包括源代码，原理图，设计思路等，并且提供详尽的百科知识库。可以通过MWbalanced学习两轮平衡车的相关知识，也可以进行二次开发，实现自己的创意。
+MWbalanced项目旨在为大学生/车模爱好者/创客提供可二次开发的两轮自平衡小车。我们秉承开放，合作，分享的理念，致力将Crazepony打造成航模爱好者学习交流的软硬件平台。
+
+MWbalanced是开源项目，包括源代码，原理图，设计思路等，并且提供详尽的百科知识库。可以通过MWbalanced学习两轮平衡车的相关知识，也可以进行二次开发，实现自己的创意。
 
 * 网址：http://miaowlabs.com
 * 百科：http://miaowlabs.com/wiki-MWbalanced.html
