@@ -11,7 +11,8 @@ title: 下载中心
 
 <a href="https://github.com/MiaowLabs/MWbalanced-firmware-none" class="btn btn-primary btn-xl" role="button" target="_blank" >控制源码</a>
 <a href="" class="btn btn-primary btn-xl" role="button" target="_blank" >遥控源码</a>
-<a href="http://pan.baidu.com/s/1gdk9WYZ" class="btn btn-primary btn-xl" role="button" target="_blank" >出厂固件</a>
+<a href="http://pan.baidu.com/s/1gdk9WYZ" class="btn btn-primary btn-xl" role="button" target="_blank" >最新固件</a>
+<a href="http://pan.baidu.com/s/1eQyjVpC" class="btn btn-primary btn-xl" role="button" target="_blank" >历版固件</a>
 
 ## 原理图/元器件资料
 我们整理了MWbalanced的原理图和所使用到元器件的资料（Datasheet、封装图等），并上传到了百度云盘，供大家下载。
