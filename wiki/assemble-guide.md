@@ -13,10 +13,11 @@ MWbalanced**暂不提供散件销售**。本组装教程主要目的是提供给
 
 * MWbalanced控制电路板（PCBA）
 * 1300mAh锂电池
+* GB37减速电机(MWbalanced 1.0)
+* GM25定制电机(MWbalanced 2.0)
 * L型电机联接架
 * 65mm海绵里轮
 * 亚克力底板
-* 减速电机
 * 铜柱
 * 螺丝
 * 螺母
