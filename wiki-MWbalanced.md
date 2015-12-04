@@ -48,10 +48,10 @@ title: MWbalanced Wiki
 * [为什么要用加速度计和陀螺仪两个传感器？](wiki/why-accel-gyro.html)
 * [两轮自平衡小车需要用到多少个维度数据？](wiki/how-many-dimensions.html)
 * [互补滤波器](wiki/complementary-filter.html)
-* [软件姿态解算](wiki/software-)
+* [软件姿态解算]()
 * [硬件姿态解算]()
 * [三轴陀螺仪和三轴加速度计MPU6050]()
-* [平衡车PID控制算法]()
+* [平衡车PID控制算法](wiki/algorithm-pid.html)
 
 <h2 id="crazyflie">Small RTOS51</h2>
 <p>为了满足各个层次小伙伴的需求和体现出我们的努力，后续会试着移植Small RTOS51实时操作系统内核。Small RTOS51是陈明计先生编写的一个实时操作系统，并著有《嵌入式实时操作系统Small RTOS51原理及应用》。SmallRTOS51适合在小RAM/小FLASH单片机上运行。</p>
