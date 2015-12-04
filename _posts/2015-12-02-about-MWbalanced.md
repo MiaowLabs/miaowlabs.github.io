@@ -2,12 +2,12 @@
 layout: blog-post
 title: MWbalanced开源两轮自平衡小车
 author: Songyimiao
-description: MWbalanced项目旨在为大学生/车模爱好者/创客提供可二次开发的两轮自平衡小车原型。我们秉承开放，合作，分享的理念，致力将MWbalanced打造成车模爱好者学习交流的软硬件平台。
+description: MWbalanced项目旨在为大学生/电子爱好者/创客提供可二次开发的两轮自平衡小车原型。我们秉承开放，合作，分享的理念，致力将MWbalanced打造成车模爱好者学习交流的软硬件平台。
 ---
 
 ![](/img/MWbalanced-PCBA.jpg)
 
-MWbalanced项目旨在为大学生/车模爱好者/创客提供可二次开发的两轮自平衡小车。我们秉承开放，合作，分享的理念，致力将Crazepony打造成航模爱好者学习交流的软硬件平台。
+MWbalanced项目旨在为大学生/车模爱好者/创客提供可二次开发的两轮自平衡小车。我们秉承开放，合作，分享的理念，致力将MWbalanced打造成电子爱好者学习交流的软硬件平台。
 
 MWbalanced是开源项目，包括源代码，原理图，设计思路等，并且提供详尽的百科知识库。可以通过MWbalanced学习两轮平衡车的相关知识，也可以进行二次开发，实现自己的创意。
 
@@ -19,7 +19,7 @@ MWbalanced是开源项目，包括源代码，原理图，设计思路等，并�
 
 ## MWbalanced的故事
 
-MWbalanced项目起源于孩童从小对车模的喜爱。
+MWbalanced项目起源于孩童从小对四驱车的喜爱，随着年龄的增长，小车也从四驱进化至直立，热爱依旧。
 
 ## MWbalanced的理念
 
