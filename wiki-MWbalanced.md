@@ -26,7 +26,7 @@ title: MWbalanced Wiki
 * [windows下开发环境搭建—Small RTOS51版本]()
 * [STC-ISP使用及常见问题](wiki/stc-isp-use-guide.html)
 * [通过USB烧写固件](wiki/usb-download-firmware.html)
-* [MWbalanced安卓客户端]()
+* [MWbalanced安卓客户端](wiki/bluetooth-connect.html)
 * [虚拟示波器Serial Digital Scope](wiki/serial-digital-scope.html)
 
 <h2>MWbalanced原理讲解</h2>
