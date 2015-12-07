@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: MWbalanced安卓客户端
+title: MWbalanced安卓客户端&蓝牙连接
 ---
 
 # {{ page.title }}
