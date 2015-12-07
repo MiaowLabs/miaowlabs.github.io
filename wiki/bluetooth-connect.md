@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: 蓝牙连接指南
+title: MWbalanced安卓客户端
 ---
 
 # {{ page.title }}
@@ -19,7 +19,7 @@ MWbalanced选用了HM-13蓝牙模块，兼容SPP（蓝牙2.1）和BLE（蓝牙4.
 
 * 双模包含两个蓝牙地址，有些手机会搜到两个地址，00:0E:0B开头的是BLE模式的地址，00:0E:0E开头的是EDR地址。
 
-##MWbalanced连接手机蓝牙
+##手机蓝牙连接MWbalanced
 
 以下演示使用的安卓手机是小米4，使用MWbalanced官方APP。Android版APP：[下载地址](http://pan.baidu.com/s/1eRxOPsI)；iOS版APP暂未推出。
 
