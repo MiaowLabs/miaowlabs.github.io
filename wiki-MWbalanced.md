@@ -16,6 +16,10 @@ title: MWbalanced Wiki
 * [组装维修教程](wiki/assemble-guide.html)
 * [MWbalanced零部件购买指南](wiki/devices-buy.html)
 
+<h2>一步步打造自己的MWbalanced</h2>
+* [搭建开发环境](wiki/setup-environment.html)
+
+
 <h2>MWbalanced选型指南</h2>
 * [MWbalanced元器件选型总览](wiki/devices-selection.html)
 * [MWbalanced电机选型](wiki/motor-select.html)
