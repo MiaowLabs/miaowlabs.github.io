@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: Windows下开发环境搭建-裸机版本
+title: Windows下开发环境搭建
 ---
 
 # {{ page.title }}
