@@ -18,6 +18,7 @@ title: MWbalanced Wiki
 
 <h2>一步步打造自己的MWbalanced</h2>
 * [搭建开发环境](wiki/setup-environment.html)
+* [搭建开发环境](wiki/new-project.html)
 
 
 <h2>MWbalanced选型指南</h2>
