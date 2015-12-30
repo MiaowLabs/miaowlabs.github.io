@@ -153,14 +153,14 @@ Listing 文件夹。
 10.4、在 Include Paths 栏里添加库文件的搜索路径，这样就可以屏蔽掉默认的搜索路
 径。
 
-![](/img/wiki/new-project-23.png)
+![](/img/wiki/new-project-22.png)
 
 但当编译器在我们指定的路径下 搜索不到的话还是会回到标准目录去搜索，就
 像有些 ANSIC C 的库文件，如 stdin.h 、 stdio.h。
 
 库文件路径修改成功之后如下所示：
 
-![](/img/wiki/new-project-22.png)
+![](/img/wiki/new-project-23.png)
 
 到了这里就算是大功告成了。
 
