@@ -1,4 +1,4 @@
----
+t---
 layout: wiki
 title: 新建工程
 ---
@@ -101,7 +101,7 @@ BSP 、Startup。
 
 **我们的命名方式都是尽量能顾名思义，Appcode用来存放用户自定义的应用程序,Startup从名字就可以看得出我们是用它来放我们的启动代码的，，Driver用来存放STC驱动文件， Common 用来存放通用资源文件。**
 
-接下来我们往这些新建的组中添加文件，双击哪个组就可以往哪个组里面
+9.3、接下来我们往这些新建的组中添加文件，双击哪个组就可以往哪个组里面
 添加文件，如果该组里面已经有文件的话，双击则把组里面的文件都显示
 出来，然后再双击该组的话，则可以继续添加文件。
 
@@ -110,7 +110,7 @@ BSP 、Startup。
 在对话框里面的文件类型里面我们选择 ALL files（*.*），不然有些文件会显示
 不出来。
 
-至此，我们的工程基本建好了啦。但是还有一些工作需要完成。下面来配
+10.1、至此，我们的工程基本建好了啦。但是还有一些工作需要完成。下面来配
 置一下Keil的配置选项，点击工具栏中的魔术棒按钮。
 
 Target选项卡，Memory Model用鼠标点击Memory Model的下拉箭头，会有3个选项：
@@ -139,18 +139,18 @@ Target选项卡，Memory Model用鼠标点击Memory Model的下拉箭头，会�
 
 ![](/img/wiki/new-project-24.png)
 
-10.1、Output 选项卡如下设置，点击 Select Folder for Objects... 设
+10.2、Output 选项卡如下设置，点击 Select Folder for Objects... 设
 置编译后输出文件保存的位置。同时把 Debug Information 、 Create HEX File
 和 Browse information 这三个选项框也选上。
 
 ![](/img/wiki/new-project-19.png)
 
-9.2、在 Listing 这个选项卡中，点击 Select Folder listings…定位到工程中的
+10.3、在 Listing 这个选项卡中，点击 Select Folder listings…定位到工程中的
 Listing 文件夹。
 
 ![](/img/wiki/new-project-20.png)
 
-9.3、在 Include Paths 栏里添加库文件的搜索路径，这样就可以屏蔽掉默认的搜索路
+10.4、在 Include Paths 栏里添加库文件的搜索路径，这样就可以屏蔽掉默认的搜索路
 径。
 
 ![](/img/wiki/new-project-21.png)
@@ -163,4 +163,4 @@ Listing 文件夹。
 ![](/img/wiki/new-project-22.png)
 
 到了这里就算是大功告成了。如果在新建工程中遇到什么问题，先不要
-急，可先参考野火提供的已经新建好的工程模板。
+急，可先参考喵呜提供的已经源代码的工程噢。
