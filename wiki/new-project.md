@@ -1,6 +1,6 @@
 t---
 layout: wiki
-title: Windows下开发环境搭建-裸机版本
+title: 新建工程
 ---
 
 # {{ page.title }}
