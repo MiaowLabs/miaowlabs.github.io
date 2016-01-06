@@ -15,13 +15,13 @@ title: 新建工程
 
 一个方法是，打开STC-ISP下载工具，在右边选项卡里选择“Keil仿真设置”，点击“添加型号和头文件到Keil中”，可以把STC现有大部分芯片的头文件包含进去。
 
-![](/img/wiki/new-project-01.png)
+![](/img/wiki/new-project-02.png)
 
 第一种方法
 
 另一个方法是，打开STC-ISP下载工具，在右边选项卡里选择“头文件”，在“单片机系列”中选择要用到的芯片型号，我们在这里选“STC15W4Kxx/IAP15W4K61S4/IRC15W4K63S4 Series”，就可以看到对应的头文件，再复制代码或者保存文件，放进工程。
 
-![](/img/wiki/new-project-02.png)
+![](/img/wiki/new-project-01.png)
 
 第二种方法
 
