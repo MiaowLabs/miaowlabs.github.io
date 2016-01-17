@@ -11,7 +11,7 @@ title: 下载中心
 
 <a href="https://github.com/MiaowLabs/MWbalanced-firmware-none" class="btn btn-primary btn-xl" role="button" target="_blank" >控制源码</a>
 <a href="" class="btn btn-primary btn-xl" role="button" target="_blank" >遥控源码</a>
-<a href="http://pan.baidu.com/s/1pK6ugDd" class="btn btn-primary btn-xl" role="button" target="_blank" >最新固件</a>
+<a href="http://pan.baidu.com/s/1mhmswoK" class="btn btn-primary btn-xl" role="button" target="_blank" >最新固件</a>
 <a href="http://pan.baidu.com/s/1gef6cKj" class="btn btn-primary btn-xl" role="button" target="_blank" >历版固件</a>
 
 ## 原理图/元器件资料
