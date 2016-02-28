@@ -12,16 +12,15 @@ title: MWbalanced Wiki
 
 <p>MWbalanced是喵呜实验室的两轮自平衡小车的代号。代号MWbalanced的命名遵循“MW+xxx”的方式，MW为大写，是Miaow的缩写，balanced为小写，意为“平衡的”。</p>
 
-* [入手试玩教程](/manual.html)
-* [组装维修教程](wiki/assemble-guide.html)
-* [MWbalanced零部件购买指南](wiki/devices-buy.html)
+* [MWbalancedSTC15(第一版)零部件购买指南](wiki/devices-buy.html)
 
-<h2>一步步打造自己的MWbalanced</h2>
-* [搭建开发环境](wiki/setup-environment.html)
-* [新建工程](wiki/new-project.html)
+<h2>《零死角玩转两轮自平衡小车-基于MWbalancedSTC15（第二版）》</h2>
+* [MWbalancedSTC15(第二版)硬件原理讲解](wiki-hardware-basic-2.html)
+* [Windows平台下搭建开发环境](wiki/setup-environment.html)
+* [新建Keil工程模板](wiki/new-project.html)
 
 
-<h2>MWbalanced选型指南</h2>
+<h2>MWbalanced选型指南（第一版）</h2>
 * [MWbalanced元器件选型总览](wiki/devices-selection.html)
 * [MWbalanced电机选型](wiki/motor-select.html)
 * [MWbalanced电池选型](wiki/power-select.html)
