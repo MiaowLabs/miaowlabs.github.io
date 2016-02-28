@@ -15,7 +15,7 @@ title: MWbalanced Wiki
 * [MWbalancedSTC15(第一版)零部件购买指南](wiki/devices-buy.html)
 
 <h2>《零死角玩转两轮自平衡小车-基于MWbalancedSTC15（第二版）》</h2>
-* [MWbalancedSTC15(第二版)硬件原理讲解](wiki-hardware-basic-2.html)
+* [MWbalancedSTC15(第二版)硬件原理讲解](wiki/hardware-basic-2.html)
 * [Windows平台下搭建开发环境](wiki/setup-environment.html)
 * [新建Keil工程模板](wiki/new-project.html)
 
