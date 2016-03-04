@@ -15,6 +15,7 @@ title: MWbalanced Wiki
 * [MWbalancedSTC15(第一版)零部件购买指南](wiki/devices-buy.html)
 
 <h2>《零死角玩转两轮自平衡小车-基于MWbalancedSTC15（第二版）讲解》</h2>
+* [（公开课视频）零基础制作两轮自平衡小车](wiki/hardware-basic-2.html)
 * [MWbalancedSTC15(第二版)硬件原理图讲解](wiki/hardware-basic-2.html)
 * [为什么要用加速度计和陀螺仪两种传感器？](wiki/why-accel-gyro.html)
 * [两轮自平衡小车需要用到多少个维度数据？](wiki/how-many-dimensions.html)
