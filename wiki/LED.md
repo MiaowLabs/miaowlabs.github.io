@@ -31,3 +31,5 @@ MWbalancedSTC15的控制板上有四颗LED指示灯，其中一颗是蓝牙状�
 
 ![](/img/wiki/led-06.gif)
 
+LED指示灯实验代码传送门：（这几天整理下就上传）
+
