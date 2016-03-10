@@ -15,13 +15,25 @@ title: MWbalanced Wiki
 * [MWbalancedSTC15(第一版)零部件购买指南](wiki/devices-buy.html)
 
 <h2>《零死角玩转两轮自平衡小车-基于MWbalancedSTC15（第二版）讲解》</h2>
-* [【公开课】零基础制作两轮自平衡小车视频](wiki/open-class.html)
-* [MWbalancedSTC15(第二版)硬件原理图讲解](wiki/hardware-basic-2.html)
-* [为什么要用加速度计和陀螺仪两种传感器？](wiki/why-accel-gyro.html)
-* [两轮自平衡小车需要用到多少个维度数据？](wiki/how-many-dimensions.html)
-* [简单有效的互补滤波器](wiki/complementary-filter.html)
-* [Windows平台下搭建开发环境](wiki/setup-environment.html)
-* [新建Keil工程模板](wiki/new-project.html)
+* [给初学者的一堂公开课](wiki/open-class.html)
+* [基础教程：MWbalancedSTC15(第二版)硬件原理图讲解](wiki/hardware-basic-2.html)
+* [基础教程：为什么要用加速度计和陀螺仪两种传感器？](wiki/why-accel-gyro.html)
+* [基础教程：两轮自平衡小车需要用到多少个维度数据？](wiki/how-many-dimensions.html)
+* [基础教程：简单有效的互补滤波器](wiki/complementary-filter.html)
+* [基础教程：在Windows平台下搭建开发环境](wiki/setup-environment.html)
+* [基础教程：新建Keil工程模板](wiki/new-project.html)
+* [基础教程：LED指示灯实验](wiki/new-project.html)
+* [基础教程：串口通讯实验](wiki/new-project.html)
+* [基础教程：（蓝牙）无线通讯实验](wiki/new-project.html)
+* [基础教程：传感器数据采集实验](wiki/new-project.html)
+* [基础教程：PWM驱动电机实验](wiki/new-project.html)
+* [基础教程：编码器数据采集实验](wiki/new-project.html)
+* [进阶教程：多传感器数据融合](wiki/new-project.html)
+* [进阶教程：使用PID算法控制电机速度](wiki/new-project.html)
+* [进阶教程：角度环PD调试指南](wiki/new-project.html)
+* [进阶教程：速度环PI调试指南](wiki/new-project.html)
+* [进阶教程：方向环PD调试指南](wiki/new-project.html)
+* [进阶教程：红外巡线](wiki/new-project.html)
 
 
 <h2>MWbalanced选型指南（第一版）</h2>
