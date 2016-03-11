@@ -10,9 +10,7 @@ title: MWbalanced Wiki
 </b>
 </div>
 
-<p>MWbalanced是喵呜实验室的两轮自平衡小车的代号。代号MWbalanced的命名遵循“MW+xxx”的方式，MW为大写，是Miaow的缩写，balanced为小写，意为“平衡的”。</p>
-
-* [MWbalancedSTC15(第一版)零部件购买指南](wiki/devices-buy.html)
+<p>MWbalanced是喵呜实验室的两轮自平衡小车的代号。代号MWbalancedSTC15的命名遵循“MW+xxx”的方式，MW为大写，是Miaow的缩写，balanced为小写，意为“平衡的”，STC15是该版本使用的控制芯片型号。另有MWbalancedSTM32。</p>
 
 <h2>《零死角玩转两轮自平衡小车-基于MWbalancedSTC15（第二版）讲解》</h2>
 * [给初学者的一堂公开课](wiki/open-class.html)
@@ -23,7 +21,7 @@ title: MWbalanced Wiki
 * [基础教程：在Windows平台下搭建开发环境](wiki/setup-environment.html)
 * [基础教程：新建Keil工程模板](wiki/new-project.html)
 * [基础教程：LED指示灯实验](wiki/LED.html)
-* [基础教程：串口通讯实验(待上传)]()
+* [基础教程：串口通讯实验](wiki/uart.html)
 * [基础教程：（蓝牙）无线通讯实验(待上传)]()
 * [基础教程：传感器数据采集实验(待上传)]()
 * [基础教程：PWM驱动电机实验(待上传)]()
@@ -37,6 +35,7 @@ title: MWbalanced Wiki
 
 
 <h2>MWbalanced选型指南（第一版）</h2>
+* [MWbalanced(第一版)零部件购买指南](wiki/devices-buy.html)
 * [MWbalanced元器件选型总览](wiki/devices-selection.html)
 * [MWbalanced电机选型](wiki/motor-select.html)
 * [MWbalanced电池选型](wiki/power-select.html)
