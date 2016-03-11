@@ -22,7 +22,7 @@ title: MWbalanced Wiki
 * [基础教程：新建Keil工程模板](wiki/new-project.html)
 * [基础教程：LED指示灯实验](wiki/LED.html)
 * [基础教程：串口通讯实验](wiki/uart.html)
-* [基础教程：（蓝牙）无线通讯实验(待上传)]()
+* [基础教程：（蓝牙）无线通讯实验](wiki/bluetooth.html)
 * [基础教程：传感器数据采集实验(待上传)]()
 * [基础教程：PWM驱动电机实验(待上传)]()
 * [基础教程：编码器数据采集实验(待上传)]()
