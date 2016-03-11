@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: LED指示灯实验
+title: 串口通讯实验
 ---
 
 # {{ page.title }}
