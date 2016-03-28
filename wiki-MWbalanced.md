@@ -14,7 +14,12 @@ title: MWbalanced Wiki
 
 <h2>《零死角玩转两轮自平衡小车-基于MWbalancedSTC15（第二版）讲解》</h2>
 * [给初学者的一堂公开课](wiki/open-class.html)
+* [教你怎么连接蓝牙遥控小车](wiki/bluetooth-connect.html)
+* [教你通过USB烧写固件](wiki/usb-download-firmware.html)
+* [教你使用懒人工具&固件烧写软件STC-ISP（及常见问题）](wiki/stc-isp-use-guide.html)
+* [教你使用虚拟示波器Serial Digital Scope显示数据波形](wiki/serial-digital-scope.html)
 * [基础教程：MWbalancedSTC15(第二版)硬件原理图讲解](wiki/hardware-basic-2.html)
+* [基础教程：MWbalanced软件框架讲解—裸机版本](wiki/software-main-none.html)
 * [基础教程：为什么要用加速度计和陀螺仪两种传感器？](wiki/why-accel-gyro.html)
 * [基础教程：两轮自平衡小车需要用到多少个维度数据？](wiki/how-many-dimensions.html)
 * [基础教程：简单有效的互补滤波器](wiki/complementary-filter.html)
@@ -23,7 +28,7 @@ title: MWbalanced Wiki
 * [基础教程：LED指示灯实验](wiki/LED.html)
 * [基础教程：串口通讯实验](wiki/uart.html)
 * [基础教程：（蓝牙）无线通讯实验](wiki/bluetooth.html)
-* [基础教程：传感器数据采集实验(待上传)]()
+* [基础教程：传感器数据采集实验](wiki/mpu-6050.html)
 * [基础教程：PWM驱动电机实验(待上传)]()
 * [基础教程：编码器数据采集实验(待上传)]()
 * [进阶教程：多传感器数据融合(待上传)]()
@@ -43,14 +48,9 @@ title: MWbalanced Wiki
 <h2 id="rd">开发指南</h2>
 * [windows下开发环境搭建—裸机版本](wiki/setup-environment-in-windows-none.html)
 * [windows下开发环境搭建—Small RTOS51版本]()
-* [STC-ISP使用及常见问题](wiki/stc-isp-use-guide.html)
-* [通过USB烧写固件](wiki/usb-download-firmware.html)
-* [MWbalanced安卓客户端&蓝牙连接指南](wiki/bluetooth-connect.html)
-* [虚拟示波器Serial Digital Scope](wiki/serial-digital-scope.html)
 
 <h2>MWbalanced原理讲解</h2>
 * [MWbalanced硬件原理讲解](wiki//hardware-basic.html)
-* [MWbalanced软件框架讲解—裸机版本](wiki/software-main-none.html)
 * [MWbalanced软件开发经验总结](wiki/)
 * [MWbalanced通信协议](wiki/)
 
