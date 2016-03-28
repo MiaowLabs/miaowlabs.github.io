@@ -30,6 +30,6 @@ title: 下载中心
 
 ## 上位机和Android客户端
 <a href="http://pan.baidu.com/s/1mg3w8xa" class="btn btn-primary btn-xl" role="button" target="_blank" >虚拟示波器Serial Digital Scope V2</a>
-<a href="http://pan.baidu.com/s/1qWXCHlE" class="btn btn-primary btn-xl" role="button" target="_blank" >Android APP安装程序（蓝牙2.1）</a>
+<a href="https://pan.baidu.com/s/1nv8aAHN" class="btn btn-primary btn-xl" role="button" target="_blank" >Android APP安装程序（蓝牙2.1）</a>
 
 
