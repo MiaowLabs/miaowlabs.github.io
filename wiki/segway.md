@@ -14,7 +14,7 @@ title: 开创历史的Segway
 
 Segway在成长过程中，几经易主，可谓一把辛酸史，现在已经被Ninebot收购至麾下。
 
-##Dean·Kamen时代
+## Dean·Kamen时代
 
 ![](/img/wiki/segway-01.jpg)
 
@@ -35,7 +35,7 @@ Dean·Kamen曾考入伍斯特理工学院(Worcester Polytechnic Institute)，两
 
 从此，Segway便开始攻入于政府与军方市场。
 
-####Segway进入中国市场
+#### Segway进入中国市场
 
 2006年Segway正式进入中国市场。
 
@@ -45,13 +45,13 @@ Dean·Kamen曾考入伍斯特理工学院(Worcester Polytechnic Institute)，两
 
 2008年11月，Segway的首席技术官Doug Field（道格·菲尔德）被Steve Jobs（史蒂夫·乔布斯）挖去出任苹果工业设计部门副总裁。
 
-##Jimi·Heselden时代
+## Jimi·Heselden时代
 
 2009年12月24日，Segway公司被一位英国企业家Jimi·Heselden的公司Hesco Bastion收购。不过不幸的是，Jimi·Heselden于2010年9月27日骑着他的Segway X2 Scooter户外版平衡车坠悬崖身亡，享年62岁。
 
 直到2013年2月28日被SSI（Summit Strategic Investments）收购，Segway并未推出什么新产品，只是除了更多的运用于警方，Segway还开始大量在旅游业做推广，成为旅游区的代步工具。
 
-####“电动平衡车”在中国市场
+#### “电动平衡车”在中国市场
 
 在美国，Segway不仅仅是一个品牌，而且被定义为一种品类。所以在中国需要取一个中文译名，由于人们对其品类定位模糊，结果五花八门的名字都出来了——脱胎于音译的“摄位车”、“思维车”、“赛格威”，根据研发技术的“智能载具”、“代步机器人”，根据使用方法的“体感车”，根据品牌的比如“易步车”等等，不一而足。
 
@@ -59,11 +59,11 @@ Dean·Kamen曾考入伍斯特理工学院(Worcester Polytechnic Institute)，两
 
 而在这个时候，Dean·Kamen依然是Segway的投资者，不过他已经不怎么管理Segway了，听说他在发明一种新的假肢，这个全新的产品主要用户群是在战争中失去手臂的军人。果然，还是发明家更适合他。
 
-##SSI时代
+## SSI时代
 
 2013年，Segway被SSI（Summit Strategic Investments）收购，并宣称今后几年将改变发展方向，但这一项目却一直被搁置。
 
-##Ninebot时代
+## Ninebot时代
 
 ![](/img/wiki/segway-04.jpg)
 
@@ -77,11 +77,11 @@ Dean·Kamen曾考入伍斯特理工学院(Worcester Polytechnic Institute)，两
 
 Ninebot是国内领先的集研发、设计、生产、销售与服务于一体的智能短途产品运营商，Ninebot旗下有WindRunner（风行者）系列、Ninebot九号系列、Ninebot One系列产品。收购后，Ninebot不仅获得Segway旗下三大产品系列近十款产品的所有权，行业400多项核心专利，以及人才、生产线，全球经销商网络和供应商体系。
 
-##群雄割据时代
+## 群雄割据时代
 
 Segway被小米生态链成员Ninebot收购。使得平衡车市场局面再一次被打破，进入群雄割据时代。
 
-平衡车在中国消费者心中有两个大品牌，南易步北风行者。易步的总部在东莞，风行者的总部在北京。其他的品牌或者还没有如这两者大的销量和影响力，或者术业有专攻（比如新世纪品牌只面向公安系统销售）。与此同时，还有大量刚刚起步创业的平衡车企业。
+平衡车在中国消费者心中有两个大品牌，南乐行北九号。乐行的总部在深圳，九号的总部在北京。其他的品牌或者还没有如这两者大的销量和影响力，或者术业有专攻（比如新世纪品牌只面向公安系统销售）。与此同时，还有大量刚刚起步创业的平衡车企业。
 
 
 
