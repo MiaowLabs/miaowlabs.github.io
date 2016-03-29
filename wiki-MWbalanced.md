@@ -10,7 +10,7 @@ title: MWbalanced Wiki
 </b>
 </div>
 
-<p>MWbalanced是喵呜实验室的两轮自平衡小车的代号。代号MWbalancedSTC15的命名遵循“MW+xxx”的方式，MW为大写，是Miaow的缩写，balanced为小写，意为“平衡的”，STC15是该版本使用的控制芯片型号。另有MWbalancedSTM32。</p>
+<p>MWbalanced是喵呜实验室的两轮自平衡小车的代号。代号MWbalancedSTC15的命名遵循“MW+xxx”的方式，MW为大写，是Miaow的缩写，balanced为小写，意为“平衡的”，STC15是该版本使用的控制芯片型号。</p>
 
 <h2>扫盲</h2>
 * [两轮平衡车历史回顾](wiki/self-balanced-history.html)
