@@ -28,7 +28,7 @@ title: 喵呜百科
 <h2>数学建模</h2>
 <p>由喵呜实验室年青貌美身强力壮的小伙伴Rick Grimes为初学者打造的倾力之作。</p>
 * [两轮自平衡小车的数学建模](wiki/Mathematical-Modeling/MWbalanced-Mathematical-Modeling.html)
-* 
+
 <h2>MWbalancedSTC15（第二版）开发指南</h2>
 * [教你怎么连接蓝牙遥控小车](wiki/bluetooth-connect.html)
 * [教你通过USB烧写固件](wiki/usb-download-firmware.html)
