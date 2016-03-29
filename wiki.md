@@ -13,8 +13,7 @@ title: Miaow Wiki
 <h2 id="self-balanced">两轮平衡车</h2>
 <p>开源硬件是喵呜实验室团队成长的土壤。喵呜实验室也愿意积极地给大家带来更多开源硬件。</p>
 
-* [两轮平衡车历史回顾](wiki/self-balanced-history.html)
-* [开创历史的Segway](wiki/segway.html)
+
 * [开源两轮自平衡小车](wiki/open-source-self-balanced.html)
 
 <h2 id="basic-knowledge">基础知识</h2>
