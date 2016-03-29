@@ -150,18 +150,18 @@ PID校正器由比例P，积分I，微分D这三种基本规律组合而成。�
 
 在Simulink文件中，建立自平衡车的数学模型，调用PID控制器构成控制系统的主要部分。设定输入信号值为0，代表角度初始值为0，平衡车初始在平衡位置。对输出节点，调用两个Step模块，通过设定Step Time，使之构成宽度为1s的脉冲信号作为平衡车的外力干扰作用信号。整体系统构成负反馈形式。如图10.
 
-![](/img/wiki/Mathematical-Modeling/MWbalanced-024.png)
+![](/img/wiki/Mathematical-Modeling/MWbalanced-025.png)
 
 图10 自平衡车控制系统数学模型的simulink仿真
 
 仿真系统中示波器Angle与f分别表示角度变化波形与外力作用信号波形。点击运行之后可以很清晰的看到，外力作用为标准的脉冲信号。如图11。
 此时，在脉冲信号作为干扰的情况下，Angle示波器中显示了车体角度的变化值，如图12。通过波形可以看出，角度在外界干扰的情况下，能够在一定时间内自动恢复到稳定状态。证明了前文建立的自平衡车控制系统的数学模型是行之有效的。
 
-![](/img/wiki/Mathematical-Modeling/MWbalanced-025.png)
+![](/img/wiki/Mathematical-Modeling/MWbalanced-026.png)
 
 图11 外界干扰信号波形图
 
-![](/img/wiki/Mathematical-Modeling/MWbalanced-024.png)
+![](/img/wiki/Mathematical-Modeling/MWbalanced-027.png)
  
 图12 车体角度自恢复过程仿真波形
 
