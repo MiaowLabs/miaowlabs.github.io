@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: MWbalanced Wiki
+title: 喵呜百科
 ---
 
 <div class="jumbotron">
@@ -12,21 +12,34 @@ title: MWbalanced Wiki
 
 <p>MWbalanced是喵呜实验室的两轮自平衡小车的代号。代号MWbalancedSTC15的命名遵循“MW+xxx”的方式，MW为大写，是Miaow的缩写，balanced为小写，意为“平衡的”，STC15是该版本使用的控制芯片型号。</p>
 
+<h1>《零基础制作两轮自平衡小车-基于MWbalancedSTC15（第二版）讲解》</h1>
+
 <h2>扫盲</h2>
+<p>本章节主要讲解平衡车历史和基础知识。</p>
 * [两轮平衡车历史回顾](wiki/self-balanced-history.html)
 * [开创历史的Segway](wiki/segway.html)
+* [为什么要用加速度计和陀螺仪两种传感器？](wiki/why-accel-gyro.html)
+* [两轮自平衡小车需要用到多少个维度数据？](wiki/how-many-dimensions.html)
 
-<h2>《零基础制作两轮自平衡小车-基于MWbalancedSTC15（第二版）讲解》</h2>
-* [给初学者的一堂公开课](wiki/open-class.html)
+<h2>公开课</h2>
+<p>本堂公开课主讲内容：器件选型；原理图讲解；自平衡原理；滤波算法讲解；调试经验分享。</p>
+* [为初学者开设的公开课](wiki/open-class.html)
+
+<h2>数学建模</h2>
+<p>由喵呜实验室年青貌美身强力壮的小伙伴Rick Grimes为初学者打造的倾力之作。</p>
+* [两轮自平衡小车的数学建模](wiki/Mathematical-Modeling/MWbalanced-Mathematical-Modeling.html)
+* 
+<h2>MWbalancedSTC15（第二版）开发指南</h2>
 * [教你怎么连接蓝牙遥控小车](wiki/bluetooth-connect.html)
 * [教你通过USB烧写固件](wiki/usb-download-firmware.html)
-* [教你使用懒人工具&固件烧写软件STC-ISP（及常见问题）](wiki/stc-isp-use-guide.html)
+* [教你使用固件烧写软件&懒人工具STC-ISP（及其常见问题）](wiki/stc-isp-use-guide.html)
 * [教你使用虚拟示波器Serial Digital Scope显示数据波形](wiki/serial-digital-scope.html)
-* [两轮自平衡小车的数学建模](wiki/Mathematical-Modeling/MWbalanced-Mathematical-Modeling.html)
-* [基础教程：MWbalancedSTC15(第二版)硬件原理图讲解](wiki/hardware-basic-2.html)
-* [基础教程：MWbalanced软件框架讲解—裸机版本](wiki/software-main-none.html)
-* [基础教程：为什么要用加速度计和陀螺仪两种传感器？](wiki/why-accel-gyro.html)
-* [基础教程：两轮自平衡小车需要用到多少个维度数据？](wiki/how-many-dimensions.html)
+<h3>硬件部分</h3>
+* [MWbalancedSTC15(第二版)硬件原理图讲解](wiki/hardware-basic-2.html)
+
+<h3>软件部分</h3>
+* [MWbalanced软件框架讲解—裸机版本](wiki/software-main-none.html)
+* [windows下开发环境搭建—Small RTOS51版本（待上传）]()
 * [基础教程：简单有效的互补滤波器](wiki/complementary-filter.html)
 * [基础教程：在Windows平台下搭建开发环境](wiki/setup-environment.html)
 * [基础教程：新建Keil工程模板](wiki/new-project.html)
@@ -52,7 +65,6 @@ title: MWbalanced Wiki
 
 <h2 id="rd">开发指南</h2>
 * [windows下开发环境搭建—裸机版本](wiki/setup-environment-in-windows-none.html)
-* [windows下开发环境搭建—Small RTOS51版本]()
 
 <h2>MWbalanced原理讲解</h2>
 * [MWbalanced硬件原理讲解](wiki//hardware-basic.html)
