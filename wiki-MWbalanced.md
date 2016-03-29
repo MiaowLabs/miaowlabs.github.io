@@ -22,6 +22,7 @@ title: MWbalanced Wiki
 * [教你通过USB烧写固件](wiki/usb-download-firmware.html)
 * [教你使用懒人工具&固件烧写软件STC-ISP（及常见问题）](wiki/stc-isp-use-guide.html)
 * [教你使用虚拟示波器Serial Digital Scope显示数据波形](wiki/serial-digital-scope.html)
+* [两轮自平衡小车的数学建模](wiki/Mathematical-Modeling/MWbalancedSTC15-Mathematical-Modeling.html)
 * [基础教程：MWbalancedSTC15(第二版)硬件原理图讲解](wiki/hardware-basic-2.html)
 * [基础教程：MWbalanced软件框架讲解—裸机版本](wiki/software-main-none.html)
 * [基础教程：为什么要用加速度计和陀螺仪两种传感器？](wiki/why-accel-gyro.html)
