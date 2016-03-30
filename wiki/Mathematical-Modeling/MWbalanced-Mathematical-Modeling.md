@@ -5,7 +5,7 @@ title: 两轮自平衡小车的数学建模
 
 # {{ page.title }}
 
-> 作者：Miaow Labs-Rick Grimes
+> 作者：Rick Grimes
 
 #### 模型假设与符号说明
 
@@ -150,22 +150,26 @@ PID校正器由比例P，积分I，微分D这三种基本规律组合而成。�
 
 在Simulink文件中，建立自平衡车的数学模型，调用PID控制器构成控制系统的主要部分。设定输入信号值为0，代表角度初始值为0，平衡车初始在平衡位置。对输出节点，调用两个Step模块，通过设定Step Time，使之构成宽度为1s的脉冲信号作为平衡车的外力干扰作用信号。整体系统构成负反馈形式。如图10.
 
-![](/img/wiki/Mathematical-Modeling/MWbalanced-024.png)
+![](/img/wiki/Mathematical-Modeling/MWbalanced-025.png)
 
 图10 自平衡车控制系统数学模型的simulink仿真
 
 仿真系统中示波器Angle与f分别表示角度变化波形与外力作用信号波形。点击运行之后可以很清晰的看到，外力作用为标准的脉冲信号。如图11。
 此时，在脉冲信号作为干扰的情况下，Angle示波器中显示了车体角度的变化值，如图12。通过波形可以看出，角度在外界干扰的情况下，能够在一定时间内自动恢复到稳定状态。证明了前文建立的自平衡车控制系统的数学模型是行之有效的。
 
-![](/img/wiki/Mathematical-Modeling/MWbalanced-025.png)
+![](/img/wiki/Mathematical-Modeling/MWbalanced-026.png)
 
 图11 外界干扰信号波形图
 
-![](/img/wiki/Mathematical-Modeling/MWbalanced-024.png)
+![](/img/wiki/Mathematical-Modeling/MWbalanced-027.png)
  
 图12 车体角度自恢复过程仿真波形
 
 #### 本章小结
 
 本章基于对平衡车做出的几个基本合理假设，首先从物理学中倒立摆系统入手，结合平衡车的结构特点进行了详细的受力分析，得到了控制平衡车稳定的参数要求。同时，在受力分析的基础上，进一步建立了平衡车在时域上的的微分方程模型，动态的描述了平衡车的运行特征。之后根据经典控制理论，得到平衡车的传递函数，在S域利用matlab软件对平衡车的稳定性做了探讨。得到了系统由于在S平面右半平面有极点而不稳定的结论。之后在此基础上，选取PD控制，在平衡车系统传递函数的基础上增加负反馈通道对系统进行校正。然后利用matlab在此分析了系统的稳定性，得到了稳定的结论。为下一步实际设计小车的软硬件系统提供了理论支持。
+
+**附：**
+
+本章讲解中用到的Matlab文件：[百度云传送门](https://pan.baidu.com/s/1qYxfvFA)
 

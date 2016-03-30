@@ -30,7 +30,7 @@ title: 喵呜百科
 * [两轮自平衡小车的数学建模](wiki/Mathematical-Modeling/MWbalanced-Mathematical-Modeling.html)
 
 <h2>MWbalancedSTC15（第二版）开发指南</h2>
-* [教你怎么连接蓝牙遥控小车](wiki/bluetooth-connect.html)
+* [教你连接蓝牙遥控小车](wiki/bluetooth-connect.html)
 * [教你通过USB烧写固件](wiki/usb-download-firmware.html)
 * [教你使用固件烧写软件&懒人工具STC-ISP（及其常见问题）](wiki/stc-isp-use-guide.html)
 * [教你使用虚拟示波器Serial Digital Scope显示数据波形](wiki/serial-digital-scope.html)
