@@ -29,32 +29,36 @@ title: 喵呜百科
 <p>由喵呜实验室年青貌美身强力壮的小伙伴Rick Grimes为初学者打造的倾力之作。</p>
 * [两轮自平衡小车的数学建模](wiki/Mathematical-Modeling/MWbalanced-Mathematical-Modeling.html)
 
-<h2>MWbalancedSTC15（第二版）开发指南</h2>
-* [教你连接蓝牙遥控小车](wiki/bluetooth-connect.html)
-* [教你通过USB烧写固件](wiki/usb-download-firmware.html)
-* [教你使用固件烧写软件&懒人工具STC-ISP（及其常见问题）](wiki/stc-isp-use-guide.html)
-* [教你使用虚拟示波器Serial Digital Scope显示数据波形](wiki/serial-digital-scope.html)
-<h3>硬件部分</h3>
+<h2>硬件部分</h2>
 * [MWbalancedSTC15(第二版)硬件原理图讲解](wiki/hardware-basic-2.html)
 
-<h3>软件部分</h3>
+<h2>软件部分</h2>
 * [MWbalanced软件框架讲解—裸机版本](wiki/software-main-none.html)
+* [MWbalanced软件框架讲解—Small RTOS51系统版本（待上传）]()
+ 
+<h2>开发指南</h2>
+* [连接蓝牙遥控小车](wiki/bluetooth-connect.html)
+* [通过USB烧写固件](wiki/usb-download-firmware.html)
+* [使用固件烧写软件&懒人工具STC-ISP常见问题](wiki/stc-isp-use-guide.html)
+* [使用虚拟示波器Serial Digital Scope显示数据波形](wiki/serial-digital-scope.html)
+
+<h2>新手教程</h2>
+* [简单有效的互补滤波器](wiki/complementary-filter.html)
+* [windows下开发环境搭建-裸机版本开发环境](wiki/setup-environment.html)
 * [windows下开发环境搭建—Small RTOS51版本（待上传）]()
-* [基础教程：简单有效的互补滤波器](wiki/complementary-filter.html)
-* [基础教程：在Windows平台下搭建开发环境](wiki/setup-environment.html)
-* [基础教程：新建Keil工程模板](wiki/new-project.html)
-* [基础教程：LED指示灯实验](wiki/LED.html)
-* [基础教程：串口通讯实验](wiki/uart.html)
-* [基础教程：（蓝牙）无线通讯实验](wiki/bluetooth.html)
-* [基础教程：传感器数据采集实验](wiki/mpu-6050.html)
-* [基础教程：PWM驱动电机实验(待上传)]()
-* [基础教程：编码器数据采集实验(待上传)]()
-* [进阶教程：多传感器数据融合(待上传)]()
-* [进阶教程：使用PID算法控制电机速度(待上传)]()
-* [进阶教程：角度环PD调试指南](wiki/angle-pd.html)
-* [进阶教程：速度环PI调试指南(待上传)]()
-* [进阶教程：方向环PD调试指南(待上传)]()
-* [进阶教程：红外巡线(待上传)]()
+* [新建Keil工程模板](wiki/new-project.html)
+* [LED指示灯实验](wiki/LED.html)
+* [串口通讯实验](wiki/uart.html)
+* [无线通讯实验（蓝牙）](wiki/bluetooth.html)
+* [传感器数据采集实验](wiki/mpu-6050.html)
+* [PWM驱动电机实验(待上传)]()
+* [编码器数据采集实验(待上传)]()
+* [多传感器数据融合(待上传)]()
+* [使用PID算法控制电机速度(待上传)]()
+* [角度环PD调试指南](wiki/angle-pd.html)
+* [速度环PI调试指南(待上传)]()
+* [方向环PD调试指南(待上传)]()
+* [红外巡线(待上传)]()
 
 
 <h2>MWbalanced选型指南（第一版）</h2>
