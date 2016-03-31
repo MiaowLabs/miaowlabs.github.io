@@ -31,10 +31,12 @@ title: 喵呜百科
 
 <h2>硬件部分</h2>
 * [MWbalancedSTC15(第二版)硬件原理图讲解](wiki/hardware-basic-2.html)
+* [MWbalancedSTC15(第二版)元器件选型总览](wiki/devices-selection-02.html)
 
 <h2>软件部分</h2>
 * [MWbalanced软件框架讲解—裸机版本](wiki/software-main-none.html)
 * [MWbalanced软件框架讲解—Small RTOS51系统版本（待上传）]()
+* [简单有效的互补滤波器](wiki/complementary-filter.html)
  
 <h2>开发指南</h2>
 * [连接蓝牙遥控小车](wiki/bluetooth-connect.html)
@@ -43,7 +45,6 @@ title: 喵呜百科
 * [使用虚拟示波器Serial Digital Scope显示数据波形](wiki/serial-digital-scope.html)
 
 <h2>新手教程</h2>
-* [简单有效的互补滤波器](wiki/complementary-filter.html)
 * [windows下开发环境搭建-裸机版本开发环境](wiki/setup-environment.html)
 * [windows下开发环境搭建—Small RTOS51版本（待上传）]()
 * [新建Keil工程模板](wiki/new-project.html)
