@@ -37,6 +37,7 @@ title: 喵呜百科
 * [MWbalancedSTC15软件框架讲解—裸机版本](wiki/software-main-none.html)
 * [MWbalancedSTC15软件框架讲解—Small RTOS51系统版本（待上传）]()
 * [简单有效的互补滤波器](wiki/complementary-filter.html)
+* [小明带你入门PID控制](wiki/what-is-pid.html)
 
 <h2 id="structure">机械部分</h2>
 * [MWbalancedSTC15的机械结构](wiki/MWbalanced-structure.html)
