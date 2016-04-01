@@ -14,37 +14,40 @@ title: 喵呜百科
 
 <h1>《零基础制作两轮自平衡小车-基于MWbalancedSTC15（第二版）讲解》</h1>
 
-<h2>扫盲</h2>
+<h2 id="basic">扫盲</h2>
 <p>本章节主要讲解平衡车历史和基础知识。</p>
 * [两轮平衡车历史回顾](wiki/self-balanced-history.html)
 * [开创历史的Segway](wiki/segway.html)
 * [为什么要用加速度计和陀螺仪两种传感器？](wiki/why-accel-gyro.html)
 * [两轮自平衡小车需要用到多少个维度数据？](wiki/how-many-dimensions.html)
 
-<h2>公开课</h2>
+<h2 id="open-class">公开课</h2>
 <p>本堂公开课主讲内容：器件选型；原理图讲解；自平衡原理；滤波算法讲解；调试经验分享。</p>
 * [为初学者开设的公开课](wiki/open-class.html)
 
-<h2>数学建模</h2>
+<h2 id="math-model">数学建模</h2>
 <p>由喵呜实验室年青貌美身强力壮的小伙伴Rick Grimes为初学者打造的倾力之作。</p>
 * [两轮自平衡小车的数学建模](wiki/Mathematical-Modeling/MWbalanced-Mathematical-Modeling.html)
 
-<h2>硬件部分</h2>
+<h2 id="hardware">硬件部分</h2>
 * [MWbalancedSTC15(第二版)硬件原理图讲解](wiki/hardware-basic-2.html)
 * [MWbalancedSTC15(第二版)元器件选型总览](wiki/devices-selection-02.html)
 
-<h2>软件部分</h2>
-* [MWbalanced软件框架讲解—裸机版本](wiki/software-main-none.html)
-* [MWbalanced软件框架讲解—Small RTOS51系统版本（待上传）]()
+<h2 id="software">软件部分</h2>
+* [MWbalancedSTC15软件框架讲解—裸机版本](wiki/software-main-none.html)
+* [MWbalancedSTC15软件框架讲解—Small RTOS51系统版本（待上传）]()
 * [简单有效的互补滤波器](wiki/complementary-filter.html)
+
+<h2 id="structure">机械部分</h2>
+* [MWbalancedSTC15的机械结构](wiki/MWbalanced-structure.html)
  
-<h2>开发指南</h2>
+<h2 id="development">开发指南</h2>
 * [连接蓝牙遥控小车](wiki/bluetooth-connect.html)
 * [通过USB烧写固件](wiki/usb-download-firmware.html)
 * [使用固件烧写软件&懒人工具STC-ISP常见问题](wiki/stc-isp-use-guide.html)
 * [使用虚拟示波器Serial Digital Scope显示数据波形](wiki/serial-digital-scope.html)
 
-<h2>新手教程</h2>
+<h2 id="course">新手教程</h2>
 * [windows下开发环境搭建-裸机版本开发环境](wiki/setup-environment.html)
 * [windows下开发环境搭建—Small RTOS51版本（待上传）]()
 * [新建Keil工程模板](wiki/new-project.html)
@@ -62,14 +65,11 @@ title: 喵呜百科
 * [红外巡线(待上传)]()
 
 
-<h2>MWbalanced选型指南（第一版）</h2>
+<h2>MWbalancedSTC15选型指南（第一版）</h2>
 * [MWbalanced(第一版)零部件购买指南](wiki/devices-buy.html)
-* [MWbalanced元器件选型总览](wiki/devices-selection.html)
-* [MWbalanced电机选型](wiki/motor-select.html)
-* [MWbalanced电池选型](wiki/power-select.html)
-
-<h2 id="rd">开发指南</h2>
-* [windows下开发环境搭建—裸机版本](wiki/setup-environment-in-windows-none.html)
+* [MWbalanced(第一版)元器件选型总览](wiki/devices-selection.html)
+* [MWbalanced(第一版)电机选型](wiki/motor-select.html)
+* [MWbalanced(第一版)电池选型](wiki/power-select.html)
 
 <h2>MWbalanced原理讲解</h2>
 * [MWbalanced硬件原理讲解](wiki//hardware-basic.html)
@@ -94,7 +94,7 @@ title: 喵呜百科
 * [三轴陀螺仪和三轴加速度计MPU6050]()
 * [平衡车PID控制算法](wiki/algorithm-pid.html)
 
-<h2 id="crazyflie">Small RTOS51</h2>
+<h2 id="small-rtos51">Small RTOS51</h2>
 <p>为了满足各个层次小伙伴的需求和体现出我们的努力，后续会试着移植Small RTOS51实时操作系统内核。Small RTOS51是陈明计先生编写的一个实时操作系统，并著有《嵌入式实时操作系统Small RTOS51原理及应用》。SmallRTOS51适合在小RAM/小FLASH单片机上运行。</p>
 * [Small RTOS51简介](wiki/smallrtos51-intro.html)
 * [介绍几个常用的宏的作用]()
@@ -102,5 +102,4 @@ title: 喵呜百科
 * [通信协议]()
 
 <h2 id="other">其他</h2>
-* [MWbalanced的机械结构](wiki/MWbalanced-structure.html)
 * [MPU-6050芯片解剖](wiki/mpu6050-anatomy.html)
