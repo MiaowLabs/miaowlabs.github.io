@@ -15,12 +15,14 @@ title: 下载中心
 <a href="http://pan.baidu.com/s/1gef6cKj" class="btn btn-primary btn-xl" role="button" target="_blank" >历版固件</a>
 
 ## 原理图/元器件资料
+
 我们整理了MWbalanced的原理图和所使用到元器件的资料（Datasheet、封装图等），并上传到了百度云盘，供大家下载。
 
-<a href="http://pan.baidu.com/s/1o7x9sfw" class="btn btn-primary btn-xl" role="button" target="_blank" >原理图</a>
+<a href="http://pan.baidu.com/s/1o8GM2UI" class="btn btn-primary btn-xl" role="button" target="_blank" >原理图(硬件版本2.0)</a>
 <a href="http://pan.baidu.com/s/1sj5Uesd" class="btn btn-primary btn-xl" role="button" target="_blank" >元器件资料</a>
 
 ## Windows相关安装包
+
 代码在Windows下使用Keil进行开发编译。固件的烧写可以直接通过Micro USB进行烧写。我们整理了开发工具的安装文件、驱动安装文件等，共享在百度网盘上提供下载。
 
 <p>
