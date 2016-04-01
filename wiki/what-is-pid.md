@@ -39,11 +39,11 @@ PID是以它的三种纠正算法而命名。受控变数是三种算法（比�
 
 其中
 
-K_p：比例增益，是调适参数
+Kp：比例增益，是调适参数
 
-K_i：积分增益，也是调适参数
+Ki：积分增益，也是调适参数
 
-K_d：微分增益，也是调适参数
+Kd：微分增益，也是调适参数
 
 e：误差=设定值（SP）- 回授值（PV）
 
@@ -66,3 +66,21 @@ PID控制器的一般转移函数是：
 例如一个温控的循环水浴设备有二个串级的PID控制器，分别有各自的热电偶温度感测器。外回路的控制器控制水温，其感测器距加热器很远，直接量测整体水温，其误差量是理想水温及整体水温的差值。外回路PID控制器的输出即为内回路控制器的目标值，内回路控制器控制加热器，其感测器是在加热器上，其误差量是加热器的理想温度及量测到温度的差值，其输出会使加热器维持在设定值附近。
 
 内外回路控制器的参数可能会差很多，外回路的PID控制器有较长的时间常数，对应所有的水加热或是冷却需要的时间。内回路的PID控制器反应会比较快。每个控制器可以调整到符合其真正控制的系统，例如水槽中所有的水，或是加热器本身。
+
+### 伪代码
+
+以下是一段实现PID算法的伪代码：
+
+<pre><code>
+previous_error = 0
+integral = 0 
+start:
+  error = setpoint - measured_value
+  integral = integral + error*dt
+  derivative = (error - previous_error)/dt
+  output = Kp*error + Ki*integral + Kd*derivative
+  previous_error = error
+  wait(dt)
+  goto start
+
+</pre></code>
