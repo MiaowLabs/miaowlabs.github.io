@@ -49,7 +49,7 @@ title: 喵呜百科
 * [使用虚拟示波器Serial Digital Scope显示数据波形](wiki/serial-digital-scope.html)
 
 <h2 id="video">视频教程</h2>
-* [连接蓝牙遥控小车](wiki/bluetooth-connect.html)
+* [角度环PD调试指南](wiki/MWbalanced-angle-pd.html)
 
 <h2 id="course">新手教程</h2>
 * [windows下开发环境搭建-裸机版本开发环境](wiki/setup-environment.html)
