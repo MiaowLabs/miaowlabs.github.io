@@ -48,6 +48,9 @@ title: 喵呜百科
 * [使用固件烧写软件&懒人工具STC-ISP常见问题](wiki/stc-isp-use-guide.html)
 * [使用虚拟示波器Serial Digital Scope显示数据波形](wiki/serial-digital-scope.html)
 
+<h2 id="video">视频教程</h2>
+* [连接蓝牙遥控小车](wiki/bluetooth-connect.html)
+
 <h2 id="course">新手教程</h2>
 * [windows下开发环境搭建-裸机版本开发环境](wiki/setup-environment.html)
 * [windows下开发环境搭建—Small RTOS51版本（待上传）]()
