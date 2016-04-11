@@ -49,9 +49,9 @@ title: 喵呜百科
 * [使用虚拟示波器Serial Digital Scope显示数据波形](wiki/serial-digital-scope.html)
 
 <h2 id="video">视频教程</h2>
-<p>超清无码的调试视频。</p>
+<p>听说，看着这些视频就能调试出能地上滚天上飞的两轮自平衡小车。</p>
 * [快！扶我起来看超清无码的角度环PD调试指南](wiki/MWbalanced-angle-pd.html)
-
+* [来！再扶我起来看超清无码的速度环PI调试指南](wiki/MWbalanced-speed-pi.html)
 <h2 id="course">新手教程</h2>
 * [windows下开发环境搭建-裸机版本开发环境](wiki/setup-environment.html)
 * [windows下开发环境搭建—Small RTOS51版本（待上传）]()
