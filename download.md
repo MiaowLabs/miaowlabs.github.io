@@ -27,7 +27,8 @@ title: 下载中心
 
 <p>
 <a href="http://pan.baidu.com/s/1kTKN5AZ" class="btn btn-primary btn-xl" role="button" target="_blank" >Keil C51安装文件</a>
-<a href="http://pan.baidu.com/s/1bnBg2qN" class="btn btn-primary btn-xl" role="button" target="_blank" >STC-ISP-15xx-v6.82H固件烧写工具</a>
+<a href="https://pan.baidu.com/s/1sluwq77" class="btn btn-primary btn-xl" role="button" target="_blank" >STC-ISP-15xx-v6.82H固件烧写工具</a>
+<a href="https://pan.baidu.com/s/1c08Q5AK" class="btn btn-primary btn-xl" role="button" target="_blank" >CP2102驱动（含x86和x64）</a>
 </p>
 
 ## 上位机和Android客户端
