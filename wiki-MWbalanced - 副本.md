@@ -48,23 +48,50 @@ title: 喵呜百科
 
 <h2 id="course">新手教程</h2>
 * [windows下开发环境搭建-裸机版本开发环境](wiki/setup-environment.html)
+* [windows下开发环境搭建—Small RTOS51版本（待上传）]()
 * [新建Keil工程模板](wiki/new-project.html)
 * [LED指示灯实验](wiki/LED.html)
 * [串口通讯实验](wiki/uart.html)
 * [无线通讯实验（蓝牙）](wiki/bluetooth.html)
 * [传感器数据采集实验](wiki/mpu-6050.html)
-* [角度环PD调试指南](wiki/MWbalanced-angle-pd.html)
-* [速度环PI调试指南](wiki/MWbalanced-speed-pi.html)
+* [PWM驱动电机实验(待上传)]()
+* [编码器数据采集实验(待上传)]()
+* [多传感器数据融合(待上传)]()
+* [使用PID算法控制电机速度(待上传)]()
+* [角度环PD调试指南](wiki/angle-pd.html)
+* [速度环PI调试指南(待上传)]()
+* [方向环PD调试指南(待上传)]()
+* [红外巡线(待上传)]()
 
-<h2 id="basic">扫盲</h2>
-<p>本章节主要涉及部分基础知识。</p>
-* [为什么要用加速度计和陀螺仪两种传感器？](wiki/why-accel-gyro.html)
-* [两轮自平衡小车需要用到多少个维度数据？](wiki/how-many-dimensions.html)
+
+<h2>MWbalanced 2.0选型指南（第一版）</h2>
+* [MWbalanced(第一版)零部件购买指南](wiki/devices-buy.html)
+* [MWbalanced(第一版)元器件选型总览](wiki/devices-selection.html)
+* [MWbalanced(第一版)电机选型](wiki/motor-select.html)
+* [MWbalanced(第一版)电池选型](wiki/power-select.html)
+
+<h2>MWbalanced原理讲解</h2>
+* [MWbalanced硬件原理讲解](wiki//hardware-basic.html)
+* [MWbalanced软件开发经验总结](wiki/)
+* [MWbalanced通信协议](wiki/)
 
 <h2 id="exp">开发经验总结</h2>
 * [原地直立&原地旋转](wiki/MWbalanced-inplace-hold.html)
 * [动力效率&续航时间](wiki/MWbalanced-power-endurance.html)
 * [车体平衡调试](wiki/MWbalanced-debug.html)
+* [超声波和避障]()
+* [红外巡线]()
+* [摄像头和图传]()
+
+<h2 id="quadcopter-dev">两轮自平衡小车算法讲解</h2>
+<p>姿态解算是指把陀螺仪、加速度计等数据融合在一起，得到平衡小车的姿态数据，也叫做姿态融合。姿态解算的过程，涉及到传感器数据读取与滤波，四元数与旋转，姿态解算框架，长期融合/快速融合。</p>
+* [为什么要用加速度计和陀螺仪两个传感器？](wiki/why-accel-gyro.html)
+* [两轮自平衡小车需要用到多少个维度数据？](wiki/how-many-dimensions.html)
+* [互补滤波器](wiki/complementary-filter.html)
+* [软件姿态解算]()
+* [硬件姿态解算]()
+* [三轴陀螺仪和三轴加速度计MPU6050]()
+* [平衡车PID控制算法](wiki/algorithm-pid.html)
 
 <h2 id="small-rtos51">Small RTOS51</h2>
 <p>为了满足各个层次小伙伴的需求和体现出我们的努力，后续会试着移植Small RTOS51实时操作系统内核。Small RTOS51是陈明计先生编写的一个实时操作系统，并著有《嵌入式实时操作系统Small RTOS51原理及应用》。SmallRTOS51适合在小RAM/小FLASH单片机上运行。</p>
@@ -74,6 +101,11 @@ title: 喵呜百科
 * [通信协议]()
 
 <h2 id="other">其他</h2>
-* [开创历史的Segway](wiki/segway.html)
-* [两轮平衡车历史回顾](wiki/self-balanced-history.html)
 * [MPU-6050芯片解剖](wiki/mpu6050-anatomy.html)
+
+<h2 id="basic">扫盲</h2>
+<p>本章节主要讲解平衡车历史和基础知识。</p>
+* [两轮平衡车历史回顾](wiki/self-balanced-history.html)
+* [开创历史的Segway](wiki/segway.html)
+* [为什么要用加速度计和陀螺仪两种传感器？](wiki/why-accel-gyro.html)
+* [两轮自平衡小车需要用到多少个维度数据？](wiki/how-many-dimensions.html)
