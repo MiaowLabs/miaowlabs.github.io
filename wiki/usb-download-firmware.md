@@ -25,3 +25,5 @@ MWbalanced2.0使用的是外部晶振@20M，而且使用了STC15单片机内部�
 烧录成功后，STC-ISP会有操作成功提示。如图2所示。
 
 ![](/img/wiki/stc-isp-download-success.png)
+
+图2
