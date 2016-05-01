@@ -36,7 +36,7 @@ MWbalanced2.0使用定制的锂电池，容量2000mAh，额定电压7.4，充满
 
 特点：高容量,高放平台,工作时间长,寿命长。
 
-购买地址：[淘宝链接](https://item.taobao.com/item.htm?spm=a1z09.2.0.0.4wwaGV&id=15616162951&_u=1qnqfnbf221)
+购买地址：[淘宝链接](https://item.taobao.com/item.htm?spm=a230r.1.14.32.E1P6u7&id=529808134531&ns=1&abbucket=15#detail)
 
 适配的智能快速充电器：[淘宝链接](https://item.taobao.com/item.htm?spm=a230r.1.14.42.R8Fz9N&id=530722106272&ns=1&abbucket=15#detail)
 
