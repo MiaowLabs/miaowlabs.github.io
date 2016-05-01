@@ -2,7 +2,7 @@
 layout: blog-post
 title: MWbalanced开源两轮自平衡小车
 author: Songyimiao
-description: MWbalanced项目旨在为大学生/电子初学者/创客提供可二次开发的两轮自平衡小车开发套件（MWbalanced DSK）。我们秉承开放、合作、分享的理念，致力将MWbalanced打造成车模爱好者学习交流的软硬件平台。
+description: MWbalanced项目旨在为大学生/电子初学者/创客提供两轮自平衡小车开发套件（MWbalanced DSK）。我们希望MWbalanced项目能够为开源硬件/开源软件/创客领域贡献一份力量。
 ---
 
 ![](/img/MWbalanced.png)
@@ -24,7 +24,7 @@ MWbalanced是开源项目，包括源代码，原理图，设计思路等，并�
 
 MWbalanced项目起源于孩童从小对四驱车的喜爱，随着年龄的增长，小车也从四驱车变成了直立车，唯有热爱依旧。
 
-MWbalanced项目也在不停地发展着。
+MWbalanced项目也在稳步地向前推进着。
 
 ## MWbalanced的理念
 
