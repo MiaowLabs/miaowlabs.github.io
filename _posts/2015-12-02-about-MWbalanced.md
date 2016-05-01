@@ -24,6 +24,8 @@ MWbalanced是开源项目，包括源代码，原理图，设计思路等，并�
 
 MWbalanced项目起源于孩童从小对四驱车的喜爱，随着年龄的增长，小车也从四驱车变成了直立车，唯有热爱依旧。
 
+MWbalanced项目也在不停地发展着。
+
 ## MWbalanced的理念
 
 ![](/img/blog/open-hardware.png)
