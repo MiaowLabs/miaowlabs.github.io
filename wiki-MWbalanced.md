@@ -19,6 +19,7 @@ MWbalanced2.0百科改编自《零基础制作两轮自平衡小车（MWbalanced
 
 * [MWbalanced零部件购买指南](wiki/devices-buy-02.html)
 <h2 id="development">开发指南</h2>
+* [拼装套件](wiki/assembly-instructions.html)
 * [如何连接蓝牙](wiki/bluetooth-connect.html)
 * [如何烧写固件](wiki/usb-download-firmware.html)
 * [固件烧写软件&懒人工具STC-ISP常见问题](wiki/stc-isp-use-guide.html)
