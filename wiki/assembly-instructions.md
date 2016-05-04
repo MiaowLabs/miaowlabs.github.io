@@ -25,6 +25,7 @@ title: 组装维修教程
 * 橡胶车轮
 * 亚克力板
 * 锂电池
+* 连接线
 * 铜柱
 * 螺丝
 * 螺母
@@ -35,61 +36,61 @@ title: 组装维修教程
 
 ### 第一步：安装电机固定架
 
-![](/img/wiki/assembly/1.gif)
+![](/img/wiki/Assembly/1.gif)
 
 用M3*10螺丝和螺母，把两个电机固定架固定到亚克力板上，并拧紧。
 
 ### 第二步：安装电机
 
-![](/img/wiki/assembly/2.gif)
+![](/img/wiki/Assembly/2.gif)
 
 用M3*6螺丝，将两个电机固定到固定架上，并拧紧。
 
 ### 第三步：组装橡胶车轮
 
-![](/img/wiki/assembly/3.gif)
+![](/img/wiki/Assembly/3.gif)
 
 将两个橡胶车轮先拼接好。
 
 ### 第四步：安装橡胶车轮
 
-![](/img/wiki/assembly/4.gif)
+![](/img/wiki/Assembly/4.gif)
 
 把两个橡胶车轮紧配压进电机轴。注意，螺母的一侧应朝外，避免螺丝卡到固定架，影响车轮转动。
 
 ### 第五步：安装下层铜柱
 
-![](/img/wiki/assembly/5.gif)
+![](/img/wiki/Assembly/5.gif)
 
 用M3*6螺丝，依次把四个铜柱安装到黑色亚克力板。
 
 ### 第六步：固定锂电池
 
-![](/img/wiki/assembly/6.gif)
+![](/img/wiki/Assembly/6.gif)
 
 用扎带，把锂电池固定到黑色亚克力板上，并将过长的扎带剪掉。
 
 ### 第七步：固定控制电路板
 
-![](/img/wiki/assembly/7.gif)
+![](/img/wiki/Assembly/7.gif)
 
 拿起控制电路板，对好固定孔，卡进铜柱里面，并把电源接上到控制电路板的防插反接口上。
 
 ### 第八步：安装上层铜柱
 
-![](/img/wiki/assembly/8.gif)
+![](/img/wiki/Assembly/8.gif)
 
 把控制电路板卡好位置后，再依次安装四个上层铜柱。
 
 ### 第九步：安装透明亚克力板
 
-![](/img/wiki/assembly/9.gif)
+![](/img/wiki/Assembly/9.gif)
 
 用螺丝，将上层透明亚克力板固定好。
 
 ### 第十步：连接电机线
 
-![](/img/wiki/assembly/10.gif)
+![](/img/wiki/Assembly/10.gif)
 
 连接好电机和控制电路板的线。注意，左边电机对于电路板左边端子，右边同理，别连接错了。
 
