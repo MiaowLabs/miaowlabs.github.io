@@ -1,16 +1,16 @@
 ---
 layout: wiki
-title: 组装维修教程
+title: 拼装套件
 ---
 
 # {{ page.title }}
 
-> 本Gif教程对应MWbalanced2.0 DSK（初学者开发套件）。
+> 本教程对应MWbalanced2.0 DSK。
 > 
-> DSK 即 Developer Starter Kit
+> DSK 即 Developer Starter Kit（译：初学者开发套件）
 
 
-**温馨提示：本Gif教程对应MWbalanced2.0 DSK（初学者开发套件）。**
+**温馨提示：本教程对应MWbalanced2.0 DSK（初学者开发套件）。**
 
 ## 准备工具：
 
@@ -19,16 +19,18 @@ title: 组装维修教程
 
 ## 套件列表
 
-* 控制电路板（PCBA）
-* 电机固定架
-* 减速电机
-* 橡胶车轮
-* 亚克力板
-* 锂电池
-* 连接线
-* 铜柱
-* 螺丝
-* 螺母
+![](/img/wiki/Assembly/0.png)
+
+1. 控制电路板（PCBA）
+2. 电机固定架
+3. 减速电机
+4. 橡胶车轮
+5. 亚克力板
+6. 锂电池
+7. 连接线
+8. 铜柱
+9. 螺丝
+10. 螺母
 
 > PCBA是英文Printed Circuit Board（PCB）+ Assembly的简称，也就是说PCB空板经过SMT贴片上件，再经过DIP插件，最后得到的元器件已经贴好的电路板，简称PCBA。
 
