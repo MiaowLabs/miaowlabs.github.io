@@ -10,7 +10,7 @@ title: 下载中心
 现在使用的控制代码命名方式为“MWbalanced-firmware-none”，名字中的none表示**没有**使用实时操作系统RTOS，是裸机代码，代码更加简单明了，适合初学者使用。
 
 <a href="https://github.com/MiaowLabs/MWbalanced-firmware-none" class="btn btn-primary btn-xl" role="button" target="_blank" >控制源码</a>
-<a href="http://pan.baidu.com/s/1mhmswoK" class="btn btn-primary btn-xl" role="button" target="_blank" >最新固件</a>
+<a href="http://pan.baidu.com/s/1i5sCkbr" class="btn btn-primary btn-xl" role="button" target="_blank" >最新固件</a>
 <a href="http://pan.baidu.com/s/1gef6cKj" class="btn btn-primary btn-xl" role="button" target="_blank" >历版固件</a>
 
 ## 原理图/元器件资料
@@ -32,6 +32,6 @@ title: 下载中心
 
 ## 上位机和Android客户端
 <a href="http://pan.baidu.com/s/1mg3w8xa" class="btn btn-primary btn-xl" role="button" target="_blank" >虚拟示波器Serial Digital Scope V2</a>
-<a href="https://pan.baidu.com/s/1nv8aAHN" class="btn btn-primary btn-xl" role="button" target="_blank" >Android APP安装程序（蓝牙2.1）</a>
+<a href="http://pan.baidu.com/s/1dFI2JLZ" class="btn btn-primary btn-xl" role="button" target="_blank" >Android APP安装程序（MWbalaced 1.4.apk）</a>
 
 
