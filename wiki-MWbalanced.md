@@ -62,7 +62,7 @@ MWbalanced默认选用8051内核MCU，另有MWblancedSTM32选用STM32F103C8T6。
 * [MPU-6050设置](wiki/mpu-6050.html)
 * [角度环PD调试指南](wiki/MWbalanced-angle-pd.html)
 * [速度环PI调试指南](wiki/MWbalanced-speed-pi.html)
-* [扩展：超声波跟随]()
+* [扩展：超声波跟随](wiki/ultrasonic.html)
 * [扩展：舵机]()
 * [扩展：红外寻迹]()
 
