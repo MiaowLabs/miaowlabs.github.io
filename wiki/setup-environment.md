@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: Windows下开发环境搭建-裸机版本
+title: 开发环境搭建-裸机版本
 ---
 
 # {{ page.title }}
@@ -19,47 +19,21 @@ STC-ISP固件烧录工具：喵呜实验室百度云网盘[stc-isp-15xx-v6.82H](
 
 ## 环境配置说明
 
-在拿到MWbalanced之后，很多朋友都跃跃欲试，想自己烧写个程序到小车控制板上，看看效果。下面我们将演示如何将程序烧写到MWbalanced（MWbalanced是喵呜实验室研制的51单片机两轮自平衡小车的代号）上，但前提是我们的电脑上必须已经安装了CP2102驱动和Keil C51开发环境，没有安装的朋友请参考我们的教程。我们提供的代码都是已经编译好的，直接下载即可，如果不行，请重新编译一次。
+在拿到MWbalanced之后，很多朋友都跃跃欲试，想自己烧写个程序到小车控制板上，看看效果。
+
+下面我们将演示如何将程序烧写到MWbalanced上。前提是，我们的电脑上已经安装CP2102驱动和Keil C51，没有安装的朋友请参考我们的教程。我们提供的代码都是已经编译好的，直接下载即可，如果不行，请重新编译一次。
 
 裸机版本是指没有使用RTOS的主控固件版本，由于没有使用RTOS，程序代码显得更加简单明了，开发环境配置简单，非常适合初学者使用。
 
 裸机版本的代码使用Keil C51进行开发编译，下面介绍编译环境的搭建和编译过程。
 
 ## Keil C51的安装和破解
+
 由于主控使用的是8051内核的STC15，所以必须使用带有8051编译工具链的Keil C51。喵呜实验室使用的Keil版本是Keil C51 V9.00。喵呜实验室百度云网盘提供带有8051编译工具链的Keil C51 V9.00安装文件下载，带有破解注册机和破解说明文档。大家自行下载安装。我们的电脑上是装了Keil C51，然后又安装了MDK-ARM加以覆盖的，不过依然可以看得到版本为9.00。
 
 ![](/img/wiki/keil-version.png)
 
 该安装文件在Windows XP 32位系统、Windows 7 32和64位系统上测试通过。
 
-## 在Github上下载源代码
 
-主控固件裸机版本，裸机指没有使用实时操作系统RTOS。由于没有使用RTOS，所以代码更加简单明了，适合初学者使用。
-
-喵呜实验室的MWbalanced项目是开源的，所有代码都托管在Github的[MWbalanced项目](https://github.com/miaowlabs)下。裸机源代码放置在[MWbalanced-firmware-none](https://github.com/MiaowLabs/MWbalanced-firmware-none)下，命名中的none表示不使用RTOS。
-
-进入Github页面后，在右侧点击“Download ZIP”，即可下载源代码。
-
-![](/img/wiki/download-zip.png)
-
-## 源代码导入和编译
-
-在源代码中，有4个文件为Keil工程文件。
-
-~~~
-MWbalanced-firmware-none.plg
-MWbalanced-firmware-none.uvopt
-MWbalanced-firmware-none.uvproj
-MWbalanced-firmware-none_uvproj.bak
-~~~
-
-以Keil C51 9.00为例，点击Project栏目下Open project，打开代码解压所在文件夹选中MWbalanced-firmware-none.uvproj，此时已将代码项目工程所有文件导入Keil C51，如图所示：
-
-![](/img/wiki/keil-build.png)
-
-点击左上角的编译按钮，编译整个项目，在工程下生成Output目录，目录中MWbalanced-firmware-none.hex就是可以烧写到STC15的固件。
-
-STC15固件的调试和烧入可以使用STC-ISP调试器进行开发，详见[STC-ISP的使用及常见问题]()。MWbalanced板载USB-TTL芯片，支持USB口烧入，即采用ISP下载，操作简单。只需要安装CP2102驱动程序，使用一根Mini USB数据线连接电脑。详见[固件烧写]()，烧录界面如图所示:
-
-![](/img/wiki/stc-isp-download.png)
 

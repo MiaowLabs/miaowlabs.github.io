@@ -16,11 +16,12 @@ MWbalanced2.0百科改编自《零基础制作两轮自平衡小车（MWbalanced
 </p>
 
 <h1></h1>
-
+* [开源两轮自平衡小车](wiki/open-source-self-balanced.html)
 * [MWbalanced零部件购买指南](wiki/devices-buy-02.html)
 <h2 id="development">开发指南</h2>
 * [拼装套件](wiki/assembly-instructions.html)
 * [如何连接蓝牙](wiki/bluetooth-connect.html)
+* [如何下载代码](wiki/download-source-code.heml)
 * [如何烧写固件](wiki/usb-download-firmware.html)
 * [固件烧写软件&懒人工具STC-ISP常见问题](wiki/stc-isp-use-guide.html)
 * [如何使用Serial Digital Scope显示数据波形](wiki/serial-digital-scope.html)
@@ -51,14 +52,19 @@ MWbalanced2.0百科改编自《零基础制作两轮自平衡小车（MWbalanced
 * [MWbalancedSTC15的机械结构](wiki/MWbalanced-structure.html)
 
 <h2 id="course">新手教程</h2>
-* [windows下开发环境搭建-裸机版本开发环境](wiki/setup-environment.html)
-* [新建Keil工程模板](wiki/new-project.html)
-* [LED指示灯实验](wiki/LED.html)
+* [搭建开发环境-裸机版本](wiki/setup-environment.html)
+* [如何下载代码](wiki/download-source-code.heml)
+* [如何编译代码](wiki/download-source-code.heml)
+* [新建工程模板](wiki/new-project.html)
+* [LED实验](wiki/led.html)
 * [串口通讯实验](wiki/uart.html)
-* [无线通讯实验（蓝牙）](wiki/bluetooth.html)
-* [传感器数据采集实验](wiki/mpu-6050.html)
+* [蓝牙通讯实验](wiki/bluetooth.html)
+* [MPU-6050设置](wiki/mpu-6050.html)
 * [角度环PD调试指南](wiki/MWbalanced-angle-pd.html)
 * [速度环PI调试指南](wiki/MWbalanced-speed-pi.html)
+* [扩展：超声波跟随]()
+* [扩展：舵机]()
+* [扩展：红外寻迹]()
 
 <h2 id="basic">扫盲</h2>
 <p>本章节主要涉及部分基础知识。</p>
@@ -72,10 +78,7 @@ MWbalanced2.0百科改编自《零基础制作两轮自平衡小车（MWbalanced
 
 <h2 id="small-rtos51">Small RTOS51</h2>
 <p>为了满足各个层次小伙伴的需求和体现出我们的努力，后续会试着移植Small RTOS51实时操作系统内核。Small RTOS51是陈明计先生编写的一个实时操作系统，并著有《嵌入式实时操作系统Small RTOS51原理及应用》。SmallRTOS51适合在小RAM/小FLASH单片机上运行。</p>
-* [Small RTOS51简介](wiki/smallrtos51-intro.html)
-* [介绍几个常用的宏的作用]()
-* [固件系统流程框架]()
-* [通信协议]()
+* [Small RTOS51](wiki/smallrtos51-intro.html)
 
 <h2 id="other">其他</h2>
 * [开创历史的Segway](wiki/segway.html)

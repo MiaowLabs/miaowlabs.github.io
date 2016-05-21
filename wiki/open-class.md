@@ -19,5 +19,3 @@ title: 【公开课】零基础制作两轮自平衡小车
 <embed src="http://player.youku.com/player.php/sid/XMTQ4OTIzMTA0MA==/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
 </p>
 
-![](/img/wiki/open-class.jpg)
-

@@ -7,12 +7,13 @@ title: 通过USB烧写固件
 
 > 作者：Songyimiao
 
-注：本文适用于MWbalanced2.0。
+注：本文适用于MWbalanced 2.0。
 
 烧写固件所需的东西：
 
 * Micro-USB数据线；
 * STC-ISP烧录工具；
+* 最新固件（[下载中心](http://miaowlabs.com/download.html)最新固件或源代码里的Hex）
 
 MWbalanced2.0带有一颗USB-TTL芯片CP2102，所以可以直接通过USB接口下载或更新固件。
 
