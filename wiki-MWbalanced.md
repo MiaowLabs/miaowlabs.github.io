@@ -53,8 +53,8 @@ MWbalanced2.0百科改编自《零基础制作两轮自平衡小车（MWbalanced
 
 <h2 id="course">新手教程</h2>
 * [搭建开发环境-裸机版本](wiki/setup-environment.html)
-* [如何下载代码](wiki/download-source-code.heml)
-* [如何编译代码](wiki/download-source-code.heml)
+* [如何下载代码](wiki/download-source-code.html)
+* [如何编译代码](wiki/download-source-code.html)
 * [新建工程模板](wiki/new-project.html)
 * [LED实验](wiki/led.html)
 * [串口通讯实验](wiki/uart.html)
