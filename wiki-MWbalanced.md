@@ -11,8 +11,7 @@ title: 喵呜百科
 </div>
 
 <p>MWbalanced是喵呜实验室的两轮自平衡小车的代号。代号MWbalanced的命名遵循“MW+xxx”的方式，MW为大写，是Miaow的缩写，balanced为小写，意为“平衡的”。<br>
-MWbalanced默认使用STC15作为控制芯片，另有MWbalancedSTM32使用STM32作为控制芯片。<br>
-MWbalanced2.0百科改编自《零基础制作两轮自平衡小车（MWbalanced2.0）》。
+MWbalanced默认选用8051内核MCU，另有MWblancedSTM32选用STM32F103C8T6。
 </p>
 
 <h1></h1>
@@ -49,7 +48,7 @@ MWbalanced2.0百科改编自《零基础制作两轮自平衡小车（MWbalanced
 * [小明带你入门PID控制](wiki/what-is-pid.html)
 
 <h2 id="structure">机械部分</h2>
-* [MWbalancedSTC15的机械结构](wiki/MWbalanced-structure.html)
+* [MWbalanced的机械结构](wiki/MWbalanced-structure.html)
 
 <h2 id="course">新手教程</h2>
 * [搭建开发环境-裸机版本](wiki/setup-environment.html)
