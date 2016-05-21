@@ -7,13 +7,13 @@ description: MWbalanced项目旨在为大学生/电子初学者/创客提供两�
 
 ![](/img/MWbalanced.png)
 
-MWbalanced是一款8051单片机控制的开源两轮自平衡小车，非常适合单片机初学者学习STEM（科学、技术、工程学、数学）领域的知识。初学者可以将MWbalanced扩展成各种形态的机器人，并且通过经典编程软件Keil，轻松学习编程知识，体验机械学、电子学、控制系统以及计算机科学的魅力。
+MWbalanced Developer Starter Kit是喵呜实验室基于8051单片机自主研发的两轮自平衡小车初学者开发套件，非常适合单片机初学者学习STEM（科学、技术、工程学、数学）领域的知识。该产品从机械设计、设计心得到控制源码均开放给用户，实现让用户从零开始搭建属于自己的两轮自平衡小车的目的。用户可使用功能各异的传感器，将MWbalanced扩展成各种形态的机器人，并且通过经典编程软件Keil，轻松学习编程知识，体验机械学、电子学、控制系统以及计算机科学的魅力。
 
-MWbalanced项目**旨在为大学生/电子初学者/创客提供可二次开发的两轮自平衡小车开发套件（MWbalanced DSK）**。
+MWbalanced项目**旨在为大学生/电子初学者/创客提供可二次开发的两轮自平衡小车开发套件（MWbalanced Developer Starter Kit）**。
 
 我们秉承开放、合作、分享的理念，致力将MWbalanced打造成出色的开源项目。
 
-MWbalanced是开源项目，包括源代码，原理图，设计思路等，并且提供详尽的百科知识库，可以通过该项目学习或DIY两轮自平衡小车，也可在MWbalanced平台上进行二次开发，实现自己的创意。
+MWbalanced是开源项目，包括源代码，原理图，设计思路等，并且提供详尽的百科知识库，任何人都可免费通过参考该项目学习或DIY两轮自平衡小车，也可在MWbalanced平台上进行二次开发，实现自己的创意。
 
 * 喵呜官网：http://miaowlabs.com
 * 项目百科：http://miaowlabs.com/wiki-MWbalanced.html
