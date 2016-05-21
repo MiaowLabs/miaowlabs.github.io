@@ -15,4 +15,8 @@ title: 开源两轮自平衡小车
 
 喵呜实验室（Miaow Labs）的开源两轮自平衡小车MWbalanced。
 
-根据控制芯片的不同，又分为MWbalancedSTC15和MWbalancedSTM32。
+MWbalanced默认选用8051内核MCU，另有MWblancedSTM32选用STM32F103C8T6。
+
+![](/img/MWbalanced.png)
+
+
