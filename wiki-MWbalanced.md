@@ -20,7 +20,7 @@ MWbalanced默认选用8051内核MCU，另有MWblancedSTM32选用STM32F103C8T6。
 <h2 id="development">开发指南</h2>
 * [拼装套件](wiki/assembly-instructions.html)
 * [如何连接蓝牙](wiki/bluetooth-connect.html)
-* [如何下载代码](wiki/download-source-code.heml)
+* [如何下载代码](wiki/download-source-code.html)
 * [如何烧写固件](wiki/usb-download-firmware.html)
 * [固件烧写软件&懒人工具STC-ISP常见问题](wiki/stc-isp-use-guide.html)
 * [如何使用Serial Digital Scope显示数据波形](wiki/serial-digital-scope.html)
@@ -63,7 +63,7 @@ MWbalanced默认选用8051内核MCU，另有MWblancedSTM32选用STM32F103C8T6。
 * [角度环PD调试指南](wiki/MWbalanced-angle-pd.html)
 * [速度环PI调试指南](wiki/MWbalanced-speed-pi.html)
 * [扩展：超声波跟随](wiki/ultrasonic.html)
-* [扩展：舵机]()
+* [扩展：舵机](wiki/servo.html)
 * [扩展：红外寻迹]()
 
 <h2 id="basic">扫盲</h2>
