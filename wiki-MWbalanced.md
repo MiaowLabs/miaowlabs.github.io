@@ -64,7 +64,7 @@ MWbalanced默认选用8051内核MCU，另有MWblancedSTM32选用STM32F103C8T6。
 * [速度环PI调试指南](wiki/MWbalanced-speed-pi.html)
 * [扩展：超声波跟随](wiki/ultrasonic.html)
 * [扩展：舵机](wiki/servo.html)
-* [扩展：红外寻迹]()
+* [扩展：红外寻迹](wiki/infrared.html)
 
 <h2 id="basic">扫盲</h2>
 <p>本章节主要涉及部分基础知识。</p>
