@@ -7,23 +7,22 @@ title: MWbalanced安卓客户端&蓝牙连接
 
 > 作者：Songyimiao
 
-MWbalanced选用了HM-13蓝牙模块，兼容SPP（蓝牙2.1）和BLE（蓝牙4.0）。
+MWbalanced2.0 默认板载SPP-C蓝牙模块。
 
 ![](/img/wiki/bluetooth-connect-01.png)
 
 图1
 
-使用该模块要注意以下两点：
+使用该模块要注意：
 
-* 默认出厂波特率115200, N, 8, 1。
+* 默认出厂波特率9600, N, 8, 1。
 
-* 双模包含两个蓝牙地址，有些手机会搜到两个地址，00:0E:0B开头的是BLE模式的地址，00:0E:0E开头的是EDR地址。
 
-##手机蓝牙连接MWbalanced
+## 手机蓝牙连接MWbalanced
 
-以下演示使用的安卓手机是小米4，使用MWbalanced官方APP。Android版APP：[下载地址](http://pan.baidu.com/s/1eRxOPsI)；iOS版APP暂未推出。
+以下演示使用的安卓手机是小米4，使用MWbalanced官方APP。Android版APP：[下载地址](http://miaowlabs.com/download.html)；iOS版APP暂未推出。
 
-第一步，先开启手机蓝牙，搜索蓝牙设备。双模包含两个蓝牙地址，有些手机会搜到两个地址， 00:0E:0B开头的是BLE模式的地址，00:0E:0E开头的是EDR地址。如图2-1、2-2。
+第一步，先开启手机蓝牙，搜索蓝牙设备“MWbalanced”。
 
 ![](/img/wiki/bluetooth-connect-02-01.png)
 
@@ -33,7 +32,7 @@ MWbalanced选用了HM-13蓝牙模块，兼容SPP（蓝牙2.1）和BLE（蓝牙4.
 
 图2-2
 
-第二步，点击要连接的蓝牙设备，输入密码（EDR地址默认1234，BLE地址默认000000），将手机和蓝牙设备配对好。如果是出现两个地址，如果您不确定哪一个，两个地址都分别输入密码试一遍。如图3。
+第二步，点击要连接的蓝牙设备"MWbalanced"，输入密码（默认1234），将手机和蓝牙设备配对好。
 
 ![](/img/wiki/bluetooth-connect-03.png)
 
