@@ -6,11 +6,11 @@ title: Miaow Wiki
 <div class="jumbotron">
 <b>
     <p class="lead">这里是喵呜实验室提供的维基百科。</p>
-    <p class="lead">下面介绍一些涉及两轮自平衡小车的基本概念等。希望我们的努力能够为新手入门提供帮助和指导。 </p>
+    <p class="lead">下面介绍一些电子方面的相关知识，希望我们的努力能够为新手入门提供帮助和指导。 </p>
 </b>
 </div>
 
-<h2 id="self-balanced">两轮平衡车</h2>
+<h2 id="self-balanced">关于我们</h2>
 <p>开源硬件是喵呜实验室团队成长的土壤。喵呜实验室也愿意积极地给大家带来更多开源硬件。</p>
 
 
