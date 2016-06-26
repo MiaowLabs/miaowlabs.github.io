@@ -1,0 +1,941 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>原地旋转 | 零基础制作两轮自平衡小车</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.1.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./MWbalanced-power-endurance.html" />
+    
+    
+    <link rel="prev" href="./MWbalanced-inplace-hold.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="9.2" data-basepath="." data-revision="Sun Jun 26 2016 18:47:20 GMT+0800 (中国标准时间)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        前言
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> 开发指南</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="assembly-instructions.html">
+            
+                
+                    <a href="./assembly-instructions.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        拼装套件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="bluetooth-connect.html">
+            
+                
+                    <a href="./bluetooth-connect.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        如何连接蓝牙
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="download-source-code.html">
+            
+                
+                    <a href="./download-source-code.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        如何下载代码
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="usb-download-firmware.html">
+            
+                
+                    <a href="./usb-download-firmware.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        如何烧写固件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="stc-isp-use-guide.html">
+            
+                
+                    <a href="./stc-isp-use-guide.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        使用STC-ISP的常见问题
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="serial-digital-scope.html">
+            
+                
+                    <a href="./serial-digital-scope.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        如何使用Serial Digital Scope显示数据波形
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> 视频教程</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="open-class.html">
+            
+                
+                    <a href="./open-class.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        为初学者开设的公开课
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="MWbalanced-angle-pd.html">
+            
+                
+                    <a href="./MWbalanced-angle-pd.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        快！扶我起来看超清无码的角度环PD调试指南
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="MWbalanced-speed-pi.html">
+            
+                
+                    <a href="./MWbalanced-speed-pi.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        来！再扶我起来看超清无码的速度环PI调试指南
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> 数学建模</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="Mathematical-Modeling/MWbalanced-Mathematical-Modeling.html">
+            
+                
+                    <a href="./Mathematical-Modeling/MWbalanced-Mathematical-Modeling.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        两轮自平衡小车的数学建模
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> 硬件部分</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="hardware-basic-2.html">
+            
+                
+                    <a href="./hardware-basic-2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        WMbalanced硬件原理图讲解
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="devices-selection-02.html">
+            
+                
+                    <a href="./devices-selection-02.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        MWbalanced元器件选型总览
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> 软件部分</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="software-main-none.html">
+            
+                
+                    <a href="./software-main-none.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        软件框架讲解
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="complementary-filter.html">
+            
+                
+                    <a href="./complementary-filter.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        一阶互补滤波
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="what-is-pid.html">
+            
+                
+                    <a href="./what-is-pid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        PID
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> 机械部分</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="MWbalanced-structure.html">
+            
+                
+                    <a href="./MWbalanced-structure.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        MWbalanced的机械结构
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> 新手教程</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="setup-environment.html">
+            
+                
+                    <a href="./setup-environment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        搭建开发环境
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="download-source-code.html">
+            
+                
+                    <a href="./download-source-code.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        如何下载程序
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="compile-source-code.html">
+            
+                
+                    <a href="./compile-source-code.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        如何编译代码
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="stc-headermd.html">
+            
+            <span><b>7.4.</b> 获取芯片头文件</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="new-project.html">
+            
+                
+                    <a href="./new-project.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        新建工程模板
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="led.html">
+            
+                
+                    <a href="./led.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        LED实验
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="uart.html">
+            
+                
+                    <a href="./uart.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.7.</b>
+                        
+                        串口通讯实验
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="bluetooth.html">
+            
+                
+                    <a href="./bluetooth.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                        蓝牙通讯实验
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="mpu-6050.html">
+            
+                
+                    <a href="./mpu-6050.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.9.</b>
+                        
+                        MPU-6050设置
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="MWbalanced-angle-pd.html">
+            
+                
+                    <a href="./MWbalanced-angle-pd.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.10.</b>
+                        
+                        角度环PD调试指南
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="MWbalanced-speed-pi.html">
+            
+                
+                    <a href="./MWbalanced-speed-pi.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.11.</b>
+                        
+                        速度环PI调试指南
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12" data-path="ultrasonic.html">
+            
+                
+                    <a href="./ultrasonic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.12.</b>
+                        
+                        扩展：超声波跟随
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.13" data-path="servo.html">
+            
+                
+                    <a href="./servo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.13.</b>
+                        
+                        扩展：舵机
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.14" data-path="infrared.html">
+            
+                
+                    <a href="./infrared.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.14.</b>
+                        
+                        扩展：红外寻迹
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path=".md.html">
+            
+            <span><b>8.</b> 扫盲</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="why-accel-gyro.html">
+            
+                
+                    <a href="./why-accel-gyro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        为什么要用加速度计和陀螺仪两种传感器？
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="how-many-dimensions.html">
+            
+                
+                    <a href="./how-many-dimensions.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        两轮自平衡小车需要用到多少个维度数据？
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="segway.html">
+            
+                
+                    <a href="./segway.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        开创历史的Segway
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="self-balanced-history.html">
+            
+                
+                    <a href="./self-balanced-history.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                        两轮平衡车历史回顾
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" >
+            
+            <span><b>9.</b> 开发经验总结</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="9.1" data-path="MWbalanced-inplace-hold.html">
+            
+                
+                    <a href="./MWbalanced-inplace-hold.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        原地直立
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="9.2" data-path="MWbalanced-inplace-hold.html">
+            
+                
+                    <a href="./MWbalanced-inplace-hold.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        原地旋转
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="MWbalanced-power-endurance.html">
+            
+                
+                    <a href="./MWbalanced-power-endurance.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                        动力效率
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="MWbalanced-power-endurance.html">
+            
+                
+                    <a href="./MWbalanced-power-endurance.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                        续航时间
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="MWbalanced-debug.html">
+            
+                
+                    <a href="./MWbalanced-debug.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.5.</b>
+                        
+                        平衡调试
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" >
+            
+            <span><b>10.</b> Small RTOS51</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1" data-path="smallrtos51-intro.html">
+            
+                
+                    <a href="./smallrtos51-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.</b>
+                        
+                        Small RTOS51
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >零基础制作两轮自平衡小车</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <hr>
+<p>layout: wiki</p>
+<h2 id="title-%E5%8E%9F%E5%9C%B0%E7%9B%B4%E7%AB%8B-%E5%8E%9F%E5%9C%B0%E6%97%8B%E8%BD%AC">title: &#x539F;&#x5730;&#x76F4;&#x7ACB;&amp;&#x539F;&#x5730;&#x65CB;&#x8F6C;</h2>
+<h1 id=""> </h1>
+<blockquote>
+<p>&#x4F5C;&#x8005;&#xFF1A;Songyimiao</p>
+</blockquote>
+<p>&#x539F;&#x5730;&#x76F4;&#x7ACB;&#x662F;MWbalanced&#x73A9;&#x5BB6;&#x95EE;&#x5F97;&#x6700;&#x591A;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x4E5F;&#x662F;&#x96BE;&#x8C03;&#x8BD5;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x9996;&#x5148;&#x6211;&#x4EEC;&#x660E;&#x786E;&#x4EC0;&#x4E48;&#x662F;&#x539F;&#x5730;&#x76F4;&#x7ACB;&#xFF1F;</p>
+<p>&#x5F85;&#x7EED;&#x3002;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./MWbalanced-inplace-hold.html" class="navigation navigation-prev " aria-label="Previous page: 原地直立"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./MWbalanced-power-endurance.html" class="navigation navigation-next " aria-label="Next page: 动力效率"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
