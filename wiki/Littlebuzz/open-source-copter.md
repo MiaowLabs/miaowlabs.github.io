@@ -28,7 +28,7 @@ Crazyflie有两个版本，一代和二代。一代采用STM32F103CB @ 72 MHz �
 官网：http://www.kkmulticopter.kr/
 
 * MWC飞控
-* 
+
 官网：http://www.multiwii.com/connecting-elements
 
 * PX4飞控
@@ -38,13 +38,15 @@ Crazyflie有两个版本，一代和二代。一代采用STM32F103CB @ 72 MHz �
 * MikroKopter
 
 > 在2006年10月24号，Holger Buss和Ingo Busker创造了MK，一个伟大的Mikrokopter四轴社区。 在2007年中，Mikrokopter便像一个“ 空中的钉子”，像一只鸟一样，稳步的停留在空中。这对于开源四轴飞行器是一个很大的里程碑。
-
+>
 > MikroKopter来自德国。毫无疑问，MikroKopter这个名字来源于德语，对应的英文应该是MicroCopter。
-
+>
 > 官网：http://www.mikrokopter.de/en/home
-
+>
 > 本小节作者：Luuuuu
+>
 > 本小节链接：https://zhuanlan.zhihu.com/p/19794300
+>
 > 本小节来源：知乎
 
 
@@ -58,7 +60,7 @@ Crazyflie有两个版本，一代和二代。一代采用STM32F103CB @ 72 MHz �
 
 喵呜实验室的开源微型四轴飞行器Littlebuzz，选取STC15@20M(1T 8051)作为主芯片，资料整理比较系统，并免费发布在官网，关键是中文文档，代码更新托管在Github，适合单片机初学者、电子爱好者、大学生等学习、研究。在这里你几乎可以学习到全部的四轴知识。
 
-售价：299人民币
+售价：¥299
 
 官网：www.miaowlabs.com/wiki-Littlebuzz.html
 
@@ -66,7 +68,7 @@ Crazyflie有两个版本，一代和二代。一代采用STM32F103CB @ 72 MHz �
 
 目前最新开源产品是【开拓者V2】，选取STM32F103@72M作为主芯片。地面站做得特别好，但是并不开源。官网资料已经很久没更新，需要购买其产品才能得到最新源代码。
 
-售价：528人民币
+售价：¥528
 
 官网：www.anotc.com
 
@@ -76,13 +78,22 @@ Crazyflie有两个版本，一代和二代。一代采用STM32F103CB @ 72 MHz �
 
 选取STM32F103@72M作为主芯片。
 
-售价：388人民币
+售价：¥388
 
 * 圆点博士小四轴
 
-国内比较早的做小四轴的
+国内比较早的做小四轴的。
 
-售价：699人民币
+售价：¥699
 
 提供飞控学习版源代码和商业版飞行固件。需购买才能得到商业版飞行固件。
 
+官网已挂，无法打开。
+
+* 烈火小四轴
+
+国内比较早的做小四轴的。
+
+售价：¥436
+
+无官网。
