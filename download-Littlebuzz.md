@@ -13,7 +13,7 @@ title: 下载中心
 
 我们整理了Littlebuzz的原理图，并上传到了百度云盘，供大家下载。
 
-<a href="https://pan.baidu.com/s/1qYTDRTq" class="btn btn-primary btn-xl" role="button" target="_blank" >原理图(MWbalanced2.0)</a>
+<a href="https://pan.baidu.com/s/1qYTDRTq" class="btn btn-primary btn-xl" role="button" target="_blank" >原理图</a>
 
 
 ## Windows相关安装包
