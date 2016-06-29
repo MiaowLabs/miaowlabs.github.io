@@ -10,8 +10,8 @@ title: 喵呜百科
 </b>
 </div>
 
-<p>MWbalanced是喵呜实验室的两轮自平衡小车的代号。代号MWbalanced的命名遵循“MW+xxx”的方式，MW为大写，是Miaow的缩写，balanced为小写，意为“平衡的”。<br>
-MWbalanced默认选用8051内核MCU，另有MWblancedSTM32选用STM32F103C8T6。
+<p>MWbalanced是喵呜实验室的两轮自平衡小车的代号。<br>
+代号MWbalanced的命名遵循“MW+xxx”的方式，"MW"为大写，是"Miaow"的缩写，"balanced"为小写，意为“平衡的”。<br>
 </p>
 
 <h1></h1>
