@@ -25,7 +25,7 @@ Little有“小巧可爱”之意，buzz为“嗡嗡声”，两者组合无他�
 * [如何使用Serial Digital Scope显示数据波形](wiki/serial-digital-scope.html)
 
 <h2 id="hardware">硬件部分</h2>
-* [Littlebuzz 1.0硬件原理图讲解]()
+* [Littlebuzz 1.0硬件原理图讲解](wiki/Littlebuzz/hardware-basic.html)
 * [Littlebuzz 1.0元器件选型总览]()
 
 <h2 id="software">软件部分</h2>
