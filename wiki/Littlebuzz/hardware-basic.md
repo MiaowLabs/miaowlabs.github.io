@@ -63,7 +63,7 @@ Littlebuzz采用3.7v 350mAh锂电池。电池电压为3.7V，但系统选用芯�
 
 ## 姿态传感器
 
-Littlebuzz的姿态传感器使用的Invensens公司的MPU-6050单芯片六轴传感器，它包含了一个三轴陀螺仪和一个三轴加速度计。MPU-6050使用IIC通信，可以外挂磁力计HMC5883L，但微型四轴飞行器体积过小，电机运转起来对磁力计影响较大，Littlebuzz没有加入磁力计。
+Littlebuzz的姿态传感器使用的Invensens公司的MPU-6050单芯片六轴传感器，它包含了一个三轴陀螺仪和一个三轴加速度计。MPU-6050使用IIC通信，可以外挂磁力计HMC5883L，但微型四轴飞行器体积过小，电机运转起来对磁力计影响较大，使磁力计形同虚设，所以Littlebuzz没有加入磁力计。
 
 
 ![](http://miaowlabs.com/img/wiki/Littlebuzz/hardware/04.png)

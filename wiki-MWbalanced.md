@@ -18,6 +18,7 @@ title: 喵呜百科
 * [开源两轮自平衡小车](wiki/open-source-self-balanced.html)
 * [MWbalanced零部件购买指南](wiki/devices-buy-02.html)
 <h2 id="development">开发指南</h2>
+* [功能演示](wiki/MWbalanced-functions.html)
 * [拼装套件](wiki/assembly-instructions.html)
 * [如何连接蓝牙](wiki/bluetooth-connect.html)
 * [如何下载代码](wiki/download-source-code.html)
