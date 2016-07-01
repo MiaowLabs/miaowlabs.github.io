@@ -40,7 +40,7 @@ Littlebuzz的特点：
 
 IAP15W4K61S4单片机内置时钟和复位电路，单片机的最小系统电路非常简洁。
 
-![](http://miaowlabs.com/img/wiki/Littlebuzz/01.png)
+![](http://miaowlabs.com/img/wiki/Littlebuzz/hardware/01.png)
 
 
 ## 动力电源
@@ -49,16 +49,16 @@ IAP15W4K61S4单片机内置时钟和复位电路，单片机的最小系统电�
 
 航模动力电池，常见有1s 3.7v、2s 7.4v、3s 11.1v锂电池。“s”代表串联，“2s”即为两块3.7v锂电池串联，得到7.4v。
 
-![](http://miaowlabs.com/img/wiki/Littlebuzz/10.jpg)
+![](http://miaowlabs.com/img/wiki/Littlebuzz/hardware/10.jpg)
 
 ## 系统电源
 
 
 Littlebuzz采用3.7v 350mAh锂电池。电池电压为3.7V，但系统选用芯片要求是3.3v和5v供电。3.7v无法满足所有电压需求。所以，Littlebuzz采取先用DCDC将3.7V升至5V，再用LDO降至3.3V，以满足系统电压使用要求。
 
-![power](http://miaowlabs.com/img/wiki/Littlebuzz/02.png) 
+![power](http://miaowlabs.com/img/wiki/Littlebuzz/hardware/02.png) 
 
-![power](http://miaowlabs.com/img/wiki/Littlebuzz/03.png)
+![power](http://miaowlabs.com/img/wiki/Littlebuzz/hardware/03.png)
 
 
 ## 姿态传感器
@@ -66,23 +66,23 @@ Littlebuzz采用3.7v 350mAh锂电池。电池电压为3.7V，但系统选用芯�
 Littlebuzz的姿态传感器使用的Invensens公司的MPU-6050单芯片六轴传感器，它包含了一个三轴陀螺仪和一个三轴加速度计。MPU-6050使用IIC通信，可以外挂磁力计HMC5883L，但微型四轴飞行器体积过小，电机运转起来对磁力计影响较大，Littlebuzz没有加入磁力计。
 
 
-![](http://miaowlabs.com/img/wiki/Littlebuzz/04.png)
+![](http://miaowlabs.com/img/wiki/Littlebuzz/hardware/04.png)
 
 ## 驱动电路
 
 Littlebuzz选用MOS管来驱动电机，通过PWM控制电机转速。该MOS管的驱动电路可达3A，完全满足微型四轴飞行器的设计需求。值得注意的是，MOS管要接电阻下拉，防止电机在上电时误转。
 
 
-![](http://miaowlabs.com/img/wiki/Littlebuzz/05.png)
+![](http://miaowlabs.com/img/wiki/Littlebuzz/hardware/05.png)
 
 
 ## USB-Serial协议转换
 
 几乎每个人都有手机数据线，所以，出于节省环保和方便使用的目的，Littlebuzz上集成了USB-Serial芯片CP2102和Micro-USB端子。实现一键下载，随走随下的功能。
 
-![](http://miaowlabs.com/img/wiki/Littlebuzz/06.png)
+![](http://miaowlabs.com/img/wiki/Littlebuzz/hardware/06.png)
 
-![](http://miaowlabs.com/img/wiki/Littlebuzz/09.jpg)
+![](http://miaowlabs.com/img/wiki/Littlebuzz/hardware/09.jpg)
 
 ## 充电管理
 
@@ -90,7 +90,7 @@ Littlebuzz选用MOS管来驱动电机，通过PWM控制电机转速。该MOS管�
 
 LTC4054外围电路简单，一个电阻R4作为充电限流电阻，充电电流最大可达600mA，充电电流计算公式：IBAT =(VPROG /RPROG)*1000。R1作为充电指示灯的限流电阻，选择几百欧姆就行了。当充电进行中，引脚CHRG常低，充电结束时，CHRG拉高。对应的状态就是：充电时，LED灯常亮，充电完成，LED 灯灭。
 
-![](http://miaowlabs.com/img/wiki/Littlebuzz/07.png)
+![](http://miaowlabs.com/img/wiki/Littlebuzz/hardware/07.png)
 
 ## 2.4G 通信
 
@@ -98,6 +98,6 @@ LTC4054外围电路简单，一个电阻R4作为充电限流电阻，充电电�
 
 Littlebuzz体积紧凑，nRF24L01芯片不集成到PCB上，而是选用现成的无线模块，其接口电路和无线模块实物分别如图所示。
 
-![](http://miaowlabs.com/img/wiki/Littlebuzz/08.png)
+![](http://miaowlabs.com/img/wiki/Littlebuzz/hardware/08.png)
 
-![](http://miaowlabs.com/img/wiki/Littlebuzz/11.jpg)
+![](http://miaowlabs.com/img/wiki/Littlebuzz/hardware/11.jpg)
