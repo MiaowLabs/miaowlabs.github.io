@@ -15,7 +15,7 @@ Little有“小巧可爱”之意，buzz为“嗡嗡声”，两者组合无他�
 </p>
 
 <h1></h1>
-* [Littllebuzz简介](wiki/Littlebuzz/Littlebuzz.html)
+* [Littllebuzz简介](wiki/Littlebuzz/littlebuzz.html)
 * [开源四轴飞行器](wiki/Littlebuzz/open-source-copter.html)
 * [工作原理、十字模式与X字模式](wiki/Littlebuzz/basics.html)
 <h2 id="development">开发指南</h2>
