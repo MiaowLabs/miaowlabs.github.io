@@ -15,12 +15,13 @@ Little有“小巧可爱”之意，buzz为“嗡嗡声”，两者组合无他�
 </p>
 
 <h1></h1>
+* [Littllebuzz简介](wiki/Littlebuzz/Littlebuzz.html)
 * [开源四轴飞行器](wiki/Littlebuzz/open-source-copter.html)
-* [Littlebuzz零部件购买指南]()
+* [工作原理、十字模式与X字模式](wiki/Littlebuzz/basics.html)
 <h2 id="development">开发指南</h2>
-
+* [Littlebuzz零部件购买指南]()
 * [如何下载代码]()
-* [如何烧写固件]()
+* [如何烧写固件](wiki/Littlebuzz/usb-download-firmware.html)
 * [固件烧写软件&懒人工具STC-ISP常见问题]()
 * [如何使用Serial Digital Scope显示数据波形](wiki/serial-digital-scope.html)
 
