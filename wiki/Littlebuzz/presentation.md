@@ -1,7 +1,7 @@
 
 ---
 layout: wiki
-title: MWbalancedSTC15(第二版)硬件原理讲解
+title: Littlebuzz介绍
 ---
 
 # {{ page.title }}
