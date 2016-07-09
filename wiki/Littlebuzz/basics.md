@@ -48,3 +48,15 @@ Littlebuzz采用的是十字模式。
 
 ![](http://miaowlabs.com/img/wiki/Littlebuzz/basics-005.png)
 
+### 初学者关于十字模式和X字模式的误识
+
+部分初学者误认为，传感器摆放的位置和角度直接决定了四轴飞行模式为十字模式还是X字模式。
+
+比如，常见的MPU-6050在四轴飞行器上摆放的角度有以下两种情况：
+
+![](http://miaowlabs.com/img/wiki/Littlebuzz/basics-006.jpg)
+
+然而并不是，四轴飞行模式也可以通过算法姿态换算来切换成十字模式或X字模式。
+
+
+
