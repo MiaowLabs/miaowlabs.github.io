@@ -56,7 +56,14 @@ Littlebuzz采用的是十字模式。
 
 ![](http://miaowlabs.com/img/wiki/Littlebuzz/basics-006.jpg)
 
-然而并不是，四轴飞行模式也可以通过算法姿态换算来切换成十字模式或X字模式。
+然而并不是，四轴飞行模式可以通过算法姿态换算来切换成十字模式或X字模式。
 
+核心代码如下：
+
+    #define HALF_SQRT_2 0.70710678118654757f	
+
+    tmp = HALF_SQRT_2 * (x - y);	
+    y   = HALF_SQRT_2 * (x + y);
+    x = tmp;
 
 
