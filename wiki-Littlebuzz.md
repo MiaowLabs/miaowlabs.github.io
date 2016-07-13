@@ -14,7 +14,7 @@ title: 喵呜百科
 Little有“小巧可爱”之意，buzz为“嗡嗡声”，两者组合无他意，纯为了朗读顺口容易记。
 </p>
 
-<h1></h1>
+<h2 id="development">课前知识</h2>
 * [Littllebuzz介绍](wiki/Littlebuzz/presentation.html)
 * [开源四轴飞行器](wiki/Littlebuzz/open-source-copter.html)
 * [工作原理、十字模式与X字模式](wiki/Littlebuzz/basics.html)
