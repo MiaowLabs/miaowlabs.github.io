@@ -5,11 +5,11 @@ author: Edison Song
 description: 喵呜实验室Miaowlabs的开源微型四轴飞行器Littlebuzz，选取STC15@20M(1T 8051)作为主芯片。在这里，你几乎可以学习到全部的四轴飞行器知识。
 ---
 
-![](/img/blog/littlubuzz-02.jpg)
+![](/img/blog/littlebuzz-02.jpg)
 
 喵呜实验室的开源微型四轴飞行器Littlebuzz，选取STC15@20M(1T 8051)作为主芯片，资料整理系统，并免费发布在官网，关键是中文文档，符合国人阅读习惯。代码更新托管在Github，适合单片机初学者、电子爱好者、大学生等学习、研究。在这里，你几乎可以学习到全部的四轴飞行器知识。
 
-![](/img/blog/littlubuzz-01.jpg)
+![](/img/blog/littlebuzz-01.jpg)
 
 Littlebuzz的特点：
 
@@ -20,7 +20,7 @@ Littlebuzz的特点：
  * nRF24L01+模块。不带PA，遥控距离约60m，带PA，遥控距离更长，具体未测试；
  * 标准micro-USB接口。用于烧录程序和对350mAh锂电池充电，充电时间40分钟。
 
-![](/img/blog/littlubuzz-03.jpg)
+![](/img/blog/littlebuzz-03.jpg)
  
 Littlebuzz上集成了USB-Serial芯片CP2102和Micro-USB端子。实现一键下载，随走随下的功能。
 
