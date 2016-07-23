@@ -1,7 +1,7 @@
 ---
 layout: blog-post
 title: 众筹超预期 MWbalanced2.0筹集到人民币17738元
-author: Songyimiao
+author: songyibiao
 description: MWbalanced项目在推进到2.0的时候，我们将MWbalanced2.0放到电子发烧友众筹（又称聚丰众筹），预期筹集一万元整。到2016/03/31众筹结束时，成功筹集到资金人民币17728元，远超预期。
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: blog-post
 title: Littlebuzz微型四轴飞行器
-author: Edison Song
+author: songyibiao
 description: 喵呜实验室Miaowlabs的开源微型四轴飞行器Littlebuzz，选取STC15@20M(1T 8051)作为主芯片。在这里，你几乎可以学习到全部的四轴飞行器知识。
 ---
 
