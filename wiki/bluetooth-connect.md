@@ -20,7 +20,7 @@ MWbalanced2.0 默认板载SPP-C蓝牙模块。
 
 ## 手机蓝牙连接MWbalanced
 
-以下演示使用的安卓手机是小米4，使用MWbalanced官方APP。Android版APP：[下载地址](http://miaowlabs.com/download.html)；iOS版APP暂未推出。
+以下演示使用的安卓手机是小米4，使用MWbalanced官方APP。Android版APP在下载中心自由下载；iOS版APP暂未推出。
 
 第一步，先开启手机蓝牙，搜索蓝牙设备“MWbalanced”。
 
