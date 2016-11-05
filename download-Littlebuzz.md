@@ -18,6 +18,12 @@ title: 下载中心
 
 <a href="https://pan.baidu.com/s/1i5NmxqH" class="btn btn-primary btn-xl" role="button" target="_blank" >Littlebuzz Rev2.0 原理图</a>
 
+## 生产文件
+
+这部分是Littlebuzz Rev2.0（含飞行器、遥控器）的Gerber生产文件，直接发给工厂打样或生产即可。
+
+<a href="https://pan.baidu.com/s/1hrSzdY0" class="btn btn-primary btn-xl" role="button" target="_blank" >Gerber for Littlebuzz Rev2.0</a>
+
 
 ## Windows相关安装包
 
