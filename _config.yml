@@ -1,20 +1,28 @@
 # Site settings
 title: MiaowLabs
-email: admin@miaowlabs.com
+email: songyibiao@miaowlabs.com
 description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
+# User setting
+owner: 薛定谔的喵大
+email: songyibiao@miaowlabs.com
 weibo_username: miaowlabs
-github_username: MiaowLabs
+github_username: miaowlabs
+wechat_username: miaowlabs
+address: 
+  - line:
+  - line:
+  # Feel free to add more lines here 
+telephone: +86 13692103651
+copyright: 喵呜实验室MiaowLabs
 
-copyright: 喵呜实验室
-
-address: Shenzhen,China
-date: 2015
-
-paginate:            8
-paginate_path: "/blog/page:num/"
+# API settings
+google_api_key:
 
 # Build settings
 markdown: kramdown
