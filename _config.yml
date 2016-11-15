@@ -11,6 +11,7 @@ url: "" # the base hostname & protocol for your site
 # User setting
 owner: 薛定谔的喵大
 email: songyibiao@miaowlabs.com
+address: Shenzhen
 weibo_username: miaowlabs
 github_username: miaowlabs
 wechat_username: miaowlabs
@@ -19,7 +20,7 @@ address:
   - line:
   # Feel free to add more lines here 
 telephone: +86 13692103651
-copyright: 喵呜实验室MiaowLabs
+copyright: MiaowLabs 喵呜实验室
 
 # API settings
 google_api_key:
