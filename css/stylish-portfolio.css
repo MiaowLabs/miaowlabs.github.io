@@ -22,6 +22,15 @@ body {
     vertical-align: middle;
 }
 
+@media(max-width:768px){
+	.text-vertical-center  {
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+		font-size: 60%;
+	}
+}
+
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
