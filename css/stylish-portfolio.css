@@ -31,6 +31,12 @@ body {
 	}
 }
 
+@media(max-width:768px){
+	.songyibiao-h2  {
+		font-size: 80%;
+	}
+}
+
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
