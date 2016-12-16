@@ -177,6 +177,14 @@ hr.small {
     -o-background-size: cover;
 }
 
+.slide {
+	display: table;
+    position: relative;
+    width: 100%;
+	height: auto;
+	-webkit-background-size: cover;
+}
+
 /* About */
 
 .about {
