@@ -19,6 +19,12 @@
     })
     </script>
 
+	 <!-- Script to 下拉菜单鼠标经过显示 -->
+<script>    
+$('li.dropdown').mouseover(function() {   
+     $(this).addClass('open');    }).mouseout(function() {        $(this).removeClass('open');    }); 
+</script>	
+
 <!-- Fancybox JavaScript -->
 <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
 

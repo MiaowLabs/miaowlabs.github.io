@@ -1,10 +1,116 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 
-{% include head.html %}
+<head>
+
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="keywords" content="喵呜实验室,MiaowLabs,Mwbalanced,Littlebuzz,微型四轴飞行器,两轮自平衡小车" />
+   <meta name="description" content="MiaowLabs喵呜实验室以“拥抱开源，持续创新”为主旨理念，致力于成为全球开源硬件开拓者，目前开源产品涵盖两轮自平衡小车及微型四轴飞行器。">
+   <meta name="author" content="songyibiao">
+   <link rel="shortcut icon" href="/img/icon/miaowlabs.ico">
+
+  <title>MiaowLabs 喵呜实验室 | 拥抱开源 持续创新</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="/css/stylish-portfolio.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  
+  <!-- fancyBox CSS-->
+  <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+  
+  <link href="/css/full-slider.css" rel="stylesheet">
+
+ 
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
 
 <body id="page-top">
-{% include nav.html %}
+
+<nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <!-- <nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top"> -->
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<!--data-target="bs-example-navbar-collapse-1"-->
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">MiaowLabs 喵呜实验室</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1"> 
+		<!--注释内容-->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="/index.html">首页</a>
+                </li>
+                <li class="dropdown">
+					<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">两轮自平衡小车<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+					   <li>
+					   <a href="/wiki/MWbalanced.html" target="_blank">Wiki百科</a>
+					   </li> 
+					   <li>
+					   <a href="/book/MWbalanced" target="_blank">Book书籍</a>
+					   </li> 					    
+					   <li>
+					   <a href="/download/MWbalanced.html" target="_blank">DownLoad下载</a>
+					   </li> 					   
+					</ul>
+				</li> 
+                <li class="dropdown">
+					<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">微型四轴飞行器<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+					   <li>
+					   <a href="/faq.html" target="_blank">FAQ问题</a>
+					   </li>
+					   <li>
+					   <a href="/wiki/Littlebuzz.html" target="_blank">Wiki百科</a>
+					   </li> 									    
+					   <li>
+					   <a href="/download/Littlebuzz.html" target="_blank">DownLoad下载</a>
+					   </li> 					   
+					</ul>
+				</li> 																			
+				<li>
+                    <a href="http://bbs.miaowlabs.com/">论坛</a>
+                </li> 
+				<li class="dropdown"> 
+					<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">购买<b class="caret"></b></a>
+				    <ul class="dropdown-menu">
+					   <li><a href="http://miaowlabs.taobao.com/" target="_blank">开源产品</a></li> 
+					   <li><a href="https://item.taobao.com/item.htm?spm=a230r.1.14.16.Gzn59M&id=541820603040&ns=1&abbucket=14#detail" target="_blank">视频教程</a></li>
+				  </ul>
+				</li>	
+				<li>
+					<a href="contact.html">合作</a>
+				</li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
 
 <div class="bs-docs-header" id="content">
   <div class="container">
@@ -24,7 +130,239 @@
         <p class="text-muted">&copy; 20{{ site.time | date: '%y' }} {{ site.copyright }} All rights reserved. </p>
 		<a href="http://www.miitbeian.gov.cn/">粤ICP备15014207号</a> 
 </div>
-{% include scripts.html %}
+
+<!-- jQuery -->
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/custom.js"></script> 
+
+<!-- Plugin JavaScript -->
+<script src="/js/jquery.easing.min.js"></script>
+<script src="/js/jquery.fittext.js"></script>
+<script src="/js/wow.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+	 <!-- Script to 下拉菜单鼠标经过显示 -->
+<script>    
+$('li.dropdown').mouseover(function() {   
+     $(this).addClass('open');    }).mouseout(function() {        $(this).removeClass('open');    }); 
+</script>	
+
+<!-- Fancybox JavaScript -->
+<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+			/*
+			 *  Open manually
+			 */
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+			
+			
+				
+			
+
+		});
+	</script>
+
+<!-- GoogleAnalytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70335512-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- baidutongji -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fb08cf1b17b64a66eecb24e52ae9813e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
 
 </body>
 

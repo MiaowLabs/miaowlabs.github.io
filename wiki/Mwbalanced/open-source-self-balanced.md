@@ -19,6 +19,5 @@ title: 开源两轮自平衡小车
 
 MWbalanced默认选用8051内核MCU，另有MWblancedSTM32选用STM32F103C8T6。
 
-![](http://miaowlabs.com/img/MWbalanced.png)
 
 
