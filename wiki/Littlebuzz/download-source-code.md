@@ -7,7 +7,7 @@ title: 下载源代码
 
 > 作者：Songyimiao
 
-Littlbuzz的代码托管在海外网站Github，部分同学可能熟悉这网站的使用。
+Littlbuzz的代码托管在海外网站Github，部分同学不熟悉这网站的使用。
 
 在这里，我决定写下点什么，教大家下载。
 
