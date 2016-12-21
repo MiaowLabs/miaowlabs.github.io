@@ -9,7 +9,7 @@ title: 下载中心
 
 现在使用的控制代码命名方式为“Littlebuzz-firmware-none”，名字中的none表示**没有**使用实时操作系统RTOS，是裸机代码，代码更加简单明了，适合初学者使用。
 
-<a href="wiki/Littlebuzz/download-source-code.html" class="btn btn-primary btn-xl" role="button" target="_blank" >飞行器源码</a>
+<a href="../wiki/Littlebuzz/download-source-code.html" class="btn btn-primary btn-xl" role="button" target="_blank" >飞行器源码</a>
 <a href="https://github.com/MiaowLabs/Littlebuzz-remote-none" class="btn btn-primary btn-xl" role="button" target="_blank" >遥控器源码</a>
 
 ## 原理图/元器件资料
