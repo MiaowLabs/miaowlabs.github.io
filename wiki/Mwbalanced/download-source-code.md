@@ -11,7 +11,7 @@ title: 下载源代码
 
 在这里，我决定写下点什么，教大家下载。
 
-**下载地址：**[GITHUB](https://github.com/MiaowLabs/MWbalanced-firmware-none)
+**下载地址：**<a href="https://github.com/MiaowLabs/MWbalanced-firmware-none" class="btn btn-primary btn-xl" role="button" target="_blank" >控制源码</a>
 
 GITHUB是国外网站，现在还没有被墙。如果你打不开，可能是你的网络问题，请更换网络服务商重试。
 
