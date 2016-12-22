@@ -49,3 +49,10 @@ footer {
 .img-responsive{
     display:inline;
 }
+
+.carousel-caption .version {
+    margin-top: 20px;
+    color: #9783b9;
+    font-size: 18px;
+	color: #000;
+}
