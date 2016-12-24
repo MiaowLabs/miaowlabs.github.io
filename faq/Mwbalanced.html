@@ -117,7 +117,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">FAQ
-                    <small>Littlebuzz四轴飞行器</small>
+                    <small>Mwbalanced两轮自平衡小车</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.html">首页</a>
@@ -135,12 +135,12 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">51单片机能做四轴飞行器吗？</a>
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Mwbalanced 8051有哪些功能？</a>
                             </h4>
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse">
                             <div class="panel-body">
-                                答案是肯定的，事实胜于雄辩，Littlebuzz小四轴就是用51单片机作为控制芯片。具体型号为STC15W4K61S4，是一款增强型的51单片机。51单片机是一个泛指，只要是8051内核的单片机都属于51单片机。当然，那些最入门级的STC89C51/AT89C52之类的单片机是制作不了四轴飞行器的呢。
+                                Mwbalanced 8051 的扩展功能有：1、蓝牙遥控； 2、红外循迹； 3、超声波跟随和避障。其中，蓝牙遥控是默认的，控制板集成了蓝牙模块。其他功能，需要亲购买对应的模块添加上去，喵呜家的代码已经包含这部分功能代码。其他更好玩的功能，等待同学们发挥自己的聪明才智喔~
                             </div>
                         </div>
                     </div>
@@ -148,12 +148,12 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Littlebuzz四轴飞行器是用什么开发的？</a>
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Mwbalanced 8051两轮自平衡小车是用什么开发的？</a>
                             </h4>
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse">
                             <div class="panel-body">
-                                Littlebuzz小四轴是用C语言开发的，开发环境是Keil C51，相信学过51单片机的同学都不会感到陌生O(∩_∩)O~。
+                                Mwbalanced平衡小车是用C语言开发的，开发环境是Keil。
                             </div>
                         </div>
                     </div>
@@ -161,94 +161,56 @@
 					<div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Littlebuzz小四轴如何解锁？</a>
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Mwbalanced 8051平衡续航时间有多久？</a>
                             </h4>
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse">
                             <div class="panel-body">
-                                解锁动作：开启遥控器，将油门杆拉至最低，同时把方向杆打满右舵，保持两秒，听到“滴”一声后，红灯由闪烁变为常亮，解锁成功。
+                                纯平衡直立状态，续航超过两小时；遥控全速运动状态,续航超过四十分钟。其他情况下的续航时间还没具体测试。
                             </div>
                         </div>
                     </div>
                     <!-- /.panel -->  
-					<div class="panel panel-default">
+					  
+                    <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Littlebuzz小四轴如何上锁？</a>
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">怎么查看Mwbalanced 8051平衡小车电量啊?</a>
                             </h4>
                         </div>
                         <div id="collapseFour" class="panel-collapse collapse">
                             <div class="panel-body">
-                                上锁动作：开启遥控器，将油门杆拉至最低，同时把方向杆打满左舵，保持两秒，听到“滴”一声后，红灯由常亮变为上锁，上锁成功。上锁状态，遥控器对飞行器操作无效。
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.panel -->  
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Littlebuzz小四轴能悬停吗?</a>
-                            </h4>
-                        </div>
-                        <div id="collapseFive" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                不能自主悬停，但可通过手动模式来达到悬停效果。要实现自主悬停，要保持三个维度不漂移，起码需要三样东西：GPS/光流、气压计/超声波、六轴传感器，成本很高，而Littlebuzz小四轴只有六轴传感器。市面大多数微型四轴都无法实现自主悬停功能，对小四轴而言，加入更多的传感器意味着机体载重增加，随之而来的是动力效率的下降。
+                                有两个途径：一是小车控制板上的红灯亮起，表明小车已经处于低电量状态，请及时充电；二是Mwbalanced平衡小车蓝牙连接「喵呜手机端」APP，在“关于”栏下，点击“读取信息”，就能看到此时电池电量电压，低于7.3V就应该充电了喔。
                             </div>
                         </div>
                     </div>
                     <!-- /.panel -->
-                    <div class="panel panel-default">
+					<div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Littlebuzz小四轴如何做到垂直起飞？</a>
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Mwbalanced 8051的各种指示灯代表什么?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                红灯亮起，表明小车已经处于低电量状态，请及时充电；蓝牙未连接，蓝灯闪烁；蓝牙连接后，蓝灯常亮。
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+					<div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Mwbalanced只有8051版吗？</a>
                             </h4>
                         </div>
                         <div id="collapseSix" class="panel-collapse collapse">
                             <div class="panel-body">
-                                由于存在生产误差、安装误差、运输碰损等问题，送达用户手上的Littlebuzz小四轴不一定就能垂直起飞。用户可按以下步骤调整，以恢复垂直起飞功能：<br>有OLED显示屏的用户：1、检测电机和电机座，如果偏歪了，请纠正；2、观察OLED数据，然后通过右下方微调按钮直至Pitch和Roll为0，然后按开关右侧按钮S2进行数据保存。<br>没有OLED显示屏的用户：1、检测电机和电机座，如果偏歪了，请纠正；2、将Littlebuzz放置静止水平地面，将机头朝外，机尾（双杠标志）对着自己；3、先按开关左侧按钮，进行陀螺仪校正；4、然后轻推油门使四轴离地，观察四轴偏飞哪边，则按遥控器右下方四个方位的微调按钮，偏哪方向就按对应方向按钮，再轻推油门，多次测试，直至垂直起飞状态；5、调整后，按遥控器右侧按钮（S2），进行姿态微调数据保存。
+                                Mwbalanced 有两个分支：一个是Mwbalanced 8051，一个是Mwbalanced STM32，前者选用51单片机STC15作为控制芯片，后者是选用STM32F103C8T6作为控制芯片。
                             </div>
                         </div>
                     </div>
-                    <!-- /.panel --> 
-					<div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">Littlebuzz小四轴的蜂鸣器“滴滴”连续响是在报警吗？</a>
-                            </h4>
-                        </div>
-                        <div id="collapseSeven" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                是的。当飞行器电量较低时，飞行器还可以继续飞，但遥控器的蜂鸣器会发出“滴滴”的连续响声，提示用户这时候应该平稳低飞，缓慢降落，防止电量过低出现误操作。降落后，把遥控器上锁，“滴滴”警报声就会消除。
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.panel --> 
-					<div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">新手首次飞应该控制四轴？</a>
-                            </h4>
-                        </div>
-                        <div id="collapseEight" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                对于没有飞行经验的用户，请在初次飞行前，先熟悉识别飞行器的机头和机尾，不然飞起来都不知道哪边是机头哪边是机尾，然后尽量挑选空旷的地方试飞。新手容易在室内飞行撞天花板。注意，要慢慢推油门，切忌忽上忽下推油门。飞行器离地后，尝试打方向杠调节飞行方向。
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.panel --> 
-					<div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">怎么对Littlebuzz充电？</a>
-                            </h4>
-                        </div>
-                        <div id="collapseNine" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                把飞行器开关关闭，插上USB数据线，对电池开始充电，这时充电红灯常亮。当红灯变暗或熄灭，即电池已经充满电。
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.panel --> 
+                    <!-- /.panel -->
                 </div>
                 <!-- /.panel-group -->
             </div>

@@ -6,7 +6,7 @@ title: 喵呜百科
 <div class="jumbotron">
 <b>
     <p class="lead">这里是喵呜实验室的维基百科。</p>
-    <p class="lead">我们提供DIY一个属于你自己两轮自平衡小车的文档，也提供对MWbalanced两轮自平衡小车进行二次开发的指导。 </p>
+    <p class="lead">我们提供DIY一个属于你自己两轮自平衡小车的文档，也提供对Mwbalanced两轮自平衡小车进行二次开发的指导。 </p>
 </b>
 </div>
 
