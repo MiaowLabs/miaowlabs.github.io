@@ -5,7 +5,7 @@ title: 拼装套件
 
 # {{ page.title }}
 
-> 本教程对应MWbalanced2.0 DSK。
+> 本教程对应MWbalanced 8051 2.0 DSK。
 > 
 > DSK 即 Developer Starter Kit（译：初学者开发套件）
 
@@ -97,3 +97,5 @@ title: 拼装套件
 连接好电机和控制电路板的线。注意，左边电机对于电路板左边端子，右边同理，别连接错了。
 
 ### 安装完毕
+
+Done!
