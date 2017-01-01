@@ -5,51 +5,54 @@ title: 喵呜百科
 
 <div class="jumbotron">
 <b>
-    <p class="lead">这里是喵呜实验室的维基百科。</p>
-    <p class="lead">我们提供DIY一个属于你自己两轮自平衡小车的文档，也提供对Mwbalanced两轮自平衡小车进行二次开发的指导。 </p>
+    <p class="lead">这里是Mwbalanced的维基百科。我们提供DIY一个属于你自己两轮自平衡小车的文档，也提供对Mwbalanced两轮自平衡小车进行二次开发的指导。 </p>
 </b>
 </div>
 
-<p>Mwbalanced是喵呜实验室的两轮自平衡小车的代号。<br>
-代号Mwbalanced的命名遵循“Mw+xxx”的方式，"Mw"为大写，是"Miaow"的缩写，"balanced"为小写，意为“平衡的”。<br>
-</p>
+* [入手拼装套件教程](/wiki/Mwbalanced/assembly-instructions.html)
+* [硬广|Mwbalanced简介](/wiki/Mwbalanced/open-source-self-balanced.html)
 
 <h1></h1>
-* [开源两轮自平衡小车](/wiki/Mwbalanced/open-source-self-balanced.html)
-* [MWbalanced零部件购买指南](/wiki/Mwbalanced/devices-buy-02.html)
 <h2 id="development">开发指南</h2>
+* [整车设计思路](/wiki/Mwbalanced/the-vehicle-design.html)
+
+
 * [功能演示](/wiki/Mwbalanced/MWbalanced-functions.html)
-* [拼装套件](/wiki/Mwbalanced/assembly-instructions.html)
 * [如何连接蓝牙](/wiki/Mwbalanced/bluetooth-connect.html)
 * [如何下载代码](/wiki/Mwbalanced/download-source-code.html)
 * [如何烧写固件](/wiki/Mwbalanced/usb-download-firmware.html)
 * [固件烧写软件&懒人工具STC-ISP常见问题](/wiki/Mwbalanced/stc-isp-use-guide.html)
 * [如何使用Serial Digital Scope显示数据波形](/wiki/Mwbalanced/serial-digital-scope.html)
 
+<h2 id="hardware">硬件设计</h2>
+* [MWbalanced(第二版)硬件原理图讲解](/wiki/Mwbalanced/hardware-basic-2.html)
+* [MWbalanced(第二版)元器件选型总览](/wiki/Mwbalanced/devices-selection-02.html)
+
+<h2 id="structure">机械设计</h2>
+* [整车机械结构](/wiki/Mwbalanced/MWbalanced-structure.html)
+* [电池的安装]()
+* [传感器的安装]()
+
+<h2 id="software">软件设计</h2>
+* [Keil C51集成开发环境介绍](/wiki/Mwbalanced/software-main-none.html)
+* [Mwbalanced软件框架讲解-裸机版本](/wiki/Mwbalanced/software-main-none.html)
+* [简单有效的互补滤波器](/wiki/Mwbalanced/complementary-filter.html)
+* [小明带你入门PID控制](/wiki/Mwbalanced/what-is-pid.html)
+
 <h2 id="open-class">公开课</h2>
 <p>本堂公开课主讲内容：器件选型；原理图讲解；自平衡原理；滤波算法讲解；调试经验分享。</p>
 * [为初学者开设的公开课](/wiki/Mwbalanced/open-class.html)
 
-<h2 id="video">视频教程</h2>
+<h2 id="video">调试教程</h2>
 <p>听说，看着这些视频就能调试出能地上滚天上飞的两轮自平衡小车。</p>
 * [快！扶我起来看超清无码的角度环PD调试指南](/wiki/Mwbalanced/MWbalanced-angle-pd.html)
 * [来！再扶我起来看超清无码的速度环PI调试指南](/wiki/Mwbalanced/MWbalanced-speed-pi.html)
 
 <h2 id="math-model">数学建模</h2>
-<p>由喵呜实验室年青貌美身强力壮的小伙伴Rick Grimes为初学者打造的倾力之作。</p>
-* [两轮自平衡小车的数学建模](/wiki/Mwbalanced/MWbalanced-Mathematical-Modeling.html)
+<p>由年青貌美身强力壮的小伙伴Rick Grimes提供。</p>
+* [两轮自平衡小车的数学建模](/wiki/Mwbalanced/Mathematical-Modeling.html)
 
-<h2 id="hardware">硬件部分</h2>
-* [MWbalanced(第二版)硬件原理图讲解](/wiki/Mwbalanced/hardware-basic-2.html)
-* [MWbalanced(第二版)元器件选型总览](/wiki/Mwbalanced/devices-selection-02.html)
 
-<h2 id="software">软件部分</h2>
-* [MWbalanced软件框架讲解-裸机版本](/wiki/Mwbalanced/software-main-none.html)
-* [简单有效的互补滤波器](/wiki/Mwbalanced/complementary-filter.html)
-* [小明带你入门PID控制](/wiki/Mwbalanced/what-is-pid.html)
-
-<h2 id="structure">机械部分</h2>
-* [MWbalanced的机械结构](/wiki/Mwbalanced/MWbalanced-structure.html)
 
 <h2 id="course">新手教程</h2>
 * [搭建开发环境-裸机版本](/wiki/Mwbalanced/setup-environment.html)
@@ -82,6 +85,7 @@ title: 喵呜百科
 * [Small RTOS51](/wiki/Mwbalanced/smallrtos51-intro.html)
 
 <h2 id="other">其他</h2>
+* [MWbalanced部件购买DIY指南](/wiki/Mwbalanced/devices-buy-02.html)
 * [开创历史的Segway](/wiki/Mwbalanced/segway.html)
 * [两轮平衡车历史回顾](/wiki/Mwbalanced/self-balanced-history.html)
 * [MPU-6050芯片解剖](/wiki/Mwbalanced/mpu6050-anatomy.html)

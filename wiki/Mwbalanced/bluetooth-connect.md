@@ -1,13 +1,15 @@
 ---
 layout: wiki
-title: MWbalanced安卓客户端&蓝牙连接
+title: 喵呜手机端的使用教程
 ---
 
 # {{ page.title }}
 
-> 作者：Songyimiao
+> author：Songyibiao
 
-MWbalanced2.0 默认板载SPP-C蓝牙模块。
+## 注意事项
+
+Mwbalanced 2.0 默认板载SPP-C蓝牙模块。
 
 ![](/img/wiki/bluetooth-connect-01.png)
 
@@ -17,44 +19,42 @@ MWbalanced2.0 默认板载SPP-C蓝牙模块。
 
 * 默认出厂波特率9600, N, 8, 1。
 
+使用蓝牙遵循：“匹配--->连接--->使用” 操作流程
 
-## 手机蓝牙连接MWbalanced
+## APP「喵呜手机端」连接指南
 
-以下演示使用的安卓手机是小米4，使用MWbalanced官方APP。Android版APP在下载中心自由下载；iOS版APP暂未推出。
+以下演示使用安卓手机小米4，使用APP「喵呜手机端」。
 
-第一步，先开启手机蓝牙，搜索蓝牙设备“MWbalanced”。
+第一步，先开启手机蓝牙，搜索蓝牙设备“Mwbalanced”。
 
 ![](/img/wiki/bluetooth-connect-02-01.png)
 
-图2-1
+图2
+
+第二步，点击要连接的蓝牙设备"Mwbalanced"，输入密码（默认1234），将手机和蓝牙设备配对好。
 
 ![](/img/wiki/bluetooth-connect-02-02.png)
 
-图2-2
-
-第二步，点击要连接的蓝牙设备"MWbalanced"，输入密码（默认1234），将手机和蓝牙设备配对好。
+图3-1
 
 ![](/img/wiki/bluetooth-connect-03.png)
 
-图3
+图3-2
 
-第三步，打开MWbalanced APP。如图4。
+第三步，打开「喵呜手机端」APP。如图4。
 
 ![](/img/wiki/bluetooth-connect-04.png)
 
 图4
 
-第四步，先点击“更新蓝牙”，然后在下方选择配对好的蓝牙设备。如图5、6。
+第四步，点击右上角蓝牙标志，会弹出配对好的蓝牙设备。如图5。
 
 ![](/img/wiki/bluetooth-connect-05.png)
 
 图5
 
-![](/img/wiki/bluetooth-connect-06.png)
 
-图6
-
-第五步，点击“连接蓝牙”，连接成功后，蓝牙状态为“true”。如图7。
+第五步，选择要连接的设备，这里选择“Mwbalanced”，连接成功后，会有文字提示。如图7。
 
 ![](/img/wiki/bluetooth-connect-07.png)
 

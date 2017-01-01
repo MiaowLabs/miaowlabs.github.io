@@ -5,18 +5,13 @@ title: 喵呜百科
 
 <div class="jumbotron">
 <b>
-    <p class="lead">这里是喵呜实验室的维基百科。</p>
-    <p class="lead">我们提供DIY一个属于你自己微型四轴飞行器的文档，也提供对Littlebuzz微型四轴飞行器进行二次开发的指导。 </p>
+    <p class="lead">这里是Littlebuzz的维基百科。我们提供DIY一个属于你自己微型四轴飞行器的文档，也提供对Littlebuzz微型四轴飞行器进行二次开发的指导。 </p>
 </b>
 </div>
 
-<p>Littlebuzz是喵呜实验室的微型四轴飞行器的代号。<br>
-Little有“小巧可爱”之意，buzz为“嗡嗡声”，两者组合无他意，纯为了朗读顺口容易记。
-</p>
-
 <h2 id="development">课前知识</h2>
 * [Littllebuzz介绍](/wiki/Littlebuzz/presentation.html)
-* [开源四轴飞行器](/wiki/Littlebuzz/open-source-copter.html)
+* [国内外开源四轴飞行器一览](/wiki/Littlebuzz/open-source-copter.html)
 * [工作原理、十字模式与X字模式](/wiki/Littlebuzz/basics.html)
 <h2 id="development">开发指南</h2>
 * [Littlebuzz零部件购买指南]()
