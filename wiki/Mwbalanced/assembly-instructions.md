@@ -8,6 +8,8 @@ title: 拼装套件
 > 本教程对应MWbalanced 8051 2.0 DSK。
 > 
 > DSK 即 Developer Starter Kit（译：初学者开发套件）
+> 
+> author:songyibiao
 
 
 **温馨提示：本教程对应MWbalanced2.0 DSK（初学者开发套件）。**

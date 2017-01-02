@@ -5,7 +5,7 @@ title: Mwbalanced开源两轮自平衡小车
 
 # {{ page.title }}
 
-> Author：Songyibiao
+> author：songyibiao
 
 ![](/img/wiki/Mwbalanced.jpg)
 
