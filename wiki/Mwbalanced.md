@@ -9,7 +9,7 @@ title: 喵呜百科
 </b>
 </div>
 
-* [Mwbalanced的故事](/wiki/Mwbalanced/open-source-self-balanced.html)
+* [Mwbalanced 8051 介绍](/wiki/Mwbalanced/open-source-self-balanced.html)
 * [入手拼装套件教程](/wiki/Mwbalanced/assembly-instructions.html)
 * [安卓APP遥控教程](/wiki/Mwbalanced/bluetooth-connect.html)
 
