@@ -48,8 +48,10 @@ title: 喵呜百科
 
 <h2 id="video">调试教程</h2>
 <p>听说，看着这些视频就能调试出能地上滚天上飞的两轮自平衡小车。</p>
-* [快！扶我起来看超清无码的角度环PD调试指南](/wiki/Mwbalanced/MWbalanced-angle-pd.html)
-* [来！再扶我起来看超清无码的速度环PI调试指南](/wiki/Mwbalanced/MWbalanced-speed-pi.html)
+* [平衡小车角度环调试指南（文字版）](/wiki/Mwbalanced/upright.html)
+* [平衡小车速度环调试指南（文字版）](/wiki/Mwbalanced/speed.html)
+* [快！扶我起来看超清无码的角度环PD调试指南（视频）](/wiki/Mwbalanced/MWbalanced-angle-pd.html)
+* [来！再扶我起来看超清无码的速度环PI调试指南（视频）](/wiki/Mwbalanced/MWbalanced-speed-pi.html)
 
 <h2 id="basic">扫盲</h2>
 <p>本章节主要涉及部分基础知识。</p>
