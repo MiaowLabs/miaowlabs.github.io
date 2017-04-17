@@ -15,9 +15,9 @@ title: 下载中心
 
 ## 原理图/元器件资料
 
-我们整理了MWbalanced的原理图和所使用到元器件的资料（Datasheet、封装图等），并上传到了百度云盘，供大家下载。
+我们整理了MWbalanced 8051的原理图和所使用到元器件的资料（Datasheet、封装图等），并上传到了百度云盘，供大家下载。
 
-<a href="http://pan.baidu.com/s/1o8GM2UI" class="btn btn-primary btn-xl" role="button" target="_blank" >原理图(MWbalanced2.0)</a>
+<a href="https://pan.baidu.com/s/1slO2i0t" class="btn btn-primary btn-xl" role="button" target="_blank" >原理图(MWbalanced2.0)</a>
 <a href="http://pan.baidu.com/s/1sj5Uesd" class="btn btn-primary btn-xl" role="button" target="_blank" >元器件资料</a>
 
 ## Windows相关安装包
@@ -32,7 +32,8 @@ title: 下载中心
 
 ## 上位机和Android客户端
 <a href="http://pan.baidu.com/s/1mg3w8xa" class="btn btn-primary btn-xl" role="button" target="_blank" >虚拟示波器Serial Digital Scope V2</a>
-<a href="https://pan.baidu.com/s/1coW9zC" class="btn btn-primary btn-xl" role="button" target="_blank" >（新版|推荐|密码:4mwt）喵呜手机端</a>
+<a href="https://pan.baidu.com/s/1skR9LrJ" class="btn btn-primary btn-xl" role="button" target="_blank" >（新版|推荐|密码:4mwt）喵呜手机端APP</a>
+<a href="https://pan.baidu.com/s/1c1Dhj36" class="btn btn-primary btn-xl" role="button" target="_blank" >平衡小车通用控制APP（与喵呜手机端APP相同的通信协议）</a>
 <a href="http://pan.baidu.com/s/1dFI2JLZ" class="btn btn-primary btn-xl" role="button" target="_blank" >（旧版）Android APP安装程序（APK 1.4）</a>
 
 
