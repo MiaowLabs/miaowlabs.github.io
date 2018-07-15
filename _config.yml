@@ -1,5 +1,5 @@
 # Site settings
-title: MiaowLabs
+title: 喵呜实验室MiaowLabs
 email: songyibiao@miaowlabs.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -9,22 +9,54 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
 # User setting
-owner: 薛定谔的喵大
+owner: songyibiao
 email: songyibiao@miaowlabs.com
-address: Shenzhen
+address: Maoming
 weibo_username: miaowlabs
-github_username: miaowlabs
-wechat_username: miaowlabs
+github_username: songyibiao
+wechat_username: boxbeat
 address: 
   - line:
   - line:
   # Feel free to add more lines here 
 telephone: +86 13692103651
-copyright: MiaowLabs 喵呜实验室
+copyright: 喵呜实验室MiaowLabs 
 
+description_footer: 唯有爱与科技不可辜负。
+
+# comments
+# two ways to comment, only choose one, and use your own short name
+# 两种评论插件，选一个就好了，使用自己的 short_name
+duoshuo_shortname: 
+disqus_shortname: 
+
+# statistic analysis 统计代码
+# 百度统计 id，将统计代码替换为自己的百度统计id，即
+# hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
+# xxxxx字符串
+baidu_tongji_id: 
+google_analytics_id: 
 
 # API settings
 google_api_key:
 
 # Build settings
 markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# port
+# port: 1234
+
+# url
+category_dir: category/
+tag_dir: tag/
+
+# excerpt
+excerpt_separator: "\n\n\n\n"
+
+# paginate
+gems: [jekyll-paginate]
+paginate: 6
