@@ -1,0 +1,19 @@
+I"<h1 id="开源两轮自平衡小车">开源两轮自平衡小车</h1>
+
+<blockquote>
+  <p>作者：Songyimiao</p>
+</blockquote>
+
+<p>开源，其价值在于更利于知识的传播。</p>
+
+<p>目前，国内较为系统的开源产品有喵呜实验室的MWbalanced。</p>
+
+<h2 id="mwbalanced">MWbalanced</h2>
+
+<p>喵呜实验室（Miaow Labs）的开源两轮自平衡小车MWbalanced。</p>
+
+<p>MWbalanced默认选用8051内核MCU，另有MWblancedSTM32选用STM32F103C8T6。</p>
+
+<p><img src="/img/MWbalanced.png" alt="" /></p>
+
+:ET

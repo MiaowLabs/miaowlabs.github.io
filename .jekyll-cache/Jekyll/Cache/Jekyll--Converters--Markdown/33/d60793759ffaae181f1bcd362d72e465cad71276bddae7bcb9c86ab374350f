@@ -1,0 +1,106 @@
+I"�<h1 id="拼装套件">拼装套件</h1>
+
+<blockquote>
+  <p>本教程对应MWbalanced 8051 2.0 DSK。</p>
+
+  <p>DSK 即 Developer Starter Kit（译：初学者开发套件）</p>
+
+  <p>author:songyibiao</p>
+</blockquote>
+
+<p><strong>温馨提示：本教程对应MWbalanced2.0 DSK（初学者开发套件）。</strong></p>
+
+<h2 id="准备工具">准备工具：</h2>
+
+<ul>
+  <li>螺丝刀</li>
+  <li>剪刀（或者小刀）</li>
+</ul>
+
+<h2 id="套件列表">套件列表</h2>
+
+<p><img src="/img/wiki/Assembly/0.png" alt="" /></p>
+
+<ol>
+  <li>控制电路板（PCBA）</li>
+  <li>电机固定架</li>
+  <li>减速电机</li>
+  <li>橡胶车轮</li>
+  <li>亚克力板</li>
+  <li>锂电池</li>
+  <li>连接线</li>
+  <li>铜柱</li>
+  <li>螺丝</li>
+  <li>螺母</li>
+</ol>
+
+<blockquote>
+  <p>PCBA是英文Printed Circuit Board（PCB）+ Assembly的简称，也就是说PCB空板经过SMT贴片上件，再经过DIP插件，最后得到的元器件已经贴好的电路板，简称PCBA。</p>
+</blockquote>
+
+<h2 id="开始组装">开始组装</h2>
+
+<h3 id="第一步安装电机固定架">第一步：安装电机固定架</h3>
+
+<p><img src="/img/wiki/Assembly/1.gif" alt="" /></p>
+
+<p>用M3*10螺丝和螺母，把两个电机固定架固定到亚克力板上，并拧紧。</p>
+
+<h3 id="第二步安装电机">第二步：安装电机</h3>
+
+<p><img src="/img/wiki/Assembly/2.gif" alt="" /></p>
+
+<p>用M3*6螺丝，将两个电机固定到固定架上，并拧紧。</p>
+
+<h3 id="第三步组装橡胶车轮">第三步：组装橡胶车轮</h3>
+
+<p><img src="/img/wiki/Assembly/3.gif" alt="" /></p>
+
+<p>将两个橡胶车轮先拼接好。</p>
+
+<h3 id="第四步安装橡胶车轮">第四步：安装橡胶车轮</h3>
+
+<p><img src="/img/wiki/Assembly/4.gif" alt="" /></p>
+
+<p>把两个橡胶车轮紧配压进电机轴。注意，螺母的一侧应朝外，避免螺丝卡到固定架，影响车轮转动。</p>
+
+<h3 id="第五步安装下层铜柱">第五步：安装下层铜柱</h3>
+
+<p><img src="/img/wiki/Assembly/5.gif" alt="" /></p>
+
+<p>用M3*6螺丝，依次把四个铜柱安装到黑色亚克力板。</p>
+
+<h3 id="第六步固定锂电池">第六步：固定锂电池</h3>
+
+<p><img src="/img/wiki/Assembly/6.gif" alt="" /></p>
+
+<p>用扎带，把锂电池固定到黑色亚克力板上，并将过长的扎带剪掉。</p>
+
+<h3 id="第七步固定控制电路板">第七步：固定控制电路板</h3>
+
+<p><img src="/img/wiki/Assembly/7.gif" alt="" /></p>
+
+<p>拿起控制电路板，对好固定孔，卡进铜柱里面，并把电源接上到控制电路板的防插反接口上。</p>
+
+<h3 id="第八步安装上层铜柱">第八步：安装上层铜柱</h3>
+
+<p><img src="/img/wiki/Assembly/8.gif" alt="" /></p>
+
+<p>把控制电路板卡好位置后，再依次安装四个上层铜柱。</p>
+
+<h3 id="第九步安装透明亚克力板">第九步：安装透明亚克力板</h3>
+
+<p><img src="/img/wiki/Assembly/9.gif" alt="" /></p>
+
+<p>用螺丝，将上层透明亚克力板固定好。</p>
+
+<h3 id="第十步连接电机线">第十步：连接电机线</h3>
+
+<p><img src="/img/wiki/Assembly/10.gif" alt="" /></p>
+
+<p>连接好电机和控制电路板的线。注意，左边电机对于电路板左边端子，右边同理，别连接错了。</p>
+
+<h3 id="安装完毕">安装完毕</h3>
+
+<p>Done!</p>
+:ET

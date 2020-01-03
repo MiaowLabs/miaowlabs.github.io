@@ -1,0 +1,92 @@
+I"�<div class="jumbotron">
+<b>
+    <p class="lead">这里是Mwbalanced的维基百科。我们提供DIY一个属于你自己两轮自平衡小车的文档，也提供对Mwbalanced两轮自平衡小车进行二次开发的指导。 </p>
+</b>
+</div>
+
+<ul>
+  <li><a href="/wiki/Mwbalanced/open-source-self-balanced.html">Mwbalanced 8051 介绍</a></li>
+  <li><a href="/wiki/Mwbalanced/assembly-instructions.html">入手拼装套件教程</a></li>
+  <li><a href="/wiki/Mwbalanced/bluetooth-connect.html">安卓APP遥控教程</a></li>
+</ul>
+
+<h2 id="development">开发指南</h2>
+<ul>
+  <li><a href="/wiki/Mwbalanced/setup-environment.html">搭建开发环境-裸机版本</a></li>
+  <li><a href="/wiki/Mwbalanced/new-project.html">新建工程模板</a></li>
+  <li><a href="/wiki/Mwbalanced/download-source-code.html">下载源代码</a></li>
+  <li><a href="/wiki/Mwbalanced/compile-source-code.html">编译源代码</a></li>
+  <li><a href="/wiki/Mwbalanced/stc-header.html">获取STC芯片头文件</a></li>
+  <li><a href="/wiki/Mwbalanced/usb-download-firmware.html">往Mwbalanced烧写固件</a></li>
+  <li><a href="/wiki/Mwbalanced/stc-isp-use-guide.html">固件烧写软件STC-ISP常见问题</a></li>
+  <li><a href="/wiki/Mwbalanced/serial-digital-scope.html">虚拟示波器SerialDigitalScope使用方法</a></li>
+  <li><a href="/wiki/Mwbalanced/led.html">LED实验</a></li>
+  <li><a href="/wiki/Mwbalanced/uart.html">串口通讯实验</a></li>
+  <li><a href="/wiki/Mwbalanced/bluetooth.html">蓝牙通讯实验</a></li>
+  <li><a href="/wiki/Mwbalanced/mpu-6050.html">六轴传感器MPU-6050使用实验</a></li>
+  <li><a href="/wiki/Mwbalanced/ultrasonic.html">超声波跟随扩展</a></li>
+  <li><a href="/wiki/Mwbalanced/servo.html">舵机扩展</a></li>
+  <li><a href="/wiki/Mwbalanced/infrared.html">红外寻迹扩展</a></li>
+</ul>
+
+<h2 id="hardware">硬件设计</h2>
+<ul>
+  <li><a href="/wiki/Mwbalanced/the-vehicle-design.html">整车设计思路</a></li>
+  <li><a href="/wiki/Mwbalanced/hardware-basic-2.html">MWbalanced(第二版)硬件原理图讲解</a></li>
+  <li><a href="/wiki/Mwbalanced/devices-selection-02.html">MWbalanced(第二版)元器件选型总览</a></li>
+</ul>
+
+<h2 id="structure">机械设计</h2>
+<ul>
+  <li><a href="/wiki/Mwbalanced/MWbalanced-structure.html">整车机械结构</a></li>
+  <li><a href="">电池的安装</a></li>
+  <li><a href="">传感器的安装</a></li>
+</ul>
+
+<h2 id="software">软件设计</h2>
+<ul>
+  <li><a href="">Keil C51集成开发环境介绍</a></li>
+  <li><a href="/wiki/Mwbalanced/software-main-none.html">Mwbalanced软件框架讲解-裸机版本</a></li>
+  <li><a href="/wiki/Mwbalanced/complementary-filter.html">简单有效的互补滤波器</a></li>
+  <li><a href="/wiki/Mwbalanced/what-is-pid.html">小明带你入门PID控制</a></li>
+</ul>
+
+<h2 id="video">调试教程</h2>
+<p>听说，看着这些视频就能调试出能地上滚天上飞的两轮自平衡小车。</p>
+<ul>
+  <li><a href="/wiki/Mwbalanced/upright.html">平衡小车角度环调试指南（文字版）</a></li>
+  <li><a href="/wiki/Mwbalanced/speed.html">平衡小车速度环调试指南（文字版）</a></li>
+  <li><a href="/wiki/Mwbalanced/MWbalanced-angle-pd.html">快！扶我起来看超清无码的角度环PD调试指南（视频）</a></li>
+  <li><a href="/wiki/Mwbalanced/MWbalanced-speed-pi.html">来！再扶我起来看超清无码的速度环PI调试指南（视频）</a></li>
+</ul>
+
+<h2 id="basic">扫盲</h2>
+<p>本章节主要涉及部分基础知识。</p>
+<ul>
+  <li><a href="/wiki/Mwbalanced/why-accel-gyro.html">为什么要用加速度计和陀螺仪两种传感器？</a></li>
+  <li><a href="/wiki/Mwbalanced/how-many-dimensions.html">两轮自平衡小车需要用到多少个维度数据？</a></li>
+</ul>
+
+<h2 id="exp">开发经验总结</h2>
+<ul>
+  <li><a href="/wiki/Mwbalanced/MWbalanced-inplace-hold.html">原地直立&amp;原地旋转</a></li>
+  <li><a href="/wiki/Mwbalanced/MWbalanced-power-endurance.html">动力效率&amp;续航时间</a></li>
+  <li><a href="/wiki/Mwbalanced/MWbalanced-debug.html">车体平衡调试</a></li>
+</ul>
+
+<h2 id="small-rtos51">Small RTOS51</h2>
+<p>为了满足各个层次小伙伴的需求和体现出我们的努力，后续会试着移植Small RTOS51实时操作系统内核。Small RTOS51是陈明计先生编写的一个实时操作系统，并著有《嵌入式实时操作系统Small RTOS51原理及应用》。Small RTOS51适合在小RAM/小FLASH单片机上运行，并且与μCOS商业应用收费不同，Small RTOS51在商业应用是免费的。</p>
+<ul>
+  <li><a href="/wiki/Mwbalanced/smallrtos51-intro.html">Small RTOS51 简介</a></li>
+</ul>
+
+<h2 id="other">其他</h2>
+<ul>
+  <li><a href="/wiki/Mwbalanced/open-class.html">为初学者开设的公开课</a></li>
+  <li><a href="/wiki/Mwbalanced/Mathematical-Modeling.html">两轮自平衡小车的数学建模</a></li>
+  <li><a href="/wiki/Mwbalanced/devices-buy-02.html">MWbalanced部件购买DIY指南</a></li>
+  <li><a href="/wiki/Mwbalanced/segway.html">开创历史的Segway</a></li>
+  <li><a href="/wiki/Mwbalanced/self-balanced-history.html">两轮平衡车历史回顾</a></li>
+  <li><a href="/wiki/Mwbalanced/mpu6050-anatomy.html">MPU-6050芯片解剖</a></li>
+</ul>
+:ET

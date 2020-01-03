@@ -1,0 +1,186 @@
+I"O(<blockquote>
+  <p>本教程适合MWbalanced 1.0版本</p>
+</blockquote>
+
+<h2 id="整车物料列表">整车物料列表</h2>
+
+<ul>
+  <li>MWbalanced两轮平衡车，电机、轮子已经安装（1个）</li>
+</ul>
+
+<h2 id="确认飞机的前与后">确认飞机的前与后</h2>
+<p>Crazepony默认固件使用是的X结构模式，无头飞行模式，遥控默认固件为左手油门（美国手）。</p>
+
+<p>将飞机水平放于地面，在飞机正中间，有箭头指向飞机的正前方（飞机的开关方向）。除此之外，还可以通过机臂确认前后。M3和M4机臂为飞机机头方向，M1和M2为飞机机尾方向。</p>
+
+<p><img src="/assets/img/manual-1-wiki.png" alt="" /></p>
+
+<p>一般我们站在飞机的后方，面向飞机开始操控。</p>
+
+<blockquote>
+  <p>Crazepony遥控默认固件为美国手，无头模式。更多关于<a href="./japan-american-rc.html">遥控器美国手</a>。更多关于<a href="./head-free.html">无头模式飞行</a>。</p>
+</blockquote>
+
+<h2 id="遥控器操作">遥控器操作</h2>
+<ul>
+  <li>将遥控器开关推到ON。</li>
+  <li>将飞机的开关推到ON，飞控开始初始化，大概需要10秒左右。最后如果M1和M2机臂两个LED闪烁，则可以进入下面的解锁试飞。否则，请进入异常处理部分，具体查看下面的Crazepony灯语部分。</li>
+  <li>解锁试飞。左手油门低到最低同时右手横滚拉到最左边，解锁油门。解锁成功，飞机电机将怠速旋转。（<strong>最新版本遥控固件不再需要该步骤</strong>）</li>
+  <li>按下遥控器上“-”按键，M1和M2机臂上LED常亮进入校准。校准结束，M1和M2机臂上LED开始闪烁。按下遥控器上的“+”按键，开启电机怠速转动。</li>
+  <li>默认是定高飞行模式，油门通道控制垂直方向的速度，缓慢推油门，四轴将开始上升，拉到油门中位以下则下降。</li>
+  <li>降落操作，可以使四轴下降至地面，然后，按“+”号键关闭电机。</li>
+</ul>
+
+<blockquote>
+  <p>默认飞行模式为无头、定高飞行模式。飞机记录起飞的方向，飞行过程中，飞机响应摇杆的方向，始终以起飞时的方向为准，没有机头机尾的区别。</p>
+</blockquote>
+
+<p>下面为遥控器解锁操作示意图。</p>
+
+<p><img src="/assets/img/user-guide-10.png" alt="" /></p>
+
+<p>下面为遥控器上按键功能标注。</p>
+
+<p><img src="/assets/img/manual-3-wiki.png" alt="" /></p>
+
+<h2 id="手机app遥控-蓝牙40-ble">手机APP遥控-蓝牙4.0 BLE</h2>
+
+<p><strong>Android手机需要Android 4.3版本以上。</strong></p>
+
+<p>官网下载支持BLE的<a href="http://pan.baidu.com/s/1nt69pUD">Android APP</a>，并且安装。
+另外，因蓝牙版本的设计及本批次选用扭力稍大于之前版本的720空心杯电机，我们修改了悬停两处参数，最新版适用于蓝牙4.0机身、遥控固件<a href="http://pan.baidu.com/s/1pJECSWV">下载链接</a>。</p>
+
+<p>蓝牙4.0版本APP使用方法</p>
+
+<ul>
+  <li>将飞机的开关推到ON，LED开始进入一系列的闪烁变化，飞控开始初始化。</li>
+  <li>打开APP，点击连接。</li>
+  <li>查找设备，会搜寻到名字为Crazepony设备。点击连接此设备，<strong>无需配对，无需PIN码</strong>，连接成功后，机身的蓝牙提示灯常亮。</li>
+  <li>点击校准按钮，此时M1和M2臂上的led灯会常亮，校准陀螺仪和加速度计，校准完成后开始闪烁，等待解锁。</li>
+  <li>点击定高按钮。</li>
+  <li>点击解锁按钮，四个电机怠速旋转，推动油门，飞机起飞，松开油门，飞机悬停。</li>
+  <li>点击起飞/降落按键，可以手动降落飞机（起飞按键目前不支持此功能，降落按键有功能）。</li>
+</ul>
+
+<p>注意：用app操作时，飞行模式需要手动设置，即需要点定高和无头才能实现相应的功能。</p>
+
+<p>遥控和app控制，都支持失控自动降落功能，控制距离建议不要大于20米，最好在室内练习熟练以后再去室外飞。</p>
+
+<p><img src="/assets/img/ble-app-1.jpg" alt="" /></p>
+
+<p><img src="/assets/img/ble-app-2.jpg" alt="" /></p>
+
+<p>iPhone手机APP很快就可以发布。</p>
+
+<h2 id="手机app遥控-蓝牙21">手机APP遥控-蓝牙2.1</h2>
+<p><strong>蓝牙2.1版本现在已经停产，现在支持蓝牙4.0 BLE。</strong></p>
+
+<p>官网下载支持蓝牙2.1版本的<a href="http://pan.baidu.com/s/1eQfBgye">APP</a>，并且安装。</p>
+
+<ul>
+  <li>将飞机的开关推到ON，LED开始进入一系列的闪烁变化，飞控开始初始化。</li>
+  <li>打开app，点击连接。</li>
+  <li>查找设备，第一次连接crazepony，设备名是一个叫null的设备，点击连接此设备，会显示出完整设备名：crazepony，PIN码为：<strong>1234</strong>，连接成功后，机身的蓝牙提示灯常亮。</li>
+  <li>点击校准按钮，此时M1和M2臂上的led灯会常亮，校准陀螺仪和加速度计，校准完成后开始闪烁，等待解锁。</li>
+  <li>点击定高按钮。</li>
+  <li>点击解锁按钮，四个电机怠速旋转，推动油门，飞机起飞，松开油门，飞机悬停。</li>
+  <li>点击起飞/降落按键，可以手动降落飞机（起飞按键目前不支持此功能，降落按键有功能）。</li>
+</ul>
+
+<p>注意：用app操作时，飞行模式需要手动设置，即需要点定高和无头才能实现相应的功能。</p>
+
+<p>遥控和app控制，都支持失控自动降落功能，控制距离建议不要大于20米，最好在室内练习熟练以后再去室外飞。</p>
+
+<h2 id="crazepony灯语">Crazepony灯语</h2>
+
+<p>Crazepony的4个臂膀各有一个蓝色的LED。我们规定了部分LED闪烁的方式（灯语），用于指示飞机的状态。灯语分为指示类型和异常类型，指示类型用于开发和调试，异常类型则必须要处理才能够使用飞机。</p>
+
+<p>异常指示灯列表。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">灯语</th>
+      <th style="text-align: left">含义</th>
+      <th style="text-align: left">解决办法</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">旋转闪烁</td>
+      <td style="text-align: left">未接收到遥控信号（遥控或者手机APP）</td>
+      <td style="text-align: left">开启遥控器。如果开启遥控器未能解决，则需要先开启遥控器，再开启飞机重试（重烧固件时会遇到）</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">M1 M2和M3 M4交替闪烁</td>
+      <td style="text-align: left">IMU未校准</td>
+      <td style="text-align: left">将飞机水平放置地面上，按遥控器上“-”号键（或者APP上的校准按钮）进行IMU校准</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">4灯同时快闪</td>
+      <td style="text-align: left">低电压提示</td>
+      <td style="text-align: left">给电池充电</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>正常提示灯列表。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">灯语</th>
+      <th style="text-align: left">含义</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">M1和M2常亮3秒，M3和M4长灭</td>
+      <td style="text-align: left">IMU启动校准，校准陀螺仪</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">M1和M2闪烁，M3和M4长灭</td>
+      <td style="text-align: left">正常，可以进行起飞，IMU校准等动作</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">M1闪烁8次，其它灯长灭</td>
+      <td style="text-align: left">配置蓝牙模块</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>关于蓝牙配置：机身的M1臂上的LED灯会闪烁8次，这里是在检测蓝牙模块是否正常；如果蓝牙设备波特率不是设定值（115200），那么会进入写蓝牙设备名，写波特率，写PIN码的逻辑，M1,M3和M2，M4臂上的灯会交替闪烁，配置蓝牙参数成功后，四个灯一起点亮1秒</p>
+</blockquote>
+
+<h2 id="电量检测和充电">电量检测和充电</h2>
+<p>飞机的四个机臂LED同时出现快速闪烁，则表示飞机电池需要充电。将飞机开关拨到Charge位置，连上usb线则可以充电。可以使用电脑，充电宝，手机充电器等为飞机进行充电。</p>
+
+<p><img src="/assets/img/charge.jpg" alt="" /></p>
+
+<p>充电时红色LED亮起，变暗或者灭掉的时候则表示充电完成。</p>
+
+<h2 id="电机容易损坏的问题">电机容易损坏的问题</h2>
+<p>为什么Crazepony的电机臀部老是被戳穿？有人会在这个时候开始一个劲儿乱喷骂娘，我也很无奈。</p>
+
+<p>这么说吧，正常情况下100次起落，都不会对飞机造成任何物理结构上不可逆的毁坏。那么，电机臀部被戳穿这种事情，属于飞机脸先着地的意外，他的臀部是被那根轴顶穿的，空心杯电机其实很脆弱，这个我没办法控制，我已经尽力了。我看了国内的那些用空心杯电机的小四轴，好像都有这个问题…所以，大家提高飞行技术，是对Crazepony最直接的保护。当然，电机坏了，这种事情太好处理了，多准备些空心杯电机，只要主板没坏，随便怎么折腾都可以…</p>
+
+<h2 id="桨叶遥控安装">桨叶/遥控安装</h2>
+<blockquote>
+  <p>对于Crazepony 5.2版本，入手即飞，不需要该步骤的安装。</p>
+</blockquote>
+
+<p>四轴飞行器的桨叶分为两种，正桨和反桨。安装的时候不能够搞混淆。桨叶上标示有R的安装到M2，M4两个机臂的电机上。标示有L桨叶安装到M1，M3两个机臂电机上。</p>
+
+<p><img src="/assets/img/user-guide-5-0-1.jpg" alt="" />
+<img src="/assets/img/user-guide-5-0-2.jpg" alt="" /></p>
+
+<p>发货清单中有黑色和透明两种硅胶垫，用于缓冲飞机降落时的撞击，并且起到保护电机线的作用，请自行选择一种安装。效果如下图所示。</p>
+
+<p><img src="/assets/img/user-guide-5-1-0.jpg" alt="" /></p>
+
+<p>你拿到Crazepony的包裹的时候，需要自行安装遥控器摇杆帽，没有左右之分。</p>
+
+<p>将2.4G模块安装到遥控器上的排针插座上。模块方向向外。</p>
+
+:ET

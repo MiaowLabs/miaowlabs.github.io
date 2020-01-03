@@ -1,0 +1,30 @@
+I"�<h1 id="通过usb烧写固件">通过USB烧写固件</h1>
+
+<blockquote>
+  <p>作者：Songyimiao</p>
+</blockquote>
+
+<p>注：本文适用于MWbalanced 2.0。</p>
+
+<p>烧写固件所需的东西：</p>
+
+<ul>
+  <li>Micro-USB数据线；</li>
+  <li>STC-ISP烧录工具；</li>
+  <li>最新固件（<a href="http://miaowlabs.com/download.html">下载中心</a>最新固件或源代码里的Hex）</li>
+</ul>
+
+<p>MWbalanced2.0带有一颗USB-TTL芯片CP2102，所以可以直接通过USB接口下载或更新固件。</p>
+
+<p>MWbalanced2.0使用的是外部晶振@20M，而且使用了STC15单片机内部复位电路，所以在烧写固件时，要先对STC-ISP做以下设置，再烧写操作，如图1所示。</p>
+
+<p><img src="/img/wiki/stc-isp-download.png" alt="" /></p>
+
+<p>图1</p>
+
+<p>烧录成功后，STC-ISP会有操作成功提示。如图2所示。</p>
+
+<p><img src="/img/wiki/stc-isp-download-success.png" alt="" /></p>
+
+<p>图2</p>
+:ET

@@ -1,0 +1,47 @@
+I"�<h1 id="mwbalanced电池选型">MWbalanced电池选型</h1>
+
+<blockquote>
+  <p>作者：Songyimiao</p>
+</blockquote>
+
+<p>电池选型一般是在选定电机后进行的，要根据电机的额定电压来选择。</p>
+
+<p>我们最后选择一款价格便宜，性能粗暴的航模锂电池。以后制作四轴飞行器也可以循环使用。</p>
+
+<p>下面是该锂电池的参数：</p>
+
+<ul>
+  <li>额定容量：1300mah</li>
+  <li>标准电压：11.1v</li>
+  <li>单片电芯：3.7v</li>
+  <li>单片充满电压：4.2v</li>
+  <li>电池组充满总电压：12.6v</li>
+  <li>放电倍率C数：25C</li>
+  <li>瞬间放电可达：50C</li>
+  <li>放电插头：T插头，线长10cm ，14#硅胶线耐高温</li>
+  <li>充电插头：3S平衡插头</li>
+  <li>电池尺寸：长74mmx宽34mmx厚20mm</li>
+  <li>电池重量：106g</li>
+</ul>
+
+<p>小车质量重心位置越低，则小车绕电机轴的转动惯量越小，电机的机电时间常数越小，因此越有利于小车平衡的控制。因为电池是整个小车重量的重要组成部分，所以我们把电池装在了小车的下面靠近电机的位置。</p>
+
+<p>##扩展知识</p>
+
+<p>因为我们使用的电池是3S 11.1V 25C锂聚合物电池，所以我们有必要学会合理使用锂聚合物电池，以免发生意外。</p>
+
+<p>下面实验针对1S 3.7V锂聚合物电池，但是也适用于我们使用的3S 11.1V锂聚合物电池。</p>
+
+<p>锂聚合物电池可能发生爆炸的四个小实验：</p>
+
+<ul>
+  <li>锂聚合物电池穿刺实验</li>
+  <li>锂聚合物电池短路实验</li>
+  <li>锂聚合物电池弯折实验</li>
+  <li>模拟过度充电实验（1S 3.7V电池 模拟5V直充电压）</li>
+</ul>
+
+<p>
+<embed src="http://player.youku.com/player.php/sid/XOTAwNTAxNTMy/v.swf" allowfullscreen="true" quality="high" width="480" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" />&lt;/embed&gt;
+</p>
+:ET

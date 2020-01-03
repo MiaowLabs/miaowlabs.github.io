@@ -1,0 +1,23 @@
+I"�<h1 id="下载源代码">下载源代码</h1>
+
+<blockquote>
+  <p>作者：Songyimiao</p>
+</blockquote>
+
+<p>Littlbuzz的代码托管在海外网站Github，部分同学不熟悉这网站的使用。</p>
+
+<p>在这里，我决定写下点什么，教大家下载。</p>
+
+<p><strong>下载地址：</strong><a href="https://github.com/MiaowLabs/Littlebuzz-firmware-none">GITHUB</a></p>
+
+<p>GITHUB是国外网站，现在还没有被墙。如果你打不开，可能是你的网络问题，请更换网络服务商重试。</p>
+
+<p>主控固件裸机版本，裸机指没有使用实时操作系统RTOS。由于没有使用RTOS，所以代码更加简单明了，适合初学者使用。</p>
+
+<p>裸机源代码放置在MWbalanced-firmware-none下，命名中的none表示不使用RTOS。</p>
+
+<p>进入Github页面后，在右侧点击“Download ZIP”，即可下载源代码。</p>
+
+<p><img src="/img/wiki/download-soure-code.png" alt="" /></p>
+
+:ET

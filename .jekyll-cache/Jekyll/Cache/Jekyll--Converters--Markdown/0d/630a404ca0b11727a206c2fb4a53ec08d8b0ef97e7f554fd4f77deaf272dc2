@@ -1,0 +1,73 @@
+I"�<h1 id="mwbalanced零部件购买指南">MWbalanced零部件购买指南</h1>
+
+<blockquote>
+  <p>作者：Songyimiao</p>
+</blockquote>
+
+<p>为了方便大家DIY自己的MWbalanced，我们整理出重要的零部件&amp;元器件的淘宝购买地址，供大家参考或购买。</p>
+
+<p>Tips：大家也可以直接在淘宝上搜索关键词“MWbalanced”，我们已上架大部分零部件&amp;元器件，方便大家一站式采购，节省快递费用。</p>
+
+<h2 id="电机">电机</h2>
+
+<p>GA25电机（带11CPR霍尔编码器）</p>
+
+<p>部分指标：</p>
+
+<ul>
+  <li>额定电压：6V</li>
+  <li>转速：165RPM</li>
+  <li>编码器：11CPR霍尔编码器(AB相正交输出)</li>
+</ul>
+
+<p>购买地址：<a href="https://item.taobao.com/item.htm?spm=a230r.1.14.22.R8Fz9N&amp;id=530768792280&amp;ns=1&amp;abbucket=15#detail">淘宝链接</a></p>
+
+<h2 id="轮子">轮子</h2>
+
+<p>4毫米D型孔橡胶车轮</p>
+
+<p>购买地址：<a href="https://item.taobao.com/item.htm?spm=a230r.1.14.37.R8Fz9N&amp;id=530721850842&amp;ns=1&amp;abbucket=15#detail">淘宝链接</a></p>
+
+<h2 id="电池">电池</h2>
+
+<p>MWbalanced2.0使用定制的锂电池，容量2000mAh，额定电压7.4，充满电压8.4V，持续放电电流4A。</p>
+
+<p>特点：高容量,高放平台,工作时间长,寿命长。</p>
+
+<p>购买地址：<a href="https://item.taobao.com/item.htm?spm=a230r.1.14.32.E1P6u7&amp;id=529808134531&amp;ns=1&amp;abbucket=15#detail">淘宝链接</a></p>
+
+<p>适配的智能快速充电器：<a href="https://item.taobao.com/item.htm?spm=a230r.1.14.42.R8Fz9N&amp;id=530722106272&amp;ns=1&amp;abbucket=15#detail">淘宝链接</a></p>
+
+<h2 id="蓝牙模块">蓝牙模块</h2>
+
+<p>MWbalanced2.0使用蓝牙模块SPP-C，性价比最高。</p>
+
+<p>购买地址：<a href="https://item.taobao.com/item.htm?spm=a230r.1.14.17.R8Fz9N&amp;id=530271728357&amp;ns=1&amp;abbucket=15#detail">淘宝链接</a></p>
+
+<h2 id="mcu">MCU</h2>
+
+<p>控制芯片为STC15系列1T 8051单片机。IAP15W4K61S4，4K SRAM，8051内核，33MHz主频，61K Flash，LQFP48封装。</p>
+
+<blockquote>
+  <p>STC的IAP系列单片机，和STC系列单片机的不同之处在于，整颗MCU的Flash空间，用户可在自己的程序中进行改写，开发用户自己的ISP程序。例如改写用户bootloader，实现无线升级固件等功能。</p>
+</blockquote>
+
+<p>购买地址：<a href="https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-2285046357.14.Vgn8wp&amp;id=526103204556">淘宝链接</a></p>
+
+<h2 id="传感器">传感器</h2>
+
+<p>MPU6050，三轴陀螺仪+三轴加速度传感器，自带DMP四元数输出，内部温度补偿。</p>
+
+<h2 id="电机驱动">电机驱动</h2>
+
+<p>MWbalanced1.0选用电机驱动芯片TB6612FNG。</p>
+
+<p>MWbalanced1.0选用电机驱动芯片MC33186，Freescale生产，单H桥芯片，工作电压5V-28V，兼容TTL/CMOS输入，PWM频率可达20kHz，输出电流限制在6.5A±20%，输出电流超过8A时启动输出短路保护。</p>
+
+<p>MC33186淘宝链接：<a href="https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-2285046357.4.Vgn8wp&amp;id=526047719618">淘宝链接</a></p>
+
+<h2 id="usb-uart桥接器">USB-UART桥接器</h2>
+
+<p>CP2102，是一款高度集成的USB-UART桥接器，用于固件下载，参数调试。</p>
+
+:ET

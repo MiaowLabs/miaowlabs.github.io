@@ -1,0 +1,53 @@
+I"�<h1 id="invensense-mpu-6050-芯片解剖">Invensense MPU-6050 芯片解剖</h1>
+
+<blockquote>
+  <p>参考：http://zeptobars.ru/en/read/Invensense-MPU6050-6d-MEMS-IMU-gyroscope-accelerometer</p>
+</blockquote>
+
+<p>InvenSense的MPU-6050集成了具有16位分辨率的陀螺仪和加速度计。它包含两个晶片，面对面地在很多地方用焊点连接（这就给我们的芯片解剖造成了麻烦，最后一次分离所需的温度超过600℃）。 如图1。</p>
+
+<p><img src="/img/wiki/mpu6050-anatomy-01.jpg" alt="" /></p>
+
+<p>图1</p>
+
+<p>在全局照片上你可以看到他们是如何的不平坦。 大一点的晶片突出表面的高度有28μm，小一点的晶片超过100μm。如图2。此外，那颗大一点的MEMS晶片下方还有逻辑电路。</p>
+
+<p><img src="/img/wiki/mpu6050-anatomy-02.jpg" alt="" /></p>
+
+<p>图2 大的晶片尺寸为2782x2718μm，小的晶片尺寸为2778x2195μm。</p>
+
+<p>小晶片，对焦在顶层。宽度最小的齿列的为1μm。</p>
+
+<p>这些齿列让我们可以通过电极之间的电容变化来感知它们的运动。 如图3。</p>
+
+<p><img src="/img/wiki/mpu6050-anatomy-03.jpg" alt="" /></p>
+
+<p>图3</p>
+
+<p>小晶片，对焦于底层，如图4：</p>
+
+<p><img src="/img/wiki/mpu6050-anatomy-04.jpg" alt="" /></p>
+
+<p>图4</p>
+
+<p>大晶片，如图5：</p>
+
+<p><img src="/img/wiki/mpu6050-anatomy-05.jpg" alt="" /></p>
+
+<p>图5</p>
+
+<p>在MEMS的下方可以很容易地找到传统的数字逻辑电路，～250nm的半间距</p>
+
+<p>SRAM，单元面积为10.13µm<sup>2</sup>，如图6：</p>
+
+<p><img src="/img/wiki/mpu6050-anatomy-06.jpg" alt="" /></p>
+
+<p>图6</p>
+
+<p>基础标准单元逻辑电路，如图7：</p>
+
+<p><img src="/img/wiki/mpu6050-anatomy-07.jpg" alt="" /></p>
+
+<p>图7</p>
+
+:ET

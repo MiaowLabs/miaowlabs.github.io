@@ -1,0 +1,57 @@
+I"�<h1 id="windows下开发环境搭建-裸机版本">Windows下开发环境搭建-裸机版本</h1>
+
+<blockquote>
+  <p>作者：Songyimiao</p>
+</blockquote>
+
+<p>IDE开发工具Keil C51 V9.00下载地址：喵呜实验室百度云网盘<a href="http://pan.baidu.com/s/1kTKN5AZ">Keil-C51-Version-9.00.zip</a></p>
+
+<p>IDE开发工具Keil C51最新版本（C51-Version-9.54a）官方下载地址：<a href="https://www.keil.com/demo/eval/c51.htm">Keil官网下载页面</a>。</p>
+
+<p>平衡小车控制源代码下载地址：Github项目<a href="https://github.com/MiaowLabs/MWbalanced-firmware-none">MWbalanced-firmware-none</a>。</p>
+
+<p>CP2102驱动下载地址：喵呜实验室百度云网盘<a href="http://pan.baidu.com/s/1c08Q5AK">CP2102驱动</a></p>
+
+<p>STC-ISP固件烧录工具：喵呜实验室百度云网盘<a href="http://pan.baidu.com/s/1bnBg2qN">stc-isp-15xx-v6.82H</a></p>
+
+<h2 id="环境配置说明">环境配置说明</h2>
+<p>裸机版本是指没有使用RTOS的主控固件版本，由于没有使用RTOS，程序代码显得更加简单明了，开发环境配置简单，非常适合初学者使用。</p>
+
+<p>裸机版本的代码使用Keil C51进行开发编译，下面介绍编译环境的搭建和编译过程。</p>
+
+<h2 id="keil-c51的安装和破解">Keil C51的安装和破解</h2>
+<p>由于主控使用的是8051内核的STC15，所以必须使用带有8051编译工具链的Keil C51。喵呜实验室使用的Keil版本是Keil C51 V9.00。喵呜实验室百度云网盘提供带有8051编译工具链的Keil C51 V9.00安装文件下载，带有破解注册机和破解说明文档。大家自行下载安装。我们的电脑上是装了Keil C51，然后又安装了MDK-ARM加以覆盖的，不过依然可以看得到版本为9.00。</p>
+
+<p><img src="/img/wiki/keil-version.png" alt="" /></p>
+
+<p>该安装文件在Windows XP 32位系统、Windows 7 32和64位系统上测试通过。</p>
+
+<h2 id="源代码下载">源代码下载</h2>
+<p>主控固件裸机版本，裸机指没有使用实时操作系统RTOS。由于没有使用RTOS，所以代码更加简单明了，适合初学者使用。</p>
+
+<p>喵呜实验室的MWbalanced项目是开源的，所有代码都托管在Github的<a href="https://github.com/miaowlabs">MWbalanced项目</a>下。裸机源代码放置在<a href="https://github.com/MiaowLabs/MWbalanced-firmware-none">MWbalanced-firmware-none</a>下，命名中的none表示不使用RTOS。</p>
+
+<p>进入Github页面后，在右侧点击“Download ZIP”，即可下载源代码。</p>
+
+<p><img src="/img/wiki/download-zip.png" alt="" /></p>
+
+<h2 id="源代码导入和编译">源代码导入和编译</h2>
+<p>在源代码中，有4个文件为Keil工程文件。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MWbalanced-firmware-none.plg
+MWbalanced-firmware-none.uvopt
+MWbalanced-firmware-none.uvproj
+MWbalanced-firmware-none_uvproj.bak
+</code></pre></div></div>
+
+<p>以Keil C51 9.00为例，点击Project栏目下Open project，打开代码解压所在文件夹选中MWbalanced-firmware-none.uvproj，此时已将代码项目工程所有文件导入Keil C51，如图所示：</p>
+
+<p><img src="/img/wiki/keil-build.png" alt="" /></p>
+
+<p>点击左上角的编译按钮，编译整个项目，在工程下生成Output目录，目录中MWbalanced-firmware-none.hex就是可以烧写到STC15的固件。</p>
+
+<p>STC15固件的调试和烧入可以使用STC-ISP调试器进行开发，详见<a href="">STC-ISP的使用及常见问题</a>。MWbalanced板载USB-TTL芯片，支持USB口烧入，即采用ISP下载，操作简单。只需要安装CP2102驱动程序，使用一根Mini USB数据线连接电脑。详见<a href="">固件烧写</a>，烧录界面如图所示:</p>
+
+<p><img src="/img/wiki/stc-isp-download.png" alt="" /></p>
+
+:ET

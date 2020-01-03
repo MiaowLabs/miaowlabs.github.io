@@ -1,0 +1,28 @@
+I"u<h1 id="扩展舵机">扩展：舵机</h1>
+
+<blockquote>
+  <p>作者：Songyimiao</p>
+</blockquote>
+
+<p>本章节为大伙讲解如何在MWbalanced 2.0上扩展舵机。</p>
+
+<p>演示视频传送门：<a href="http://v.youku.com/v_show/id_XMTU3NjM1ODM4MA==.html">我是视频</a></p>
+
+<p>先看原理图，如图1，MWbalanced控制板预留出两路PWM接口(舵机)，引脚兼容市面上常见的角度或速度舵机。</p>
+
+<p><img src="/img/wiki/servo-001.png" alt="舵机" /></p>
+
+<p>图1</p>
+
+<p>可以用扎带或胶布或胶水等，把舵机固定在上层亚克力板上，然后再接好线。如图2。</p>
+
+<p><img src="/img/wiki/servo-002.png" alt="舵机安装" /></p>
+
+<p>图2</p>
+
+<p>我们在APP 1.4上增加了舵机控制按钮，如图3。</p>
+
+<p><img src="/img/wiki/servo-003.png" alt="APP1.4" /></p>
+
+<p>如此一来，遥控舵机也是很方便啦。</p>
+:ET
