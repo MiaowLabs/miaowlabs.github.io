@@ -1,0 +1,1345 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>MPU6050姿态解算和数据融合 · 给新手的两轮自平衡小车开发实战指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="宋一标">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="E08.html" />
+    
+    
+    <link rel="prev" href="B07.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://c.miaowlabs.com/" target="_blank" class="custom-link">给新手的两轮自平衡小车开发实战指南</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">前言</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="A32.html">
+            
+                <a href="A32.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    推荐学习路线
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">套件上手</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="A09.html">
+            
+                <a href="A09.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    必看开箱组装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="A33.html">
+            
+                <a href="A33.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    参数特点一览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="A15.html">
+            
+                <a href="A15.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    蓝牙遥控模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="A34.html">
+            
+                <a href="A34.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    红外循迹模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="A35.html">
+            
+                <a href="A35.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    超声跟随模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="A36.html">
+            
+                <a href="A36.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    超声避障模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="A37.html">
+            
+                <a href="A37.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    提起识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="A38.html">
+            
+                <a href="A38.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    着陆识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="A39.html">
+            
+                <a href="A39.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    OLED显示说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="A06.html">
+            
+                <a href="A06.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    烧录程序指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="A18.html">
+            
+                <a href="A18.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    修改遥控APP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="A29.html">
+            
+                <a href="A29.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    修改开机模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="B04.html">
+            
+                <a href="B04.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    硬件组成概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="A46.html">
+            
+                <a href="A46.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    IO引脚分配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="A19.html">
+            
+                <a href="A19.html">
+            
+                    
+                        <b>2.15.</b>
+                    
+                    软件功能说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="A30.html">
+            
+                <a href="A30.html">
+            
+                    
+                        <b>2.16.</b>
+                    
+                    程序框架介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.17" data-path="A31.html">
+            
+                <a href="A31.html">
+            
+                    
+                        <b>2.17.</b>
+                    
+                    分析排除故障
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">原理分析篇</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="A40.html">
+            
+                <a href="A40.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    平衡原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="A42.html">
+            
+                <a href="A42.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    动力学分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="A43.html">
+            
+                <a href="A43.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    数学建模
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="A44.html">
+            
+                <a href="A44.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    Simulink仿真
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">电路开发篇</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="B22.html">
+            
+                <a href="B22.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    系统框架一览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="B06.html">
+            
+                <a href="B06.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    主控模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="B09.html">
+            
+                <a href="B09.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    稳压模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="B12.html">
+            
+                <a href="B12.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    驱动模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="A20.html">
+            
+                <a href="A20.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    蓝牙模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="B23.html">
+            
+                <a href="B23.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    传感器模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="B25.html">
+            
+                <a href="B25.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    底板功能说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="B26.html">
+            
+                <a href="B26.html">
+            
+                    
+                        <b>4.8.</b>
+                    
+                    电机参数说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="B24.html">
+            
+                <a href="B24.html">
+            
+                    
+                        <b>4.9.</b>
+                    
+                    洞洞板底板手工焊接教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">软件开发篇</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="F03.html">
+            
+                <a href="F03.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    约定代码编写规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="A07.html">
+            
+                <a href="A07.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    安装MDK-ARM软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="A02.html">
+            
+                <a href="A02.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    使用MDK-ARM软件编译代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="A08.html">
+            
+                <a href="A08.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    安装STM32CubeMX软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="A21.html">
+            
+                <a href="A21.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    STM32CubeMX软件生成工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="A11.html">
+            
+                <a href="A11.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    GPIO与LED闪烁的仪式感
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="A22.html">
+            
+                <a href="A22.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    Timer与按键消抖的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="A23.html">
+            
+                <a href="A23.html">
+            
+                    
+                        <b>5.8.</b>
+                    
+                    Usart与Printf函数重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="A24.html">
+            
+                <a href="A24.html">
+            
+                    
+                        <b>5.9.</b>
+                    
+                    Timer编码器模式读取编码器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="A25.html">
+            
+                <a href="A25.html">
+            
+                    
+                        <b>5.10.</b>
+                    
+                    PWM与TB6612FNG驱动电机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="A26.html">
+            
+                <a href="A26.html">
+            
+                    
+                        <b>5.11.</b>
+                    
+                    硬件I2C读取MPU6050原始数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="B07.html">
+            
+                <a href="B07.html">
+            
+                    
+                        <b>5.12.</b>
+                    
+                    加速度计、陀螺仪的工作原理和数据融合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.13" data-path="A27.html">
+            
+                <a href="A27.html">
+            
+                    
+                        <b>5.13.</b>
+                    
+                    MPU6050姿态解算和数据融合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.14" data-path="E08.html">
+            
+                <a href="E08.html">
+            
+                    
+                        <b>5.14.</b>
+                    
+                    PID控制原理与增量式PID算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.15" data-path="A28.html">
+            
+                <a href="A28.html">
+            
+                    
+                        <b>5.15.</b>
+                    
+                    电机速度闭环内环PID控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.16" data-path="E02.html">
+            
+                <a href="E02.html">
+            
+                    
+                        <b>5.16.</b>
+                    
+                    直立平衡角度环PID控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.17" data-path="E03.html">
+            
+                <a href="E03.html">
+            
+                    
+                        <b>5.17.</b>
+                    
+                    运动速度闭环外环PID控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.18" data-path="E10.html">
+            
+                <a href="E10.html">
+            
+                    
+                        <b>5.18.</b>
+                    
+                    提高PWM频率为24kHz
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.19" data-path="E11.html">
+            
+                <a href="E11.html">
+            
+                    
+                        <b>5.19.</b>
+                    
+                    移植U8g2单色图形库驱动OLED
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">其他</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="F04.html">
+            
+                <a href="F04.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    扩展投稿
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >MPU6050姿态解算和数据融合</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="mpu-6050&#x59FF;&#x6001;&#x89E3;&#x7B97;&#x548C;&#x6570;&#x636E;&#x878D;&#x5408;">MPU-6050&#x59FF;&#x6001;&#x89E3;&#x7B97;&#x548C;&#x6570;&#x636E;&#x878D;&#x5408;</h1>
+<blockquote>
+<p><em>&#x672C;&#x5C0F;&#x8282;&#x5BF9; MPU-6050 &#x4F20;&#x611F;&#x5668;&#x7684;&#x539F;&#x59CB;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x59FF;&#x6001;&#x89E3;&#x7B97;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x5229;&#x7528;&#x6570;&#x636E;&#x878D;&#x5408;&#x7B97;&#x6CD5;&#x5F97;&#x5230;&#x7CBE;&#x51C6;&#x7684;&#x89D2;&#x5EA6;&#x3002;</em></p>
+</blockquote>
+<p>&#x5728;&#x4E0A;&#x4E24;&#x5C0F;&#x8282;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x8BFB;&#x5230; MPU-6050 &#x4F20;&#x611F;&#x5668;&#x7684;&#x539F;&#x59CB;&#x6570;&#x636E;&#xFF0C;&#x5B66;&#x4E60;&#x4E86;&#x52A0;&#x901F;&#x5EA6;&#x4F20;&#x611F;&#x5668;&#x3001;&#x9640;&#x87BA;&#x4EEA;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x3001;&#x59FF;&#x6001;&#x89E3;&#x7B97;&#xFF0C;&#x5E76;&#x5BF9;&#x4E92;&#x8865;&#x6EE4;&#x6CE2;&#x6709;&#x6240;&#x4E86;&#x89E3;&#x3002;&#x5728;&#x672C;&#x5C0F;&#x8282;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x7ED3;&#x5408; STM32CubeMX&#x3001;MDK-ARM &#x8F6F;&#x4EF6;&#xFF0C;&#x5BF9; MPU-6050 &#x4F20;&#x611F;&#x5668;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x59FF;&#x6001;&#x89E3;&#x7B97;&#x548C;&#x6570;&#x636E;&#x878D;&#x5408;&#x3002;</p>
+<h3 id="&#x5177;&#x4F53;&#x6B65;&#x9AA4;">&#x5177;&#x4F53;&#x6B65;&#x9AA4;</h3>
+<p>&#x8FDB;&#x5165;&#x6211;&#x4EEC;&#x4E0A;&#x4E00;&#x5C0F;&#x8282;&#x4FEE;&#x6539;&#x8FC7;&#x7684; MiaowLabs-Demo &#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x518D;&#x6253;&#x5F00;&#x91CC;&#x9762;&#x7684; MDK-ARM &#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x627E;&#x5230; MiaowLabs-Demo.uvprojx &#x5DE5;&#x7A0B;&#x6587;&#x4EF6;&#xFF0C;&#x53CC;&#x51FB;&#xFF0C;&#x6253;&#x5F00;&#x5DE5;&#x7A0B;&#x3002;&#x5728; MDK-ARM &#x5DE5;&#x7A0B;&#x754C;&#x9762;&#xFF0C;&#x6309;&#x4E0B;&#x7EC4;&#x5408;&#x952E; Ctrl+N&#xFF08;&#x6309;&#x4F4F; Ctrl &#x952E;&#x518D;&#x6309; N &#x952E;&#xFF09;&#xFF0C;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x518D;&#x6309;&#x4E0B;&#x7EC4;&#x5408;&#x952E; Ctrl+S&#xFF0C;&#x6587;&#x4EF6;&#x540D;&#x6539;&#x4E3A; filter.c&#xFF0C;&#x4FDD;&#x5B58;&#x5230; MiaowLabs-DEMO &#x7684; Src &#x6587;&#x4EF6;&#x5939;&#x91CC;&#xFF0C;&#x63A5;&#x7740;&#x5728; MDK-ARM &#x5DE5;&#x7A0B;&#x754C;&#x9762;&#x5DE6;&#x4FA7; Project &#x680F;&#x76EE;&#x53CC;&#x51FB; Application/User &#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x628A; filter.c &#x52A0;&#x8FDB;&#x6765;&#x3002;</p>
+<p>&#x53CC;&#x51FB; filter.c &#x6E90;&#x6587;&#x4EF6;&#xFF0C;&#x6572;&#x5165;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre class="language-"><code class="lang-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&quot;filter.h&quot;</span></span><span class="token comment">//&#x52A0;&#x5165;&#x5934;&#x6587;&#x4EF6;</span>
+
+<span class="token comment">//&#x4E92;&#x8865;&#x6EE4;&#x6CE2;&#x5668;</span>
+<span class="token comment">// a = tau / (tau + dt)  </span>
+<span class="token comment">// acc = &#x52A0;&#x901F;&#x5EA6;&#x4F20;&#x611F;&#x5668;&#x6570;&#x636E; </span>
+<span class="token comment">// gyro = &#x9640;&#x87BA;&#x4EEA;&#x6570;&#x636E; </span>
+<span class="token comment">// dt = &#x8FD0;&#x884C;&#x5468;&#x671F;       </span>
+<span class="token keyword">float</span> angle<span class="token punctuation">;</span>
+<span class="token keyword">float</span> a<span class="token punctuation">;</span>
+
+<span class="token keyword">float</span> <span class="token function">ComplementaryFilter</span><span class="token punctuation">(</span><span class="token keyword">float</span> acc<span class="token punctuation">,</span> <span class="token keyword">float</span> gyro<span class="token punctuation">,</span> <span class="token keyword">float</span> dt<span class="token punctuation">)</span> 
+<span class="token punctuation">{</span>
+    a <span class="token operator">=</span> <span class="token number">0.98</span><span class="token punctuation">;</span>  
+    angle <span class="token operator">=</span> a <span class="token operator">*</span> <span class="token punctuation">(</span>angle <span class="token operator">+</span> gyro <span class="token operator">*</span> dt<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">-</span> a<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>acc<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+    <span class="token keyword">return</span> angle<span class="token punctuation">;</span>  
+<span class="token punctuation">}</span>
+</code></pre>
+<figure id="fig5.13.1"><img src="img/2019-07-20_202823.png" alt="&#x4EE3;&#x7801;&#x622A;&#x56FE;"><figcaption>Image 5.13.1 - &#x4EE3;&#x7801;&#x622A;&#x56FE;</figcaption></figure>
+<p>filter.c &#x6E90;&#x6587;&#x4EF6;&#x4E2D;&#x6682;&#x65F6;&#x5C31;&#x53EA;&#x662F;&#x5C01;&#x88C5;&#x4E86;&#x4E00;&#x4E2A;&#x4E92;&#x8865;&#x6EE4;&#x6CE2;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x6DFB;&#x52A0;&#x4E86;&#x5934;&#x6587;&#x4EF6;&#xFF0C;&#x4F46;&#x6211;&#x4EEC;&#x8FD8;&#x6CA1;&#x521B;&#x5EFA;&#x5934;&#x6587;&#x4EF6;&#x5462;&#xFF0C;&#x518D;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6; filter.h &#x5934;&#x6587;&#x4EF6;&#xFF0C;&#x628A;&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x5230; Inc &#x6587;&#x4EF6;&#x5939;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x628A;&#x4E0B;&#x9762;&#x4EE3;&#x7801;&#x6572;&#x8FDB;&#x53BB;&#x3002;</p>
+<pre class="language-"><code class="lang-c"><span class="token macro property">#<span class="token directive keyword">ifndef</span> __FILTER_H</span>
+<span class="token macro property">#<span class="token directive keyword">define</span> __FILTER_H</span>
+
+<span class="token keyword">float</span> <span class="token function">ComplementaryFilter</span><span class="token punctuation">(</span><span class="token keyword">float</span> acc<span class="token punctuation">,</span> <span class="token keyword">float</span> gyro<span class="token punctuation">,</span> <span class="token keyword">float</span> dt<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+</code></pre>
+<p>&#x5728; MDK-ARM &#x5DE5;&#x7A0B;&#x754C;&#x9762;&#xFF0C;&#x6309;&#x4E0B;&#x7EC4;&#x5408;&#x952E; Ctrl+N&#xFF08;&#x6309;&#x4F4F; Ctrl &#x952E;&#x518D;&#x6309; N &#x952E;&#xFF09;&#xFF0C;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x518D;&#x6309;&#x4E0B;&#x7EC4;&#x5408;&#x952E; Ctrl+S&#xFF0C;&#x6587;&#x4EF6;&#x540D;&#x6539;&#x4E3A; control.c&#xFF0C;&#x4FDD;&#x5B58;&#x5230; MiaowLabs-DEMO &#x7684; Src &#x6587;&#x4EF6;&#x5939;&#x91CC;&#xFF0C;&#x63A5;&#x7740;&#x5728; MDK-ARM &#x5DE5;&#x7A0B;&#x754C;&#x9762;&#x5DE6;&#x4FA7; Project &#x680F;&#x76EE;&#x53CC;&#x51FB; Application/User &#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x628A; control.c &#x52A0;&#x8FDB;&#x6765;&#x3002;</p>
+<p>&#x53CC;&#x51FB; control.c &#x6E90;&#x6587;&#x4EF6;&#xFF0C;&#x6572;&#x5165;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre class="language-"><code class="lang-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&quot;control.h&quot;</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&quot;filter.h&quot;</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&quot;mpu6050.h&quot;</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&quot;math.h&quot;</span></span>
+
+<span class="token keyword">short</span> x_nAcc<span class="token punctuation">,</span>y_nAcc<span class="token punctuation">,</span>z_nAcc<span class="token punctuation">;</span><span class="token comment">//&#x52A0;&#x901F;&#x5EA6;x&#x8F74;&#x3001;y&#x8F74;&#x3001;z&#x8F74;&#x6570;&#x636E;</span>
+<span class="token keyword">short</span> x_nGyro<span class="token punctuation">,</span>y_nGyro<span class="token punctuation">,</span>z_nGyro<span class="token punctuation">;</span><span class="token comment">//&#x9640;&#x87BA;&#x4EEA;x&#x8F74;&#x3001;y&#x8F74;&#x3001;z&#x8F74;&#x6570;&#x636E;</span>
+<span class="token keyword">float</span> x_fAcc<span class="token punctuation">,</span>y_fAcc<span class="token punctuation">,</span>z_fAcc<span class="token punctuation">;</span>
+
+<span class="token keyword">float</span> g_fAccAngle<span class="token punctuation">;</span><span class="token comment">//&#x52A0;&#x901F;&#x5EA6;&#x4F20;&#x611F;&#x5668;&#x7ECF;&#x8FC7;atan2()&#x89E3;&#x7B97;&#x5F97;&#x5230;&#x7684;&#x89D2;&#x5EA6;</span>
+<span class="token keyword">float</span> g_fGyroAngleSpeed<span class="token punctuation">;</span><span class="token comment">//&#x9640;&#x87BA;&#x4EEA;&#x89D2;&#x901F;&#x5EA6;</span>
+<span class="token keyword">float</span> g_fCarAngle<span class="token punctuation">;</span><span class="token comment">//&#x5C0F;&#x8F66;&#x503E;&#x89D2;</span>
+<span class="token keyword">float</span> dt <span class="token operator">=</span> <span class="token number">0.005</span><span class="token punctuation">;</span><span class="token comment">//&#x4E92;&#x8865;&#x6EE4;&#x6CE2;&#x5668;&#x63A7;&#x5236;&#x5468;&#x671F;</span>
+
+<span class="token keyword">unsigned</span> <span class="token keyword">char</span> g_ucMainEventCount<span class="token punctuation">;</span><span class="token comment">//&#x4E3B;&#x4E8B;&#x4EF6;&#x8BA1;&#x6570;&#xFF0C;&#x4F1A;&#x7528;&#x5728;&#x4E2D;&#x65AD;&#x4E2D;</span>
+
+<span class="token keyword">void</span> <span class="token function">GetMpuData</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token comment">//&#x83B7;&#x53D6;MPU-6050&#x6570;&#x636E;&#x51FD;&#x6570;</span>
+<span class="token punctuation">{</span>
+    <span class="token function">MPU_Get_Accelerometer</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>x_nAcc<span class="token punctuation">,</span><span class="token operator">&amp;</span>y_nAcc<span class="token punctuation">,</span><span class="token operator">&amp;</span>z_nAcc<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//&#x83B7;&#x53D6;MPU-6050&#x52A0;&#x901F;&#x5EA6;&#x6570;&#x636E;</span>
+    <span class="token function">MPU_Get_Gyroscope</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>x_nGyro<span class="token punctuation">,</span><span class="token operator">&amp;</span>y_nGyro<span class="token punctuation">,</span><span class="token operator">&amp;</span>z_nGyro<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//&#x83B7;&#x53D6;MPU-6050&#x9640;&#x87BA;&#x4EEA;&#x6570;&#x636E;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> <span class="token function">AngleCalculate</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token comment">//&#x89D2;&#x5EA6;&#x8BA1;&#x7B97;&#x51FD;&#x6570;</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">//-------&#x52A0;&#x901F;&#x5EA6;&#x6570;&#x636E;&#x5904;&#x7406;--------------------------</span>
+    <span class="token comment">//&#x91CF;&#x7A0B;&#x4E3A;&#xB1;2g&#x65F6;&#xFF0C;&#x7075;&#x654F;&#x5EA6;&#xFF1A;16384 LSB/g</span>
+    x_fAcc <span class="token operator">=</span> x_nAcc <span class="token operator">/</span> <span class="token number">16384.0</span><span class="token punctuation">;</span>
+    y_fAcc <span class="token operator">=</span> y_nAcc <span class="token operator">/</span> <span class="token number">16384.0</span><span class="token punctuation">;</span>
+    z_fAcc <span class="token operator">=</span> z_nAcc <span class="token operator">/</span> <span class="token number">16384.0</span><span class="token punctuation">;</span>
+
+    g_fAccAngle <span class="token operator">=</span> <span class="token function">atan2</span><span class="token punctuation">(</span>y_fAcc<span class="token punctuation">,</span>z_fAcc<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">3.14</span> <span class="token operator">*</span> <span class="token number">180.0</span><span class="token punctuation">;</span>
+
+    <span class="token comment">//-------&#x9640;&#x87BA;&#x4EEA;&#x6570;&#x636E;&#x5904;&#x7406;-------------------------</span>
+    <span class="token comment">//&#x8303;&#x56F4;&#x4E3A;2000deg/s&#x65F6;&#xFF0C;&#x6362;&#x7B97;&#x5173;&#x7CFB;&#xFF1A;16.4 LSB/(deg/s)</span>
+    g_fGyroAngleSpeed <span class="token operator">=</span> x_nGyro <span class="token operator">/</span> <span class="token number">16.4</span><span class="token punctuation">;</span>  <span class="token comment">//&#x8BA1;&#x7B97;&#x89D2;&#x901F;&#x5EA6;&#x503C;                   </span>
+
+    <span class="token comment">//-------&#x4E92;&#x8865;&#x6EE4;&#x6CE2;---------------</span>
+    g_fCarAngle <span class="token operator">=</span> <span class="token function">ComplementaryFilter</span><span class="token punctuation">(</span>g_fAccAngle<span class="token punctuation">,</span> g_fGyroAngleSpeed<span class="token punctuation">,</span> dt<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<figure id="fig5.13.2"><img src="img/2019-07-20_211215.png" alt="&#x4EE3;&#x7801;&#x622A;&#x56FE;"><figcaption>Image 5.13.2 - &#x4EE3;&#x7801;&#x622A;&#x56FE;</figcaption></figure>
+<p>&#x51FD;&#x6570; GetMpuData() &#x7684;&#x4E3B;&#x8981;&#x4F5C;&#x7528;&#xFF0C;&#x5C31;&#x662F;&#x5206;&#x522B;&#x83B7;&#x53D6; MPU-6050 &#x4F20;&#x611F;&#x5668;&#x7684;&#x4E09;&#x8F74;&#x52A0;&#x901F;&#x5EA6;&#x3001;&#x4E09;&#x8F74;&#x9640;&#x87BA;&#x4EEA;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x5C06;&#x6570;&#x636E;&#x5B58;&#x5165; x_nAcc&#x3001;y_nAcc&#x3001;z_nAcc&#x3001;x_nGyro&#x3001;y_nGyro&#x3001;z_nGyro &#x53D8;&#x91CF;&#x4E2D;&#x3002;</p>
+<p>&#x51FD;&#x6570; AngleCalculate() &#x7684;&#x4E3B;&#x8981;&#x4F5C;&#x7528;&#xFF0C;&#x5C31;&#x662F;&#x5148;&#x5C06;&#x52A0;&#x901F;&#x5EA6;&#x6570;&#x636E;&#x9664;&#x4E8E;&#x7075;&#x654F;&#x5EA6;&#xFF0C;&#x5C06;&#x52A0;&#x901F;&#x5EA6;&#x6570;&#x636E;&#x7531; LSB &#x8F6C;&#x5316;&#x6210; g&#xFF0C;&#x6CE8;&#x610F;&#x8FD9;&#x65F6;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#x4E3A;&#x4E86;&#x4FDD;&#x6301;&#x7CBE;&#x5EA6;&#x4E3A;&#x4F7F;&#x7528;&#x4E86; float &#x7C7B;&#x578B;&#xFF0C;&#x518D;&#x4F7F;&#x7528; atan2() &#x51FD;&#x6570;&#x8BA1;&#x7B97;&#x51FA;&#x89D2;&#x5EA6;&#xFF0C;&#x8FD9;&#x65F6;&#x7684;&#x89D2;&#x5EA6;&#x5355;&#x4F4D;&#x4E3A;&#x5F27;&#x5EA6;&#xFF0C;&#x5148;&#x9664; 3.14 &#x518D;&#x4E58; 180&#xB0;&#xFF0C;&#x5C06;&#x5355;&#x4F4D;&#x8F6C;&#x6362;&#x6210;&#x6211;&#x4EEC;&#x65E5;&#x5E38;&#x7528;&#x7684;&#x5EA6;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x5C06;&#x9640;&#x87BA;&#x4EEA;&#x6570;&#x636E;&#x9664;&#x4E8E;&#x7075;&#x654F;&#x5EA6;&#xFF0C;&#x5F97;&#x5230;&#x89D2;&#x901F;&#x5EA6;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A; deg/s&#x3002;&#x6700;&#x540E;&#xFF0C;&#x5C06;&#x52A0;&#x901F;&#x5EA6;&#x521D;&#x7B97;&#x7684;&#x89D2;&#x5EA6;&#x548C;&#x9640;&#x87BA;&#x4EEA;&#x89D2;&#x901F;&#x5EA6;&#x9001;&#x5165;&#x4E92;&#x8865;&#x6EE4;&#x6CE2;&#x5668;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x878D;&#x5408;&#xFF0C;&#x5F97;&#x5230;&#x6700;&#x7EC8;&#x7684;&#x7A33;&#x5B9A;&#x7684;&#x7CBE;&#x51C6;&#x7684;&#x5C0F;&#x8F66;&#x503E;&#x89D2;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x5B9A;&#x4E49; dt = 0.005&#xFF0C;&#x5373; 5ms&#xFF0C;&#x8981;&#x600E;&#x4E48;&#x6837;&#x624D;&#x80FD;&#x5B9E;&#x73B0;&#x7CBE;&#x51C6;&#x7684; 5ms &#x8FD0;&#x884C;&#x4E00;&#x6B21;&#x5462;&#xFF1F;&#x653E;&#x5728;&#x4E3B;&#x5FAA;&#x73AF;&#x4E2D;&#x662F;&#x4E0D;&#x53EF;&#x9760;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x6309;&#x987A;&#x5E8F;&#x8FD0;&#x884C;&#xFF0C;&#x65E0;&#x6CD5;&#x7CBE;&#x786E;&#x5730;&#x63A7;&#x5236;&#x65F6;&#x95F4;&#x3002;&#x552F;&#x6709;&#x9760;&#x5B9A;&#x65F6;&#x4E2D;&#x65AD;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x5173;&#x952E;&#x4EE3;&#x7801;&#x653E;&#x5728;&#x6211;&#x4EEC;&#x5148;&#x524D;&#x7528;&#x8FC7;&#x7684; SysTick_Handler() &#x6EF4;&#x7B54;&#x5B9A;&#x65F6;&#x5668;&#x4E2D;&#x65AD;&#x670D;&#x52A1;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x4EE5;&#x671F;&#x5B9E;&#x73B0;&#x7CBE;&#x51C6;&#x7684;&#x8FD0;&#x884C;&#x3002; </p>
+<p>&#x6DFB;&#x52A0; math.h &#x5934;&#x6587;&#x4EF6;&#xFF0C;&#x624D;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x4F7F;&#x7528; atan2() &#x53CD;&#x6B63;&#x5207;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x518D;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6; control.h &#x5934;&#x6587;&#x4EF6;&#xFF0C;&#x628A;&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x5230; Inc &#x6587;&#x4EF6;&#x5939;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x628A;&#x4E0B;&#x9762;&#x4EE3;&#x7801;&#x6572;&#x8FDB;&#x53BB;&#xFF1A;</p>
+<pre class="language-"><code class="lang-c"><span class="token macro property">#<span class="token directive keyword">ifndef</span> __CONTROL_H</span>
+<span class="token macro property">#<span class="token directive keyword">define</span> __CONTROL_H</span>
+
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&quot;filter.h&quot;</span></span>
+
+<span class="token keyword">extern</span> <span class="token keyword">unsigned</span> <span class="token keyword">char</span> g_ucMainEventCount<span class="token punctuation">;</span>
+<span class="token keyword">extern</span> <span class="token keyword">float</span> g_fCarAngle<span class="token punctuation">;</span>
+
+<span class="token keyword">void</span> <span class="token function">GetMpuData</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">void</span> <span class="token function">AngleCalculate</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+</code></pre>
+<figure id="fig5.13.3"><img src="img/2019-07-20_211424.png" alt="&#x4EE3;&#x7801;&#x622A;&#x56FE;"><figcaption>Image 5.13.3 - &#x4EE3;&#x7801;&#x622A;&#x56FE;</figcaption></figure>
+<p>&#x6253;&#x5F00; main.h &#x5934;&#x6587;&#x4EF6;&#xFF0C;&#x5C06; control.h &#x5934;&#x6587;&#x4EF6;&#x6DFB;&#x52A0;&#x8FDB;&#x53BB;&#x3002;</p>
+<pre class="language-"><code class="lang-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&quot;control.h&quot;</span></span>
+</code></pre>
+<figure id="fig5.13.4"><img src="img/2019-07-20_212229.png" alt="&#x4EE3;&#x7801;&#x622A;&#x56FE;"><figcaption>Image 5.13.4 - &#x4EE3;&#x7801;&#x622A;&#x56FE;</figcaption></figure>
+<p>&#x8FD9;&#x91CC;&#x4E0D;&#x628A; filter.h &#x5934;&#x6587;&#x4EF6;&#x6DFB;&#x52A0;&#x8FDB;&#x53BB;&#xFF0C;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x5728; control.h &#x91CC;&#x9762;&#x5305;&#x542B;&#x4E86; filter.h &#x5934;&#x6587;&#x4EF6;&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x5FC5;&#x5728;&#x8FD9;&#x91CC;&#x518D;&#x91CD;&#x590D;&#x6DFB;&#x52A0;&#x3002;</p>
+<p>&#x5728; MDK-ARM &#x5DE6;&#x4FA7; Application/User &#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x627E;&#x5230; stm32f1xx_it.c &#x6E90;&#x6587;&#x4EF6;&#xFF0C;&#x53CC;&#x51FB;&#x6253;&#x5F00;&#xFF0C;&#x5C06;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#x6572;&#x5165; SysTick_Handler() &#x51FD;&#x6570;&#x4E2D;&#xFF1A;</p>
+<pre class="language-"><code class="lang-c">  <span class="token comment">/* USER CODE BEGIN SysTick_IRQn 0 */</span>
+
+  g_ucMainEventCount<span class="token operator">++</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>g_ucMainEventCount<span class="token operator">&gt;=</span><span class="token number">5</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        g_ucMainEventCount<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token function">GetMpuData</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                   <span class="token comment">//&#x8BFB;&#x53D6;MPU6050&#x6570;&#x636E;&#x51FD;&#x6570;&#xFF0C;&#x6BCF;5ms&#x6267;&#x884C;&#x4E00;&#x6B21;</span>
+        <span class="token function">AngleCalculate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>             <span class="token comment">//&#x89D2;&#x5EA6;&#x73AF;&#x8BA1;&#x7B97;&#x51FD;&#x6570;&#xFF0C;&#x6BCF;5ms&#x6267;&#x884C;&#x4E00;&#x6B21;</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment">/* USER CODE END SysTick_IRQn 0 */</span>
+</code></pre>
+<figure id="fig5.13.5"><img src="img/2019-07-20_213115.png" alt="&#x4EE3;&#x7801;&#x622A;&#x56FE;"><figcaption>Image 5.13.5 - &#x4EE3;&#x7801;&#x622A;&#x56FE;</figcaption></figure>
+<p>&#x5728; main.c &#x4E3B;&#x5FAA;&#x73AF;&#x4E2D;&#x6DFB;&#x52A0;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre class="language-"><code class="lang-c"><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5C0F;&#x8F66;&#x89D2;&#x5EA6; = %f&quot;</span><span class="token punctuation">,</span>g_fCarAngle<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//&#x6253;&#x5370;&#x5B9E;&#x65F6;&#x89D2;&#x5EA6;     </span>
+<span class="token function">HAL_Delay</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//&#x5EF6;&#x65F6;0.5s&#xFF0C;&#x9632;&#x6B62;&#x6253;&#x5370;&#x53D1;&#x9001;&#x6570;&#x636E;&#x592A;&#x5FEB;        </span>
+<span class="token function">HAL_GPIO_TogglePin</span><span class="token punctuation">(</span>LED_GPIO_Port<span class="token punctuation">,</span>LED_Pin<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//&#x6307;&#x793A;&#x706F;</span>
+</code></pre>
+<p>&#x70B9;&#x51FB;&#x7F16;&#x8BD1;&#x6309;&#x94AE;&#xFF0C;&#x91CD;&#x65B0;&#x8FDB;&#x884C;&#x7F16;&#x8BD1;&#xFF0C;&#x8FD9;&#x65F6;&#x6CA1;&#x6709;&#x62A5;&#x9519;&#x3002;&#x4F46;&#x662F;&#x70E7;&#x5F55;&#x4EE3;&#x7801;&#x4F1A;&#x53D1;&#x73B0;&#x4E0D;&#x4EC5;&#x6570;&#x636E;&#x53D1;&#x9001;&#x4E0D;&#x51FA;&#xFF0C;&#x751A;&#x81F3;&#x8FDE;&#x6307;&#x793A;&#x706F;&#x90FD;&#x4E0D;&#x95EA;&#x70C1;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#x4E2D;&#x65AD;&#x670D;&#x52A1;&#x51FD;&#x6570;&#x91CC;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre class="language-"><code class="lang-c">  <span class="token comment">/* USER CODE BEGIN SysTick_IRQn 0 */</span>
+
+  g_ucMainEventCount<span class="token operator">++</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>g_ucMainEventCount<span class="token operator">&gt;=</span><span class="token number">5</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        g_ucMainEventCount<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token function">GetMpuData</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                   <span class="token comment">//&#x8BFB;&#x53D6;MPU6050&#x6570;&#x636E;&#x51FD;&#x6570;&#xFF0C;&#x6BCF;5ms&#x6267;&#x884C;&#x4E00;&#x6B21;</span>
+        <span class="token function">AngleCalculate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>             <span class="token comment">//&#x89D2;&#x5EA6;&#x73AF;&#x8BA1;&#x7B97;&#x51FD;&#x6570;&#xFF0C;&#x6BCF;5ms&#x6267;&#x884C;&#x4E00;&#x6B21;</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment">/* USER CODE END SysTick_IRQn 0 */</span>
+</code></pre>
+<p>&#x56E0;&#x4E3A;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x662F;&#x5728; 1ms &#x5185;&#x8FD0;&#x884C;&#x5B8C;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x786E;&#x4FDD;&#x51FD;&#x6570; GetMpuData() &#x548C; AngleCalculate() &#x80FD;&#x5728; 1ms &#x5185;&#x5C31;&#x8FD0;&#x884C;&#x5B8C;&#x6BD5;&#x3002;</p>
+<p>&#x800C;&#x51FD;&#x6570; GetMpuData() &#x91CC;&#x9762;&#x7684; &#x51FD;&#x6570; MPU_Get_Accelerometer() &#x548C; MPU_Get_Gyroscope() &#x90FD;&#x8C03;&#x7528;&#x4E86; MPU_Read_Len() &#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x91CC;&#x9762;&#x6709;&#x4E00;&#x53E5;&#x5EF6;&#x65F6;&#x4EE3;&#x7801; <code>HAL_Delay(100);</code>&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x8FD0;&#x884C;&#x5B8C;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x8981; 100ms+ &#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x5728; 1ms &#x4E2D;&#x65AD;&#x91CC;&#x6839;&#x672C;&#x8FD0;&#x884C;&#x4E0D;&#x5B8C;&#xFF0C;&#x538B;&#x6839;&#x6CA1;&#x6709;&#x65F6;&#x95F4;&#x7ED9;&#x5230;&#x4E3B;&#x5FAA;&#x73AF;&#x6267;&#x884C;&#x5176;&#x4ED6;&#x4EE3;&#x7801;&#xFF0C;&#x6240;&#x4EE5;&#x53D1;&#x9001;&#x4E0D;&#x51FA;&#x6570;&#x636E;&#xFF0C;&#x6307;&#x793A;&#x706F;&#x4E5F;&#x4E0D;&#x95EA;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5C06;&#x5EF6;&#x65F6;&#x51FD;&#x6570; <code>HAL_Delay(100);</code> &#x6CE8;&#x91CA;&#x6389;&#xFF0C;&#x52A0;&#x5FEB; I2C &#x8BFB;&#x53D6;&#x901F;&#x5EA6;&#xFF0C;&#x5E76;&#x4E0D;&#x5F71;&#x54CD; I2C &#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#x3002;</p>
+<figure id="fig5.13.6"><img src="img/2019-07-20_214622.png" alt="&#x6CE8;&#x91CA;&#x6389;&#x5EF6;&#x65F6;&#x51FD;&#x6570;"><figcaption>Image 5.13.6 - &#x6CE8;&#x91CA;&#x6389;&#x5EF6;&#x65F6;&#x51FD;&#x6570;</figcaption></figure>
+<p>&#x70B9;&#x51FB;&#x7F16;&#x8BD1;&#x6309;&#x94AE;&#xFF0C;&#x91CD;&#x65B0;&#x8FDB;&#x884C;&#x7F16;&#x8BD1;&#xFF0C;&#x8FD9;&#x65F6;&#x6CA1;&#x6709;&#x62A5;&#x9519;&#x3002;&#x5C06;&#x4EE3;&#x7801;&#x70E7;&#x5F55;&#x8FDB;&#x5C0F;&#x8F66;&#x4E2D;&#xFF0C;&#x4F1A;&#x770B;&#x5230;&#x6307;&#x793A;&#x706F;&#x6BCF; 0.5s &#x95EA;&#x70C1;&#x4E00;&#x6B21;&#x3002;</p>
+<p>&#x63D2;&#x4E0A; Micro-USB &#x6570;&#x636E;&#x7EBF;&#xFF0C;&#x6253;&#x5F00;&#x4E32;&#x53E3;&#x52A9;&#x624B;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x968F;&#x7740;&#x5C0F;&#x8F66;&#x503E;&#x659C;&#x89D2;&#x5EA6;&#x53D8;&#x5316;&#xFF0C;&#x53D1;&#x9001;&#x5230;&#x4E32;&#x53E3;&#x52A9;&#x624B;&#x4E0A;&#x7684;&#x6570;&#x636E;&#x4E5F;&#x968F;&#x4E4B;&#x53D8;&#x5316;&#x3002;</p>
+<figure id="fig5.13.7"><img src="img/2019-07-20_214948.png" alt="&#x5F97;&#x5230;&#x7CBE;&#x51C6;&#x7684;&#x89D2;&#x5EA6;"><figcaption>Image 5.13.7 - &#x5F97;&#x5230;&#x7CBE;&#x51C6;&#x7684;&#x89D2;&#x5EA6;</figcaption></figure>
+<h3 id="&#x4F7F;&#x7528;&#x865A;&#x62DF;&#x793A;&#x6CE2;&#x5668;">&#x4F7F;&#x7528;&#x865A;&#x62DF;&#x793A;&#x6CE2;&#x5668;</h3>
+<p>&#x4F7F;&#x7528; printf() &#x51FD;&#x6570;&#x6253;&#x5370;&#x8F93;&#x51FA;&#x89D2;&#x5EA6;&#x5230;&#x4E32;&#x53E3;&#x52A9;&#x624B;&#x4E0A;&#xFF0C;&#x867D;&#x7136;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5927;&#x81F4;&#x7684;&#x89D2;&#x5EA6;&#x6548;&#x679C;&#xFF0C;&#x4F46;&#x4E0D;&#x591F;&#x76F4;&#x89C2;&#xFF0C;&#x800C;&#x4E14;&#x65E0;&#x6CD5;&#x770B;&#x5230;&#x52A0;&#x901F;&#x5EA6;&#x3001;&#x9640;&#x87BA;&#x4EEA;&#x3001;&#x878D;&#x5408;&#x540E;&#x7684;&#x89D2;&#x5EA6;&#x4E4B;&#x95F4;&#x7684;&#x8054;&#x7CFB;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x52A0;&#x901F;&#x5EA6;&#x3001;&#x9640;&#x87BA;&#x4EEA;&#x3001;&#x89D2;&#x5EA6;&#x7B49;&#x53C2;&#x6570;&#xFF0C;&#x901A;&#x8FC7;&#x865A;&#x62DF;&#x793A;&#x6CE2;&#x5668;&#x8F6C;&#x5316;&#x6210;&#x66F2;&#x7EBF;&#x8F93;&#x51FA;&#xFF0C;&#x66F4;&#x52A0;&#x76F4;&#x89C2;&#x5730;&#x89C2;&#x5BDF;&#x6570;&#x636E;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x3002;</p>
+<p>&#x8FDB;&#x5165; MiaowLabs-Demo &#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x518D;&#x6253;&#x5F00;&#x91CC;&#x9762;&#x7684; MDK-ARM &#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x627E;&#x5230; MiaowLabs-Demo.uvprojx &#x5DE5;&#x7A0B;&#x6587;&#x4EF6;&#xFF0C;&#x53CC;&#x51FB;&#xFF0C;&#x6253;&#x5F00;&#x5DE5;&#x7A0B;&#x3002;</p>
+<p>&#x4ECE;&#x5149;&#x76D8;&#x4E2D;&#x627E;&#x5230;&#x865A;&#x62DF;&#x793A;&#x6CE2;&#x5668;&#x4E0A;&#x4F4D;&#x673A;&#x7684; API &#x4EE3;&#x7801;&#x6587;&#x4EF6;&#xFF1A; <code>outputdata.c</code>&#x3001;<code>outputdata.h</code>&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x6587;&#x4EF6;&#x4E3B;&#x8981;&#x5C31;&#x662F;&#x5C06;&#x53D1;&#x9001;&#x5230;&#x865A;&#x62DF;&#x793A;&#x6CE2;&#x5668;&#x7684;&#x534F;&#x8BAE;&#x548C;&#x6821;&#x9A8C;&#x7B49;&#x7B49;&#x529F;&#x80FD;&#x90FD;&#x5DF2;&#x7ECF;&#x5C01;&#x88C5;&#x597D;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x6700;&#x540E;&#x7684;&#x53D1;&#x9001;&#x51FD;&#x6570;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x5C06; <code>outputdata.c</code> &#xFF0C;&#x590D;&#x5236;&#x5230; MiaowLabs-Demo &#x6587;&#x4EF6;&#x5939;&#x7684; Src &#x6587;&#x4EF6;&#x5939;&#x91CC;&#x3002;</p>
+<figure id="fig5.13.8"><img src="img/2019-07-27_181343.png" alt="&#x590D;&#x5236; outputdata.c &#x5230; Src &#x6587;&#x4EF6;&#x5939;"><figcaption>Image 5.13.8 - &#x590D;&#x5236; outputdata.c &#x5230; Src &#x6587;&#x4EF6;&#x5939;</figcaption></figure>
+<p>&#x5C06; <code>outputdata.h</code> &#x590D;&#x5236;&#x5230; MiaowLabs-Demo &#x6587;&#x4EF6;&#x5939;&#x7684; Inc &#x6587;&#x4EF6;&#x5939;&#x91CC;&#x3002;</p>
+<figure id="fig5.13.9"><img src="img/2019-07-27_181515.png" alt="&#x590D;&#x5236; outputdata.h &#x5230; Inc &#x6587;&#x4EF6;&#x5939;"><figcaption>Image 5.13.9 - &#x590D;&#x5236; outputdata.h &#x5230; Inc &#x6587;&#x4EF6;&#x5939;</figcaption></figure>
+<p>&#x6253;&#x5F00; MDK-ARM &#x8F6F;&#x4EF6;&#xFF0C;&#x5728;&#x5DE6;&#x4FA7;&#x76EE;&#x5F55;&#x4E2D;&#x53CC;&#x51FB; Application/User&#xFF0C;&#x5C06; Src &#x6587;&#x4EF6;&#x5939;&#x7684; <code>outputdata.c</code> &#x52A0;&#x5165;&#x5DE5;&#x7A0B;&#x3002;</p>
+<figure id="fig5.13.10"><img src="img/2019-07-27_181821.png" alt="&#x5C06; Src &#x6587;&#x4EF6;&#x5939;&#x7684; `outputdata.c` &#x52A0;&#x5165;&#x5DE5;&#x7A0B;"><figcaption>Image 5.13.10 - &#x5C06; Src &#x6587;&#x4EF6;&#x5939;&#x7684; `outputdata.c` &#x52A0;&#x5165;&#x5DE5;&#x7A0B;</figcaption></figure>
+<p>&#x53CC;&#x51FB;&#x6253;&#x5F00; <code>outputdata.c</code> &#x6E90;&#x6587;&#x4EF6;&#xFF0C;&#x5BF9;&#x4E24;&#x4E2A;&#x5730;&#x65B9;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x3002;</p>
+<p>&#x7B2C;&#x4E00;&#x4E2A;&#x5730;&#x65B9;&#x662F;&#x6CE8;&#x91CA;&#x6389;&#x539F;&#x6765;&#x7684;&#x5934;&#x6587;&#x4EF6; <code>uart.h</code>&#xFF0C;&#x628A;&#x6211;&#x4EEC;&#x7528;&#x5230;&#x7684;&#x5934;&#x6587;&#x4EF6; <code>usart.h</code> &#x6DFB;&#x52A0;&#x8FDB;&#x6765;&#x3002;</p>
+<pre class="language-"><code class="lang-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&quot;outputdata.h&quot;</span></span>
+<span class="token comment">//#include &quot;uart.h&quot;</span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&quot;usart.h&quot;</span></span>
+</code></pre>
+<p>&#x7B2C;&#x4E8C;&#x4E2A;&#x5730;&#x65B9;&#x662F;&#x4FEE;&#x6539;&#x53D1;&#x9001;&#x51FD;&#x6570;&#xFF0C;&#x5C06;&#x539F;&#x53E5; <code>uart_putchar(databuf[i]);</code> &#x6CE8;&#x91CA;&#x6389;&#xFF0C;&#x6539;&#x4E3A; HAL &#x5E93;&#x7684;&#x53D1;&#x9001;&#x51FD;&#x6570; <code>HAL_UART_Transmit(&amp;huart1,&amp;databuf[i],1,0xFF);</code>&#x3002;</p>
+<pre class="language-"><code class="lang-c"><span class="token keyword">void</span> <span class="token function">OutPut_Data</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+  <span class="token keyword">int</span> temp<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token keyword">unsigned</span> <span class="token keyword">int</span> temp1<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token keyword">unsigned</span> <span class="token keyword">char</span> databuf<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token keyword">unsigned</span> <span class="token keyword">char</span> i<span class="token punctuation">;</span>
+  <span class="token keyword">unsigned</span> <span class="token keyword">short</span> CRC16 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token number">4</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+   <span class="token punctuation">{</span>
+
+    temp<span class="token punctuation">[</span>i<span class="token punctuation">]</span>  <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span>OutData<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    temp1<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">unsigned</span> <span class="token keyword">int</span><span class="token punctuation">)</span>temp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+   <span class="token punctuation">}</span>
+
+  <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token number">4</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span> 
+  <span class="token punctuation">{</span>
+    databuf<span class="token punctuation">[</span>i<span class="token operator">*</span><span class="token number">2</span><span class="token punctuation">]</span>   <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">unsigned</span> <span class="token keyword">char</span><span class="token punctuation">)</span><span class="token punctuation">(</span>temp1<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">%</span><span class="token number">256</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    databuf<span class="token punctuation">[</span>i<span class="token operator">*</span><span class="token number">2</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">unsigned</span> <span class="token keyword">char</span><span class="token punctuation">)</span><span class="token punctuation">(</span>temp1<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">/</span><span class="token number">256</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  CRC16 <span class="token operator">=</span> <span class="token function">CRC_CHECK</span><span class="token punctuation">(</span>databuf<span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  databuf<span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">]</span> <span class="token operator">=</span> CRC16<span class="token operator">%</span><span class="token number">256</span><span class="token punctuation">;</span>
+  databuf<span class="token punctuation">[</span><span class="token number">9</span><span class="token punctuation">]</span> <span class="token operator">=</span> CRC16<span class="token operator">/</span><span class="token number">256</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token number">10</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token comment">//uart_putchar(databuf[i]);</span>
+    <span class="token function">HAL_UART_Transmit</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>huart1<span class="token punctuation">,</span><span class="token operator">&amp;</span>databuf<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0xFF</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x7ED9;&#x51FA; outputdata.c &#x6E90;&#x6587;&#x4EF6;&#x4FEE;&#x6539;&#x4E4B;&#x540E;&#x7684;&#x5168;&#x90E8;&#x4EE3;&#x7801;&#xFF0C;&#x4EE5;&#x4FBF;&#x840C;&#x65B0;&#x4EEC;&#x8FDB;&#x884C;&#x53C2;&#x8003;&#x3002;</p>
+<pre class="language-"><code class="lang-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&quot;outputdata.h&quot;</span></span>
+<span class="token comment">//#include &quot;uart.h&quot;</span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&quot;usart.h&quot;</span></span>
+
+<span class="token keyword">float</span> OutData<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">unsigned</span> <span class="token keyword">short</span> <span class="token function">CRC_CHECK</span><span class="token punctuation">(</span><span class="token keyword">unsigned</span> <span class="token keyword">char</span> <span class="token operator">*</span>Buf<span class="token punctuation">,</span> <span class="token keyword">unsigned</span> <span class="token keyword">char</span> CRC_CNT<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">short</span> CRC_Temp<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">char</span> i<span class="token punctuation">,</span>j<span class="token punctuation">;</span>
+    CRC_Temp <span class="token operator">=</span> <span class="token number">0xffff</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>CRC_CNT<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>      
+        CRC_Temp <span class="token operator">^</span><span class="token operator">=</span> Buf<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span>j<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span><span class="token number">8</span><span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>CRC_Temp <span class="token operator">&amp;</span> <span class="token number">0x01</span><span class="token punctuation">)</span>
+                CRC_Temp <span class="token operator">=</span> <span class="token punctuation">(</span>CRC_Temp <span class="token operator">&gt;&gt;</span><span class="token number">1</span> <span class="token punctuation">)</span> <span class="token operator">^</span> <span class="token number">0xa001</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span>
+                CRC_Temp <span class="token operator">=</span> CRC_Temp <span class="token operator">&gt;&gt;</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span><span class="token punctuation">(</span>CRC_Temp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> <span class="token function">OutPut_Data</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+  <span class="token keyword">int</span> temp<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token keyword">unsigned</span> <span class="token keyword">int</span> temp1<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token keyword">unsigned</span> <span class="token keyword">char</span> databuf<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token keyword">unsigned</span> <span class="token keyword">char</span> i<span class="token punctuation">;</span>
+  <span class="token keyword">unsigned</span> <span class="token keyword">short</span> CRC16 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token number">4</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+   <span class="token punctuation">{</span>
+
+    temp<span class="token punctuation">[</span>i<span class="token punctuation">]</span>  <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span>OutData<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    temp1<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">unsigned</span> <span class="token keyword">int</span><span class="token punctuation">)</span>temp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+   <span class="token punctuation">}</span>
+
+  <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token number">4</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span> 
+  <span class="token punctuation">{</span>
+    databuf<span class="token punctuation">[</span>i<span class="token operator">*</span><span class="token number">2</span><span class="token punctuation">]</span>   <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">unsigned</span> <span class="token keyword">char</span><span class="token punctuation">)</span><span class="token punctuation">(</span>temp1<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">%</span><span class="token number">256</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    databuf<span class="token punctuation">[</span>i<span class="token operator">*</span><span class="token number">2</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">unsigned</span> <span class="token keyword">char</span><span class="token punctuation">)</span><span class="token punctuation">(</span>temp1<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">/</span><span class="token number">256</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  CRC16 <span class="token operator">=</span> <span class="token function">CRC_CHECK</span><span class="token punctuation">(</span>databuf<span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  databuf<span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">]</span> <span class="token operator">=</span> CRC16<span class="token operator">%</span><span class="token number">256</span><span class="token punctuation">;</span>
+  databuf<span class="token punctuation">[</span><span class="token number">9</span><span class="token punctuation">]</span> <span class="token operator">=</span> CRC16<span class="token operator">/</span><span class="token number">256</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token number">10</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token comment">//uart_putchar(databuf[i]);</span>
+    <span class="token function">HAL_UART_Transmit</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>huart1<span class="token punctuation">,</span><span class="token operator">&amp;</span>databuf<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0xFF</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5206;&#x522B;&#x5728; control.c&#x3001;main.h &#x6587;&#x4EF6;&#x91CC;&#x9762;&#x6DFB;&#x52A0; outputdata.h &#x5934;&#x6587;&#x4EF6;&#x3002;</p>
+<figure id="fig5.13.11"><img src="img/2019-07-27_183104.png" alt="&#x5728; control.c &#x91CC;&#x6DFB;&#x52A0; outputdata.h &#x5934;&#x6587;&#x4EF6;"><figcaption>Image 5.13.11 - &#x5728; control.c &#x91CC;&#x6DFB;&#x52A0; outputdata.h &#x5934;&#x6587;&#x4EF6;</figcaption></figure>
+<figure id="fig5.13.12"><img src="img/2019-07-27_183223.png" alt="&#x5728; main.h &#x91CC;&#x6DFB;&#x52A0; outputdata.h &#x5934;&#x6587;&#x4EF6;"><figcaption>Image 5.13.12 - &#x5728; main.h &#x91CC;&#x6DFB;&#x52A0; outputdata.h &#x5934;&#x6587;&#x4EF6;</figcaption></figure>
+<p>&#x5728; control.c &#x6587;&#x4EF6;&#x91CC;&#x7684; AngleCalculate() &#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x628A;&#x8981;&#x53D1;&#x9001;&#x7684;&#x6570;&#x636E;&#x5206;&#x522B;&#x9001;&#x5165;&#x8F93;&#x51FA;&#x6570;&#x7EC4;&#x4E2D;&#x3002;</p>
+<pre class="language-"><code class="lang-c"><span class="token keyword">void</span> <span class="token function">AngleCalculate</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">//-------&#x52A0;&#x901F;&#x5EA6;&#x6570;&#x636E;&#x5904;&#x7406;--------------------------</span>
+    <span class="token comment">//&#x91CF;&#x7A0B;&#x4E3A;&#xB1;2g&#x65F6;&#xFF0C;&#x7075;&#x654F;&#x5EA6;&#xFF1A;16384 LSB/g</span>
+    x_fAcc <span class="token operator">=</span> x_nAcc <span class="token operator">/</span> <span class="token number">16384.0</span><span class="token punctuation">;</span>
+    y_fAcc <span class="token operator">=</span> y_nAcc <span class="token operator">/</span> <span class="token number">16384.0</span><span class="token punctuation">;</span>
+    z_fAcc <span class="token operator">=</span> z_nAcc <span class="token operator">/</span> <span class="token number">16384.0</span><span class="token punctuation">;</span>
+
+  g_fAccAngle <span class="token operator">=</span> <span class="token function">atan2</span><span class="token punctuation">(</span>y_fAcc<span class="token punctuation">,</span>z_fAcc<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">180.0</span> <span class="token operator">/</span> <span class="token number">3.14</span><span class="token punctuation">;</span>
+
+    <span class="token comment">//-------&#x9640;&#x87BA;&#x4EEA;&#x6570;&#x636E;&#x5904;&#x7406;-------------------------</span>
+    <span class="token comment">//&#x8303;&#x56F4;&#x4E3A;2000deg/s&#x65F6;&#xFF0C;&#x6362;&#x7B97;&#x5173;&#x7CFB;&#xFF1A;16.4 LSB/(deg/s)</span>
+    g_fGyroAngleSpeed <span class="token operator">=</span> x_nGyro <span class="token operator">/</span> <span class="token number">16.4</span><span class="token punctuation">;</span>  <span class="token comment">//&#x8BA1;&#x7B97;&#x89D2;&#x901F;&#x5EA6;&#x503C;                   </span>
+
+    <span class="token comment">//-------&#x4E92;&#x8865;&#x6EE4;&#x6CE2;---------------</span>
+    g_fCarAngle <span class="token operator">=</span> <span class="token function">ComplementaryFilter</span><span class="token punctuation">(</span>g_fAccAngle<span class="token punctuation">,</span> g_fGyroAngleSpeed<span class="token punctuation">,</span> dt<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    OutData<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">=</span>g_fAccAngle<span class="token punctuation">;</span><span class="token comment">//&#x53D1;&#x9001;&#x52A0;&#x901F;&#x5EA6;&#x521D;&#x6B65;&#x8BA1;&#x7B97;&#x7684;&#x89D2;&#x5EA6;</span>
+    OutData<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span>g_fGyroAngleSpeed<span class="token punctuation">;</span><span class="token comment">//&#x53D1;&#x9001;&#x9640;&#x87BA;&#x4EEA;&#x89D2;&#x901F;&#x5EA6;</span>
+    OutData<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token operator">=</span>g_fCarAngle<span class="token punctuation">;</span><span class="token comment">//&#x53D1;&#x9001;&#x6570;&#x636E;&#x878D;&#x5408;&#x5F97;&#x5230;&#x7684;&#x89D2;&#x5EA6;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<figure id="fig5.13.13"><img src="img/2019-07-27_183542.png" alt="&#x4FEE;&#x6539; AngleCalculate() &#x51FD;&#x6570;"><figcaption>Image 5.13.13 - &#x4FEE;&#x6539; AngleCalculate() &#x51FD;&#x6570;</figcaption></figure>
+<p>&#x5728; main.c &#x6587;&#x4EF6;&#x7684;&#x4E3B;&#x5FAA;&#x73AF;&#x4E2D;&#x6CE8;&#x91CA;&#x6389;&#x6216;&#x5220;&#x6389;&#x4E4B;&#x524D;&#x5B9E;&#x9A8C;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x6DFB;&#x52A0;&#x8C03;&#x7528;&#x865A;&#x62DF;&#x793A;&#x6CE2;&#x5668;&#x7684;&#x53D1;&#x9001;&#x51FD;&#x6570;&#x3002;</p>
+<pre class="language-"><code class="lang-c">  <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+      <span class="token comment">//printf(&quot;&#x5C0F;&#x8F66;&#x89D2;&#x5EA6; = %f&quot;,g_fCarAngle);     </span>
+    <span class="token comment">//HAL_Delay(500);//&#x5EF6;&#x65F6;0.5s&#xFF0C;&#x9632;&#x6B62;&#x6253;&#x5370;&#x53D1;&#x9001;&#x6570;&#x636E;&#x592A;&#x5FEB;        </span>
+        <span class="token comment">//HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);</span>
+        <span class="token function">OutPut_Data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//&#x8C03;&#x7528;&#x865A;&#x62DF;&#x793A;&#x6CE2;&#x5668;&#x7684;&#x53D1;&#x9001;&#x51FD;&#x6570;</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<figure id="fig5.13.14"><img src="img/2019-07-27_183900.png" alt="&#x8C03;&#x7528;&#x865A;&#x62DF;&#x793A;&#x6CE2;&#x5668;&#x7684;&#x53D1;&#x9001;&#x51FD;&#x6570;"><figcaption>Image 5.13.14 - &#x8C03;&#x7528;&#x865A;&#x62DF;&#x793A;&#x6CE2;&#x5668;&#x7684;&#x53D1;&#x9001;&#x51FD;&#x6570;</figcaption></figure>
+<p>&#x7528;&#x6570;&#x636E;&#x7EBF;&#x8FDE;&#x63A5;&#x5C0F;&#x8F66;&#xFF0C;&#x6253;&#x5F00;&#x865A;&#x62DF;&#x793A;&#x6CE2;&#x5668;&#xFF0C;&#x7136;&#x540E;&#x70B9;&#x51FB;&#x5DE6;&#x4E0A;&#x65B9;&#x83DC;&#x5355;&#x680F;&#x7684; Setup &#x680F;&#xFF0C; &#x9009;&#x62E9;&#x5BF9;&#x5E94;&#x7684; COM &#x53E3;&#xFF0C;&#x6CE2;&#x7279;&#x7387;&#x9009;&#x62E9; 115200&#x3002;</p>
+<figure id="fig5.13.15"><img src="img/2019-07-27_184252.png" alt="&#x8BBE;&#x7F6E;&#x865A;&#x62DF;&#x793A;&#x6CE2;&#x5668;"><figcaption>Image 5.13.15 - &#x8BBE;&#x7F6E;&#x865A;&#x62DF;&#x793A;&#x6CE2;&#x5668;</figcaption></figure>
+<p>&#x8BBE;&#x7F6E;&#x597D;&#x4E4B;&#x540E;&#xFF0C;&#x7535;&#x673A;&#x53F3;&#x4E0B;&#x89D2;&#x7684; RUN &#x6309;&#x94AE;&#xFF0C;&#x5C31;&#x4F1A;&#x5F00;&#x59CB;&#x663E;&#x793A;&#x6CE2;&#x5F62;&#xFF0C;&#x7531;&#x4E8E;&#x5750;&#x6807;&#x7CFB;&#x9ED8;&#x8BA4;&#x6570;&#x503C;&#x6BD4;&#x8F83;&#x5927;&#xFF0C;&#x800C;&#x6211;&#x4EEC;&#x8981;&#x663E;&#x793A;&#x7684;&#x6570;&#x636E;&#x6570;&#x503C;&#x53C8;&#x6BD4;&#x8F83;&#x5C0F;&#xFF0C;&#x53EF;&#x80FD;&#x4E00;&#x5F00;&#x59CB;&#x51E0;&#x4E4E;&#x770B;&#x4E0D;&#x5230;&#x6CE2;&#x5F62;&#x3002;</p>
+<figure id="fig5.13.16"><img src="img/2019-07-27_184615.png" alt="&#x51E0;&#x4E4E;&#x770B;&#x4E0D;&#x89C1;&#x6CE2;&#x5F62;"><figcaption>Image 5.13.16 - &#x51E0;&#x4E4E;&#x770B;&#x4E0D;&#x89C1;&#x6CE2;&#x5F62;</figcaption></figure>
+<p>&#x522B;&#x614C;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x70B9;&#x51FB;&#x4E0A;&#x9762;&#x7684;&#x5DE5;&#x5177;&#x680F;&#xFF0C;&#x53EF;&#x4EE5;&#x5206;&#x522B;&#x9010;&#x6B65;&#x653E;&#x5927; X &#x8F74;&#x548C; Y &#x8F74;&#xFF0C;&#x76F4;&#x81F3;&#x663E;&#x793A;&#x6E05;&#x6670;&#x7684;&#x6CE2;&#x5F62;&#x3002;</p>
+<figure id="fig5.13.17"><img src="img/2019-07-27_180220.png" alt="&#x653E;&#x5927;&#x770B;&#x5230;&#x6E05;&#x6670;&#x7684;&#x6CE2;&#x5F62;"><figcaption>Image 5.13.17 - &#x653E;&#x5927;&#x770B;&#x5230;&#x6E05;&#x6670;&#x7684;&#x6CE2;&#x5F62;</figcaption></figure>
+<p>&#x865A;&#x62DF;&#x793A;&#x6CE2;&#x5668;&#x7684; 4 &#x4E2A;&#x901A;&#x9053;&#xFF0C;&#x5206;&#x522B;&#x5BF9;&#x5E94;&#x4EE3;&#x7801;&#x91CC;&#x7684;&#x6570;&#x7EC4; OutData[4] &#x7684;&#x56DB;&#x4E2A;&#x6570;&#x636E;&#x3002;&#x5728;&#x8FD9;&#x91CC;&#xFF0C;&#x521A;&#x624D;&#x6211;&#x4EEC;&#x5C06;&#x52A0;&#x901F;&#x5EA6;&#x6570;&#x636E;&#x8D4B;&#x7ED9; OutData[0]&#xFF0C;&#x6240;&#x4EE5;&#x52A0;&#x901F;&#x5EA6;&#x6570;&#x636E;&#x5BF9;&#x5E94; CH1 &#x901A;&#x9053;&#xFF0C;&#x5373;&#x7EA2;&#x7EBF;&#x3002;&#x4EE5;&#x6B64;&#x7C7B;&#x63A8;&#xFF0C;&#x9EC4;&#x7EBF;&#x4EE3;&#x8868;&#x9640;&#x87BA;&#x4EEA;&#x89D2;&#x901F;&#x5EA6;&#xFF0C;&#x84DD;&#x7EBF;&#x4EE3;&#x8868;&#x6570;&#x636E;&#x878D;&#x5408;&#x540E;&#x7684;&#x89D2;&#x5EA6;&#x3002;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x6CA1;&#x6709;&#x91CD;&#x65B0;&#x8D4B;&#x503C;&#x7ED9; OutData[3]&#xFF0C;&#x5373;&#x901A;&#x9053; 4&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x9ED8;&#x8BA4;&#x7684;&#x6570;&#x503C;&#x4E3A; 0&#xFF0C;&#x5728;&#x4E0A;&#x4F4D;&#x673A;&#x4E2D;&#x53EA;&#x662F;&#x4E00;&#x6761;&#x76F4;&#x7EBF;&#x3002;</p>
+<p>&#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x7684;&#x6CE2;&#x5F62;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x7ECF;&#x8FC7;&#x6EE4;&#x6CE2;&#x540E;&#x7684;&#x89D2;&#x5EA6;&#x503C;&#xFF0C;&#x80FD;&#x975E;&#x5E38;&#x8FC5;&#x901F;&#x5730;&#x8DDF;&#x8E2A;&#x5230;&#x52A0;&#x901F;&#x5EA6;&#x6570;&#x636E;&#xFF0C;&#x53C8;&#x6CA1;&#x6709;&#x52A0;&#x901F;&#x5EA6;&#x6570;&#x636E;&#x90A3;&#x4E48;&#x591A;&#x566A;&#x97F3;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x7684;&#x6548;&#x679C;&#x3002;</p>
+
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="B07.html" class="navigation navigation-prev " aria-label="Previous page: 加速度计、陀螺仪的工作原理和数据融合">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="E08.html" class="navigation navigation-next " aria-label="Next page: PID控制原理与增量式PID算法">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"MPU6050姿态解算和数据融合","level":"5.13","depth":1,"next":{"title":"PID控制原理与增量式PID算法","level":"5.14","depth":1,"path":"E08.md","ref":"E08.md","articles":[]},"previous":{"title":"加速度计、陀螺仪的工作原理和数据融合","level":"5.12","depth":1,"path":"B07.md","ref":"B07.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-highlight","splitter","back-to-top-button","copy-code-button","prism","include-codeblock","ace","katex","image-captions","popup","fontsettings","theme-comscore","multipart","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"ace":{},"livereload":{},"splitter":{},"popup":{},"multipart":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"family":"sans","size":2,"theme":"white"},"theme-comscore":{},"back-to-top-button":{},"copy-code-button":{},"include-codeblock":{"check":false,"edit":true,"lang":"","fixlang":false,"template":"ace","theme":"monokai","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"image-captions":{"caption":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"宋一标","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"A09.html#fig2.1.1","level":"2.1","list_caption":"Figure: 安装电机固定部件","alt":"安装电机固定部件","nro":1,"url":"/img/焊接组装02.GIF","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"安装电机固定部件","attributes":{},"skip":false,"key":"2.1.1"},{"backlink":"A09.html#fig2.1.2","level":"2.1","list_caption":"Figure: 安装电机","alt":"安装电机","nro":2,"url":"/img/焊接组装03.GIF","index":2,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"安装电机","attributes":{},"skip":false,"key":"2.1.2"},{"backlink":"A09.html#fig2.1.3","level":"2.1","list_caption":"Figure: 安装 TB6612FNG 驱动模块","alt":"安装 TB6612FNG 驱动模块","nro":3,"url":"/img/焊接组装04.GIF","index":3,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"安装 TB6612FNG 驱动模块","attributes":{},"skip":false,"key":"2.1.3"},{"backlink":"A09.html#fig2.1.4","level":"2.1","list_caption":"Figure: 安装 MPU-6050 模块","alt":"安装 MPU-6050 模块","nro":4,"url":"/img/焊接组装05.GIF","index":4,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"安装 MPU-6050 模块","attributes":{},"skip":false,"key":"2.1.4"},{"backlink":"A09.html#fig2.1.5","level":"2.1","list_caption":"Figure: 安装 9Vto5v/3.3v 电源降压模块","alt":"安装 9Vto5v/3.3v 电源降压模块","nro":5,"url":"/img/焊接组装06.GIF","index":5,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"安装 9Vto5v/3.3v 电源降压模块","attributes":{},"skip":false,"key":"2.1.5"},{"backlink":"A09.html#fig2.1.6","level":"2.1","list_caption":"Figure: 安装 STM32 控制板","alt":"安装 STM32 控制板","nro":6,"url":"/img/焊接组装07.GIF","index":6,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"安装 STM32 控制板","attributes":{},"skip":false,"key":"2.1.6"},{"backlink":"A09.html#fig2.1.7","level":"2.1","list_caption":"Figure: 安装电机连接线","alt":"安装电机连接线","nro":7,"url":"/img/焊接组装08.GIF","index":7,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"安装电机连接线","attributes":{},"skip":false,"key":"2.1.7"},{"backlink":"A09.html#fig2.1.8","level":"2.1","list_caption":"Figure: 安装蓝牙模块","alt":"安装蓝牙模块","nro":8,"url":"/img/焊接组装09.GIF","index":8,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"安装蓝牙模块","attributes":{},"skip":false,"key":"2.1.8"},{"backlink":"A09.html#fig2.1.9","level":"2.1","list_caption":"Figure: 安装四根塑料支撑柱","alt":"安装四根塑料支撑柱","nro":9,"url":"/img/焊接组装10.GIF","index":9,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"安装四根塑料支撑柱","attributes":{},"skip":false,"key":"2.1.9"},{"backlink":"A09.html#fig2.1.10","level":"2.1","list_caption":"Figure: 撕掉亚克力保护膜","alt":"撕掉亚克力保护膜","nro":10,"url":"/img/焊接组装11.GIF","index":10,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"撕掉亚克力保护膜","attributes":{},"skip":false,"key":"2.1.10"},{"backlink":"A09.html#fig2.1.11","level":"2.1","list_caption":"Figure: 安装透明亚克力","alt":"安装透明亚克力","nro":11,"url":"/img/焊接组装12.GIF","index":11,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"安装透明亚克力","attributes":{},"skip":false,"key":"2.1.11"},{"backlink":"A09.html#fig2.1.12","level":"2.1","list_caption":"Figure: 安装轮胎","alt":"安装轮胎","nro":12,"url":"/img/焊接组装13.GIF","index":12,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"安装轮胎","attributes":{},"skip":false,"key":"2.1.12"},{"backlink":"A09.html#fig2.1.13","level":"2.1","list_caption":"Figure: 安装电池","alt":"安装电池","nro":13,"url":"/img/焊接组装14.GIF","index":13,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"安装电池","attributes":{},"skip":false,"key":"2.1.13"},{"backlink":"A09.html#fig2.1.14","level":"2.1","list_caption":"Figure: 安装完毕","alt":"安装完毕","nro":14,"url":"/img/焊接组装15.GIF","index":14,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"安装完毕","attributes":{},"skip":false,"key":"2.1.14"},{"backlink":"A09.html#fig2.1.15","level":"2.1","list_caption":"Figure: 组装完成的增强版小车","alt":"组装完成的增强版小车","nro":15,"url":"/img/焊接组装16.jpg","index":15,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"组装完成的增强版小车","attributes":{},"skip":false,"key":"2.1.15"},{"backlink":"A33.html#fig2.2.1","level":"2.2","list_caption":"Figure: 详细参数","alt":"详细参数","nro":16,"url":"/img/参数一览.jpg","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"详细参数","attributes":{},"skip":false,"key":"2.2.1"},{"backlink":"A15.html#fig2.3.1","level":"2.3","list_caption":"Figure: 重力感应","alt":"重力感应","nro":17,"url":"/img/重力感应.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"重力感应","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"A15.html#fig2.3.2","level":"2.3","list_caption":"Figure: 摇杆控制","alt":"摇杆控制","nro":18,"url":"/img/摇杆控制.png","index":2,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"摇杆控制","attributes":{},"skip":false,"key":"2.3.2"},{"backlink":"A15.html#fig2.3.3","level":"2.3","list_caption":"Figure: 波形显示","alt":"波形显示","nro":19,"url":"/img/波形显示.png","index":3,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"波形显示","attributes":{},"skip":false,"key":"2.3.3"},{"backlink":"A15.html#fig2.3.4","level":"2.3","list_caption":"Figure: PID","alt":"PID","nro":20,"url":"/img/PID.png","index":4,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"PID","attributes":{},"skip":false,"key":"2.3.4"},{"backlink":"A15.html#fig2.3.5","level":"2.3","list_caption":"Figure: 状态查询","alt":"状态查询","nro":21,"url":"/img/状态查询.png","index":5,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"状态查询","attributes":{},"skip":false,"key":"2.3.5"},{"backlink":"A15.html#fig2.3.6","level":"2.3","list_caption":"Figure: 喵呜手机端简易版","alt":"喵呜手机端简易版","nro":22,"url":"/img/喵呜手机端简易版.png","index":6,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"喵呜手机端简易版","attributes":{},"skip":false,"key":"2.3.6"},{"backlink":"A06.html#fig2.10.1","level":"2.10","list_caption":"Figure: 连接数据线","alt":"连接数据线","nro":23,"url":"/img/IMG_5731.JPG","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"连接数据线","attributes":{},"skip":false,"key":"2.10.1"},{"backlink":"A06.html#fig2.10.2","level":"2.10","list_caption":"Figure: MDK界面","alt":"MDK界面","nro":24,"url":"/img/001MDK截图界面2.png","index":2,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"MDK界面","attributes":{},"skip":false,"key":"2.10.2"},{"backlink":"A06.html#fig2.10.3","level":"2.10","list_caption":"Figure: MDK界面","alt":"MDK界面","nro":25,"url":"/img/001MDK截图界面3.png","index":3,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"MDK界面","attributes":{},"skip":false,"key":"2.10.3"},{"backlink":"A06.html#fig2.10.4","level":"2.10","list_caption":"Figure: MDK界面","alt":"MDK界面","nro":26,"url":"/img/001MDK截图界面4.png","index":4,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"MDK界面","attributes":{},"skip":false,"key":"2.10.4"},{"backlink":"A06.html#fig2.10.5","level":"2.10","list_caption":"Figure: MDK界面","alt":"MDK界面","nro":27,"url":"/img/001MDK截图界面5.png","index":5,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"MDK界面","attributes":{},"skip":false,"key":"2.10.5"},{"backlink":"A06.html#fig2.10.6","level":"2.10","list_caption":"Figure: MDK界面","alt":"MDK界面","nro":28,"url":"/img/001MDK截图界面6.png","index":6,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"MDK界面","attributes":{},"skip":false,"key":"2.10.6"},{"backlink":"A29.html#fig2.12.1","level":"2.12","list_caption":"Figure: 修改模式","alt":"修改模式","nro":29,"url":"/img/1111.JPG","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"修改模式","attributes":{},"skip":false,"key":"2.12.1"},{"backlink":"B04.html#fig2.13.1","level":"2.13","list_caption":"Figure: 模块分布","alt":"模块分布","nro":30,"url":"/img/Lite详情---副本_05.jpg","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"模块分布","attributes":{},"skip":false,"key":"2.13.1"},{"backlink":"A19.html#fig2.15.1","level":"2.15","list_caption":"Figure: 「小霸王Lite」两轮自平衡小车软件流程图","alt":"「小霸王Lite」两轮自平衡小车软件流程图","nro":31,"url":"/img/2020-03-10_222947.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"「小霸王Lite」两轮自平衡小车软件流程图","attributes":{},"skip":false,"key":"2.15.1"},{"backlink":"A30.html#fig2.16.1","level":"2.16","list_caption":"Figure: 工程分组","alt":"工程分组","nro":32,"url":"/img/2019-12-22_223137.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"工程分组","attributes":{},"skip":false,"key":"2.16.1"},{"backlink":"A40.html#fig3.1.1","level":"3.1","list_caption":"Figure: 保持木棒直立的反馈控制 alt ><","alt":"保持木棒直立的反馈控制 alt ><","nro":33,"url":"img/2020-04-15_190510.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"保持木棒直立的反馈控制 alt ><","attributes":{},"skip":false,"key":"3.1.1"},{"backlink":"A40.html#fig3.1.2","level":"3.1","list_caption":"Figure: 通过车轮运动保持小车平衡 alt ><","alt":"通过车轮运动保持小车平衡 alt ><","nro":34,"url":"img/2020-04-15_190703.png","index":2,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"通过车轮运动保持小车平衡 alt ><","attributes":{},"skip":false,"key":"3.1.2"},{"backlink":"A42.html#fig3.2.1","level":"3.2","list_caption":"Figure: 小车简化成倒立的单摆 alt ><","alt":"小车简化成倒立的单摆 alt ><","nro":35,"url":"img/2020-04-15_190900.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"小车简化成倒立的单摆 alt ><","attributes":{},"skip":false,"key":"3.2.1"},{"backlink":"A42.html#fig3.2.2","level":"3.2","list_caption":"Figure: 普通单摆受力分析 alt ><","alt":"普通单摆受力分析 alt ><","nro":36,"url":"img/2020-04-15_190958.png","index":2,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"普通单摆受力分析 alt ><","attributes":{},"skip":false,"key":"3.2.2"},{"backlink":"A42.html#fig3.2.3","level":"3.2","list_caption":"Figure: 不同阻尼力下的单摆运动 alt ><","alt":"不同阻尼力下的单摆运动 alt ><","nro":37,"url":"img/2020-04-15_191610.png","index":3,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"不同阻尼力下的单摆运动 alt ><","attributes":{},"skip":false,"key":"3.2.3"},{"backlink":"A42.html#fig3.2.4","level":"3.2","list_caption":"Figure: 在车轮上的参照系中小车受力分析 alt ><","alt":"在车轮上的参照系中小车受力分析 alt ><","nro":38,"url":"img/2020-04-15_191910.png","index":4,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"在车轮上的参照系中小车受力分析 alt ><","attributes":{},"skip":false,"key":"3.2.4"},{"backlink":"A42.html#fig3.2.5","level":"3.2","list_caption":"Figure: 小车控制两个系数作用 alt ><","alt":"小车控制两个系数作用 alt ><","nro":39,"url":"img/2020-04-15_194201.png","index":5,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"小车控制两个系数作用 alt ><","attributes":{},"skip":false,"key":"3.2.5"},{"backlink":"A43.html#fig3.3.1","level":"3.3","list_caption":"Figure: 小车运动方程 alt ><","alt":"小车运动方程 alt ><","nro":40,"url":"img/2020-04-15_194525.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"小车运动方程 alt ><","attributes":{},"skip":false,"key":"3.3.1"},{"backlink":"A43.html#fig3.3.2","level":"3.3","list_caption":"Figure: 加入比例微分反馈后的系统框图 alt ><","alt":"加入比例微分反馈后的系统框图 alt ><","nro":41,"url":"img/2020-04-15_200847.png","index":2,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"加入比例微分反馈后的系统框图 alt ><","attributes":{},"skip":false,"key":"3.3.2"},{"backlink":"A43.html#fig3.3.3","level":"3.3","list_caption":"Figure: 两轮自平衡小车系统稳定时对应根轨迹极点 alt ><","alt":"两轮自平衡小车系统稳定时对应根轨迹极点 alt ><","nro":42,"url":"img/Modeling02.png","index":3,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"两轮自平衡小车系统稳定时对应根轨迹极点 alt ><","attributes":{},"skip":false,"key":"3.3.3"},{"backlink":"A44.html#fig3.4.1","level":"3.4","list_caption":"Figure: 两轮自平衡小车控制系统数学模型的 Simulink 仿真 alt ><","alt":"两轮自平衡小车控制系统数学模型的 Simulink 仿真 alt ><","nro":43,"url":"img/Modeling03.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"两轮自平衡小车控制系统数学模型的 Simulink 仿真 alt ><","attributes":{},"skip":false,"key":"3.4.1"},{"backlink":"A44.html#fig3.4.2","level":"3.4","list_caption":"Figure: 外界干扰信号波形图 alt ><","alt":"外界干扰信号波形图 alt ><","nro":44,"url":"img/Modeling05.png","index":2,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"外界干扰信号波形图 alt ><","attributes":{},"skip":false,"key":"3.4.2"},{"backlink":"A44.html#fig3.4.3","level":"3.4","list_caption":"Figure: 车体角度自恢复过程仿真波形 alt ><","alt":"车体角度自恢复过程仿真波形 alt ><","nro":45,"url":"img/Modeling04.png","index":3,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"车体角度自恢复过程仿真波形 alt ><","attributes":{},"skip":false,"key":"3.4.3"},{"backlink":"B22.html#fig4.1.1","level":"4.1","list_caption":"Figure: 系统框架","alt":"系统框架","nro":46,"url":"/img/2018-09-02_105402.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"系统框架","attributes":{},"skip":false,"key":"4.1.1"},{"backlink":"B06.html#fig4.2.1","level":"4.2","list_caption":"Figure: 内部资源","alt":"内部资源","nro":47,"url":"/img/2019-06-20_205924.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"内部资源","attributes":{},"skip":false,"key":"4.2.1"},{"backlink":"B12.html#fig4.4.1","level":"4.4","list_caption":"Figure: 驱动芯片","alt":"驱动芯片","nro":48,"url":"/img/2019-05-22_230115.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"驱动芯片","attributes":{},"skip":false,"key":"4.4.1"},{"backlink":"B12.html#fig4.4.2","level":"4.4","list_caption":"Figure: TB6612FNG 内部框图","alt":"TB6612FNG 内部框图","nro":49,"url":"/img/2018-10-04_165328.png","index":2,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"TB6612FNG 内部框图","attributes":{},"skip":false,"key":"4.4.2"},{"backlink":"B12.html#fig4.4.3","level":"4.4","list_caption":"Figure: 接线方式","alt":"接线方式","nro":50,"url":"/img/2018-10-04_165955.png","index":3,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"接线方式","attributes":{},"skip":false,"key":"4.4.3"},{"backlink":"B12.html#fig4.4.4","level":"4.4","list_caption":"Figure: 测试方法","alt":"测试方法","nro":51,"url":"/img/TTM1-MOTOR3.jpg","index":4,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"测试方法","attributes":{},"skip":false,"key":"4.4.4"},{"backlink":"B12.html#fig4.4.5","level":"4.4","list_caption":"Figure: 电机实物接线图","alt":"电机实物接线图","nro":52,"url":"/img/TTM1-MOTOR2.jpg","index":5,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"电机实物接线图","attributes":{},"skip":false,"key":"4.4.5"},{"backlink":"B23.html#fig4.6.1","level":"4.6","list_caption":"Figure: MPU-6050 模块","alt":"MPU-6050 模块","nro":53,"url":"/img/2018-12-09_180904.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"MPU-6050 模块","attributes":{},"skip":false,"key":"4.6.1"},{"backlink":"B23.html#fig4.6.2","level":"4.6","list_caption":"Figure: MPU-6050","alt":"MPU-6050","nro":54,"url":"/img/mpu-6000-family-diagram.png","index":2,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"MPU-6050","attributes":{},"skip":false,"key":"4.6.2"},{"backlink":"B23.html#fig4.6.3","level":"4.6","list_caption":"Figure: MPU-6050 内部框图","alt":"MPU-6050 内部框图","nro":55,"url":"/img/2018-10-03_155833.png","index":3,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"MPU-6050 内部框图","attributes":{},"skip":false,"key":"4.6.3"},{"backlink":"B25.html#fig4.7.1","level":"4.7","list_caption":"Figure: PCB Top Layer View","alt":"PCB Top Layer View","nro":56,"url":"/img/2020-02-07_194556.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"PCB Top Layer View","attributes":{},"skip":false,"key":"4.7.1"},{"backlink":"B26.html#fig4.8.1","level":"4.8","list_caption":"Figure: 带霍尔编码器直流减速电机TTM1 alt ><","alt":"带霍尔编码器直流减速电机TTM1 alt ><","nro":57,"url":"img/TTM1-MOTOR33.jpg","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"带霍尔编码器直流减速电机TTM1 alt ><","attributes":{},"skip":false,"key":"4.8.1"},{"backlink":"B24.html#fig4.9.1","level":"4.9","list_caption":"Figure: 定义X轴Y轴方向以及摆放位置 alt ><","alt":"定义X轴Y轴方向以及摆放位置 alt ><","nro":58,"url":"/img/IMG_60381.jpg","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"定义X轴Y轴方向以及摆放位置 alt ><","attributes":{},"skip":false,"key":"4.9.1"},{"backlink":"B24.html#fig4.9.2","level":"4.9","list_caption":"Figure: 还没焊接电池盒的走线参考图 alt ><","alt":"还没焊接电池盒的走线参考图 alt ><","nro":59,"url":"/img/IMG_60391.jpg","index":2,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"还没焊接电池盒的走线参考图 alt ><","attributes":{},"skip":false,"key":"4.9.2"},{"backlink":"B24.html#fig4.9.3","level":"4.9","list_caption":"Figure: 洞洞板焊接完成图 alt ><","alt":"洞洞板焊接完成图 alt ><","nro":60,"url":"/img/IMG_60411.jpg","index":3,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"洞洞板焊接完成图 alt ><","attributes":{},"skip":false,"key":"4.9.3"},{"backlink":"A02.html#fig5.3.1","level":"5.3","list_caption":"Figure: A02","alt":"MDK界面","nro":61,"url":"/img/001MDK截图界面.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"A02","attributes":{},"title":"A02","skip":false,"key":"5.3.1"},{"backlink":"A08.html#fig5.4.1","level":"5.4","list_caption":"Figure: 完成安装 alt ><","alt":"完成安装 alt ><","nro":62,"url":"/img/STM32Cube安装6.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"完成安装 alt ><","attributes":{},"skip":false,"key":"5.4.1"},{"backlink":"A08.html#fig5.4.2","level":"5.4","list_caption":"Figure: 在Help栏目中选中导入固件包","alt":"在Help栏目中选中导入固件包","nro":63,"url":"/img/2019-08-17_154619.png","index":2,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"在Help栏目中选中导入固件包","attributes":{},"skip":false,"key":"5.4.2"},{"backlink":"A08.html#fig5.4.3","level":"5.4","list_caption":"Figure: 选中对应固件包，然后自动导入 alt ><","alt":"选中对应固件包，然后自动导入 alt ><","nro":64,"url":"/img/2019-08-17_154732.png","index":3,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"选中对应固件包，然后自动导入 alt ><","attributes":{},"skip":false,"key":"5.4.3"},{"backlink":"A08.html#fig5.4.4","level":"5.4","list_caption":"Figure: 手动选中 STM32Cube_FW_F1_V1.7.0","alt":"手动选中 STM32Cube_FW_F1_V1.7.0","nro":65,"url":"/img/2020-03-06_212352.png","index":4,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"手动选中 STM32Cube_FW_F1_V1.7.0","attributes":{},"skip":false,"key":"5.4.4"},{"backlink":"A11.html#fig5.6.1","level":"5.6","list_caption":"Figure: LED 原理图","alt":"LED 原理图","nro":66,"url":"/img/2019-02-20_224754.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"LED 原理图","attributes":{},"skip":false,"key":"5.6.1"},{"backlink":"A23.html#fig5.8.1","level":"5.8","list_caption":"Figure: CP2102 电路原理图","alt":"CP2102 电路原理图","nro":67,"url":"/img/2019-06-30_183627.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"CP2102 电路原理图","attributes":{},"skip":false,"key":"5.8.1"},{"backlink":"A23.html#fig5.8.2","level":"5.8","list_caption":"Figure: USART1 基础设置","alt":"USART1 基础设置","nro":68,"url":"/img/2019-06-30_184815.png","index":2,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"USART1 基础设置","attributes":{},"skip":false,"key":"5.8.2"},{"backlink":"A23.html#fig5.8.3","level":"5.8","list_caption":"Figure: 启用 USART1 全局中断","alt":"启用 USART1 全局中断","nro":69,"url":"/img/2019-06-30_194522.png","index":3,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"启用 USART1 全局中断","attributes":{},"skip":false,"key":"5.8.3"},{"backlink":"A23.html#fig5.8.4","level":"5.8","list_caption":"Figure: 选项打钩","alt":"选项打钩","nro":70,"url":"/img/2019-06-30_201526.png","index":4,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"选项打钩","attributes":{},"skip":false,"key":"5.8.4"},{"backlink":"A23.html#fig5.8.5","level":"5.8","list_caption":"Figure: 重新生成代码","alt":"重新生成代码","nro":71,"url":"/img/2019-06-30_193307.png","index":5,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"重新生成代码","attributes":{},"skip":false,"key":"5.8.5"},{"backlink":"A23.html#fig5.8.6","level":"5.8","list_caption":"Figure: USART1 初始化函数","alt":"USART1 初始化函数","nro":72,"url":"/img/2019-06-30_203359.png","index":6,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"USART1 初始化函数","attributes":{},"skip":false,"key":"5.8.6"},{"backlink":"A23.html#fig5.8.7","level":"5.8","list_caption":"Figure: 选择 USE MicroLIB","alt":"选择 USE MicroLIB","nro":73,"url":"/img/2019-06-30_200127.png","index":7,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"选择 USE MicroLIB","attributes":{},"skip":false,"key":"5.8.7"},{"backlink":"A23.html#fig5.8.8","level":"5.8","list_caption":"Figure: 代码截图","alt":"代码截图","nro":74,"url":"/img/2019-06-30_204228.png","index":8,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"代码截图","attributes":{},"skip":false,"key":"5.8.8"},{"backlink":"A23.html#fig5.8.9","level":"5.8","list_caption":"Figure: 代码截图","alt":"代码截图","nro":75,"url":"/img/2019-06-30_210040.png","index":9,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"代码截图","attributes":{},"skip":false,"key":"5.8.9"},{"backlink":"A23.html#fig5.8.10","level":"5.8","list_caption":"Figure: 打印出 LED GPIO TOGGLE!","alt":"打印出 LED GPIO TOGGLE!","nro":76,"url":"/img/2019-07-03_195518.png","index":10,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"打印出 LED GPIO TOGGLE!","attributes":{},"skip":false,"key":"5.8.10"},{"backlink":"A24.html#fig5.9.1","level":"5.9","list_caption":"Figure: 电机接口电路原理图","alt":"电机接口电路原理图","nro":77,"url":"/img/2019-07-03_201409.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"电机接口电路原理图","attributes":{},"skip":false,"key":"5.9.1"},{"backlink":"A24.html#fig5.9.2","level":"5.9","list_caption":"Figure: 将 Combined Channels 选择为 Encoder Mode","alt":"将 Combined Channels 选择为 Encoder Mode","nro":78,"url":"/img/2019-07-03_205535.png","index":2,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"将 Combined Channels 选择为 Encoder Mode","attributes":{},"skip":false,"key":"5.9.2"},{"backlink":"A24.html#fig5.9.3","level":"5.9","list_caption":"Figure: Parameter Settings 选项卡的参数配置","alt":"Parameter Settings 选项卡的参数配置","nro":79,"url":"/img/2019-07-03_210321.png","index":3,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Parameter Settings 选项卡的参数配置","attributes":{},"skip":false,"key":"5.9.3"},{"backlink":"A24.html#fig5.9.4","level":"5.9","list_caption":"Figure: 重新生成代码","alt":"重新生成代码","nro":80,"url":"/img/2019-07-03_224033.png","index":4,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"重新生成代码","attributes":{},"skip":false,"key":"5.9.4"},{"backlink":"A24.html#fig5.9.5","level":"5.9","list_caption":"Figure: 代码截图","alt":"代码截图","nro":81,"url":"/img/2019-07-03_224731.png","index":5,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"代码截图","attributes":{},"skip":false,"key":"5.9.5"},{"backlink":"A24.html#fig5.9.6","level":"5.9","list_caption":"Figure: 代码截图","alt":"代码截图","nro":82,"url":"/img/2019-07-06_111603.png","index":6,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"代码截图","attributes":{},"skip":false,"key":"5.9.6"},{"backlink":"A24.html#fig5.9.7","level":"5.9","list_caption":"Figure: 代码截图","alt":"代码截图","nro":83,"url":"/img/2019-07-06_111838.png","index":7,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"代码截图","attributes":{},"skip":false,"key":"5.9.7"},{"backlink":"A24.html#fig5.9.8","level":"5.9","list_caption":"Figure: 代码截图","alt":"代码截图","nro":84,"url":"/img/2019-07-06_174110.png","index":8,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"代码截图","attributes":{},"skip":false,"key":"5.9.8"},{"backlink":"A24.html#fig5.9.9","level":"5.9","list_caption":"Figure: 串口助手截图","alt":"串口助手截图","nro":85,"url":"/img/2019-07-06_180708.png","index":9,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"串口助手截图","attributes":{},"skip":false,"key":"5.9.9"},{"backlink":"A24.html#fig5.9.10","level":"5.9","list_caption":"Figure: 串口助手截图","alt":"串口助手截图","nro":86,"url":"/img/2019-07-06_181841.png","index":10,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"串口助手截图","attributes":{},"skip":false,"key":"5.9.10"},{"backlink":"A24.html#fig5.9.11","level":"5.9","list_caption":"Figure: 计数方向与编码器信号的关系","alt":"计数方向与编码器信号的关系","nro":87,"url":"/img/2019-07-06_202620.png","index":11,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"计数方向与编码器信号的关系","attributes":{},"skip":false,"key":"5.9.11"},{"backlink":"A25.html#fig5.10.1","level":"5.10","list_caption":"Figure: Parameter Settings 选项卡的参数配置","alt":"Parameter Settings 选项卡的参数配置","nro":88,"url":"/img/2019-07-07_155507.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Parameter Settings 选项卡的参数配置","attributes":{},"skip":false,"key":"5.10.1"},{"backlink":"A25.html#fig5.10.2","level":"5.10","list_caption":"Figure: 重新生成代码","alt":"重新生成代码","nro":89,"url":"/img/2019-07-07_165725.png","index":2,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"重新生成代码","attributes":{},"skip":false,"key":"5.10.2"},{"backlink":"A25.html#fig5.10.3","level":"5.10","list_caption":"Figure: 代码截图","alt":"代码截图","nro":90,"url":"/img/2019-07-07_165946.png","index":3,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"代码截图","attributes":{},"skip":false,"key":"5.10.3"},{"backlink":"A25.html#fig5.10.4","level":"5.10","list_caption":"Figure: 配置 PA3、PA4 引脚","alt":"配置 PA3、PA4 引脚","nro":91,"url":"/img/2019-07-07_171527.png","index":4,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"配置 PA3、PA4 引脚","attributes":{},"skip":false,"key":"5.10.4"},{"backlink":"A25.html#fig5.10.5","level":"5.10","list_caption":"Figure: 重新生成代码","alt":"重新生成代码","nro":92,"url":"/img/2019-07-07_200712.png","index":5,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"重新生成代码","attributes":{},"skip":false,"key":"5.10.5"},{"backlink":"A25.html#fig5.10.6","level":"5.10","list_caption":"Figure: 代码截图","alt":"代码截图","nro":93,"url":"/img/2019-07-07_201238.png","index":6,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"代码截图","attributes":{},"skip":false,"key":"5.10.6"},{"backlink":"A25.html#fig5.10.7","level":"5.10","list_caption":"Figure: 代码截图","alt":"代码截图","nro":94,"url":"/img/2019-07-07_205646.png","index":7,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"代码截图","attributes":{},"skip":false,"key":"5.10.7"},{"backlink":"A25.html#fig5.10.8","level":"5.10","list_caption":"Figure: 编译后提示有一个警告","alt":"编译后提示有一个警告","nro":95,"url":"/img/2019-07-07_211533.png","index":8,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"编译后提示有一个警告","attributes":{},"skip":false,"key":"5.10.8"},{"backlink":"A25.html#fig5.10.9","level":"5.10","list_caption":"Figure: 编译后没有提示任何错误和警告","alt":"编译后没有提示任何错误和警告","nro":96,"url":"/img/2019-07-07_211643.png","index":9,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"编译后没有提示任何错误和警告","attributes":{},"skip":false,"key":"5.10.9"},{"backlink":"A26.html#fig5.11.1","level":"5.11","list_caption":"Figure: 使用 STM32CubeMX 配置 I2C1 接口","alt":"使用 STM32CubeMX 配置 I2C1 接口","nro":97,"url":"/img/2019-07-10_204117.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"使用 STM32CubeMX 配置 I2C1 接口","attributes":{},"skip":false,"key":"5.11.1"},{"backlink":"A26.html#fig5.11.2","level":"5.11","list_caption":"Figure: 重新生成代码","alt":"重新生成代码","nro":98,"url":"/img/2019-07-10_205224.png","index":2,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"重新生成代码","attributes":{},"skip":false,"key":"5.11.2"},{"backlink":"A26.html#fig5.11.3","level":"5.11","list_caption":"Figure: 将 `mpu6050.c` 复制到 Src 文件夹","alt":"将 `mpu6050.c` 复制到 Src 文件夹","nro":99,"url":"/img/2019-07-10_210933.png","index":3,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"将 `mpu6050.c` 复制到 Src 文件夹","attributes":{},"skip":false,"key":"5.11.3"},{"backlink":"A26.html#fig5.11.4","level":"5.11","list_caption":"Figure: 将 `mpu6050.h` 复制到 Inc 文件夹","alt":"将 `mpu6050.h` 复制到 Inc 文件夹","nro":100,"url":"/img/2019-07-10_211311.png","index":4,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"将 `mpu6050.h` 复制到 Inc 文件夹","attributes":{},"skip":false,"key":"5.11.4"},{"backlink":"A26.html#fig5.11.5","level":"5.11","list_caption":"Figure: 将 Src 文件夹的 `mpu6050.c` 加入工程","alt":"将 Src 文件夹的 `mpu6050.c` 加入工程","nro":101,"url":"/img/2019-07-10_211626.png","index":5,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"将 Src 文件夹的 `mpu6050.c` 加入工程","attributes":{},"skip":false,"key":"5.11.5"},{"backlink":"A26.html#fig5.11.6","level":"5.11","list_caption":"Figure: 在 main.h 中加入 mpu6050.h","alt":"在 main.h 中加入 mpu6050.h","nro":102,"url":"/img/2019-07-10_213418.png","index":6,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"在 main.h 中加入 mpu6050.h","attributes":{},"skip":false,"key":"5.11.6"},{"backlink":"A26.html#fig5.11.7","level":"5.11","list_caption":"Figure: 代码截图","alt":"代码截图","nro":103,"url":"/img/2019-07-10_214449.png","index":7,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"代码截图","attributes":{},"skip":false,"key":"5.11.7"},{"backlink":"A26.html#fig5.11.8","level":"5.11","list_caption":"Figure: 代码截图","alt":"代码截图","nro":104,"url":"/img/2019-07-10_221722.png","index":8,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"代码截图","attributes":{},"skip":false,"key":"5.11.8"},{"backlink":"A26.html#fig5.11.9","level":"5.11","list_caption":"Figure: 串口助手截图","alt":"串口助手截图","nro":105,"url":"/img/2019-07-10_221525.png","index":9,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"串口助手截图","attributes":{},"skip":false,"key":"5.11.9"},{"backlink":"B07.html#fig5.12.1","level":"5.12","list_caption":"Figure: 图片来自：starlino.com","alt":"图片来自：starlino.com","nro":106,"url":"/img/04.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"图片来自：starlino.com","attributes":{},"skip":false,"key":"5.12.1"},{"backlink":"B07.html#fig5.12.2","level":"5.12","list_caption":"Figure: 图片来自：starlino.com","alt":"图片来自：starlino.com","nro":107,"url":"/img/05.png","index":2,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"图片来自：starlino.com","attributes":{},"skip":false,"key":"5.12.2"},{"backlink":"B07.html#fig5.12.3","level":"5.12","list_caption":"Figure: 图片来自：starlino.com","alt":"图片来自：starlino.com","nro":108,"url":"/img/06.png","index":3,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"图片来自：starlino.com","attributes":{},"skip":false,"key":"5.12.3"},{"backlink":"B07.html#fig5.12.4","level":"5.12","list_caption":"Figure: 图片来自：starlino.com","alt":"图片来自：starlino.com","nro":109,"url":"/img/07.png","index":4,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"图片来自：starlino.com","attributes":{},"skip":false,"key":"5.12.4"},{"backlink":"B07.html#fig5.12.5","level":"5.12","list_caption":"Figure: 图片来自：starlino.com","alt":"图片来自：starlino.com","nro":110,"url":"/img/03.png","index":5,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"图片来自：starlino.com","attributes":{},"skip":false,"key":"5.12.5"},{"backlink":"B07.html#fig5.12.6","level":"5.12","list_caption":"Figure: 图片来自：starlino.com","alt":"图片来自：starlino.com","nro":111,"url":"/img/03.png","index":6,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"图片来自：starlino.com","attributes":{},"skip":false,"key":"5.12.6"},{"backlink":"A27.html#fig5.13.1","level":"5.13","list_caption":"Figure: 代码截图","alt":"代码截图","nro":112,"url":"/img/2019-07-20_202823.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"代码截图","attributes":{},"skip":false,"key":"5.13.1"},{"backlink":"A27.html#fig5.13.2","level":"5.13","list_caption":"Figure: 代码截图","alt":"代码截图","nro":113,"url":"/img/2019-07-20_211215.png","index":2,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"代码截图","attributes":{},"skip":false,"key":"5.13.2"},{"backlink":"A27.html#fig5.13.3","level":"5.13","list_caption":"Figure: 代码截图","alt":"代码截图","nro":114,"url":"/img/2019-07-20_211424.png","index":3,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"代码截图","attributes":{},"skip":false,"key":"5.13.3"},{"backlink":"A27.html#fig5.13.4","level":"5.13","list_caption":"Figure: 代码截图","alt":"代码截图","nro":115,"url":"/img/2019-07-20_212229.png","index":4,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"代码截图","attributes":{},"skip":false,"key":"5.13.4"},{"backlink":"A27.html#fig5.13.5","level":"5.13","list_caption":"Figure: 代码截图","alt":"代码截图","nro":116,"url":"/img/2019-07-20_213115.png","index":5,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"代码截图","attributes":{},"skip":false,"key":"5.13.5"},{"backlink":"A27.html#fig5.13.6","level":"5.13","list_caption":"Figure: 注释掉延时函数","alt":"注释掉延时函数","nro":117,"url":"/img/2019-07-20_214622.png","index":6,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"注释掉延时函数","attributes":{},"skip":false,"key":"5.13.6"},{"backlink":"A27.html#fig5.13.7","level":"5.13","list_caption":"Figure: 得到精准的角度","alt":"得到精准的角度","nro":118,"url":"/img/2019-07-20_214948.png","index":7,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"得到精准的角度","attributes":{},"skip":false,"key":"5.13.7"},{"backlink":"A27.html#fig5.13.8","level":"5.13","list_caption":"Figure: 复制 outputdata.c 到 Src 文件夹","alt":"复制 outputdata.c 到 Src 文件夹","nro":119,"url":"/img/2019-07-27_181343.png","index":8,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"复制 outputdata.c 到 Src 文件夹","attributes":{},"skip":false,"key":"5.13.8"},{"backlink":"A27.html#fig5.13.9","level":"5.13","list_caption":"Figure: 复制 outputdata.h 到 Inc 文件夹","alt":"复制 outputdata.h 到 Inc 文件夹","nro":120,"url":"/img/2019-07-27_181515.png","index":9,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"复制 outputdata.h 到 Inc 文件夹","attributes":{},"skip":false,"key":"5.13.9"},{"backlink":"A27.html#fig5.13.10","level":"5.13","list_caption":"Figure: 将 Src 文件夹的 `outputdata.c` 加入工程","alt":"将 Src 文件夹的 `outputdata.c` 加入工程","nro":121,"url":"/img/2019-07-27_181821.png","index":10,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"将 Src 文件夹的 `outputdata.c` 加入工程","attributes":{},"skip":false,"key":"5.13.10"},{"backlink":"A27.html#fig5.13.11","level":"5.13","list_caption":"Figure: 在 control.c 里添加 outputdata.h 头文件","alt":"在 control.c 里添加 outputdata.h 头文件","nro":122,"url":"/img/2019-07-27_183104.png","index":11,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"在 control.c 里添加 outputdata.h 头文件","attributes":{},"skip":false,"key":"5.13.11"},{"backlink":"A27.html#fig5.13.12","level":"5.13","list_caption":"Figure: 在 main.h 里添加 outputdata.h 头文件","alt":"在 main.h 里添加 outputdata.h 头文件","nro":123,"url":"/img/2019-07-27_183223.png","index":12,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"在 main.h 里添加 outputdata.h 头文件","attributes":{},"skip":false,"key":"5.13.12"},{"backlink":"A27.html#fig5.13.13","level":"5.13","list_caption":"Figure: 修改 AngleCalculate() 函数","alt":"修改 AngleCalculate() 函数","nro":124,"url":"/img/2019-07-27_183542.png","index":13,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"修改 AngleCalculate() 函数","attributes":{},"skip":false,"key":"5.13.13"},{"backlink":"A27.html#fig5.13.14","level":"5.13","list_caption":"Figure: 调用虚拟示波器的发送函数","alt":"调用虚拟示波器的发送函数","nro":125,"url":"/img/2019-07-27_183900.png","index":14,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"调用虚拟示波器的发送函数","attributes":{},"skip":false,"key":"5.13.14"},{"backlink":"A27.html#fig5.13.15","level":"5.13","list_caption":"Figure: 设置虚拟示波器","alt":"设置虚拟示波器","nro":126,"url":"/img/2019-07-27_184252.png","index":15,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"设置虚拟示波器","attributes":{},"skip":false,"key":"5.13.15"},{"backlink":"A27.html#fig5.13.16","level":"5.13","list_caption":"Figure: 几乎看不见波形","alt":"几乎看不见波形","nro":127,"url":"/img/2019-07-27_184615.png","index":16,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"几乎看不见波形","attributes":{},"skip":false,"key":"5.13.16"},{"backlink":"A27.html#fig5.13.17","level":"5.13","list_caption":"Figure: 放大看到清晰的波形","alt":"放大看到清晰的波形","nro":128,"url":"/img/2019-07-27_180220.png","index":17,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"放大看到清晰的波形","attributes":{},"skip":false,"key":"5.13.17"},{"backlink":"E08.html#fig5.14.1","level":"5.14","list_caption":"Figure: 小功率直流电机调速系统","alt":"小功率直流电机调速系统","nro":129,"url":"/img/2019-01-03_210504.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"小功率直流电机调速系统","attributes":{},"skip":false,"key":"5.14.1"},{"backlink":"E08.html#fig5.14.2","level":"5.14","list_caption":"Figure: 模拟 PID 控制系统原理图","alt":"模拟 PID 控制系统原理图","nro":130,"url":"/img/2019-01-03_210531.png","index":2,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"模拟 PID 控制系统原理图","attributes":{},"skip":false,"key":"5.14.2"},{"backlink":"A28.html#fig5.15.1","level":"5.15","list_caption":"Figure: 添加变量代码","alt":"添加变量代码","nro":131,"url":"/img/2019-07-30_202637.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"添加变量代码","attributes":{},"skip":false,"key":"5.15.1"},{"backlink":"A28.html#fig5.15.2","level":"5.15","list_caption":"Figure: 添加函数代码","alt":"添加函数代码","nro":132,"url":"/img/2019-07-30_202825.png","index":2,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"添加函数代码","attributes":{},"skip":false,"key":"5.15.2"},{"backlink":"A28.html#fig5.15.3","level":"5.15","list_caption":"Figure: 代码截图","alt":"代码截图","nro":133,"url":"/img/2019-07-30_203038.png","index":3,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"代码截图","attributes":{},"skip":false,"key":"5.15.3"},{"backlink":"A28.html#fig5.15.4","level":"5.15","list_caption":"Figure: 代码截图","alt":"代码截图","nro":134,"url":"/img/2019-07-30_203413.png","index":4,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"代码截图","attributes":{},"skip":false,"key":"5.15.4"},{"backlink":"A28.html#fig5.15.5","level":"5.15","list_caption":"Figure: 代码截图","alt":"代码截图","nro":135,"url":"/img/2019-07-30_204123.png","index":5,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"代码截图","attributes":{},"skip":false,"key":"5.15.5"},{"backlink":"A28.html#fig5.15.6","level":"5.15","list_caption":"Figure: 响应曲线","alt":"响应曲线","nro":136,"url":"/img/2019-07-30_181213-00-0.1.png","index":6,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"响应曲线","attributes":{},"skip":false,"key":"5.15.6"},{"backlink":"A28.html#fig5.15.7","level":"5.15","list_caption":"Figure: 响应曲线","alt":"响应曲线","nro":137,"url":"/img/2019-07-30_181019-00-0.9.png","index":7,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"响应曲线","attributes":{},"skip":false,"key":"5.15.7"},{"backlink":"A28.html#fig5.15.8","level":"5.15","list_caption":"Figure: 响应曲线","alt":"响应曲线","nro":138,"url":"/img/2019-07-30_210953-02-0.9.png","index":8,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"响应曲线","attributes":{},"skip":false,"key":"5.15.8"},{"backlink":"A28.html#fig5.15.9","level":"5.15","list_caption":"Figure: 响应曲线","alt":"响应曲线","nro":139,"url":"/img/2019-07-30_180754-10-0.9.png","index":9,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"响应曲线","attributes":{},"skip":false,"key":"5.15.9"},{"backlink":"E02.html#fig5.16.1","level":"5.16","list_caption":"Figure: 配置 TIM3 PWM Channel2","alt":"配置 TIM3 PWM Channel2","nro":140,"url":"/img/2019-08-04_211732.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"配置 TIM3 PWM Channel2","attributes":{},"skip":false,"key":"5.16.1"},{"backlink":"E02.html#fig5.16.2","level":"5.16","list_caption":"Figure: 配置 GPIO PB0 和 PB1 引脚","alt":"配置 GPIO PB0 和 PB1 引脚","nro":141,"url":"/IMG/2019-08-04_212212.png","index":2,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"配置 GPIO PB0 和 PB1 引脚","attributes":{},"skip":false,"key":"5.16.2"},{"backlink":"E02.html#fig5.16.3","level":"5.16","list_caption":"Figure: 配置 TIM2 ","alt":"配置 TIM2 ","nro":142,"url":"/img/2019-08-04_211008.png","index":3,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"配置 TIM2 ","attributes":{},"skip":false,"key":"5.16.3"},{"backlink":"E02.html#fig5.16.4","level":"5.16","list_caption":"Figure: 重新生成代码","alt":"重新生成代码","nro":143,"url":"/img/2019-08-04_212355.png","index":4,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"重新生成代码","attributes":{},"skip":false,"key":"5.16.4"},{"backlink":"E10.html#fig5.18.1","level":"5.18","list_caption":"Figure: 修改PWM频率","alt":"修改PWM频率","nro":144,"url":"/img/2019-09-02_202052.png","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"修改PWM频率","attributes":{},"skip":false,"key":"5.18.1"},{"backlink":"E10.html#fig5.18.2","level":"5.18","list_caption":"Figure: 目录下有中文和空格时会提示类似的错误","alt":"目录下有中文和空格时会提示类似的错误","nro":145,"url":"/img/2019-09-02_203208.png","index":2,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"目录下有中文和空格时会提示类似的错误","attributes":{},"skip":false,"key":"5.18.2"},{"backlink":"E10.html#fig5.18.3","level":"5.18","list_caption":"Figure: 转跳到该函数","alt":"转跳到该函数","nro":146,"url":"/img/2019-09-02_204538.png","index":3,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"转跳到该函数","attributes":{},"skip":false,"key":"5.18.3"},{"backlink":"E10.html#fig5.18.4","level":"5.18","list_caption":"Figure: TIM3初始化代码已经重新生成","alt":"TIM3初始化代码已经重新生成","nro":147,"url":"/img/2019-09-02_204734.png","index":4,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"TIM3初始化代码已经重新生成","attributes":{},"skip":false,"key":"5.18.4"},{"backlink":"E11.html#fig5.19.1","level":"5.19","list_caption":"Figure: 0.96 OLED","alt":"0.96 OLED","nro":148,"url":"/img/TB2O5.qpl0kpuFjSsppXXcGTXXa_!!361121710.jpg","index":1,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"0.96 OLED","attributes":{},"skip":false,"key":"5.19.1"},{"backlink":"E11.html#fig5.19.2","level":"5.19","list_caption":"Figure: 引脚连接原理图","alt":"引脚连接原理图","nro":149,"url":"/img/2019-09-08_204716.png","index":2,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"引脚连接原理图","attributes":{},"skip":false,"key":"5.19.2"},{"backlink":"E11.html#fig5.19.3","level":"5.19","list_caption":"Figure: 配置相关引脚","alt":"配置相关引脚","nro":150,"url":"/img/2019-09-08_211839.png","index":3,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"配置相关引脚","attributes":{},"skip":false,"key":"5.19.3"},{"backlink":"E11.html#fig5.19.4","level":"5.19","list_caption":"Figure: 下载u8g2代码","alt":"下载u8g2代码","nro":151,"url":"/img/2019-09-07_205818.png","index":4,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"下载u8g2代码","attributes":{},"skip":false,"key":"5.19.4"},{"backlink":"E11.html#fig5.19.5","level":"5.19","list_caption":"Figure: 解压","alt":"解压","nro":152,"url":"/img/2019-09-07_210840.png","index":5,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"解压","attributes":{},"skip":false,"key":"5.19.5"},{"backlink":"E11.html#fig5.19.6","level":"5.19","list_caption":"Figure: 复制头文件到Inc文件夹中","alt":"复制头文件到Inc文件夹中","nro":153,"url":"/img/2019-09-08_203358.png","index":6,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"复制头文件到Inc文件夹中","attributes":{},"skip":false,"key":"5.19.6"},{"backlink":"E11.html#fig5.19.7","level":"5.19","list_caption":"Figure: 复制源文件到Src文件夹中","alt":"复制源文件到Src文件夹中","nro":154,"url":"/img/2019-09-08_203205.png","index":7,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"复制源文件到Src文件夹中","attributes":{},"skip":false,"key":"5.19.7"},{"backlink":"E11.html#fig5.19.8","level":"5.19","list_caption":"Figure: 把相关文件全部加入到MDK-ARM工程中","alt":"把相关文件全部加入到MDK-ARM工程中","nro":155,"url":"/img/2019-09-08_203815.png","index":8,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"把相关文件全部加入到MDK-ARM工程中","attributes":{},"skip":false,"key":"5.19.8"},{"backlink":"E11.html#fig5.19.9","level":"5.19","list_caption":"Figure: 在main.c中添加h头文件","alt":"在main.c中添加h头文件","nro":156,"url":"/img/2019-09-08_212648.png","index":9,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"在main.c中添加h头文件","attributes":{},"skip":false,"key":"5.19.9"},{"backlink":"E11.html#fig5.19.10","level":"5.19","list_caption":"Figure: 裁剪u8g2_d_setup.c","alt":"裁剪u8g2_d_setup.c","nro":157,"url":"/img/2019-09-08_214618.png","index":10,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"裁剪u8g2_d_setup.c","attributes":{},"skip":false,"key":"5.19.10"},{"backlink":"E11.html#fig5.19.11","level":"5.19","list_caption":"Figure: 裁剪u8g2_d_memory.c","alt":"裁剪u8g2_d_memory.c","nro":158,"url":"/img/2019-09-08_214737.png","index":11,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"裁剪u8g2_d_memory.c","attributes":{},"skip":false,"key":"5.19.11"},{"backlink":"E11.html#fig5.19.12","level":"5.19","list_caption":"Figure: 加入oled.h头文件","alt":"加入oled.h头文件","nro":159,"url":"/img/2019-09-08_215903.png","index":12,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"加入oled.h头文件","attributes":{},"skip":false,"key":"5.19.12"},{"backlink":"E11.html#fig5.19.13","level":"5.19","list_caption":"Figure: 创建 u8g2 句柄","alt":"创建 u8g2 句柄","nro":160,"url":"/img/2019-09-08_221322.png","index":13,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"创建 u8g2 句柄","attributes":{},"skip":false,"key":"5.19.13"},{"backlink":"E11.html#fig5.19.14","level":"5.19","list_caption":"Figure: 初始化u8g2","alt":"初始化u8g2","nro":161,"url":"/img/2019-09-08_221511.png","index":14,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"初始化u8g2","attributes":{},"skip":false,"key":"5.19.14"},{"backlink":"E11.html#fig5.19.15","level":"5.19","list_caption":"Figure: 修改主循环代码","alt":"修改主循环代码","nro":162,"url":"/img/2019-09-08_221840.png","index":15,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"修改主循环代码","attributes":{},"skip":false,"key":"5.19.15"},{"backlink":"E11.html#fig5.19.16","level":"5.19","list_caption":"Figure: OLED显示三个圆环","alt":"OLED显示三个圆环","nro":163,"url":"/img/IMG_9875.JPG","index":16,"caption_template":"Image _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"OLED显示三个圆环","attributes":{},"skip":false,"key":"5.19.16"}]},"title":"给新手的两轮自平衡小车开发实战指南","language":"zh-hans","links":{"sidebar":{"给新手的两轮自平衡小车开发实战指南":"https://c.miaowlabs.com/"}},"gitbook":"*","description":"一本面向初学新手、内容通俗易懂、操作步骤详细的两轮自平衡小车开发实战指南。"},"file":{"path":"A27.md","mtime":"2019-09-24T13:01:28.208Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-07T13:16:23.140Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
